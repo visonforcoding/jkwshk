@@ -1,0 +1,205 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script src="__PUBLIC__/ueditor/ueditor.config.js" ></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.js" ></script>
+    <script href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" ></script>
+    <script>var ajaxurl = "{:U('Ajax/getArea')}";</script>
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '机构管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+            $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                param.classname = '{$classname}';
+                var isValid = $('#ff').form('validate');
+                var action = "{$action}";
+                if (action === 'edit') {
+                    param.action = 'edit';
+                    param.id = "{$Rs['id']}";
+                }
+                if (isValid) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/dietitians/doAddDieti.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.success) {
+                                if (data.edit) {
+                                    $.messager.alert('信息提示', data.message, 'info');
+                                } else {
+                                    $.messager.alert('信息提示', data.message, 'info', clearForm);
+                                }
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        }
+                    });
+                } else {
+                    return isValid;
+                }
+                ;
+            });
+        });
+        function clearForm() {
+            $('#ff').form('clear');
+        }
+        $(function() {
+        //省 市 县 三级联动
+        $('.area').change(function() {
+            var obj = $(this);
+            var areaId = obj.val();
+            obj.next('select').children('option').remove();
+            $.ajax({
+                type: "POST",
+                url: ajaxurl,
+                data: {'areaId': areaId},
+                success: function(msg) {
+                    $.each(msg, function(index, value) {
+                        if (index === 0) {
+                            obj.next('select').append("<option selected='selected' value='" + value['area_id'] + "'>" + value['area_name'] + "</option>");
+                        }else{
+                        obj.next('select').append("<option value='" + value['area_id'] + "'>" + value['area_name'] + "</option>");
+                        }
+                    });
+                }
+            });
+        });
+    });
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加营养师"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form">
+                <input type="hidden" name="uname" value="{$uname}"  />
+                <div class="input-group">
+                    <label>名称:</label>
+                    <input class="easyui-validatebox" style="width:400px" id="title" value="{$Rs['name']}" type="text" name="name" data-options="required:true" ></input>
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >个人照片：</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                                {$Rs['fphoto']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" style="width: 133px;" class="btn btn-primary" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="photo" id="topimg" value="{$Rs['photo']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label style="float: left">所属地区:</label>
+                    <div class="checkbox-inline" style="width:90%;float: left">
+                        <select id="province" class="area" runat="server"  name="province">
+                            <empty name="Rs">
+                                <volist name="area" id="v">
+                                    <option value="{$v.area_id}">{$v.area_name}</option>
+                                </volist>
+                                <else/>
+                                <option value="{$Rs['province']}" selected="selected">{$Rs['province']}</option>
+                                <volist name="area" id="v">
+                                    <option value="{$v.area_id}">{$v.area_name}</option>
+                                </volist>
+                            </empty>
+                        </select>
+                        <select id="city" class="area" runat="server"  name="city">
+                            <option value="{$Rs['city']}" selected="selected">{$Rs['city']}</option>
+                        </select>
+                        <select id="county" runat="server"  name="district">
+                            <option value="{$Rs['district']}" selected="selected">{$Rs['district']}</option>
+                        </select>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>电话:</label>
+                    <input class="easyui-validatebox w310" type="text" value="{$Rs['tel']}"  id="coordinate" name="tel"></input>
+                </div>
+                <div class="input-group">
+                    <label>新浪微博:</label>
+                    <textarea id="weibo" name="weibo" style="width:750px;height: 75px">{$Rs['weibo']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label>腾讯微博:</label>
+                    <textarea id="tqq" name="tqq" style="width:750px;height: 75px">{$Rs['tqq']}</textarea>
+                </div>
+                    <div  class="input-group hasEditor">
+                    <label>内容:</label>
+                    <script id="info" class="editor" name="info" type="text/plain">
+                        {$Rs['info']}
+                    </script>
+                    <script type="text/javascript">
+                        var editor = UE.getEditor('info')
+                    </script>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>SEO关键字:</label>
+                    <input class="easyui-validatebox w310" type="text" value="{$Rs['keywords']}"  id="keywords" name="keywords"></input>
+                </div>
+                <div class="input-group">
+                    <label>SEO描述:</label>
+                    <textarea class="easyui-validatebox"  style="width:700px;height:60px;"  id="description" name="description">{$Rs['description']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+                /*图片上传*/
+                        (function($) {
+                            var image = {
+                                editor: null,
+                                init: function(editorid, keyid) {
+                                    var _editor = this.getEditor(editorid);
+                                    _editor.ready(function() {
+                                        _editor.setDisabled();
+                                        _editor.hide();
+                                        _editor.addListener('beforeInsertImage', function(t, args) {
+                                            var imgsrc = args[0].src;
+                                            $("#" + keyid).val(imgsrc);
+                                            $("#disimgcover").html('<img src="' + imgsrc + '" width="120" height="120" />');
+                                        });
+                                    });
+                                },
+                                getEditor: function(editorid) {
+                                    this.editor = UE.getEditor(editorid);
+                                    return this.editor;
+                                },
+                                show: function(id) {
+                                    var _editor = this.editor;
+                                    //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+                                    //和网上一些朋友的代码不同之处就在这里  
+                                    $("#" + id).click(function() {
+                                        var image = _editor.getDialog("insertimage");
+                                        image.render();
+                                        image.open();
+                                    });
+                                },
+                                render: function(editorid) {
+                                    var _editor = this.getEditor(editorid);
+                                    _editor.render();
+                                }
+                            };
+                            $(function() {
+                                image.init("myeditor", "topimg");
+                                image.show("image");
+                            });
+                        })(jQuery);
+    </script>
+</block>

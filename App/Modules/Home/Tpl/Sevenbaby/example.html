@@ -1,0 +1,205 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>头条-分期观看-Seven Baby-健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/sevenbaby/program.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='body'>
+    <!--/*顶部*/-->
+    <include file="sevenbaby:top"/>
+    <!--/*顶部结束*/-->
+    <div class="nav">
+        <div class="nav_con">
+            <div class="sb_logo"></div>
+            <div class="sb_playtime">
+                <div id=site-nav >
+                    <ul class=quick-menu style="left:180px; top:30px">
+                        <li class="mytaobao ">
+                            <div class=menu> <a class=menu-hd  target=_top rel=nofollow style="background:#fe3883; width:35px">重播<b></b></a>
+                                <div class=menu-bd>
+                                    <div class=menu-bd-panel>
+                                        <div>
+                                            <p>19:33</p>
+                                            <p>01:05</p>
+                                            <p>10:53</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <script type=text/javascript>
+                    TB.Header.init();
+                </script> 
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li><a href="/sevenbaby/program.html">分期观看</a></li>
+                    <li  class="selected"><a href="/sevenbaby/example.html">头条</a></li>
+                    <li><a href="/sevenbaby/kids.html">育儿百科</a></li>
+                    <li><a href="#">首届电视节目</a></li>
+                </ul>
+            </div>
+            <div class="nav_list-line"><img src="__PUBLIC__/Images/home/sevenbaby/seven-baby_48.jpg" width="1" height="40" alt=""></div>
+            <div class="tree"></div>
+            <div class="nav1_list">
+                <ul>
+                    <li class="iconhome"><a href="/sevenbaby/index.html">首页</a></li>
+                    <li class="iconfmshow"><a href="/sevenbaby/family.html">家庭SHOW</a></li>
+                    <li class="iconweibo"><a href="http://e.t.qq.com/sevenbaby-61" target="_blank">官方微博</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 播放器    -->
+    <div class="player">
+        <div class="players">
+            <div class="players-box"> 
+                <script type="text/javascript" src="__PUBLIC__/js/swfobject.js"></script>
+                <script type="text/javascript" src="__PUBLIC__/Js/home/play/player.js"></script> 
+                <script src='__PUBLIC__/Js/home/play/polyvplayer.min.js'></script> 
+                <script language="javascript" type="text/javascript">
+                    $(function() {
+                        player("{$curVideo.video}");
+                    });
+                    function focusComment() {
+                        if (document.getElementById('message')) {
+                            document.getElementById('message').focus();
+                        }
+                    }
+                </script>
+                <div id="CuPlayer2"></div>
+                <div id='video_div'></div>
+            </div>
+            <div class="players-project">
+                <h2 class="players-project-title">头条</h2>
+                <p class="players-project-num">sevenbaby共播出<i style="color:#00a1e2;">47</i>期</p>
+                <ul>
+                    <volist name='programVideos' id='v' key='key'>
+                        <li> <i>{$key}</i>
+                            <dl>
+                                <dt> <a href="/sevenbaby/family/id/{$v.id}.html"> <img width="112" height="75" alt="{$v.videotime}" src="{$v.photo}"> </a> </dt>
+                                <dd> <a href="/sevenbaby/family/id/{$v.id}.html">{$v.title}</a> <br>
+                                    <span>{$v.videotime}</span> </dd>
+                            </dl>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 播放器    -->
+    <div class="main">
+        <div class="playinfo">
+            <div style=" background:#FFF; height:70px;">
+                <ul class="playinfoul">
+                    <li><a href="javascript:void(0)" class="num_1 cleck">视频信息</a></li>
+                    <li><a href="javascript:void(0)" class="num_2">分享</a></li>
+                </ul>
+                <div style=" padding-top:20px;">
+                    <p style=" float:left; font-size:16px; line-height:35px;">分享到：</p>
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style_32x32" style=" float:left;"> <a class="jiathis_button_qzone"></a> <a class="jiathis_button_tsina"></a> <a class="jiathis_button_tqq"></a> <a class="jiathis_button_weixin"></a> <a class="jiathis_button_renren"></a> <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a> </div>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1398048910982313" charset="utf-8"></script> 
+                    <!-- JiaThis Button END --></div>
+                <p class="zan"><a href="javascript:void(0)" class="num"><i></i>50</a> <a href="javascript:void(0)" class="num"><i class="idown"></i>50</a></p>
+            </div>
+            <div class="infomation ishow">
+                <p style=" float:left; margin-right:20px;"><img src="__PUBLIC__/Images/home/sevenbaby/baby_same.jpg" width="168" height="127" /></p>
+                <p style="margin-bottom:5px;"><b>{$curVideo.title}</b></p>
+                <!-- <p><strong>所属</strong>： <a href="#"  class="mark">超级诊聊室</a> &nbsp;&nbsp;<strong>主播</strong>：<a href="#"  class="mark">彭宁</a></p>-->
+                <p><strong>介绍</strong>：{$v.description}</p>
+                <p><strong>标签</strong>： <a href="#" class="mark">早餐</a> <a href="#" class="mark">生育</a> </p>
+            </div>
+            <div class="iphone ishow" style=" display:none;">
+                <p>用健康卫视APP扫描二维码，在手机/平板呢上继续观看视频</p>
+                <p class="code"><img src="__PUBLIC__/Images/home/sevenbaby/common/code.png" width="97" height="97" /><b>扫码下载健康卫视APP</b><br />
+                    <a href="#">iphone下载</a></p>
+            </div>
+            <div  class="idowmload ishow"   style=" display:none;">
+                <ul>
+                    <li>视频文件</li>
+                    <li><a href="#">不支持下载</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="adv980X90" style=" margin-top:10px;"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/sevenbaby/banner_adv1.jpg" width="980" height="90" /></a></div>
+        <!--评论-->
+        <div class="comment">
+            <include file='public:comment'/>
+            <script>
+                    $(function() {
+                        $('.postComment').click(function() {
+                            var oid = '{$curVideo.id}';
+                            var $obj = $(this).parents('p').prevAll('textarea.msgarea');
+                            var msg = $(this).parents('p').prevAll('textarea.msgarea').val();
+                            var ctype = '视频';
+                            if (msg == '') {
+                                $().toastmessage('showToast', {
+                                    text: '您未输入任何信息！',
+                                    sticky: false,
+                                    position: 'top-center',
+                                    type: 'error',
+                                    stayTime: 2000,
+                                });
+                                $obj.focus();
+                                return;
+                            }
+                            $.ajax({
+                                type: "POST",
+                                url: "/Comment/addComment.html",
+                                data: {'oid': oid, 'msg': msg, 'ctype': ctype},
+                                success: function(msg) {
+                                    if (msg.status) {
+                                        $('.commentlist').prepend('<li><dl><dt><img src="{$user.avatar}" width="50" height="50" />' +
+                                                '</dt><dd class="namedate"><span><empty name="user.nickname">{$user.username}' +
+                                                '<else/>{$user.nickname}</empty>' +
+                                                '</span></dd><dd>' + msg.data.msg + '</dd><dd class="replay">' +
+                                                '<span class="spandate">发表日期：' + msg.data.time + '</span>'
+                                                //                                    <a href="#" onclick="support('+msg.data.support+')" class="renum">支持('+msg.data.support+')</a>' +
+                                                //                                    ' <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>'+
+                                                //                                    '<a href="#" class="reshare">分享></a></dd></dl></li> '
+                                                );
+                                        $obj.val('');
+                                        $('.newscomment').after("<div class='commentpop' id='commentpop'></span>评论已提交。</div>");
+                                        setTimeout("$('.commentpop').remove()", 2500);
+                                    }
+                                    ;
+                                }
+                            });
+                        });
+                    });
+            </script>
+        </div>
+        <!--评论end--> 
+    </div>
+
+    <!-- 底部  -->
+    <div id="footer">
+        <div id="footer_end">
+            <div id="footer_econtent">
+                <p style=" margin-bottom:20px;" ><a href="/"><img src="__PUBLIC__/Images/home/sevenbaby/small_logo.png"  alt="健康卫视视频网站" style=" vertical-align:middle"  /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#">关于我们</a> | <a target="_blank" href="#">联系我们</a> | <a href="/class.php?id=76" target="_blank" >广告服务</a> | <a href="/class.php?id=5" target="_blank">诚聘英才</a> | <a href="/view.php?id=104" target="_blank">保护隐私权</a> | <a href="/view.php?id=102" target="_blank" >免责条款</a> | <a href="/view.php?id=100" target="_blank">版权声明</a> | <a href="http://www.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><img src="__PUBLIC__/Images/home/sevenbaby/small_logo_t.png" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a></p>
+                <br />
+                <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+                <br />
+                <p>健康卫视  健康新媒体 版权所有</p>
+                <br />
+                <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!--弹出登录框开始 -->
+    <include file="Public/loginbox"/>
+    <!--弹出登录框线束 -->
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/tab.js">/*可切换的标签页*/</script> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/common.js">/*公共js*/</script>
+</block>
+

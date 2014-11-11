@@ -1,0 +1,525 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script src="__PUBLIC__/ueditor/ueditor.config.js" ></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.js" ></script>
+    <script href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" ></script>
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '视点管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+            $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                param.classname = '{$classname}';
+                var isValid = $('#ff').form('validate');
+                var action = "{$action}";
+                if (action === 'edit') {
+                    param.action = 'edit';
+                    param.id = "{$Rs['id']}";
+                }
+                if (isValid) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/video/doAddVideo.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.success) {
+                                if (data.edit) {
+                                    $.messager.alert('信息提示', data.message, 'info');
+                                } else {
+                                    $.messager.alert('信息提示', data.message, 'info', clearForm);
+                                }
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        }
+                    });
+                } else {
+                    return isValid;
+                }
+                ;
+            });
+            $('#bjzp').on('click', function() {
+                $('#picBox').window('open');
+                // $('#picBox').window('refresh', '/viewpoint/showWriterPic.html');
+            });
+            $('.pic').on('click', function() {
+                var path = $(this).attr('src');
+                $('#bjzp').val(path);
+                $('.pic').css('background', 'transparent');
+                $(this).css('background', '#005916');
+            });
+            //上传视频插件
+            setTimeout(function() {
+                POLYVJQUERY.polyv.insertHtml = function(thumbnail, html, data) {
+                    var addr = POLYVJQUERY(html).find("embed").attr("src");
+                    POLYVJQUERY("#url").val(addr);
+                    POLYVJQUERY("#photo").val(thumbnail);
+                    POLYVJQUERY("#disimgcover").replaceWith('<div id="disimgcover" class="showImgC"><img src="' + thumbnail + '" width="120" height="120"/></div>');
+                    POLYVJQUERY("#title").val(data.title);
+                    POLYVJQUERY("#duration").val(data.duration);
+                    POLYVJQUERY(".jquery-dialog").trigger("cancel");
+                };
+            }, 4000);
+
+        });
+        function clearForm() {
+            $('#ff').form('clear');
+        }
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加视点"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form">
+                <div class="input-group">
+                    <label>视点标题:</label>
+                    <input class="easyui-validatebox" style="width:400px" id="title" value="{$Rs['title']}" type="text" name="title" data-options="required:true" ></input>
+                </div>
+                <div class="input-group">
+                    <label>短标题:</label>
+                    <input class="easyui-validatebox mid-text" value="{$Rs['subtitle']}" type="text" name="subtitle" ></input>
+                </div>
+                <div class="input-group">
+                    <label>期数:</label>
+                    <input class="easyui-validatebox" value="{$Rs['issue']}" type="text" name="issue" ></input>
+                </div>
+                <div class="input-group">
+                    <label style="float: left">类型:</label>
+                    <div class="checkbox-inline" style="width:90%;float: left">
+                        {$fflags}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>标签:</label>
+                    <div id="tagcheckbox" style="display: inline-block">
+                        {$Rs['ftags']}
+                    </div>
+                    <button onclick="$('#tag-window').window('open');
+                            $('#tag-window').window('refresh', '/tags/showTags.html');" type="button" class="btn btn-primary">选取标签</button>
+                    <div id="tag-window" class="easyui-window" title="选取标签" style="width:700px;height:500px"
+                         data-options="iconCls:'icon-tag4',modal:true,closed:true,minimizable:false,maximizable:false">
+                    </div>
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >海报封面：</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disPoster" class="showImgC">
+                                {$Rs['flitpic']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" style="width: 133px;" class="btn btn-primary" id="posterBtn" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="litpic" id="litpic" value="{$Rs['flitpic']}"  />
+                        </div>
+                        <script id="posterEditor"></script> 
+                    </div>
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >顶部图片：</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disLitpic" class="showImgC">
+                                {$Rs['flitpic']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" style="width: 133px;" class="btn btn-primary" id="litpicBtn" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="litpic" id="litpic" value="{$Rs['flitpic']}"  />
+                        </div>
+                        <script id="litpicEditor"></script> 
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>编辑：</label>
+                    <input name="bjmz" id="bjmz" type="text" value="{$Rs['bjmz']}" class="inputText" />
+                </div>
+                <div class="input-group">
+                    <label>编辑照片：</label>
+                    <input name="bjzp" id="bjzp" type="text" style="width:350px" value="{$Rs['bjzp']}" class="inputText" />
+                </div>
+                <div id="picBox" class="easyui-window" title="照片选择" 
+                     data-options="iconCls:'icon-save',modal:true,closed:true"  style="width:700px;height:500px;">
+                    <foreach name="pic" item="vo">
+                        <img src="{$vo}" class="pic" alt="pic"/>
+                    </foreach>
+                    <div  class="toolbar" style="text-align:right">
+                        <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="javascript:$('#picBox').window('close')">确定</a>
+                        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#picBox').window('close')">取消</a>
+                    </div>
+                </div>
+                <div  class="input-group hasEditor">
+                    <label>导读：</label>
+                    <script id="daoducontent" class="editor" name="daoducontent" type="text/plain">
+                        {$Rs['daoducontent']}
+                    </script>
+                    <script type="text/javascript">
+                        var editor = UE.getEditor('daoducontent')
+                    </script>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>腾讯微博:</label>
+                    <textarea class="easyui-validatebox"  style="width:700px;height:60px;"  id="qq_weibo" name="qq_weibo">{$Rs['qq_weibo']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label>新浪微博:</label>
+                    <textarea class="easyui-validatebox"  style="width:700px;height:60px;"  id="sina_weibo" name="qq_weibo">{$Rs['sina_weibo']}</textarea>
+                </div>
+                <div style="margin-left:0px;" class="easyui-tabs" data-options="tabWidth:112" style="width:700px;height:250px">
+                    <div title="第一段" style="padding:10px">
+                        <div class="input-group">
+                            <label>第一段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="yititle" value="{$Rs['yititle']}" type="text" name="yititle"  ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第一段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disYitup" class="showImgC">
+                                        {$Rs['fyitup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="yitupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="ertup" id="ertup" value="{$Rs['fertup']}"  />
+                                </div>
+                                <script id="yitupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="yizhus" value="{$Rs['yizhus']}" type="text" name="yizhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="yicontent" class="editor" name="yicontent" type="text/plain">
+                                {$Rs['yicontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('yicontent');
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第二段" style="padding:10px">
+                        <div class="input-group">
+                            <label>第二段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="ertitle" value="{$Rs['ertitle']}" type="text" name="ertitle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第二段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disErtup" class="showImgC">
+                                        {$Rs['fertup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="ertupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="yitup" id="yitup" value="{$Rs['fertup']}"  />
+                                </div>
+                                <script id="ertupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="erzhus" value="{$Rs['erzhus']}" type="text" name="erzhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="ercontent" class="editor" name="ercontent" type="text/plain">
+                                {$Rs['ercontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('ercontent');
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第三段" style="padding:10px">
+                        <div class="input-group">
+                            <label>第三段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="santitle" value="{$Rs['santitle']}" type="text" name="santitle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第三段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disSantup" class="showImgC">
+                                        {$Rs['fsantup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="santupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="santup" id="santup" value="{$Rs['fsantup']}"  />
+                                </div>
+                                <script id="santupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="sanzhus" value="{$Rs['sanzhus']}" type="text" name="sanzhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="sancontent" class="editor" name="sancontent" type="text/plain">
+                                {$Rs['sancontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('sancontent');
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第四段" style="padding:10px">
+                        <div class="input-group">
+                            <label>第四段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="sititle" value="{$Rs['sititle']}" type="text" name="sititle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第四段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disSitup" class="showImgC">
+                                        {$Rs['fsitup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="situpBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="situp" id="situp" value="{$Rs['fsitup']}"  />
+                                </div>
+                                <script id="situpEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="sanzhus" value="{$Rs['sanzhus']}" type="text" name="sanzhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="sicontent" class="editor" name="sicontent" type="text/plain">
+                                {$Rs['sicontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('sicontent')
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第五段" style="padding:10px">
+                        <div class="input-group">
+                            <label>第五段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="sititle" value="{$Rs['wutitle']}" type="text" name="wutitle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第五段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disWutup" class="showImgC">
+                                        {$Rs['fwutup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="wutupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="wutup" id="wutup" value="{$Rs['fwutup']}"  />
+                                </div>
+                                <script id="wutupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="wuzhus" value="{$Rs['wuzhus']}" type="text" name="wuzhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="wucontent" class="editor" name="wucontent" type="text/plain">
+                                {$Rs['wucontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('wucontent');
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第六段" data-options="tabWidth:110" style="padding:10px">
+                        <div class="input-group">
+                            <label>第六段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="sititle" value="{$Rs['liutitle']}" type="text" name="liutitle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第六段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disLiutup" class="showImgC">
+                                        {$Rs['fliutup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="liutupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="liutup" id="liutup" value="{$Rs['fliutup']}"  />
+                                </div>
+                                <script id="liutupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="liuzhus" value="{$Rs['liuzhus']}" type="text" name="liuzhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="liucontent" class="editor" name="liucontent" type="text/plain">
+                                {$Rs['liucontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('liucontent')
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第七段" data-options="tabWidth:110" style="padding:10px">
+                         <div class="input-group">
+                            <label>第六段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="qititle" value="{$Rs['qititle']}" type="text" name="qititle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第六段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disQitup" class="showImgC">
+                                        {$Rs['fqitup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="qitupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="qitup" id="qitup" value="{$Rs['fqitup']}"  />
+                                </div>
+                                <script id="qitupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="qizhus" value="{$Rs['qizhus']}" type="text" name="qizhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="qicontent" class="editor" name="qicontent" type="text/plain">
+                                {$Rs['qicontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('qicontent')
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div title="第八段" data-options="tabWidth:110" style="padding:10px">
+                        <div class="input-group">
+                            <label>第八段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="batitle" value="{$Rs['batitle']}" type="text" name="batitle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第八段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disBatup" class="showImgC">
+                                        {$Rs['fbatup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="batupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="batup" id="batup" value="{$Rs['fbatup']}"  />
+                                </div>
+                                <script id="batupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="bazhus" value="{$Rs['bazhus']}" type="text" name="bazhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="bacontent" class="editor" name="bacontent" type="text/plain">
+                                {$Rs['bacontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('bacontent')
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                     <div title="第九段" data-options="tabWidth:110" style="padding:10px">
+                        <div class="input-group">
+                            <label>第八段标题:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="batitle" value="{$Rs['batitle']}" type="text" name="batitle" ></input>
+                        </div>
+                        <div class="hasEditor hasPic" style="margin-top:20px;">
+                            <label >第八段图片：</label>
+                            <div id="tdimgcover" style="display: inline-block">
+                                <div class="showImg" style="height:163px;">
+                                    <div id="disBatup" class="showImgC">
+                                        {$Rs['fbatup']}
+                                    </div>
+                                    <div id="btnimgcover">
+                                        <input type="button" style="width: 133px;" class="btn btn-primary" id="batupBtn" value="上传图片" />
+                                    </div>
+                                    <input type="hidden" name="batup" id="batup" value="{$Rs['fbatup']}"  />
+                                </div>
+                                <script id="batupEditor"></script> 
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>图片注释:</label>
+                            <input class="easyui-validatebox" style="width:400px" id="bazhus" value="{$Rs['bazhus']}" type="text" name="bazhus"  ></input>
+                        </div>
+                        <div  class="input-group hasEditor">
+                            <!--<label>第一段内容：</label>-->
+                            <script id="bacontent" class="editor" name="bacontent" type="text/plain">
+                                {$Rs['bacontent']}
+                            </script>
+                            <script type="text/javascript">
+                                var editor = UE.getEditor('bacontent')
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>seo关键字:</label>
+                    <input class="easyui-validatebox w310" type="text" value="{$Rs['keywords']}"  id="keywords" name="keywords"></input>
+                </div>
+                <div class="input-group">
+                    <label>seo描述:</label>
+                    <textarea class="easyui-validatebox"  style="width:700px;height:60px;"  id="description" name="description">{$Rs['description']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+                /*图片上传*/
+                        (function($) {
+                            initImageUpload('posterEditor', 'poster', 'disPoster', 'posterBtn');
+                            initImageUpload('litpicEditor', 'litpic', 'disLitpic', 'litpicBtn');
+                            initImageUpload('yitupEditor', 'yitup', 'disYitup', 'yitupBtn');
+                            initImageUpload('ertupEditor', 'ertup', 'disErtup', 'ertupBtn');
+                            initImageUpload('santupEditor', 'santup', 'disSantup', 'santupBtn');
+                            initImageUpload('situpEditor', 'situp', 'disSitup', 'situpBtn');
+                            initImageUpload('wutupEditor', 'wutup', 'disWutup', 'wutupBtn');
+                            initImageUpload('liutupEditor', 'liutup', 'disLiutup', 'liutupBtn');
+                            initImageUpload('qitupEditor', 'qitup', 'disQitup', 'qitupBtn');
+                            initImageUpload('batupEditor', 'batup', 'disBatup', 'batupBtn');
+                        })(jQuery);
+    </script>
+</block>

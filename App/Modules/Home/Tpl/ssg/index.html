@@ -1,0 +1,179 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>健康视频_全球最大权威中文健康节目、健康视频网站_健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="健康视频，健康小常识视频，男性健康视频，女性健康视频，养生视频，育儿视频，瑜伽视频，明星健康视频" />
+    <meta name="description" content="健康视频，引领健康自查新风尚：健康自查看健康视频就够了。健康视频为全球最大权威中文健康节目、健康视频网站，致力于为国民提供“健康问题看健康视频一站式解答”服务，彻底解决国民健康自查信息真假难辨、理解吃力等困扰，节省国民健康自查时间和精力。一边干家务、一边收听或收看健康视频，您的健康困扰轻松解决。健康视频内容包括：减肥视频，孕妇视频，老人健康视频，男性健康视频，女性健康视频，美食视频等。" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/ssg/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/ssg/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/DD_belatedPNG.js" ></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('img,i,li,a,div');
+    </script>
+    <![endif]-->
+    <!--IE6版本提示开始-->
+    <!--[if lte IE 6]>  
+    <div id="ie6-warning">
+    <img src="__PUBLIC__/Images/home/video/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+    您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+    <a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+     或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+    Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+    </div>  
+    <script type="text/javascript">  
+    function closeme()
+    {
+       var div = document.getElementById("ie6-warning");
+       div.style.display ="none";
+    }
+    function position_fixed(el, eltop, elleft){  
+    // check if this is IE6  
+    if(!window.XMLHttpRequest)  
+    window.onscroll = function(){  
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+    }  
+    else el.style.position = "fixed";  
+    }  
+    position_fixed(document.getElementById("ie6-warning"),0, 0);  
+    </script>  
+    <![endif]-->
+    <!--版本提示结束-->
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" >
+        function show(svalue, hvalue, showvalue) {
+            $(function() {
+                $(svalue).mouseover(function() {
+                    $(hvalue).removeClass("select");
+                    $(this).children("a").addClass("select");
+                    $num = $(this).index(); //alert($num);
+                    $(showvalue).hide();
+                    $(showvalue).eq($num).show();
+                });
+            });
+        }
+        show('.link_three dd', '.link_three dd a', '.showlink');
+
+        function show2(svalue, hvalue, showvalue) {
+            $(function() {
+                $(svalue).mouseover(function() {
+                    $(hvalue).css("color", "#333");
+                    $(this).css("color", "#009944");
+                    $num = $(this).index(); //alert($num);
+                    $(this).parent().parent().parent().parent().find(showvalue).hide();
+                    $(this).parent().parent().parent().parent().find(showvalue).eq($num).show();
+                });
+            });
+        }
+        show2('.titlew b a', '.titlew b a', '.videolist');
+
+        $(function() {
+            $(".chotdl dd i:lt(3)").addClass("bg");
+            $(".rnews ul li i:lt(3)").addClass("bg");
+        });
+
+        $(function() {
+            $("#keyword span i").click(function() {
+                $(this).parent().hide();
+            });
+
+            $('.clearall').click(function() {
+                $("#keyword span").hide();
+            });
+        });
+
+        $(function() {
+            $("#selopt").hover(
+                    function() {
+                        $("#options").slideDown();
+                        $("#options li a").click(function() {
+                            $("#cursel").text($(this).text());
+                            $("#type").attr("value", $(this).attr("name"));
+                            $("#options").hide();
+                        });
+                    },
+                    function() {
+                        $("#options").hide();
+                    }
+            )
+        });
+
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.pack.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.SuperSlide.js"></script>
+    <script type='text/javascript' src="__PUBLIC__/js/home/video/Slideshow.js"></script>
+</block>
+<block name='body'>
+    <!------头部------>
+    <div class="header"> 
+        <include file="Public/top2" /> 
+        <include file="Public/ssg_nav" /> 
+        <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div> -->
+        <div class="subnav">
+            <div class="subnavcontent">
+                <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/html/ssg_logo.png" width="254" height="50" /></a></div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl_yellowbox">
+        <div class="cl_yellowboxcon w970">
+            <div class="cl_maincon lift_light">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="http://www.jkwshk.tv/bbs/sevenbaby/index.php" title="seven baby"><img src="__PUBLIC__/Images/home/html/ssg/7b_logos.png" width="74px" height="71px" /></a></dt>
+                            <dd>
+                                <p style="font-size:16px; font-weight:300; margin-top:10px">2012.6</p>
+                                <p style="font-size:24px; font-weight:300; "><a href="http://www.jkwshk.tv/ssg/smzg/7baby/index.php">seven baby</a></p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="/shaizaocan/index.php" title="晒早餐"> <img src="__PUBLIC__/Images/home/html/ssg/szc_logos.png"  style="margin-top:10px" />
+                            </a></dt>
+                            <dd>
+                                <p style="font-size:16px; font-weight:300; margin-top:10px">2012.9</p>
+                                <p style="font-size:24px; font-weight:300; "><a href="http://www.jkwshk.tv/shaizaocan/index.php">民间早餐日</a></p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="/sevenbaby/index.html" title="seven baby"><img src="__PUBLIC__/Images/home/html/ssg/7b2_logos.png" width="74px" height="71px" /></a></dt>
+                            <dd>
+                                <p style="font-size:16px; font-weight:300; margin-top:10px">2014.7</p>
+                                <p style="font-size:24px; font-weight:300; "><a href="/sevenbaby/index.html">seven baby</a></p>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="cl_maincon st_light"></div>
+            <div class="cl_maincon life_light"></div>
+        </div>
+    </div>
+
+    <div class="cl_greenbox">
+        <div class="cl_greenboxcon w970">
+            <p> <span style="color:#2eb7d6">生命之光</span>、<span style="color:#8bbc39">生态之光</span>、<span style="color:#c2af9b">生活之光</span>，这就是健康的三色光。</p>
+            <p> 健康三色光，对应三种力量：生命之光对应健康的力量，生态之光对应绿色的力量，生活之光对应慈善的力量。而这，也就构成了健康卫视新媒体网站第一个品牌活动专区《健康三色光》的三个分活动专区。</p>
+            不同于一般网站的线上活动，《健康三色光》除了线上活动，它还将通过各种形式的电视节目，甚至是同名电视栏目与之进行全方位立体互动，使网站活动“电视栏目化”。
+            <p>《健康三色光》，和健康生命有关，和绿色生态有关，和慈善生活有关，如果你和这些都有关，不要怀疑，那，你就和我们有关，不要犹豫，赶紧加入我们吧。而如果你有什么好的活动创意点子，也请告诉我们，我们一同实现！</p>
+        </div>
+    </div>
+</div>
+<!--底部代码开始--> 
+<include file="Public/foot-ssg"/> 
+<!--底部代码结束--> 
+</block>
+

@@ -1,0 +1,111 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>宝贝Show-健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script>
+</block>
+<block name='style'>
+    <style>
+        body{   background: url(__PUBLIC__/Images/home/sevenbaby/bannerbg.png) repeat;}
+    </style>
+</block>
+<block name='body'>
+    <!--/*顶部*/-->
+    <include file="sevenbaby/top"/>
+    <!--/*顶部结束*/--> 
+
+    <!--/*头部横幅层*/-->
+    <div class="row">
+        <div class="navposts" ><img src="__PUBLIC__/Images/home/sevenbaby/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+                <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+                <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+                <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+                <empty name="userId">
+                    <area shape="rect" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();
+                            showForbid();
+                            void(0);">
+                    <else/>
+                    <area shape="rect" coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+                </empty> 
+                <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="/sevenbaby/program.html" />
+                <area shape="circle" coords="100,99,95" href="/sevenbaby/index.html" title="Seven Baby 2014">
+            </map>
+        </div>
+
+        <div class="container">
+            <div class="container-content">
+                <!--宝贝内容模块-->
+                <ul class="babytitle">
+                    <li><a title="最新加入" href="/sevenbaby/babyshow.html" ></a></li>
+                    <li><a title="人气宝贝" href="/sevenbaby/babyshow/_search/votes.html" class="bpost1"></a></li>
+                    <li><a title="换一组" href="/sevenbaby/babyshow/_search/rand.html"  class="bpost2"> </a></li>
+                </ul>
+                <div class="search">
+                    <form name="sofrm" class="sofrm" method="post" action="" onSubmit="return rewrite_search()">
+                        <input name="mod" type="hidden" id="mod" value="search" />
+                        <input name="type" type="hidden" id="type" value="name" />
+                        <div id="selopt">
+                            <div id="cursel">昵称</div>
+                            <ul id="options">
+                                <li><a href="javascript: void(0);" name="nickname">昵称</a></li>
+                                <li><a href="javascript: void(0);" name="idnum">编号</a></li>
+                                <li><a href="javascript: void(0);" name="city">城市</a></li>
+                            </ul>
+                        </div>
+                        <input name="keyword" class="seartext" type="text" onfocus="if (this.value == '搜宝贝!')
+                                    this.value = ''" onblur="if (this.value == '')
+                                                this.value = '搜宝贝!';"  value="搜宝贝!"/>
+                        <input name="submit" class="submit" type="submit" />
+                    </form>
+                </div>
+                <div class="babylist clearfix">
+                    <ul>
+                        <volist name="babys" id="v">
+                            <li> <a href="/sevenbaby/babyview/id/{$v.euid}.html"><img src="/Uploads/sevenbaby/{$v.cover}" width="auto" height="150" style="max-width:220;" /></a> 
+                                <p style="margin-top:21px;"><span class="nicheng">昵称：</span><span class="name"><a href="javascript:void(0);" title="{$v.nickname}"><b>{$v.nickname}</b></a></span><span class="shownc">性别：<b>{$v.sex}</b></span></p>
+                                <p><span>城市：<b>{$v.city}</b></span><span class="shownc">年龄：<b>{$v.age}</b></span></p>
+                                <p><span>票数：<b>{$v.votes}</b></span><span class="shownc">编号：<b>{$v.idnum}</b></span></p>
+                                <p class="button_top">
+                                    <a href="/sevenbaby/babyview/id/{$v.euid}.html" class="click_btn">喜欢点一下</a>
+                                </p>
+                            <if condition="$v.61baby eq 1 "> 
+                                <div style="cursor:pointer" title="`(*∩_∩*)′，我是健康61宝宝" class="awards61"></div> 
+                            </if>
+                            <!--<div class="awards7"></div> --> 
+                            </li>
+                        </volist>
+                    </ul> 
+                </div>
+                <!--分页-->
+                <div id="page" class="page">
+                    <ul>
+                        {$show}
+                    </ul>
+                </div>
+                <!--分页-->       
+                <!--宝贝内容模块-->
+            </div>
+        </div>
+
+    </div>
+    <!--/*头部横幅层结束*/--> 
+    <include file="Sevenbaby:foot"/>
+    <!--/*底部*/-->
+    <include file="Public/loginbox"/>
+    <!--/*底部结束*/--> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/tab.js">/*可切换的标签页*/</script> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/common.js">/*公共js*/</script>
+</block>
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <menu name="admin" title="管理员管理" first_page="admin/index/">
+        <item name="groups" func="admin/groups/">管理员群组管理</item>
+        <item name="html_edit" func="admin/indexedit/action/add/">新增管理员</item>
+        <item name="html" func="admin/index">管理员管理</item>
+        <item name="password" func="public/password/">密码管理</item>
+        <item name="logs" func="admin/logs/">登入记录</item>
+    </menu>
+    <menu name="system" title="系统管理" first_page="system/areas/">
+        <item name="areas" func="system/areas">城市管理</item>
+    </menu>
+    <menu name="pic" title="图片管理" first_page="picture/index/">
+        <item name="category" func="picture/category">图集类别管理</item>
+        <item name="pictures" func="picture/index">图集管理</item>
+        <item name="tags" func="tags/index">标签管理</item>
+        <item name="attribute" func="tags/attribute">属性管理</item>
+        <item name="add" func="focus/addFocus/action/add">添加焦点图</item>
+        <item name="manage" func="focus/index">焦点图管理</item>
+        <item name="cat" func="focus/category">焦点图类别管理</item>
+    </menu>
+    <menu name="news" title="文章管理" first_page="news/index/">
+        <item name="indexedit" func="news/indexedit/?action=add">新增文章</item>
+        <item name="category" func="news/category/">文章类别</item>
+        <item name="article" func="news/index/">文章管理</item>
+        <item name="bigevent" func="news/bigevent/">大事件</item>
+    </menu>
+    <menu name="video" title="视频管理" first_page="video/index/">
+        <!--<item name="category" func="video/category/">视频类别</item>-->
+        <item name="manageCat" func="video/manageCat/">视频类别(专辑)管理</item>
+        <item name="upload" func="video/indexedit/?action=add">发布视频</item>
+        <item name="index" func="video/manageVideo/">视频管理</item>
+        <item name="manageType" func="video/manageType/">栏目类型管理</item>
+    </menu>
+    <menu name="agency" title="机构管理" first_page="host/index/">
+        <item name="host" func="host/index/">主持人管理</item>
+        <item name="hospital" func="hospital/index/">医院管理</item>
+        <item name="dietitians" func="dietitians/index/">营养师管理</item>
+        <item name="article" func="dietitians/article/">营养师文章管理</item>
+        <item name="links" func="links/index/">友情链接管理</item>
+        <item name="disease" func="disease/index/">疾病管理</item>
+        <item name="Travel" func="Travel/index/">旅游通栏管理</item>
+    </menu>
+    <menu name="ad" title="广告管理" first_page="ad/index/">
+        <item name="adindex" func="ad/index/">广告管理</item>
+    </menu>
+    <menu name="member" title="会员管理" first_page="admin/users/html/">
+        <item name="upgrade" func="admin/users/upgrade/">升级申请</item>
+        <item name="jurisdiction" func="admin/users/jurisdiction/">折扣设定</item>
+        <item name="level" func="admin/users/level/">会员等级</item>
+        <item name="recharge" func="admin/users/recharge/">充值信息</item>
+        <item name="html_edit" func="admin/users/user_add/?action=add">新增会员</item>
+        <item name="html" func="admin/users/html/">会员管理</item>
+    </menu>
+    <menu name="activity" title="活动管理" first_page="admin/activity/category/">
+        <item name="category" func="activity/category/">活动类别</item>
+        <item name="sevenbaby" func="activity/sevenbaby/">sevenbaby管理</item>
+        <item name="teacher" func="admin/active/htmls/">直播活动管理</item>
+    </menu>
+    <menu name="comment" title="评论管理" first_page="admin/comment/verify/">
+        <item name="verify" func="admin/comment/verify/">评论审核</item>
+        <item name="html" func="admin/comment/html/">评论管理</item>
+        <item name="cat" func="admin/comment/cat/">评论模块</item>
+        <item name="trash" func="admin/comment/del/">回收箱</item>
+    </menu>
+    <menu name="diary" title="日志管理" first_page="admin/diary/operate/">
+        <item name="operate" func="admin/diary/operate/">操作日志</item>
+        <item name="admin" func="admin/diary/admin/">管理日志</item>
+        <item name="login" func="admin/diary/login/">登入日志</item>
+    </menu>
+    <menu name="online" title="在线直播" first_page="admin/live/index/">
+        <item name="index" func="live/index/">节目管理</item>
+        <item name="upload" func="live/upload/">节目表上传</item>
+        <item name="login" func="admin/diary/login/">登入日志</item>
+    </menu>
+    <menu name="video" title="课程管理" first_page="admin/video/html/">
+    </menu>
+    <menu name="pay" title="支付管理" first_page="admin/video/html/">
+        <item name="html_edit" func="admin/payment/html_edit/?action=pay_add">添加支付接口</item>
+    </menu>
+    <menu name="message" title="消息管理" first_page="admin/message/replay/">
+    </menu>
+    <menu name="report" title="报表管理" first_page="admin/report/reconciliations/">
+    </menu>
+    <menu name="webhost" title="服务器管理" first_page="webhost/mysql/">
+    </menu>
+</root>

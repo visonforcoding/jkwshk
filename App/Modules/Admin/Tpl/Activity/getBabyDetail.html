@@ -1,0 +1,21 @@
+<table class="dv-table" border="0" style="width:100%;">
+    <tr>
+        <td rowspan="3" style="width:60px">
+            <img src="/Uploads/sevenbaby/{$baby.cover}" style="width:60px;margin-right: 20px;"/>
+        </td>
+        <td class="dv-label">昵称: </td>
+        <td>{$baby.nickname}</td>
+        <td class="dv-label">注册时间:</td>
+        <td>{$baby.regtime}</td>
+    </tr>
+    <tr>
+        <td class="dv-label">投票地址: </td>
+        <td><a href="{$baby.link}" target="_blank">{$baby.link}</a></td>
+        <td class="dv-label">注册ip:</td>
+        <td>{$baby.regip}</td>
+    </tr>
+    <tr>
+        <td class="dv-label">家长寄语: </td>
+        <td colspan="3">{$baby.wish}</td>
+    </tr>
+</table>

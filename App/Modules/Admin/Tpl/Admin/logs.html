@@ -1,0 +1,75 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+<!-- 菜单区域  -->
+
+<!-- 主页面开始 -->
+<script type="text/javascript">
+function searcht(){
+	var s=document.getElementById("sword").value;
+	window.location.href="/admin/logs/?s="+encodeURIComponent(s);
+	}
+
+
+</script>
+<style type="text/css">
+.searchBar div{ float:left; margin-left:7px; display:inline;}
+.searchBar div select{ height:24px;}
+</style>
+<div id="sleep"></div>
+        <div class="videoListTable">
+         	<div class="search">
+                <div class="searchBar fl">
+                  <div style="line-height:24px;">输入关键字:</div>
+                  <div><input type="text" name="sword" id="sword" value="{$s}" class="keyword" /></div>
+                  <div><input type="button" onclick="searcht()" value="搜&nbsp;索" class="btnSearch" /></div>
+          	   </div>
+             </div>
+		  <div class="clearb">
+				<div class="editBar fr"> 
+				  <a href="javascript:void(0);" onclick="Refresh();" class="iRefresh">刷新</a>
+				</div>
+			</div>
+			<table width="100%" id="J-rowColor">
+				<thead>
+					<tr height="32">
+						<td  align="center">ID</td>
+						<td  align="center">用户名</td>
+						<td  align="center">ip</td>
+					    <td  align="center">mac</td>
+                        <td  align="center">登录时间</td>
+                        <td width="65" align="center">登录状态</td>
+				  </tr>
+				</thead>
+				<tbody id="box_list">
+                    <volist name="list" id="vo">
+                    <tr id="row{$vo.id}">
+						<td align="center">{$vo.id}</td>
+						<td align="center">{$vo.name}</td>
+						<td align="center">{$vo.ip}</td>
+                        <td align="center">{$vo.mac}</td>
+                        <td align="center">{$vo.time|toDate='Y-m-d H:i:s'}</td>
+                        <td align="center"> 
+                        <switch name="vo.status">
+                            <case value="1">正确</case>
+                            <case value="2">密码错误</case>
+                            <case value="3">被拉黑</case>
+                            <case value="4">用户不存在</case>
+                            <default />验证码错误
+                        </switch>
+                        </td>
+					</tr>
+        			</volist>
+                	
+				</tbody>
+			</table>
+            <!-- 分页 start -->
+            <div class="page">
+            {$page}
+            </div>
+            <!-- 分页 end -->
+		</div>
+</body>
+</html>
+

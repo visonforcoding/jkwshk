@@ -1,0 +1,184 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>综艺</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/tv/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/tv/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('img,i,li,a,div');
+    </script>
+    <![endif]-->
+    <!--IE6版本提示开始-->
+    <!--[if lte IE 6]>  
+    <div id="ie6-warning">
+    <img src="__PUBLIC__/Images/home/tv/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+    您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+    <a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+     或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+    Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+    </div>  
+    <script type="text/javascript">  
+    function closeme()
+    {
+       var div = document.getElementById("ie6-warning");
+       div.style.display ="none";
+    }
+    function position_fixed(el, eltop, elleft){  
+    // check if this is IE6  
+    if(!window.XMLHttpRequest)  
+    window.onscroll = function(){  
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+    }  
+    else el.style.position = "fixed";  
+    }  
+    position_fixed(document.getElementById("ie6-warning"),0, 0);  
+    </script>  
+    <![endif]-->
+    <!--版本提示结束-->
+
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery1.10.2.js"></script>
+    <script type="text/javascript" >
+
+        function show(svalue, hvalue, showvalue) {
+            $(function() {
+                $(svalue).mouseover(function() {
+                    $(hvalue).removeClass("select");
+                    $(this).children("a").addClass("select");
+                    $num = $(this).index(); //alert($num);
+                    $(showvalue).hide();
+                    $(showvalue).eq($num).show();
+                });
+            });
+        }
+        show('.link_three dd', '.link_three dd a', '.showlink');
+
+        $(function() {
+            $(".chotdl dd i:lt(3)").addClass("bg");
+            $(".rnews ul li i:lt(3)").addClass("bg");
+        });
+        $(function() {
+            $("#selopt").hover(
+                    function() {
+                        $("#options").slideDown();
+                        $("#options li a").click(function() {
+                            $("#cursel").text($(this).text());
+                            $("#type").attr("value", $(this).attr("name"));
+                            $("#options").hide();
+                        });
+                    },
+                    function() {
+                        $("#options").hide();
+                    }
+            )
+        })
+
+    </script>
+</block>
+<block name='body'>
+    <!------头部------>
+    <div class="header">
+        <include file="Public/top2" /> 
+        <include file='Public:common_nav2'/>
+        <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/tv/data/index_banner1.jpg" width="970" height="90" /></a></div> -->
+        <div class="subnav">
+            <div class="subnavcontent">
+                <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/tv/v1_logo.png" width="277" height="55" /></a></div>
+                <div class="search">
+                  <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <p class="post_title"><a href="/tv">卫视节目</a>>综艺</p>
+            <img src="{$title.coverimage}" width="980" height="265" /> </div>
+        <div class="container clearfix">
+            <div class="stable clearfix"> 
+                <!--<div class="searchdate">
+                          <h3>按排行</h3>
+                          <p>
+                          <a href="#">今日最热</a>
+                          <a href="#">一周最热</a>  
+                          <a href="#">月度最热</a>
+                          <a href="#">最新更新</a>   
+                          <a href="#">历史最热</a> 
+                          </p>
+                      </div>-->
+                <div class="searchpr">
+                    <h3>按栏目</h3>
+                    <p> 
+                    <volist name='oneProgramaId' id='opi'>
+                        <a href="/tv/tvlist/cate/{$opi.id}">{$opi.name}</a>
+                    </volist>
+                    </p>
+                </div>
+            </div>
+            <div class="leftmain fl">
+                <div class="tophot">
+                    <h2 class="title">最新视频</h2>
+                    <ul class="tophotlist clearfix">
+                        <volist name='newVideo' id='nv'>
+                            <li><a href='/play/index/id/{$nv.id}.html'><img src='{$nv.photo}' width='151' height='90' /><div class="titles">{$nv.title}</div></a><span class='bg'></span><span>{$nv.addtime}</span></li>
+                        </volist>
+                    </ul>
+                </div>
+                <div class="catelist">
+                    <h2 class="title">栏目分类</h2>
+                    <div class="category">
+                        <volist name='twoTitle' id='v'>
+                            <h3 class="title"><a href="/tv/tvlist/cate/{$v.id}.html">{$v.name}</a></h3>
+                            <ul class="categorylist clearfix">
+                                <volist name='v.videos' id='sv'>
+                                    <li><a href='/play/index/id/{$sv.id}.html'><img src='{$sv.photo}' width='151' height='90' /><b>{$sv.title}</b></a><span class='bg'></span><span>{$sv.addtime}</span></li>
+                                </volist>
+                            </ul>
+                        </volist>
+                    </div>
+                </div>
+            </div>
+            <div class="rightmain fr">
+                <div class="jiemu"> <img src="{$title.logo}" width="162" height="39" />
+                    <!--        <p class="playbfbg" style=" text-align:left;">播出时间<br />
+                              周一至周日 20:20-20:55{$title.programtime}</p>-->
+                    <p class="jieshao">栏目介绍</p>
+                    <p class="jieshaotext">{$title.description}</p>
+                    <p class="jieshao">节目时长</p>
+                    <p class="jieshaotext">{$title.showtime}分钟</p>
+                    <p class="jieshao">主播</p>
+                    <p  class="jieshaotext">
+                    <volist name='starInfo' id='v'>
+                        <a href="#" title='{$v.name}'>
+                            <img src='{$v.photo}'  width='50' height='50' />
+                        </a>
+                    </volist>
+                    </p>
+                </div>
+                <div class="adv255X165"></div>
+                <div class="otherjiemu">
+                    <p class="jieshao">其他热门栏目</p>
+                    <volist name='hotList' id='hotl'>
+                        <p class="jieshaotext2"> <a href="/tv/tvlist/cate/{$hotl.id}" ><img src="{$hotl.coverimage}" width="255" height="70" /></a> {$hotl.name}<br />
+                            {$hotl.stars}</p>
+                    </volist>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/tv/data/index_banner1.jpg" width="970" height="90" /></a></div>
+        </div>
+    </div>
+
+    <!--底部代码开始-->
+    <include file="Public/footer"/>
+    <!--底部代码结束--> 
+
+    <!--<div class="left_Bg"><a class="Bg_link"  target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>
+    <div class="right_Bg"><a class="Bg_link" target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>-->
+</block>
+

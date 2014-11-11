@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="__PUBLIC__/ueditor/ueditor.config.js" ></script>
+        <script src="__PUBLIC__/ueditor/ueditor.all.js" ></script>
+        <script href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" ></script>
+                <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    </head>
+    <body>
+          <p>
+                      <label >图集封面：</label>
+                    <td id="tdimgcover">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                                {$Rs['flitpic']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" class="btn btn-primary" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="litpic" id="litpic" value="{$Rs['litpic']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                    </td>
+            </p>
+            <p class="hasEditor">
+                <label>文章内容:</label>
+                <script class="editor" id="info" name="info" type="text/plain">
+                </script>
+                <script type="text/javascript">
+                    var editor = UE.getEditor('info');
+                </script>
+            </p>
+            <script type="text/javascript">
+            /*图片上传*/
+                    (function($) {
+                        var image = {
+                            editor: null,
+                            init: function(editorid, keyid) {
+                                var _editor = this.getEditor(editorid);
+                                _editor.ready(function() {
+                                    _editor.setDisabled();
+                                    _editor.hide();
+                                    _editor.addListener('beforeInsertImage', function(t, args) {
+                                        var imgsrc = args[0].src;
+                                        $("#" + keyid).val(imgsrc);
+                                        $("#disimgcover").html('<img src="' + imgsrc + '" width="120" height="120" />');
+
+                                    });
+                                });
+                            },
+                            getEditor: function(editorid) {
+                                this.editor = UE.getEditor(editorid);
+                                return this.editor;
+                            },
+                            show: function(id) {
+                                var _editor = this.editor;
+                                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+                                //和网上一些朋友的代码不同之处就在这里  
+                                $("#" + id).click(function() {
+                                    var image = _editor.getDialog("insertimage");
+                                    image.render();
+                                    image.open();
+                                });
+                            },
+                            render: function(editorid) {
+                                var _editor = this.getEditor(editorid);
+                                _editor.render();
+                            }
+                        };
+                        $(function() {
+                            image.init("myeditor", "litpic");
+                            image.show("image");
+                        });
+                    })(jQuery);
+</script>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>全球医院大全_医院电话_医院挂号_医院预约_健康卫视</title>
+</block>
+<block name='seo'>
+<meta name="keywords" content="医院大全，医院查询，男科医院，妇科医院，女子医院，人民医院，武警医院" />
+<meta name="description" content="健康卫视网医院大全频道为您提供各类医院查询服务。包括：男科医院，妇科医院，女子医院，人民医院，武警医院以及各个地方医院。" />
+</block>
+<block name='css'>
+<link href="__PUBLIC__/css/home/hospital/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/home/hospital/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    
+<script type="text/javascript" >
+
+	function show(svalue,hvalue,showvalue){
+		$(function(){
+			$(svalue).mouseover(function(){
+				$(hvalue).removeClass("select");
+				$(this).children("a").addClass("select");	
+				$num=$(this).index(); //alert($num);
+				$(showvalue).hide();
+				$(showvalue).eq($num).show();			
+			});
+		});
+	}
+	show('.link_three dd','.link_three dd a','.showlink');
+	$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").hide();}
+		)   
+	})
+	
+	$(function(){
+		$(".chotdl dd i:lt(3)").addClass("bg");	
+		$(".rnews ul li i:lt(3)").addClass("bg");
+		$(".rnews ul li a:lt(3)").addClass("fontcolor");
+	});
+</script>
+</block>
+<block name='body'>
+<!------头部------>
+<div class="header"> 
+  <!------顶部------> 
+  <include file="Public/top2" /> 
+  <!------顶部------> 
+  <!------栏目------> 
+  <include file="Public/common_nav2" /> 
+  <!------栏目------>
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/hospital/yy_logo.png" width="223" height="82" /></a></div>
+      <div class="search">
+      <include file='Public:search'/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="adv980X90" style="margin:20px auto;"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/hospital/data/yy_adv1.jpg" width="980" height="90" /></a></div>
+  <div class="container clearfix">
+    <div class="larea fl">
+      <div style=" margin-left:20px;">
+        <div class="yy_area">
+          <dl>
+            <dt>国内</dt>
+            <volist name="province" id="v">
+              <dd><a href="/hospital/index/city/{$v.area_id}.html">{$v.area_name}</a></dd>
+            </volist>
+          </dl>
+          <dl>
+            <dt>国外</dt>
+            <dd><a href=" #">马来西亚</a></dd>
+          </dl>
+        </div>
+        <div  class="yy_area_content" id="yiyuan">
+          <h2 class="title"><b>{$curProvince}</b></h2>
+          <ul>
+            <volist name="hospitals" id="v">
+              <li><a href="/hospital/view/hospId/{$v.id}.html" target="_blank">{$v.name}</a><b> ({$v.feature})</b></li>
+            </volist>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rarea fr">
+      <div class="rhot">
+        <h2><a class="imgtitle" title="排行榜">排行榜</a></h2>
+        <dl class="chotdl">
+            <volist name="topHospital" id="v" key='key'>
+          <dd><a href="/hospital/view/hospId/{$v.id}.html" title="{$v.name}" target="_blank"><i>{$key}</i>
+           <img src="{$v.photo}" width="119" height="68" /><b>{$v.name}</b>
+            <p>{$v.info|strip_tags|htmlspecialchars_decode|ltrim|mb_substr=0,13,'utf8'}...</p>
+            </a></dd>
+            </volist>
+        </dl>
+      </div>
+      <div class="adv285X155" style=" margin-bottom:30px;"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/hospital/data/yys_adv2.jpg" width="285" height="155" /></a></div>
+      <div class="rnews">
+        <h2><a href="#" class="imgtitle" title="热门资讯"  target="_blank">热门资讯</a></h2>
+        <ul>
+          <volist name="hotNews" id="v" key="k" empty="暂时没有数据">
+            <li><i>{$k}</i><a href="/news/view/id/{$v.id}.html" target="_blank">{$v.title}</a></li>
+          </volist>
+        </ul>
+      </div>
+      <div class="rpic clearfix">
+        <h2><a href="#" class="imgtitle" title="热门图片"  target="_blank">热门图片</a></h2>
+        <ul class="clearfix">
+          <volist name="hotPhoto" id="v" offset="0" length="4">
+            <li><a href="/photo/view/id/{$v.id}.html"  title="{$v.name}"  target="_blank"><img width="128" height="88" src="{$v.topimg}" alt="{$v.name}"> <div class="titles1">{$v.name}</div></a> </li>
+          </volist>
+        </ul>
+      </div>
+      <div class="adv285X185" style=" margin-bottom:30px;"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/hospital/data/yys_adv3.jpg" width="285" height="185" /></a></div>
+      <div class="rzhuanji clearfix">
+        <h2><a href="#" class="imgtitle" title="热门专辑"  target="_blank">热门专辑</a></h2>
+        <ul  class="clearfix" >
+            <volist name="hotAlbum" id="v">
+              <li><a href="/play/index/pid/{$v.id}.html"  title="{$v.name}"  target="_blank"><img width="126" height="148"  src="{$v.coverimage}" alt="{$v.name}"></a></li>
+            </volist>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/hospital/data/index_banner1.jpg" width="970" height="90" /></a></div>
+</div>
+
+<!--底部代码开始--> 
+<include file="Public/foot"/> 
+<!--底部代码结束--> 
+</block>
+

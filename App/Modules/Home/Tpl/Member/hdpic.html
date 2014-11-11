@@ -1,0 +1,260 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>第二届seven baby-资料管理</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/member/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/style.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/tab.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/uploadify.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/toastmsg/css/jquery.toastmessage.css">
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/jquery.uploadify-3.1.min.js"></script>
+    <script type="text/javascript"  src="__PUBLIC__/toastmsg/jquery.toastmessage.js" >/*对话框 */</script> 
+    <script type="text/javascript">
+        var img_id_upload = new Array();//初始化数组，存储已经上传的图片名
+        var i = 0;//初始化数组下标
+        $(function() {
+            $('#file_upload').uploadify({
+                'auto': false, //关闭自动上传
+                'removeTimeout': 1, //文件队列上传完成1秒后删除
+                'swf': '__PUBLIC__/Js/uploadify/uploadify.swf',
+                'uploader': '/sevenbaby/upload.html',
+                'method': 'post', //方法，服务端可以用$_POST数组获取数据
+                'formData': {'id': '6'}, //在服务端使用$_POST['id']获取该数据,服务端代码上传成功后将在目录生成一个6.txt的文件
+                'buttonText': '选择图片', //设置按钮文本
+                'multi': false, //允许同时上传多张图片
+                'uploadLimit': 1, //一次最多只允许上传10张图片
+                'fileTypeDesc': 'Image Files', //只允许上传图像
+                'fileTypeExts': '*.gif; *.jpg; *.png;', //限制允许上传的图片后缀
+                'fileSizeLimit': '2000KB', //限制上传的图片不得超过200KB 
+                'rollover': true,
+                'onUploadSuccess': function(file, data, response) {
+                    //每次上传成功后执行的函数
+                    img_id_upload[i] = data;
+                    i++;
+                },
+                'onQueueComplete': function(queueData) {
+                    if (img_id_upload.length > 0)
+                        img_id_upload = img_id_upload.filter(function(n) {
+                            return n;  //去除为空的元素
+                        });
+                    $.each(img_id_upload, function(i, n) {
+                        $("#imgurl").append("<img width='300px' height='200px'  src='/Uploads/sevenbaby/" + n + "'/>");
+                        $("#photo").val(n);
+                    });
+                }
+            });
+            $('.delPic').click(function() {
+                var id = '{$baby.id}';
+                var $obj = $(this);
+                var photo = $obj.attr('photo');
+                $.ajax({
+                    url: '/sevenbaby/delBabyPhotos.html',
+                    type: "POST",
+                    data: {'id': id, 'photo': photo},
+                    success: function(msg) {
+                        if (msg.status === 1) {
+                            $().toastmessage('showToast', {
+                                text: msg.info,
+                                sticky: false,
+                                position: 'middle-center',
+                                type: 'success',
+                                stayTime: 1000,
+                                close: function() {
+                                    $obj.parents('li').remove();
+                                }
+                            });
+                        } else {
+                            $().toastmessage('showToast', {
+                                text: msg.data,
+                                sticky: false,
+                                position: 'middle-center',
+                                type: 'notice',
+                                stayTime: 2000
+                            });
+                        }
+                    }
+                });
+            });
+            $('.setCover').click(function() {
+                var id = '{$baby.id}';
+                var $obj = $(this);
+                var photo = $obj.attr('photo');
+                $.ajax({
+                    url: '/sevenbaby/setCover.html',
+                    type: "POST",
+                    data: {'id': id, 'photo': photo},
+                    success: function(msg) {
+                        if (msg.status === 1) {
+                            $().toastmessage('showToast', {
+                                text: msg.info,
+                                sticky: false,
+                                position: 'middle-center',
+                                type: 'success',
+                                stayTime: 1000,
+                                close: function() {
+//                                    photoSrc = '/Uploads/sevenbaby/' + msg.data.photo;
+//                                    coverSrc = '/Uploads/sevenbaby/' + msg.data.cover;
+//                                    $obj.parent().prev().attr('src', photoSrc);
+//                                    $obj.attr('photo', msg.data.photo);
+//                                    $obj.prevAll('a').attr('phpto', msg.data.photo);
+//                                    $('#cover').attr('src', coverSrc);
+                                    window.location.reload();
+                                }
+                            });
+                        } else {
+                            $().toastmessage('showToast', {
+                                text: msg.data,
+                                sticky: false,
+                                position: 'middle-center',
+                                type: 'notice',
+                                stayTime: 2000
+                            });
+                        }
+                    }
+                });
+            });
+        });
+        function addPhoto() {
+            var id = '{$baby.id}';
+            var photo = $('#photo').val();
+            $.ajax({
+                url: '/sevenbaby/addBabyPhotos.html',
+                type: "POST",
+                data: {'id': id, 'photo': photo},
+                success: function(msg) {
+                    if (msg.status === 1) {
+                        $().toastmessage('showToast', {
+                            text: msg.info,
+                            sticky: false,
+                            position: 'middle-center',
+                            type: 'success',
+                            stayTime: 1000,
+                            close: function() {
+                                window.location.reload();
+                            }
+                        });
+                    } else {
+                        $().toastmessage('showToast', {
+                            text: msg.data,
+                            sticky: false,
+                            position: 'middle-center',
+                            type: 'notice',
+                            stayTime: 2000
+                        });
+                    }
+                }
+            });
+        }
+        ;
+
+
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script type="text/javascript"  src="__PUBLIC__/js/home/member/bootstrap-dropdown.js" >/*下拉项*/</script>
+    <script type="text/javascript"  src="__PUBLIC__/js/home/member/bootstrap-tab.js" >/*可切换的标签页*/</script>
+</block>
+</block>
+<block name='body'>
+    <div id="head" class="yebg">
+        <div class="header">
+            <div class="top">
+                <include file="Member:top"/>
+            </div>
+        </div>
+        <div class="whitebg shadows" >
+            <div class="container clearfix">
+                <div class="user_top">
+                    <div class="user_images"><img src=<if condition="($user.avatar eq '0')">__PUBLIC__/Default.jpg<else/>{$user.avatar}</if> width="76" height="78" /></div>
+                    <p class="user_uname"><a href="#" style=" font-size:16px;">{$user.nickname|default="还没昵称"}</a></p>
+                    <p class="user_other"><a href="#image"  data-toggle="tab">修改头像</a>&nbsp;&nbsp;健康学分 {$user.credit} 分</p>
+                </div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .lsubnav li a.huodong {  background-position: -100px -560px;}
+        .lsubnav li a.huodong:hover, .lsubnav li a.select8 {  background-position: 0 -560px;}
+        .nav-tabs > li > a, .nav-pills > li > a{  line-height: 14px;  margin-right: 2px;  padding-left: 30px;  padding-right: 30px; font-size:16px; }
+        .nav-tabs > li > a:hover{ color:#01913a}
+        .hd_posttitle{border-bottom:1px solid #ccc; height:25px; line-height:25px;}
+        .hd_number{overflow:hidden; float:right; padding-top:10px; height:75px; width:74px; text-align:center; border:1px solid #ccc; position:absolute; right:30px; color:#FFF;  background:#0f9243; border:2px solid #FFF; border-bottom:none;}
+        .hd_number_ic{background:#f3f3f3; margin-top:10px; width:50px; height:50px; display:inline-block; border:2px solid #FFF;ransform:rotate(-45deg); -ms-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); }
+        .sc{ padding:5px 10px;}
+        .piclist{ margin-top:20px; border-top:1px solid #ccc;}
+        .piclist li{ margin-top:20px; text-align:center; float:left; margin-left:25px; border:1px solid #ededed; width:180px; height:165px;}
+    </style>
+    <div class="container clearfix" style=" margin-top:5px; background:#FFF;">
+        <div class="ucleft">
+            <ul class="lsubnav">
+                <li><a href="user.html"title="个人资料"></a></li>
+                <li><a href="#" class="rizhi" title="日志"></a></li>
+                <li><a href="#" class="xiangce" title="相册"></a></li>
+                <li><a href="#" class="liyans" title="留言"></a></li>
+                <li><a href="isee.html" class="isee"  title="我看过的"></a></li>
+                <li><a href="#" class="shoucang" title="我的收藏"></a></li>
+                <li><a href="#" class="xuefen" title="健康学分"></a></li>
+                <li><a href="/member/hd.html" class="huodong select8" title="活动"></a></li>
+            </ul>
+        </div>
+        <div class="ucright" style="position:relative;">
+            <p class="hd_posttitle">活动>第二届seven baby>资料管理</p>
+            <p class="hd_number">参赛编号<br/><b style="display:block;">{$baby.idnum}</b> <i class="hd_number_ic"></i></p>
+            <ul class="nav nav-tabs" style=" margin-bottom:0px; border:none; margin-top:15px;">
+                <li><a href="hduif.html ">资料管理</a></li>
+                <li class="active"><a href="hd_pic.html" style="color:#01913a">图片管理</a></li>
+                <li><a href="#" style=" color:#fd8a00;">返回活动首页</a></li>
+            </ul>
+            <div class="tab-content">
+                <div style=" background:#f3f3f3; line-height:25px; padding:10px 20px;">
+                    <p>在此上传宝贝图片，一次只能上传一张！</p>
+                    <div id="imgurl"></div>
+                    <p style=" width:200px; height:80px;">
+                        <input type="file" name="file_upload" id="file_upload" />
+                        <a href="javascript:$('#file_upload').uploadify('upload','*');" class="uploadify-button sc" >上传</a> <a href="javascript:$('#file_upload').uploadify('cancel','*')"  class="uploadify-button sc" >取消上传</a></p>
+                </div>
+                <input type="hidden" name="photo" value="" id="photo" />
+                <p style=" text-align:center; margin-top:10px;"><button class="uploadify-button" onclick="addPhoto();" style=" width:120px; padding:8px 0px; cursor:pointer;">信息无误，确认</button> </p> 
+                <div class="tab-pane active" id="userinfo">
+                    <div class="tab_table" style=" position:relative;"> 
+                        <ul class="piclist clearfix">
+                            <li>
+                                <img id="cover" src="/uploads/sevenbaby/{$baby.cover}" width="165" height="108" />
+                                <span style=" line-height:20px;">[封面图] </span>
+                            </li>
+                            <volist name="photos" id="v">
+                                <li>
+                                    <img src="/uploads/sevenbaby/{$v}" width="165" height="108" />
+                                    <span style=" line-height:20px;">[详细图]  <a href="javascript:void(0)" photo="{$v}" class="delPic" style=" color:#F00;">删除</a>
+                                        <br /><a href="javascript:void(0)" class="setCover" photo="{$v}" style=" color:#4040b2">设置为封面图</a></span>
+                                </li>
+                            </volist>
+                        </ul>
+                        <p style=" margin-top:20px; text-align:center;">参赛照片最多支持8张</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_end">
+            <div id="footer_econtent">
+                <p style=" margin-bottom:20px;" ><a href="/"><img src="__PUBLIC__/Images/home/member/small_logo.png" width="127" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#">关于我们</a> | <a href="/class.php?id=76" target="_blank" >广告服务</a> | <a href="/class.php?id=5" target="_blank">诚聘英才</a> | <a href="/view.php?id=104" target="_blank">保护隐私权</a> | <a href="/view.php?id=102" target="_blank" >免责条款</a> | <a href="/view.php?id=100" target="_blank">版权声明</a> | <a href="http://www.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><img src="__PUBLIC__/Images/home/member/small_logo_t.png" width="126" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a></p>
+                <br />
+                <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+                <br />
+                <p>健康卫视  健康新媒体 版权所有</p>
+                <br />
+                <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</block>
+

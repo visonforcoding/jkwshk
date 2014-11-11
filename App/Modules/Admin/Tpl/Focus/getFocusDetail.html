@@ -1,0 +1,21 @@
+<table class="dv-table" border="0" style="width:100%;">
+    <tr>
+        <td rowspan="3" style="width:60px">
+            <img src="{$focus.photo}" style="width:60px;margin-right: 20px;"/>
+        </td>
+        <td class="dv-label">标题: </td>
+        <td>{$focus.title}</td>
+        <td class="dv-label">添加时间:</td>
+        <td>{$focus.ctime}</td>
+    </tr>
+    <tr>
+        <td class="dv-label">链接: </td>
+        <td><a href="{$focus.link}">{$focus.link}</a></td>
+        <td class="dv-label">所属栏目:</td>
+        <td>{$focus.name}</td>
+    </tr>
+    <tr>
+        <td class="dv-label">焦点图信息: </td>
+        <td colspan="3">{$focus.info}</td>
+    </tr>
+</table>

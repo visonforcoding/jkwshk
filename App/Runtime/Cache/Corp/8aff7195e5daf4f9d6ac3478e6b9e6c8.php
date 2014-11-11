@@ -1,0 +1,126 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+<title>健康卫视台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="__PUBLIC__/css/corp/global.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/corp/index.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- 顶部开始 -->
+<div id="top">
+  <div id="TV_logo"><a href="index.html" title="健康卫视台" ><img src="__PUBLIC__/images/corp/TV_logo.png" width="190" height="51" alt=""></a></div>
+  <div id="menu">
+  <ul>
+  <li><a href="index.html">首页</a></li>
+   <li><a href="about.html">关于</a></li>
+    <li><a href="http://www.jkwshk.tv/tv/index.html" target="_blank">节目</a></li>
+     <li><a href="/index/anchors.html">主播</a></li>
+      <li><a href="http://www.jkwshk.tv/about/job.html" target="_blank">招贤</a></li>
+       <li><a href="http://www.jkwshk.tv/about/advs.html" target="_blank">广告</a></li>
+       <li><a href="http://www.jkwshk.tv/about/contact.html" target="_blank">联系</a></li>
+  </ul>
+  </div>
+  <div id="health_net"><a href="http://www.jkwshk.tv/" title="健康卫视网" target="_blank"><img src="__PUBLIC__/images/corp/health_logo.png" width="97" height="25" alt=""></a></div>
+  <div id="live"><a href="http://www.jkwshk.tv/live/" title="直播" target="_blank"><img src="__PUBLIC__/images/corp/index_09.png" width="32" height="17" alt=""></a></div>
+</div>
+<!-- 顶部结束 -->
+
+<!--主要内容开始 -->
+<div id="main">
+<!--banner start-->
+<div id="about_banner"><a href="#" target="_blank"><img src="__PUBLIC__/images/corp/about_01.png"></a></div>
+<!--banner stop-->
+  <div id="about_part_line">&nbsp;</div>
+  <div id="about_menu">
+    <ul>                                                                              
+      <li><a href="president.html">总裁致辞</a></li>
+      <li><a href="about.html" class="current">关于Health TV</a><span class="select"></span></li>
+      <li><a href="cultural.html">文化理念 </a></li>
+      <li><a href="news.html">公司动态</a></li>
+      <li><a href="event.html">大事记录</a><span class="last_part"></span></li>
+      </ul>
+  </div>
+  <div id="about_part_line2">&nbsp;</div>
+    <div class="about_content">
+        <p class="text2">
+          <font class="text3">关键词：</font>全球第一家  医学科普卫星电视台 大健康 </p>
+           <p class="text2">健康卫视2011年在香港注册上星，是全球第一家通过卫星全频道、用汉语普通话播出的医学科普卫星电视台。 </p>
+        <p>在电视节目泛娱乐化的生态环境下，健康卫视始终坚持关注人与自然本身，始终坚持&ldquo;生命、生态、生活，生生不息&rdquo;的&ldquo;大健康&rdquo;频道理念，在喧闹浮躁的电视生态环境下，刮起了一股清新的绿色之风。 </p><br>
+        <p class="text2"><font class="text3">关键词：</font>医药卫生医学科普 生态环保 公益慈善 品质生活 </p>
+           <p class="text2">健康卫视坚持采用各类节目形态传播权威的、专业的健康信息，普及健康知识，弘扬科学健康理念，内容涵盖医药卫生、医学科普、生态环保、公益慈善、品质生活等领域。 </p><br>
+
+        <p class="text2"><font class="text3">关键词：</font>国际媒体 面向全球华人 </p>
+          <p class="text2">健康卫视是一个国际化的媒体。频道面向全世界和大中华区的华人，主要受众为医学专业群体、有健康意识的社会精英、广大普通受众。 </p><br>
+
+        <p class="text2"><font class="text3">关键词：</font>有责任感和使命感的媒体 </p>
+          <p class="text2">健康卫视是一个有社会责任感和使命感的媒体。专注于涵盖&ldquo;生命、生态、生活&rdquo;三方面实质内涵的&ldquo;大健康&rdquo;，策划了一系列的大型公益电视行动，关注和报道绿色生态环保现状。 </p><br>
+        <p class="text2"><font class="text3">健康卫视频道理念和呼号：</font> </p>
+          <p class="text2">生命、生态、生活，生生不息，这里是健康卫视。 </p><br>
+
+        <p class="text2"><font class="text3">健康卫视频道理念内涵：</font> </p>
+           <p class="text2">珍爱绿色生命 </p>
+           <p class="text2">呵护和谐生态 </p>
+           <p class="text2">崇尚品质生活 </p><br>
+
+        <p style="text-indent:2em; margin-top:10px;"><font class="text3">健康卫视总宣传片：</font> </p>
+        <p style="margin:0px 30px 30px 30px;">（视频内容正在添加与整理中...） </p>
+
+        <p style="text-indent:2em; margin-top:10px;"><font class="text3">健康卫视栏目宣传片《健康是一种态度》：</font> </p>
+        <p style="margin:20px 30px 30px 30px;">
+        <embed src="http://player.polyv.net/videos/0bb65aeb75e0e51d7e143fbf594b937d_0.swf" quality="high" width="600" height="450" align="middle" allowScriptAccess="always" allowFullscreen="true" type="application/x-shockwave-flash"></embed>
+        </p>
+  </div>
+<!-- 链接部分开始 --> 
+<div id="part_line">&nbsp;&nbsp;</div>
+  
+  <div id="healthNet">
+    <div class="logo"><a href="http://www.jkwshk.tv" title="健康卫视网" target="_blank"><img src="__PUBLIC__/images/corp/index_59.png" width="162" height="30" alt=""></a></div>
+    <div class="column">
+    <ul>
+    <li><a href="http://www.jkwshk.tv" target="_blank"><img src="__PUBLIC__/images/corp/healthNet_01.png" width="130" height="130" alt="健康卫视网首页" class="logo"></a><a href="http://www.jkwshk.tv"  title="健康卫视网首页"  target="_blank"><span class="go"></span></a></li>
+    <li><a href="http://www.jkwshk.tv/Newsvideo/index.html" target="_blank"><img src="__PUBLIC__/images/corp/healthNet_02.png" width="130" height="130" alt="健闻视频" class="logo"></a><a href="http://www.jkwshk.tv/Newsvideo/index.html"  title="健闻视频" target="_blank"><span class="go"></span></a></li>
+    <li><a href="http://www.jkwshk.tv/video/index.html" target="_blank"><img src="__PUBLIC__/images/corp/healthNet_03.png" width="130" height="130" alt="健康视频" class="logo"></a><a href="http://www.jkwshk.tv/video/index.html"  title="健康视频" target="_blank"><span class="go"></span></a></li>
+    <li><a href="http://www.jkwshk.tv/tv/index.html" target="_blank"><img src="__PUBLIC__/images/corp/healthNet_04.png" width="130" height="130" class="logo"></a><a href="http://www.jkwshk.tv/tv/index.html" title="卫视节目" target="_blank"><span class="go"></span></a></li>
+    <li><a href="http://old.jkwshk.tv/view/home.html" target="_blank"><img src="__PUBLIC__/images/corp/healthNet_05.png" width="130" height="130" class="logo"></a><a href="http://old.jkwshk.tv/view/home.html" title="健康视点" target="_blank"><span class="go"></span></a></li>
+    </ul>
+    </div>
+  </div>
+  
+  <div id="TVlive">
+    <div id="TVlive_min">
+      <div class="logo"><a href="http://www.jkwshk.tv/live/"  title="Live 直播" target="_blank"><img src="__PUBLIC__/images/corp/TVlive_min_logo.png" width="140" height="30"></a></div>
+       <div class="back"><a href="http://www.jkwshk.tv/live/" target="_blank"><img src="__PUBLIC__/images/corp/TVlive_min_back.png" width="47" height="47"></a></div>
+    </div>
+  </div>
+<!-- 链接部分结束 -->
+</div>
+<!--主要内容结束 -->
+
+<!--脚部开始 -->
+<div id="foot">
+<div id="footer_end">
+    <div id="footer_econtent">
+      <div class="links">
+      <a href="http://www.jkwshk.tv" target="_blank">
+      <img src="__PUBLIC__/images/corp/health_net_logo.png" width="97" height="26" alt="健康卫视视频网站" style=" vertical-align:middle"  />
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.jkwshk.tv/about/index.html" target="_blank">关于我们</a> 
+      <a href="http://www.jkwshk.tv/about/advs.html" target="_blank" >广告服务</a> 
+      <a href="http://www.jkwshk.tv/about/job.html" target="_blank">诚聘英才</a> 
+      <a href="http://www.jkwshk.tv/about/privacy.html" target="_blank">保护隐私权</a> 
+      <a href="http://www.jkwshk.tv/about/nct.html" target="_blank">免责条款</a> 
+      <a href="http://www.jkwshk.tv/about/copyright.html" target="_blank">版权声明</a> 
+      <a href="http://www.jkwshk.tv/about/contact.html" target="_blank">联系我们</a> 
+      <a href="http://old.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#" target="_blank"><img src="__PUBLIC__/images/corp/health_tv_logo.png" width="68" height="26" alt="健康卫视台网站" style=" vertical-align:middle"  /></a>
+      </div>
+      <div class="copyright">
+      粤ICP备11075253号-1 广播电视节目制作经营许可证：（粤）字第1001号<br />健康卫视  健康新媒体 版权所有<br />Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved
+      </div>
+    </div>
+  </div>
+</div>
+<!--脚部开始 -->
+</body>
+</html>

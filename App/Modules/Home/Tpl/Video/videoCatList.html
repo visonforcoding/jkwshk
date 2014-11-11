@@ -1,0 +1,199 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>健康视频-专辑页</title>
+</block>
+<block name='css'>
+<link href="/Public/Css/home/video/global.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Css/home/video/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,i,li,a,div');
+</script>
+<![endif]-->
+<!--IE6版本提示开始-->
+<!--[if lte IE 6]>  
+<div id="ie6-warning">
+<img src="/Public/Images/home/video/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+<a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+ 或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+</div>  
+<script type="text/javascript">  
+function closeme()
+{
+   var div = document.getElementById("ie6-warning");
+   div.style.display ="none";
+}
+function position_fixed(el, eltop, elleft){  
+// check if this is IE6  
+if(!window.XMLHttpRequest)  
+window.onscroll = function(){  
+el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+}  
+else el.style.position = "fixed";  
+}  
+position_fixed(document.getElementById("ie6-warning"),0, 0);  
+</script>  
+<![endif]-->
+<!--版本提示结束-->
+<script type="text/javascript" src="__PUBLIC__/Js/home/video/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" >
+    function show(svalue,hvalue,showvalue){
+		$(function(){
+			$(svalue).mouseover(function(){
+				$(hvalue).removeClass("select");
+				$(this).children("a").addClass("select");	
+				$num=$(this).index(); //alert($num);
+				$(showvalue).hide();
+				$(showvalue).eq($num).show();			
+			});
+		});
+	}
+	show('.link_three dd','.link_three dd a','.showlink');
+	
+	
+	
+	$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").hide();}
+		)   
+	});
+        $('#aa_1').click(function(){
+		
+		$.ajax({
+			type:"get",
+			url:"__APP__/Test/header/abc/"+Math.random()+"/id/3",
+			dataType:"html",
+			success:function(data){
+				$("#bb_1").html(data);
+			}
+		})
+	})
+</script>
+</block>
+<block name='body'>
+<!------头部------>
+<div class="header"> <include file="Public/top2" /> <include file="Public/common_nav2" /> 
+  <!--<div class="adv980X90"><a href="#" target="_blank"><img src="/Public/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div> -->
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="/Public/Images/home/video/s2_logo.png" width="277" height="55" /></a></div>
+      <div class="search">
+         <include file='Public:search'/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="container clearfix">
+    <div class="postname">
+      <p><a href="/video/index.html">健康视频</a><a href="javascript:viod(0);" class="select">{$type.name}</a> </p>
+    </div>
+    <div class="leftmain fr">
+      <div class="latitle clearfix" id="latitle"> 
+     <a href="#"  class="select">专辑</a> <a href="{$url}">单集</a>  
+     <!--<a href="#" class="zr">下一页></a> <a href="#" class="zx"><上一页</a><span style=" float:right ; margin-right:10px; margin-top:6px;">1/5</span>-->
+      </div>
+      <div class="alllist" style=" height:1100px">
+        <ul class="alllistul clearfix">
+          <!--专辑开始-->
+          <volist name='videoCatList' id='v'>
+            <li style="height:230px;"> <a href="__APP__/play/index/pid/{$v.id}.html" class="listpic"><img src="{$v.coverimage}" width="151" /></a>
+              <p><a href="__APP__/play/id/{$v.id}.html">{$v.name}</a> </p>
+            </li>
+          </volist>
+        </ul>
+        <div class="page">
+          <ul>
+            {$showPage}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rightmain fl">
+      <div class="tiaojian">
+        <p style=" color:#229d66;">关键词：{$keywords}</p>
+        <p><strong>已选择条件</strong></p>
+        <if condition="$tid  neq '' ">
+            <p id="keytid" class="keyword"><span>{$video_type.name}<i con="{$video_type.id}">x</i></span> 
+        </if>
+        <if condition="$cid  neq '' ">
+            <p id="keycid" class="keyword"><span>{$type.name}<i con="{$type.id}">x</i></span> 
+        </if>
+        <script type="text/javascript" >
+$(function(){
+	//var cid =
+$("#keytid span i").click(function(){
+                        var cid = $("#keycid span i").attr('con');
+                        if(typeof(cid) == "undefined"){
+                            cid = '';
+                        }
+			location.href = "/Video/videoCatlist?cid="+cid + "&keyword={$keywords}";
+		});
+$("#keycid span i").click(function(){
+                        var tid = $("#keytid span i").attr('con');
+                        if(typeof(tid) == "undefined"){
+                            tid = '';
+                        }
+                        location.href = "/Video/videoCatlist?tid="+tid+ "&keyword={$keywords}";
+		});
+	});		
+</script>
+        <p style="margin-top:10px;"><a href="/Video/videoCatlist" class="clearall">清空所选</a></p>
+      </div>
+      <h2 class="tjfenlei">请选择条件</h2>
+      <div class="fenlei clearfix">
+        <h3>栏目分类</h3>
+        <p class='cat'> <a href="javascript:void(0)" con="0">全部</a>
+          <volist name='oneProgramaId' id='cn'> <a href="javascript:void(0)" con="{$cn.id}">{$cn.name|mb_substr=0,4,'utf-8'}</a> </volist>
+        </p>
+      </div>
+      <div class="fenlei clearfix">
+        <h3>标签分类</h3>
+        <p class='type'> <a href="javascript:void(0)" con="0">全部</a>
+          <volist name='typeName' id='tn'> <a href="javascript:void(0)" con="{$tn.id}">{$tn.name}</a> </volist>
+        </p>
+        <script type="text/javascript" >
+$(function(){
+	//var cid =
+	
+	$(".type a").click(function(){
+			var firstUrl = $(this).attr("con");
+			location.href = "/Video/videoCatlist?tid="+firstUrl + "&cid={$cid}&keyword={$keywords}";
+		});
+$(".cat a").click(function(){
+			var firstUrl = $(this).attr("con");
+                         location.href = "/Video/videoCatlist?cid="+firstUrl + "&tid={$tid}&keyword={$keywords}";
+			
+		});
+	});		
+</script> 
+      </div>
+      <!--<div class="fenlei clearfix">
+        <h3>人群分类</h3>
+        <p> <a href="#">全部</a> <a href="#" class="people">白富美推荐1分钟视频</a> <a href="#" class="people">白富美推荐1分钟视频</a><a href="#" class="people">白富美推荐1分钟视频</a><a href="#" class="people">白富美推荐1分钟视频</a></p>
+      </div>-->
+    </div>
+    <div class="clear"></div>
+    <div class="adv980X90"><a href="#" target="_blank"><img src="/Public/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div>
+  </div>
+</div>
+<!--底部代码开始--> 
+<include file="Public/footer"/> 
+<!--底部代码结束--> 
+<!--<div class="left_Bg"><a class="Bg_link"  target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>
+<div class="right_Bg"><a class="Bg_link" target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>-->
+</block>

@@ -1,0 +1,42 @@
+<div id="top">
+  <div class="w1k">
+    <div class="top_logo"> <a href="/index.html"><img src="__PUBLIC__/Images/home/sevenbaby/logo_top.png" width="134" height="35"  border="0"/></a> 
+     <a href="javascript:void(0)"><img src="__PUBLIC__/Images/home/sevenbaby/logo_hd.png" width="181" height="21"  border="0"/></a> <a href="javascript:void(0)"><img src="__PUBLIC__/Images/home/sevenbaby/logo_hg.png" width="72" height="20" border="0" /></a> </div>
+    <div class="top_ctr" > <a  href="/bbs/" target="_blank" class="icon-dearbbs" title="亲子论坛"></a> 
+        <empty name="userId">
+     	<!--<a  href="#myModal" data-toggle="modal"  class="icon-login" title="选手登录"></a>--> 
+     	<a  href="#" onclick="javascript:showLogin();showForbid();void(0);" class="icon-login" title="选手登录"></a> 
+            <else/>
+        <a  href="/member/index.html"  class="icon-userinfo" title="个人中心"></a>
+        <a class="icon-login" style=" background-position:-330px 0px;" title="退出" href="/sevenbaby/loginOut.html"></a>
+        </empty>
+     <a  href="/live.html" target="_blank" class="icon-live" title="卫视直播"></a> </div>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" style="display:none;">
+  <div class="modal-header"> <a class="close" data-dismiss="modal" >&times;</a>
+    <h3>选手登录</h3>
+  </div>
+  <div class="modal-body">
+   <a class="alert alert-warning fade in" data-dismiss="alert" href="#" aria-hidden="true"></a>
+    <div class="login_box">
+      <form action="" method="post">
+       <input name="loginflag" value="flag" type="hidden" />
+        <!--<p><label>登录名：</label><input name="username" type="text" /><span>*用户名不正确！</span></p>-->
+        <p><label>登录名：</label><input name="username" type="text" /></p>
+        <!--<p><label>密码：</label><input name="password" type="password" /><span>*密码错误！</span></p>-->
+        <p><label>密码：</label><input name="password" type="password" /></p>
+        <!--<p><label>验证码：</label><input  type="text" style="width:80px;" /><img src="/public/verify.html" id="verify" onclick="change_code();" style=" vertical-align:middle; width:80px; height:27px;"/><span>*验证码错误！</span></p>-->
+        <p><label>验证码：</label><input  type="text" style="width:80px;" />
+        <img src="/public/verify.html" id="verify" onclick="change_code();" style=" vertical-align:middle; width:80px; height:27px;"/></p>
+        <p><label></label><button class="btn btn-primary">登录</button> <button name="" type="reset" class="btn btn-primary" />重置</button></p>
+      </form>
+    </div>
+    <div class="reg_box">
+      <p>还不是健康卫视网会员？</p>
+      <a href="/member/register.html" class="btn btn-primary">注册成为会员</a> </div>
+  </div>
+  <div class="modal-footer">
+    <p>&copy;2014健康卫视网代言人评选活动</p>
+  </div>
+</div>

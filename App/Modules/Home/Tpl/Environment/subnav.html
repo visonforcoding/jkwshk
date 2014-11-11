@@ -1,0 +1,31 @@
+  <div id="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/html/content/hbkj_logo.png" width="174" height="58" /></a></div>
+      <div class="subnavcate">
+        <ul>
+          <li><a href="/Environment">首页</a></li>
+          <li><a href="/Environment/Environmentlist/category/new" target="_blank">资讯</a></li>
+          <li><a href="/Environment/Environmentlist/category/pic" target="_blank">图片</a></li>
+          <li><a href="/Environment/Environmentlist/category/video" target="_blank">视频</a></li>
+          <!--<li><a href="/Environment/Environmentlist/category/newcat" target="_blank">文字专题</a></li>-->
+          <li><a href="/Environment/Environmentlist/category/videocat" class="clecka" target="_blank">视频专题</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <form name="sofrm" class="sofrm" method="get" action="/Seek/index" onSubmit="return rewrite_search()">
+          <input name="mod" type="hidden" id="mod" value="search" />
+          <input name="type" type="hidden" id="type" value="name" />
+          <div id="selopt">
+            <div id="cursel">全站</div>
+            <ul id="options">
+              <li><a href="javascript: void(0);" name="name">全站</a></li>
+              <li><a href="javascript: void(0);" name="url">本栏</a></li>
+            </ul>
+          </div>
+          <input name="keywords" class="seartext" type="text" onfocus="if(this.value=='搜吗？搜吧！') this.value='' " onblur="if(this.value=='') this.value='搜吗？搜吧！';"  value="搜吗？搜吧！"/>
+          <input name="submit" class="submit" type="submit"  value="搜健" />
+        </form>
+      </div>
+    </div>
+    <div class="subnavline" style=" height:5px;"></div>
+  </div>

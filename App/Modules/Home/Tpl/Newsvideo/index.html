@@ -1,0 +1,328 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>健闻视频_中文健康资讯视频第一门户网站_健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="健康资讯视频，健康新闻视频，国际健康资讯视频，大健康资讯视频" />
+    <meta name="description" content="健闻视频以健康卫视《环球健康资讯》为依托，为国民及时发布全球健康资讯，帮助国民了解“大健康”领域全球最前沿的医学、环保科研成果、了解全球最新医疗产业动态，解读全球最热医疗事件等。 "
+          />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/video/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/video/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+
+    <!--[if IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/DD_belatedPNG.js" ></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('img,i,li,a,div');
+    </script>
+    <![endif]-->
+
+    <!--IE6版本提示开始-->
+    <!--[if lte IE 6]>  
+    <div id="ie6-warning">
+    <img src="__PUBLIC__/Images/home/video/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+    您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+    <a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+     或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+    Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+    </div>  
+    <script type="text/javascript">  
+    function closeme()
+    {
+       var div = document.getElementById("ie6-warning");
+       div.style.display ="none";
+    }
+    function position_fixed(el, eltop, elleft){  
+    // check if this is IE6  
+    if(!window.XMLHttpRequest)  
+    window.onscroll = function(){  
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+    }  
+    else el.style.position = "fixed";  
+    }  
+    position_fixed(document.getElementById("ie6-warning"),0, 0);  
+    </script>  
+    <![endif]-->
+    <!--版本提示结束-->
+
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" >
+        function show(svalue, hvalue, showvalue) {
+            $(function() {
+                $(svalue).mouseover(function() {
+                    $(hvalue).removeClass("select");
+                    $(this).children("a").addClass("select");
+                    $num = $(this).index(); //alert($num);
+                    $(showvalue).hide();
+                    $(showvalue).eq($num).show();
+                });
+            });
+        }
+        show('.link_three dd', '.link_three dd a', '.showlink');
+
+        $(function() {
+            $(".chotdl dd i:lt(3)").addClass("bg");
+            $(".rnews ul li i:lt(3)").addClass("bg");
+        });
+
+        $(function() {
+            $("#keyword span i").click(function() {
+                $(this).parent().hide()
+            })
+
+            $('.clearall').click(function() {
+                $("#keyword span").hide()
+            })
+        });
+
+        $(function() {
+            $("#selopt").hover(
+                    function() {
+                        $("#options").slideDown();
+                        $("#options li a").click(function() {
+                            $("#cursel").text($(this).text());
+                            $("#type").attr("value", $(this).attr("name"));
+                            $("#options").hide();
+                        });
+                    },
+                    function() {
+                        $("#options").hide();
+                    }
+            )
+        })
+
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.pack.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.SuperSlide.js"></script>
+    <script type='text/javascript' src='__PUBLIC__/js/home/video/Slideshow.js'></script>
+    <style type="text/css"></style>
+</block>
+<block name='body'>
+    <!------头部------>
+    <div class="header">
+        <include file="Public/top2" /> 
+        <include file="Public/common_nav2" /> 
+        <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div> -->
+        <div class="subnav">
+            <div class="subnavcontent">
+                <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/video/s1_logo.png" width="277" height="55" /></a></div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="banner">
+            <div id='tmpSlideshow'>
+                <volist name="focus" id="v" key="k">
+                    <div id='tmpSlide-{$k}' class='tmpSlide'><a href="{$v.link}" target="_blank">
+                            <img src="{$v.photo}" width="700" height="340" alt="男士眼部护理常识" /></a>
+                        <div class='tmpSlideCopy'>
+                            <h4><a href="{$v.link}" target="_blank">{$v.title}</a></h4>
+                            <p>{$v.info}......</p>
+                        </div>
+                    </div>
+                </volist>
+                <div id='tmpSlideshowControls'> 
+                    <!--<h4>控制器</h4>-->
+                    <volist name="focus" id="v" key="k">
+                        <div class='tmpSlideshowControl' id='tmpSlideshowControl-{$k}'></div>
+                    </volist>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container clearfix">
+
+        <div class="larea fl">
+            <div class="llist">
+                <div class="title">
+                    <p class="titlew"><a href="/newsvideo/videolist/cid/{$allnewId}.html" target="_blank" class="imgtitle fsjkzz" title="环球健闻">环球健闻</a></p>
+                </div>
+                <dl class="dllist">
+                    <!-- 循环开始 msg:图片因没数据暂时使用定值请正式上线时更换-->
+                    <dt>
+                    <volist name='allnew' id='an' offset='0' length='1'>
+                        <a href="/play/index/id/{$an.id}.html"><img alt='{$an.keywords}' src="{$an.photo}" width="338" height="204" /> 
+                            <b><i></i>{$an.channel}<br />
+                                <span style=" font-size:12px; color:#6e6e6e;">{$an.title}</span></b> 
+                        </a> 
+                    </volist>
+                    <volist name="allnew" id="v" offset="1" length="2">
+                        <a href="/play/index/id/{$v.id}.html" title="{$v.title}" class="ddlin">◆{$v.title}</a>
+                    </volist>
+                    </dt>
+                    <volist name='allnew' id='ban' offset='3' length='4'>
+                        <dd><a href="/play/index/id/{$ban.id}.html">
+                                <img alt='{$ban.description}' src="{$ban.photo}" width="151" height="91" /><b>{$ban.title}</b></a>
+                        </dd>
+                    </volist>
+                </dl>
+
+            </div>
+            <div class="llist">
+                <div class="title">
+                    <p class="titlew"><a href="/newsvideo/videolist/cid/{$authId}.html" class="imgtitle cjzls" title="权威发布">权威发布</a></p>
+                </div>
+                <dl class="dllist">
+                    <!-- 循环开始 msg:图片因没数据暂时使用定值请正式上线时更换-->
+                    <dt> 
+                    <volist name='auth' id='aut' offset='0' length='1'>
+                        <a href="/play/index/id/{$aut.id}.html"><img alt='{$aut.keywords}' src="{$aut.photo}" width="338" height="204" /> <b><i></i>{$aut.channel}<br />
+                                <span style=" font-size:12px; color:#6e6e6e;">{$aut.title}</span></b> </a> 
+                    </volist>
+                    <volist name="auth" id="v" offset="1" length="2">
+                        <a href="/play/index/id/{$v.id}.html" class="ddlin">◆{$v.title}</a>
+                    </volist>
+                    </dt>
+                    <volist name='auth' id='aut' offset='3' length='4'>
+                        <dd><a href="/play/index/id/{$aut.id}.html"><img alt='{$aut.keywords}' src="{$aut.photo}" width="151" height="91" /><b>{$aut.title}</b></a></dd>
+                    </volist>
+                </dl>
+            </div>
+            <div class="llist">
+                <div class="title">
+                    <p class="titlew"><a href="/newsvideo/videolist/cid/{$heaCliId}.html" class="imgtitle jkqjl" title="健康点击">健康点击</a></p>
+                </div>
+                <dl class="dllist">
+                    <!-- 循环开始 msg:图片因没数据暂时使用定值请正式上线时更换-->
+                    <dt> 
+                    <volist name='heaCli' id='hcl' offset='0' length='1'>
+                        <a href="/play/index/id/{$hcl.id}.html"><img alt='{$hcl.keywords}' src="{$hcl.photo}" width="338" height="204" /> 
+                            <b><i></i>{$hcl.channel}<br />
+                                <span style=" font-size:12px; color:#6e6e6e;">{$hcl.title}</span></b> </a> 
+                    </volist>
+                    <volist name="heaCli" id="v" offset="1" length="2">
+                        <a href="/play/index/id/{$v.id}.html" class="ddlin">◆{$v.title}</a>
+                    </volist>
+                    </dt>
+                    <volist name='heaCli' id='hcli' offset='3' length='4'>
+                        <dd><a href="/play/index/id/{$hcli.id}.html"><img alt='{$hcli.keywords}' src="{$hcli.photo}" width="151" height="91" /><b>{$hcli.title}</b></a></dd>
+                    </volist>
+                </dl>
+            </div>
+            <div class="adv670X90" style=" margin-bottom:20px;"></div>
+            <div class="llist">
+                <div class="title">
+                    <p class="titlew"><a href="/newsvideo/videolist/cid/{$foucsId}.htmlml" class="imgtitle yssj" title="今日视点">今日视点</a></p>
+                </div>
+                <dl class="dllist">
+                    <!-- 循环开始 msg:图片因没数据暂时使用定值请正式上线时更换-->
+                    <dt>
+                    <volist name='foucs' id='fc' offset='0' length='1'>
+                        <a href="/play/index/id/{$fc.id}.html"><img alt='{$fc.keywords}' src="{$fc.photo}" width="338" height="204" /> 
+                            <b><i></i>{$fc.channel}<br />
+                                <span style=" font-size:12px; color:#6e6e6e;">{$fc.title}</span></b> </a> 
+                    </volist>
+                    <volist name="foucs" id="v" offset="1" length="2">
+                        <a href="/play/index/id/{$v.id}.html" class="ddlin">◆{$v.title}</a>
+                    </volist>
+                    </dt>
+                    <volist name='foucs' id='fuc' offset='3' length='4'>
+                        <dd><a href="/play/index/id/{$fuc.id}.html"><img alt='{$fuc.keywords}' src="{$fuc.photo}" width="151" height="91" /><b>{$fuc.title}</b></a></dd>
+                    </volist>
+                </dl>
+            </div>
+            <div class="llist">
+                <div class="title">
+                    <p class="titlew"><a href="/newsvideo/videolist/cid/{$wordId}.html" class="imgtitle jkyd" title="天下万象">天下万象</a></p>
+                </div>
+                <dl class="dllist">
+                    <!-- 循环开始 msg:图片因没数据暂时使用定值请正式上线时更换-->
+                    <dt>
+                    <volist name='word' id='wod' offset='0' length='1'>
+                        <a href="/play/index/id/{$wod.id}.html"><img alt='{$wod.keywords}' src="{$wod.photo}" width="338" height="204" />
+                            <b><i></i>{$wod.channel}<br />
+                                <span style=" font-size:12px; color:#6e6e6e;">{$wod.title}</span></b> </a> 
+                    </volist>
+                    <volist name="word" id="v" offset="1" length="2">
+                        <a href="/play/index/id/{$v.id}.html" class="ddlin">◆{$v.title}</a>
+                    </volist>
+                    </dt>
+                    <volist name='word' id='word' offset='3' length='4'>
+                        <dd><a href="/play/index/id/{$word.id}.html"><img alt='{$word.description}' src="{$word.photo}" width="151" height="91" /><b>{$word.title}</b></a></dd>
+                    </volist>
+                </dl>
+            </div>
+            <div class="llist">
+                <div class="title">
+                    <p class="titlew"><a href="/newsvideo/videolist/cid/{$heaTPId}.html" class="imgtitle jkld" title="健康30分">健康30分</a></p>
+                </div>
+                <dl class="dllist">
+                    <!-- 循环开始 msg:图片因没数据暂时使用定值请正式上线时更换-->
+                    <dt> 
+                    <volist name='heaTP' id='hep' offset='0' length='1'>
+                        <a href="/play/index/id/{$hep.id}.html"><img alt='{$hep.keywords}' src="{$hep.photo}" width="338" height="204" /> 
+                            <b><i></i>{$hep.channel}<br />
+                                <span style=" font-size:12px; color:#6e6e6e;">{$hep.title}</span></b> </a> 
+                    </volist>
+                    <volist name="heaTP" id="v" offset="1" length="2">
+                        <a href="/play/index/id/{$v.id}.html" class="ddlin">◆{$v.title}</a>
+                    </volist>
+                    </dt>
+                    <volist name='heaTP' id='htp' offset='3' length='4'>
+                        <dd><a href="/play/index/id/{$htp.id}.html"><img alt='{$htp.description}' src="{$htp.photo}" width="151" height="91" /><b>{$htp.title}</b></a></dd>
+                    </volist>
+                </dl>
+            </div>
+        </div>
+        <div class="rarea  fr">
+            <div class="rhot">
+                <h2><a class="imgtitle" title="排行榜">排行榜</a></h2>
+                <dl class="chotdl">
+                    <volist name='topVideo' id='hV'>
+                        <dd><a href="/play/index/id/{$hV.id}.html"><i>{$i}</i><img width="132" alt='{$hV.keywords}' height="80"  src="{$hV.photo}" /><b>{$hV.title}</b></a></dd>
+                    </volist>
+                </dl>
+            </div>
+            <div class="adv285X155"></div>
+            <div class="rnews">
+                <h2><a href="/news/" class="imgtitle" title="热门资讯"  target="_blank">热门资讯</a></h2>
+                <ul>
+                    <volist name='hotNews' id='hn'>
+                        <li><i>{$i}</i><a href="/news/view/id/{$hn.id}.html" target="_blank">{$hn.title}</a></li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="rpic clearfix">
+                <h2><a href="/photo" class="imgtitle" title="热门图片"  target="_blank">热门图片</a></h2>
+                <ul class="clearfix">
+                    <volist name='hotPic' id='hp'>
+                        <li><a href="/photo/view/id/{$hp.id}.html"><img width="132" height="80"  alt='{$hp.name}' src="{$hp.topimg}" style="display: inline;"> <b>{$hp.name}</b></a> </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="adv285X185"></div>
+            <div class="rzhuanji clearfix">
+                <h2><a href="#" class="imgtitle" title="热门专辑"  target="_blank">热门专辑</a></h2>
+                <ul  class="clearfix" >
+                    <volist name='hotCatVideo' id='hcv'>
+                        <li><a href="/play/pid/{$hcv.id}.html"><img width="132" height="156"  alt='{$hcv.keywords}' src="{$hcv.coverimage}">{$hcv.name}</a></li>
+                    </volist>
+                </ul>
+            </div>
+
+            <br />
+            <div class="adv285X185"></div>
+            <br /><br />
+            <div class="adv285X90"><a target="_blank" href="#"><img width="285" height="90" src="__PUBLIC__/Images/home/video/data/adv_ws_1.jpg"></a></div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div>
+    </div>
+</div>
+
+<!--底部代码开始-->
+<include file="Public/foot"/>
+<!--底部代码结束--> 
+<!--<div class="left_Bg"><a class="Bg_link"  target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>
+<div class="right_Bg"><a class="Bg_link" target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>-->
+</block>
+

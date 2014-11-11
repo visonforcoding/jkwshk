@@ -1,0 +1,199 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>创意短片_为您打造健康创意的品质生活_健康卫视</title>
+</block>
+<block name='seo'>
+<meta name="keywords" content="创意视频，公益广告视频	，创意短片，宣传片" />
+<meta name="description" content="本频道集合了生命健康、生态环保、公益慈善、品质生活等等方面的创意短片、创意广告，通过这些富有创意和趣味的短片，传播大健康理念；同时，本频道还将展现健康卫视往期节目的精彩宣传片，便于网友了解全集节目。" />
+</block>
+<block name='css'>
+<link href="__PUBLIC__/Css/home/html/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/html/cydp.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<script src="__PUBLIC__/Js/home/html/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Js/home/html/jquery.lazyload.js"></script>
+<script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload();
+      });
+</script>
+<script type="text/javascript" >
+$(function(){
+	$(".link_three dd").mouseover(function(){
+		$(".link_three dd a").removeClass("showsin");
+		$(this).children("a").addClass("showsin");	
+		$num=$(this).index(); //alert($num);
+		$(".showlink").hide();
+		$(".showlink").eq($num).show();						
+	});	
+	$(".chotdl dd i:lt(3)").addClass("bg");	
+});
+
+$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").hide();}
+		)   
+	});
+
+</script>
+</block>
+<block name='body'>
+<!--头部代码-->
+<div id="header"> 
+  <!--头部顶部代码-->
+   <include file="Public/top" />
+  <!--头部顶部代码end--> 
+  <!--栏目代码-->
+     <include file="Public/common_nav" />
+  <!--栏目代码end--> 
+  <!---广告位980X90--> 
+  <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/data/index_banner1.jpg" width="970" height="90" /></a></div>--> 
+  <!--大栏目代码-->
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/html/content/chuangyi_logo.png" width="197" height="49" /></a></div>
+      <div class="search">
+           <include file='Public:search'/>
+      </div>
+    </div>
+  </div>
+  <!--大栏目代码end--> 
+</div>
+<!--头部代码end-->
+<div class="main"> 
+  <!--栏目代码-->
+  <ul class="navlist">
+    <li><a href="__APP__/originality" class="select" >首页</a></li>
+    <li><a href="__APP__/originality/cateList/cid/{$programVIdeo.0.pid}.html">节目宣传片</a></li>
+    <li><a href="__APP__/originality/cateList/cid/{$commonWealVIdeo.0.pid}.html">创意公益短片</a></li>
+    <li><a href="__APP__/originality/cateList/cid/{$advertiseMentVIdeo.0.pid}.html">创意广告短片</a></li>
+    <li><a href="__APP__/originality/cateList/cid/{$funnyVIdeo.0.pid}.html">创意搞笑短片</a></li>
+     <li><a href="/originality/cateList/cid/{$cyxdpCatId}.html">创意小短片</a></li>
+    <li><a href="__APP__/originality/cateList/cid/{$TvVideo.0.pid}.html">卫视宣传片</a></li>
+  </ul>
+  <!--栏目代码end--> 
+  <!--轮播图-->
+  <div id="slider">
+    <div class="slider_box" id="slider_name">
+      <ul class="silder_con">
+          <volist name='focus' id='v'>
+            <li class="silder_panel clearfix"> <a href="/play/index/id/{$v.id}.html" class="f_l"><img src="{$v.photo}" /></a>
+              <div class="silder_intro f_r">
+                <h3> <strong><a href="/play/index/id/{$v.id}.html">{$v.title}</a></strong></h3>
+                <p>{$v.description}</p>
+                <a class="silder_play" target="_blank" href="/play/index/id/{$v.id}.html">马上观看</a></div>
+            </li>
+          </volist>
+      </ul>
+      <ul class="silder_nav clearfix">
+          <volist name='focus' id='v'>
+        <li><a href="#"><img src="{$v.photo}"/></a></li>
+          </volist>
+      </ul>
+    </div>
+    <script src="__PUBLIC__/Js/home/html/jquery.slides.js" type="text/javascript"></script> 
+  </div>
+  <!--轮播图end-->
+  
+  <div class="content"> 
+    <!--左边内容代码-->
+    <div class="cleft">
+      <div class="clist">
+        <h2><a href="/Originality/cateList/cid/{$programVIdeo.0.pid}.html" class="more f_r">更多></a>节目宣传片</h2>
+        <ul>
+        <volist name='programVIdeo' id='program'>
+          <li><a href="/play/index/id/{$program.id}.html" target="_blank" title="{$program.title}"><img  src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$program.photo}" width="132" height="80" /><b>{$program.title|mb_substr=0,18,'utf-8'}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="__APP__/originality/cateList/cid/{$commonWealVIdeo.0.pid}.html" class="more f_r">更多></a>创意公益短片</h2>
+        <ul>
+        <volist name='commonWealVIdeo' id='commonWeal'>
+          <li><a href="/play/index/id/{$commonWeal.id}.html" target="_blank" title="{$commonWeal.title}"><img  src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$commonWeal.photo}" width="132" height="80" /><b>{$commonWeal.title|mb_substr=0,18,'utf-8'}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="__APP__/originality/cateList/cid/{$advertiseMentVIdeo.0.pid}.html" class="more f_r">更多></a>创意广告短片</h2>
+        <ul>
+        <volist name='advertiseMentVIdeo' id='advertiseMent'>
+          <li><a href="/play/index/id/{$advertiseMent.id}.html" target="_blank" title="{$advertiseMent.title}"><img  src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$advertiseMent.photo}" width="132" height="80" /><b>{$advertiseMent.title|mb_substr=0,18,'utf-8'}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="__APP__/originality/cateList/cid/{$funnyVIdeo.0.pid}.html" class="more f_r">更多></a>创意搞笑短片</h2>
+        <ul>
+        <volist name='funnyVIdeo' id='funny'>
+          <li><a href="/play/index/id/{$funny.id}.html" target="_blank" title="{$funny.title}"><img  src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$funny.photo}" width="132" height="80" /><b>{$funny.title|mb_substr=0,18,'utf-8'}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="/originality/cateList/cid/{$cyxdpCatId}.html" class="more f_r">更多></a>创意小短片</h2>
+        <ul>
+        <volist name='cyxdpVIdeo' id='funny'>
+          <li><a href="/play/index/id/{$funny.id}.html" target="_blank" title="{$funny.title}"><img  src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$funny.photo}" width="132" height="80" /><b>{$funny.title|mb_substr=0,18,'utf-8'}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="/Originality/cateList/cid/238.html" class="more f_r">更多></a>卫视宣传片</h2>
+        <ul>
+        <volist name='TvVideo' id='Tv'>
+          <li><a href="/play/index/id/{$Tv.id}.html" target="_blank" title="{$Tv.title}"><img  src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$Tv.photo}" width="132" height="80" /><b>{$Tv.title|mb_substr=0,10,'utf-8'}</b></a></li>
+        </volist>       
+         </ul>
+      </div>
+    </div>
+    <!--左边内容代码end--> 
+    <!--右边内容代码-->
+    <div class="cright">
+      <div class="chot">
+        <h2 class="title"><b>热门排行</b></h2>
+        <dl class="chotdl">
+        <volist name='hotVideo' id='hv'>
+          <dd><a href="/play/index/id/{$hv.id}.html"><i>{$i}</i><img src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$hv.photo}" width="132" height="80" /><b>{$hv.title}</b></a></dd>
+		</volist>
+
+        </dl>
+      </div>
+      <div class="adv320X100" style=" margin-bottom:30px;"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/data/cy-adv.jpg" width="320" height="100" /></a></div>
+      <div class="recdview">
+        <h2 class="title"><b>热门图片</b></h2>
+        <div class="viewpic"> 
+        <volist name='hotPic' id='pic'>
+        <a href="//photo/view/id/{$pic.id}.html" target="_blank" title="1"><img src="{$pic.topimg}"  alt="{$pic.name}" width="132" height="92" /><b>{$pic.name}</b></a> 
+        </volist>
+        </div>
+      </div>
+      <div class="crnews" >
+        <h2 class="title"><b>热门资讯</b></h2>
+        <ul>
+        <volist name='hotNews' id='news'>
+          <li><a href="/news/view/id/{$news.id}.html" target="_blank">{$news.title}</a></li>
+          </volist>
+        </ul>
+      </div>
+      <div class="adv320X120" style=" margin-bottom:30px;"></div>
+      <div class="adv320X160"></div>
+    </div>
+    <!--右边内容代码end--> 
+    
+  </div>
+</div>
+<div class="clear"></div>
+<div class="adv980X90"></div>
+<include file="Public/foot"/>
+</block>
+

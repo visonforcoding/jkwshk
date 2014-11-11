@@ -1,0 +1,128 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>活动新闻-Seven Baby-健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script>
+</block>
+<block name='style'>
+    <style>
+        body{   background: url(__PUBLIC__/Images/home/sevenbaby/bannerbg.png) repeat;}
+    </style>
+</block>
+<block name='body'>
+    <!--/*顶部*/-->
+    <include file="sevenbaby:top"/>
+    <!--/*顶部结束*/--> 
+
+    <!--/*头部横幅层*/-->
+    <div class="row">
+        <div class="navposts" ><img src="__PUBLIC__/Images/home/sevenbaby/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+                <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+                <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+                <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+                <empty name="userId">
+                    <area shape="rect" style=" margin-left:100px;" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();
+                            showForbid();void(0);"   class="icon-login">
+                    <else/>
+                    <area shape="rect"  style=" margin-left:100px;"  coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+                </empty> 
+                <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="/sevenbaby/program.html" />
+                <area shape="circle" coords="100,99,95" href="index.html" title="Seven Baby 2014">
+            </map>
+        </div>
+
+        <div class="container">
+            <div class="container-content">
+                <!--活动新闻内容-->
+                <div class="container-left">
+                    <h2 class="title">新闻列表</h2>
+                    <ul class="newlist">
+                        <volist name="babyNews" id="v">
+                            <li><a href="/sevenbaby/news/id/{$v.id}.html">{$v.title}</a></li>
+                        </volist>
+                    </ul>
+                </div>
+                <div class="container-right">
+                    <p class="posttitle"><i>新闻内容</i></p>
+                    <div class="text">
+                        <!--标题-->
+                        <h1 class="h1font">{$curNews.title} </h1>
+
+                        <div class="review">
+                            <i>导读</i>
+                            {$curNews.description}
+                        </div>
+                        <!--新闻内容-->
+                        {$curNews.info}
+                        <!--新闻内容-->
+                        <div class="text-btm clearfix">
+                            <p><i class="ibg">标签:</i>
+                            <volist name='tagList' id='v'>
+                                <a href='#'>{$v.tagname}</a> -
+                            </volist>
+                            </p>
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style_24x24" style=" margin-top:10px; height:18px; line-height:18px;">
+                                <i class="ibg">分享:</i>
+                                <a class="jiathis_button_qzone"></a>
+                                <a class="jiathis_button_tsina"></a>
+                                <a class="jiathis_button_tqq"></a>
+                                <a class="jiathis_button_weixin"></a>
+                                <a class="jiathis_button_cqq"></a>
+                                <a class="jiathis_button_xiaoyou"></a>
+                                <a class="jiathis_button_douban"></a>
+                                <a class="jiathis_button_kaixin001"></a>
+                                <a class="jiathis_button_copy"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1396334161969991" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div> 
+                        <p style=" color:#666;">编辑：{$curNews.writer}</p>
+                        <p style=" color:#666;">本文来自{$curNews.source}</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!--    	<dl class="con_dlist">
+                                <dt><i class="icon-a"></i>"六一健康宝宝"奖励如下：</dt>
+                            <dd>
+                                <p>1.	个人空间升级为VIP空间，成长档案得到健康卫视官网永久保存。</p>
+                                                <p>2.	优先获得健康卫视台宣和电视节目录制的机会。</p>
+                                                <p>3.	价值1366元的澳洲原装进口1881庄园经典干红葡萄酒一瓶。</p></dd>
+                        </dl>
+                        <dl class="con_dlist">
+                                <dt><i class="icon-b"></i>2014健康卫视第二届"Seven Baby"，奖励如下：</dt>
+                            <dd>
+                            <p>1．享受2012健康卫视官网形象代言人，即2012健康卫视官网 "Seven Baby（健康7宝贝）"荣誉称号。</p>
+                                        <p>2．个人空间升级为VIP空间，成长档案得到健康卫视官网永久保存。</p>
+                            <p>3．优先获得2012健康卫视台宣传片和电视节目录制的机会。</p>
+                            <p>4．欧洲最大最具知名度天然琥珀品牌S & A提供的价值 2万元的天然琥珀吊坠。</p>
+                            <p>5．喜沃即将全新上市双核智能手机。</p>
+                            </dd>
+                        </dl>-->
+                <!--活动新闻内容-->
+            </div>
+        </div>
+
+    </div>
+    <!--/*头部横幅层结束*/--> 
+
+    <!--/*底部*/-->
+    <include file="Sevenbaby:foot"/>
+    <!--/*底部结束*/--> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/tab.js">/*可切换的标签页*/</script> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/common.js">/*公共js*/</script>
+</block>
+

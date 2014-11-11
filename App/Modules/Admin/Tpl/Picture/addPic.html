@@ -1,0 +1,182 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script src="__PUBLIC__/ueditor/ueditor.config.js" ></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.js" ></script>
+    <script href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" ></script>
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '图片管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+            $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                param.classname = '{$classname}';
+                var isValid = $('#ff').form('validate');
+                var action = "{$action}";
+                if (action === 'edit') {
+                    param.action = 'edit';
+                    param.id = "{$Rs['id']}";
+                }
+                if (isValid) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/picture/doAddPic.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.success) {
+                                     $.messager.alert('信息提示', data.message, 'info');
+                                     window.location.href = '/picture/index.html';
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        }
+                    });
+                } else {
+                    return isValid;
+                }
+                ;
+            });
+        });
+        function clearForm() {
+            $('#ff').form('clear');
+        }
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加图集"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form">
+                <input type="hidden" name="uname" value="{$uname}"  />
+                <div class="input-group">
+                    <label>所属分类:</label>
+                    {$fname}
+                </div>
+                <div class="input-group">
+                    <label>图集名称:</label>
+                    <input class="easyui-validatebox" style="width:400px" id="title" value="{$Rs['name']}" type="text" name="name" data-options="required:true" ></input>
+                </div>
+                <div class="input-group">
+                    <label>图集属性:</label>
+                    {$fflags}
+                </div>
+                <div class="input-group">
+                    <label style="float: left">栏目类型:</label>
+                    <div class="checkbox-inline" style="width:90%;float: left">
+                        {$types}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                   <div class="input-group">
+                    <label>头拍:</label>
+                    <select class="selectStyle" name="toppai">
+                        <option value="day"   <if condition="$Rs.toppai eq 'day'">selected="selected"</if>>今日头拍</option>
+                        <option value="week" <if condition="$Rs.toppai eq 'week'">selected="selected"</if>>本周头拍</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>标签:</label>
+                    <div id="tagcheckbox" style="display: inline-block">
+                        {$Rs['ftags']}
+                    </div>
+                    <button onclick="$('#tag-window').window('open');
+                            $('#tag-window').window('refresh', '/tags/showTags.html');" type="button" class="btn btn-primary">选取标签</button>
+                    <div id="tag-window" class="easyui-window" title="选取标签" style="width:700px;height:500px"
+                         data-options="iconCls:'icon-tag4',modal:true,closed:true,minimizable:false,maximizable:false">
+                    </div>
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >图集封面：</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                                {$Rs['ftopimg']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" style="width: 133px;" class="btn btn-primary" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="topimg" id="topimg" value="{$Rs['topimg']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                    </div>
+                </div>
+                <div  class="input-group hasEditor">
+                    <label>内容：</br>
+                        <a href="javascript:void(0)" onclick="$('#demo-window').window('open');
+                                $('#demo-window').window('refresh', '/picture/showDemo.html');"> (查看示例)</a>
+                        <div id="demo-window" class="easyui-window" title="示例" style="width:1100px;height:500px"
+                             data-options="iconCls:'icon-tag4',modal:false,closed:true,minimizable:false,maximizable:false">
+                        </div>
+                    </label>
+                    <script id="info" class="editor" name="info" type="text/plain">
+                        {$Rs['info']}
+                    </script>
+                    <script type="text/javascript">
+                        var editor = UE.getEditor('info')
+                    </script>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>文章关键字:</label>
+                    <input class="easyui-validatebox w310" type="text" value="{$Rs['keywords']}"  id="keywords" name="keywords"></input>
+                </div>
+                <div class="input-group">
+                    <label>文章描述:</label>
+                    <textarea class="easyui-validatebox"  style="width:700px;height:60px;"  id="description" name="description">{$Rs['description']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+                /*图片上传*/
+                        (function($) {
+                            var image = {
+                                editor: null,
+                                init: function(editorid, keyid) {
+                                    var _editor = this.getEditor(editorid);
+                                    _editor.ready(function() {
+                                        _editor.setDisabled();
+                                        _editor.hide();
+                                        _editor.addListener('beforeInsertImage', function(t, args) {
+                                            var imgsrc = args[0].src;
+                                            $("#" + keyid).val(imgsrc);
+                                            $("#disimgcover").html('<img src="' + imgsrc + '" width="120" height="120" />');
+                                        });
+                                    });
+                                },
+                                getEditor: function(editorid) {
+                                    this.editor = UE.getEditor(editorid);
+                                    return this.editor;
+                                },
+                                show: function(id) {
+                                    var _editor = this.editor;
+                                    //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+                                    //和网上一些朋友的代码不同之处就在这里  
+                                    $("#" + id).click(function() {
+                                        var image = _editor.getDialog("insertimage");
+                                        image.render();
+                                        image.open();
+                                    });
+                                },
+                                render: function(editorid) {
+                                    var _editor = this.getEditor(editorid);
+                                    _editor.render();
+                                }
+                            };
+                            $(function() {
+                                image.init("myeditor", "topimg");
+                                image.show("image");
+                            });
+                        })(jQuery);
+    </script>
+</block>

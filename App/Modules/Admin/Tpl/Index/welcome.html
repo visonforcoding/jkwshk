@@ -1,0 +1,27 @@
+<include file="Public:header" />
+		<div class="videoListTable">
+            <div class="hit">
+                {$Think.session.loginUserName} {$Think.session.loginName}，欢迎你使用健康卫视后台管理系统2.0版！
+            </div>
+			<table width="100%" id="J-rowColor">
+				<thead>
+					<tr height="32">
+						<td>上次登入时间</td>
+						<td>上次登入IP</td>
+						<td>登入时间</td>
+						<td>登入IP</td>
+						<td>距离上次登入时间</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center">{$lastLoginTime}</td>
+						<td align="center">{$Think.session.lastLoginIp}</td>
+						<td align="center">{$loginTime}</td>
+						<td align="center">{$Think.session.nowLoginIp}</td>
+						<td align="center">{$subtime}</td>
+					</tr>
+				</tbody>
+				</table>
+    </div>
+<include file="Public:footer" />

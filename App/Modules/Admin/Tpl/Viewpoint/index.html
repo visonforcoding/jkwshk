@@ -1,0 +1,266 @@
+<extend name="Layout:layout2"/>
+<!--视频管理-->
+<block name="script">
+<script type="text/javascript">
+    $(function() {
+        $('#aa').accordion('select','文章管理');
+        $('#dg').datagrid({
+            url: "/viewpoint/getViewpoints.html",
+            pagination: true,
+            rownumbers: true, //显示行号
+            multiSort: true, //是否能按多个字段排序
+            fitColumns: true, //可以自动拓展
+            height: 450,
+            toolbar: '#tb',
+            pageList: [5, 10, 20, 30, 40, 50, 60],
+            autoRowHeight: false,
+            view: detailview,
+            detailFormatter: function(index, row) {
+                return '<div class="ddv" style="padding:5px 0"></div>';
+            },
+            onExpandRow: function(index, row) {
+                var ddv = $(this).datagrid('getRowDetail', index).find('div.ddv');
+                ddv.panel({
+                    border: false,
+                    cache: false,
+                    href: '/focus/getFocusDetail?id=' + row.id,
+                    onLoad: function() {
+                        $('#dg').datagrid('fixDetailRowHeight', index);
+                    }
+                });
+                $('#dg').datagrid('fixDetailRowHeight', index);
+            },
+            columns: [[
+                    {field: 'ck', checkbox: true},
+                    {field: 'title', title: '标题',
+                        editor: {
+                            type: 'validatebox',
+                            options: {
+                                valueField: 'name',
+                                required: true
+                            }
+                        }},
+                    {field: 'issue', title: '期数', sortable: true},
+                    {field: 'click', title: '点击数'  },
+                    {field: 'pubdate', title: '发布时间', sortable: true,
+                       formatter: function(value, row, index) {
+                            return date('Y-m-d H:i:s', row.updatetime);
+                        }        
+                     },
+                    {field: 'updatetime', title: '更新时间', sortable: true},
+                    {field: 'upuname', title: '上传者'},
+                    {field: 'videotime', title: '片长'},
+                    {field: 'ftype', title: '类型'},
+                    {field: 'status', title: '状态', editor: {
+                            type: 'combobox',
+                            options: {
+                                valueField: 'value',
+                                textField: 'text',
+                                data: [{
+                                        value: 1,
+                                        text: '启用'
+                                    }, {
+                                        value: 0,
+                                        text: '关闭'
+                                    }]
+                            }
+                        },
+                        formatter: function(value, row, index) {
+                            if (row.isopen == '1') {
+                                return "启用";
+                            } else {
+                                return "关闭";
+                            }
+                        }
+                    },
+                    {field: 'action', title: "操作", width: 20, formatter: function(value, row, index) {
+                            return "<a class='cwp-btn' title='编辑' href='/video/addVideo/action/edit/id/"+row.id+".html' ><span style='color:#E66A3C' class='icon-pencil2'></span> 编辑</a>" +
+                                    "<a class='cwp-btn' title='删除' href='javascript:void(0)' onclick='delIt();' style='margin-left:10px;'><span style='color:#E66A3C' class='icon-close'></span> 删除</a>";
+
+                        }}
+                ]],
+            queryParams: {
+                pid: '{$pid}'
+            }
+        });
+
+        $('#addCat_form').form({
+            onSubmit: function() {
+                var isValid = $(this).form('validate');
+                if (!isValid) {
+                    showMessage('类别名不能为空！');
+                }
+                return isValid;
+            },
+            success: function(data) {
+                showMessage(data);
+            }
+        });
+        $('#name').validatebox({
+            required: true
+        });
+        $('#pid-combotree').combotree({
+            onChange: function(newValue, oldValue) {
+                $('#dg').datagrid({
+                    queryParams: {
+                        pid: newValue
+                    }
+                });
+            }
+        });
+        $('#column-combo').combobox({
+            url: '/video/getVideoTypesForCombo.html',
+            valueField: 'id',
+            textField: 'text',
+            onSelect: function(record) {
+                $('#dg').datagrid({
+                    queryParams: {
+                        typeid: record.id
+                    }
+                });
+            }
+        });
+        //搜素按钮
+        $('#search_button').click(function() {
+            var name = $('#name').val();
+            $('#dg').datagrid({
+                queryParams: {
+                    name: name
+                }
+            });
+        });
+        //清除按钮
+        $('#clear_button').click(function() {
+            $('#dg').datagrid({
+                queryParams: {
+                }
+            });
+        });
+    });
+    function delIt() {
+        var ss = [];
+        var rows = $('#dg').datagrid('getSelections');
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            ss.push(row.id); //这行记录的ID值 
+        }
+        ;
+        $.messager.confirm('Confirm', '确定要删除记录?', function(r) {
+            if (r) {
+                $.ajax({
+                    type: "POST",
+                    url: "/video/delVideo.html",
+                    data: {"data[]": ss},
+                    success: function(msg) {
+                        showMessage(msg.info);
+                        $('#dg').datagrid('load', {
+                        });
+                    }
+                });
+            }
+        });
+    };
+    function editIt() {
+        $('#dg').datagrid('beginEdit', getIndex());
+    }
+    function getIndex() {
+        // 获取行索引
+        var row = $('#dg').datagrid('getSelected');
+        var index = $('#dg').datagrid('getRowIndex', row);
+        return index;
+    }
+    function saveEdit() {
+        $('#dg').datagrid('endEdit', getIndex());
+        var updated = $('#dg').datagrid('getChanges', 'updated');
+        if (updated.length) {
+            $.ajax({
+                type: "POST",
+                url: "",
+                data: {"data": updated},
+                success: function(msg) {
+                    showMessage(msg.info);
+                    $('#dg').datagrid('reload');
+                }
+            });
+        } else {
+            showMessage("您未更新任何数据！");
+        }
+
+    }
+    function cancelEdit() {
+        //取消编辑
+        $('#dg').datagrid('cancelEdit', getIndex());
+    }
+
+    function showMessage(msg) {
+        $.messager.show({
+            title: "提示信息",
+            msg: msg,
+            timeout: 2000,
+            showType: 'show',
+            style: {
+                right: 0,
+                left: '',
+                top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                bottom: ''
+            }
+        });
+    }
+</script>
+</block>
+<block name="css">
+<style type="text/css">
+    #dg tr{
+        height:30px!important;
+    }
+    .datagrid-row {
+        height: 40px;
+    }
+    .datagrid-cell {
+        height:30px;
+    }
+    a.cwp-btn{
+        text-decoration: none;
+    }
+</style>
+</block>
+<block name="main">
+<div class="easyui-panel" title="视点管理" data-options="iconCls:'icon-camera2',collapsible:true" >
+    <div id="tb" style="padding:5px;height:auto">  
+        <div style="margin-bottom:5px">
+            <a href="/viewpoint/add/action/add" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="delIt();">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editIt();">编辑</a>  
+            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" plain="true" onclick="cancelEdit()">取消</a> 
+            <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveEdit();">保存</a>  
+        </div>
+        <div>
+            栏目: 
+            <input class="easyui-combotree" id="pid-combotree" data-options="url:'/video/getVideoCatForCombo.html',method:'get'" style="width:200px;">
+            频道: 
+            <input id="column-combo" class="easyui-combobox" >
+            标题:
+            <input id="name" type="text" value="" >
+            <a href="javascript:void(0)" id="search_button" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
+            <a href="javascript:void(0)" id="clear_button" class="easyui-linkbutton" iconCls="icon-trash-alt">清除</a>
+        </div>
+    </div>
+    <table id="dg">
+    </table>
+</div>
+<div id="dlg1" class="easyui-dialog" title="添加管理员" style="width:420px;height:290px;padding:10px"
+     data-options="
+     iconCls: 'icon-save',
+     toolbar: '#dlg-toolbar',
+     buttons: '#dlg-buttons',
+     closed: 'true'
+     ">
+    <div id='form_box'>
+        <form class='addbox' id="addCat_form" action="/focus/addCat.html" method="post">
+            <p><span class='form_span'>栏目名：</span><input type="text" id='name' name="name"/><span class="input_info">（*必填项）</span></p>
+            <p><span class='form_span'>描述：</span><textarea name="describe"></textarea></p>
+            <p style="margin-top:30px"><span class='form_span'></span><button class="btn btn-primary" type="submit">确认添加</button></p>
+        </form>
+    </div>
+</div>
+</block>

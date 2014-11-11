@@ -1,0 +1,96 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>第二届seven baby-资料管理</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/member/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/style.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/tab.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/uploadify.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-tab.js"></script>
+</block>
+<block name='body'>
+    <div id="head" class="yebg">
+        <div class="header">
+            <div class="top">
+                <include file="Member:top"/>
+            </div>
+        </div>
+        <div class="whitebg shadows" >
+            <div class="container clearfix">
+                <div class="user_top">
+                    <div class="user_images"><img src=<if condition="($user.avatar eq '0')">__PUBLIC__/Default.jpg<else/>{$user.avatar}</if> width="76" height="78" /></div>
+                    <p class="user_uname"><a href="#" style=" font-size:16px;">{$user.nickname|default="还没昵称"}</a></p>
+                    <p class="user_other"><a href="#image"  data-toggle="tab">修改头像</a>&nbsp;&nbsp;健康学分 {$user.credit} 分</p>
+                </div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .lsubnav li a.huodong {  background-position: -100px -560px;}
+        .lsubnav li a.huodong:hover, .lsubnav li a.select8 {  background-position: 0 -560px;}
+        .nav-tabs > li > a, .nav-pills > li > a{line-height: 14px;  margin-right: 2px;  padding-left: 30px;  padding-right: 30px; font-size:16px; }
+        .nav-tabs > li > a:hover{ color:#01913a}
+        .hd_posttitle{border-bottom:1px solid #ccc; height:25px; line-height:25px;}
+        .hd_number{overflow:hidden; float:right; padding-top:10px; height:75px; width:74px; text-align:center; border:1px solid #ccc; position:absolute; right:30px; color:#FFF;  background:#0f9243; border:2px solid #FFF; border-bottom:none;}
+        .hd_number_ic{background:#f3f3f3; margin-top:10px; width:50px; height:50px; display:inline-block; border:2px solid #FFF;ransform:rotate(-45deg); -ms-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); }
+        .sc{ padding:5px 10px;}
+        .piclist{ margin-top:20px; border-top:1px solid #ccc;}
+        .piclist li{ margin-top:20px; text-align:center; float:left; margin-left:25px; width:180px; height:210px;}
+    </style>
+    <div class="container clearfix" style=" margin-top:5px; background:#FFF;">
+        <div class="ucleft">
+            <ul class="lsubnav">
+                <li><a href="user.html"title="个人资料"></a></li>
+                <li><a href="#" class="rizhi" title="日志"></a></li>
+                <li><a href="#" class="xiangce" title="相册"></a></li>
+                <li><a href="#" class="liyans" title="留言"></a></li>
+                <li><a href="/member/index.html" class="isee"  title="我看过的"></a></li>
+                <li><a href="#" class="shoucang" title="我的收藏"></a></li>
+                <li><a href="#" class="xuefen" title="健康学分"></a></li>
+                <li><a href="/member/hd.html" class="huodong select8" title="活动"></a></li>
+            </ul>
+        </div>
+        <div class="ucright" style="position:relative;">
+            <div class="tab-content">
+                <p style=" font-size:18px; margin-top:10px;">健康卫视网活动列表</p>
+                <div class="tab-pane active" id="userinfo">
+                    <div class="tab_table" style=" position:relative;"> 
+                        <ul class="piclist clearfix">
+                            <empty name="join">
+                            <li><a href="/sevenbaby/index.html" target="_blank"><img src="__PUBLIC__/Images/home/member/hd_pic3.jpg" width="175" height="165" /> <span style=" line-height:20px;">第二届Seven baby</span></a></li>
+                                <else/>
+                            <li><a href="/member/hduif.html" target="_blank"><img src="__PUBLIC__/Images/home/member/hd_pic3.jpg" width="175" height="165" /> <span style=" line-height:20px;">第二届Seven baby</span></a></li>
+                            </empty>
+                            <li><a href="http://old.jkwshk.tv/shaizaocan/index.php" target="_blank"><img src="__PUBLIC__/Images/home/member/hd_pic2.jpg" width="175" height="165" /> <span style=" line-height:20px;">晒早餐</span></a></li>
+                            <li><a href="http://old.jkwshk.tv/bbs/sevenbaby/index.php" target="_blank"><img src="__PUBLIC__/Images/home/member/hd_pic1.jpg" width="175" height="165" /> <span style=" line-height:20px;">第一届Seven baby</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_end">
+            <div id="footer_econtent">
+                <p style=" margin-bottom:20px;" ><a href="/"><img src="__PUBLIC__/Images/home/member/small_logo.png" width="127" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#">关于我们</a> | <a href="/class.php?id=76" target="_blank" >广告服务</a> | <a href="/class.php?id=5" target="_blank">诚聘英才</a> | <a href="/view.php?id=104" target="_blank">保护隐私权</a> | <a href="/view.php?id=102" target="_blank" >免责条款</a> | <a href="/view.php?id=100" target="_blank">版权声明</a> | <a href="http://www.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><img src="__PUBLIC__/Images/home/member/small_logo_t.png" width="126" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a></p>
+                <br />
+                <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+                <br />
+                <p>健康卫视  健康新媒体 版权所有</p>
+                <br />
+                <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</block>
+

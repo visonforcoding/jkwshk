@@ -1,0 +1,264 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>用户中心</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/member/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/style.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/tab.css" rel="stylesheet" type="text/css">
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script type="text/javascript"  src="__PUBLIC__/js/home/member/bootstrap-dropdown.js" >/*下拉项*/</script>
+    <script type="text/javascript"  src="__PUBLIC__/js/home/member/bootstrap-tab.js" >/*可切换的标签页*/</script>
+    <script type="text/javascript" >
+        $(function() {
+            swf.call("upload");
+        });
+    </script>
+</block>
+<block name='style'>
+    <style>
+        .lsubnav li a.huodong {  background-position: -100px -560px;}
+        .lsubnav li a.huodong:hover, .lsubnav li a.select8 {  background-position: 0 -560px;}
+        .nav-tabs > li > a, .nav-pills > li > a{line-height: 14px;  margin-right: 2px;  padding-left: 30px;  padding-right: 30px; font-size:16px; }
+        .nav-tabs > li > a:hover{ color:#01913a}
+        .hd_posttitle{border-bottom:1px solid #ccc; height:25px; line-height:25px;}
+        .hd_number{overflow:hidden; float:right; padding-top:10px; height:75px; width:74px; text-align:center; border:1px solid #ccc; position:absolute; right:30px; color:#FFF;  background:#0f9243; border:2px solid #FFF; border-bottom:none;}
+        .hd_number_ic{background:#f3f3f3; margin-top:10px; width:50px; height:50px; display:inline-block; border:2px solid #FFF;ransform:rotate(-45deg); -ms-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); }
+        .sc{ padding:5px 10px;}
+        .piclist{ margin-top:20px; border-top:1px solid #ccc;}
+        .piclist li{ margin-top:20px; text-align:center; float:left; margin-left:25px; width:180px; height:210px;}
+    </style>
+</block>
+<block name='body'>
+    <div id="head" class="yebg">
+        <div class="header">
+            <div class="top">
+                <include file="Member:top"/>                   
+            </div>
+        </div>
+        <div class="whitebg shadows" >
+            <div class="container clearfix">
+                <div class="user_top">
+                    <div class="user_images"><img src=<if condition="($user.avatar eq '0')">__PUBLIC__/Default.jpg<else/>{$user.avatar}</if> width="76" height="78" /></div>
+                    <p class="user_uname"><a href="#" style=" font-size:16px;">{$user.nickname|default="还没昵称"}</a></p>
+                    <p class="user_other"><a href="#image"  data-toggle="tab">修改头像</a>&nbsp;&nbsp;健康学分 {$user.credit} 分</p>
+                </div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix" style=" margin-top:5px; background:#FFF;">
+        <div class="ucleft">
+            <ul class="lsubnav">
+                <li><a href="user.html" class="select" title="个人资料"></a></li>
+                <li><a href="#" class="rizhi" title="日志"></a></li>
+                <li><a href="#" class="xiangce" title="相册"></a></li>
+                <li><a href="#" class="liyans" title="留言"></a></li>
+                <li><a href="index.html" class="isee"  title="我看过的"></a></li>
+                <li><a href="#" class="shoucang" title="我的收藏"></a></li>
+                <li><a href="#" class="xuefen" title="健康学分"></a></li>
+                <li><a href="/member/hd.html" class="huodong" title="活动"></a></li>
+            </ul>
+        </div>
+        <div class="ucright">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#userinfo " data-toggle="tab">基本信息</a></li>
+                <li><a href="#image" data-toggle="tab">修改头像</a></li>
+                <li><a href="#education" data-toggle="tab">教育信息</a></li>
+                <li><a href="#career" data-toggle="tab">职业信息</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="userinfo">
+                    <div class="tab_table">
+                        <form action="/member/info.html" method="post">
+                            <p>
+                                <label>昵称：</label>
+                                <input name="nickname" value="{$user.nickname}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>真实姓名：</label>
+                                <input name="truename" value="{$user.truename}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>性别：</label>
+                            <if condition="$user.sex eq '男'">
+                                <input type="radio" name="sex" value="男" checked  id="RadioGroup1_0" />
+                                <else />
+                                <input type="radio" name="sex" value="男"  id="RadioGroup1_0" />
+                            </if>
+                            男
+                            <if condition="$user.sex eq '女'">
+                                <input type="radio" name="sex" value="女" checked  id="RadioGroup1_1" />
+                                <else />
+                                <input type="radio" name="sex" value="女"  id="RadioGroup1_1" />
+                            </if>
+                            女</p>
+                            <!--                                <p>
+                                                                <label>常用邮箱：</label>
+                                                                <input name=""  class="winput" type="text" />
+                                                            </p>-->
+                            <p>
+                                <label>生日：</label>
+                                <input name="birthday" class="winput" type="Date pickers" />
+                            <p>
+                                <label>居住城市：</label>
+                                <select name="">
+                                    <option>省</option>
+                                </select>
+                                <select name="city">
+                                    <option>市</option>
+                                </select>
+                                <select name="">
+                                    <option>地级市</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>通讯地址：</label>
+                                <input name="address" value="{$user.address}" class="winput" style=" width:350px;" type="text" />
+                            </p>
+                            <p>
+                                <label>手机号：</label>
+                                <input name="phone" value="{$user.phone}" class="winput" style=" width:350px;" type="number" />
+                            </p>
+                            <p>
+                                <label>邮编：</label>
+                                <input name="zipcode" value="{$user.zipcode}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>签名：</label>
+                                <textarea name="signer"  cols="" rows="" class="bigwinputt">{$user.signer}</textarea>
+                            </p>
+                            <p>
+                                <input  type="submit" value="保存" class="savebtn" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="image">
+                    <div style="width:800px;margin: 0 auto;">
+                        <!--<h1 style="text-align:center">富头像上传编辑器演示</h1>-->
+                        <div>
+                            <p id="swfContainer"> 本组件需要安装Flash Player后才可使用，请从 <a href="http://www.adobe.com/go/getflashplayer">这里</a> 下载安装。 </p>
+                        </div>
+                        <!--<button type="button" id="upload">自定义上传按钮</button>-->
+                    </div>
+                    <script type="text/javascript">
+                        swfobject.addDomLoadEvent(function() {
+                            var swf = new fullAvatarEditor("swfContainer", {
+                                id: 'swf',
+                                upload_url: '/member/upload.html', //上传处理地址
+                                src_url: "{$user.sourceavatar|default='/Public/Default.jpg'}",
+                                src_upload: 1, //是否默认上传原图
+                                button_cancel_text: '重新选择图片上传'
+                            }, function(msg) {
+                                switch (msg.code)
+                                {
+                                    case 1 :
+                                        /*alert("页面成功加载了组件！");*/break;
+                                    case 2 :
+                                        /*alert("已成功加载默认指定的图片到编辑面板。");*/break;
+                                    case 3 :
+                                        if (msg.type == 0)
+                                        {
+                                            alert("摄像头已准备就绪且用户已允许使用。");
+                                        }
+                                        else if (msg.type == 1)
+                                        {
+                                            alert("摄像头已准备就绪但用户未允许使用！");
+                                        }
+                                        else
+                                        {
+                                            alert("摄像头被占用！");
+                                        }
+                                        break;
+                                    case 5 :
+                                        if (msg.type == 0)
+                                        {
+                                            if (msg.content.sourceUrl)
+                                            {
+                                                alert("头像已成功保存至服务器，url为：\n" + 　msg.content.sourceUrl);
+                                            }
+                                            alert("头像已成功保存至服务器，url为：\n" + msg.content.avatarUrls.join("\n"));
+                                        }
+                                        break;
+                                }
+                            }
+                            );
+                            document.getElementById("upload").onclick = function() {
+                                swf.call("upload");
+                            };
+                        });
+                    </script> 
+                </div>
+                <div class="tab-pane" id="education">
+                    <div class="tab_table">
+                        <form action="/member/educate.html" method="post">
+                            <p style=" margin-left:30px;"> 请填写您的教育信息，将会结识更多好友。</p>
+                            <p>
+                                <label>学历：</label>
+                                <select name="education">
+                                    <option value="高中" <if condition="$user.education eq '高中'">selected="selected"</if>>高中</option>
+                                    <option value="专科" <if condition="$user.education eq '专科'">selected="selected"</if>>专科</option>
+                                    <option value="本科" <if condition="$user.education eq '本科'">selected="selected"</if>>本科</option>
+                                    <option value="硕士" <if condition="$user.education eq '硕士'">selected="selected"</if>>硕士</option>
+                                    <option value="博士" <if condition="$user.education eq '博士'">selected="selected"</if>>博士</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>学校名称：</label>
+                                <input name="school" value="{$user.school}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>院系：</label>
+                                <input name="department" value="{$user.department}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>入学年份：</label>
+                                <input name="schooltime" value="{$user.schooltime}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <input  type="submit" value="保存" class="savebtn" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="career">
+                    <div class="tab_table">
+                        <form action="/member/work.html" method="post">
+                            <p style=" margin-left:30px;"> 请填写您的教育信息，将会结识更多好友。</p>
+                            <p>
+                                <label>单位名称：</label>
+                                <input name="company" value="{$user.company}" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>工作年份：</label>
+                                <input name="worktime" value="{$user.worktime}" class="winput" type="text" />
+                            <p>
+                                <input  type="submit" value="保存" class="savebtn" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_end">
+            <div id="footer_econtent">
+                <p style=" margin-bottom:20px;" ><a href="/"><img src="__PUBLIC__/Images/home/member/small_logo.png" width="127" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#">关于我们</a> | <a href="/class.php?id=76" target="_blank" >广告服务</a> | <a href="/class.php?id=5" target="_blank">诚聘英才</a> | <a href="/view.php?id=104" target="_blank">保护隐私权</a> | <a href="/view.php?id=102" target="_blank" >免责条款</a> | <a href="/view.php?id=100" target="_blank">版权声明</a> | <a href="http://www.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><img src="__PUBLIC__/Images/home/member/small_logo_t.png" width="126" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a></p>
+                <br />
+                <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+                <br />
+                <p>健康卫视  健康新媒体 版权所有</p>
+                <br />
+                <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</block>>

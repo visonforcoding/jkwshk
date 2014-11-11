@@ -1,0 +1,2621 @@
+[ 2014-09-04T14:35:48+08:00 ] 192.168.0.105 /css/index.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:35:48+08:00 ] 192.168.0.105 /head.js
+ERR: 无法加载模块:Head.js
+
+[ 2014-09-04T14:35:48+08:00 ] 192.168.0.105 /css/global.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:35:48+08:00 ] 192.168.0.105 /link.js
+ERR: 无法加载模块:Link.js
+
+[ 2014-09-04T14:35:48+08:00 ] 192.168.0.105 /foot.js
+ERR: 无法加载模块:Foot.js
+
+[ 2014-09-04T14:37:51+08:00 ] 192.168.0.105 /css/index.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:37:51+08:00 ] 192.168.0.105 /link.js
+ERR: 无法加载模块:Link.js
+
+[ 2014-09-04T14:37:51+08:00 ] 192.168.0.105 /head.js
+ERR: 无法加载模块:Head.js
+
+[ 2014-09-04T14:37:51+08:00 ] 192.168.0.105 /css/global.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:37:51+08:00 ] 192.168.0.105 /foot.js
+ERR: 无法加载模块:Foot.js
+
+[ 2014-09-04T14:38:29+08:00 ] 192.168.0.105 /css/global.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:38:29+08:00 ] 192.168.0.105 /css/index.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:39:36+08:00 ] 192.168.0.105 /css/index.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:39:38+08:00 ] 192.168.0.105 /css/index.css
+ERR: 无法加载模块:Css
+
+[ 2014-09-04T14:45:44+08:00 ] 192.168.0.105 /about.html
+ERR: 无法加载模块:About
+
+[ 2014-09-04T14:45:47+08:00 ] 192.168.0.105 /about.html
+ERR: 无法加载模块:About
+
+[ 2014-09-04T14:45:50+08:00 ] 192.168.0.105 /about.html
+ERR: 无法加载模块:About
+
+[ 2014-09-04T14:52:34+08:00 ] 192.168.0.105 /news.html
+ERR: 无法加载模块:News
+
+[ 2014-09-04T15:09:26+08:00 ] 192.168.0.105 /index_index.html
+ERR: 无法加载模块:IndexIndex
+
+[ 2014-09-04T15:26:28+08:00 ] 192.168.0.105 /index_index.html
+ERR: 无法加载模块:IndexIndex
+
+[ 2014-09-04T15:26:31+08:00 ] 192.168.0.105 /index_index.html
+ERR: 无法加载模块:IndexIndex
+
+[ 2014-09-04T15:26:33+08:00 ] 192.168.0.105 /index_index.html
+ERR: 无法加载模块:IndexIndex
+
+[ 2014-09-04T15:26:34+08:00 ] 192.168.0.105 /index_index.html
+ERR: 无法加载模块:IndexIndex
+
+[ 2014-09-04T16:19:37+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:19:37+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:22:32+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:22:32+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:42:09+08:00 ] 192.168.0.105 /Public/Images/corp/css/global.css
+ERR: 无法加载模块:Public
+
+[ 2014-09-04T16:42:09+08:00 ] 192.168.0.105 /Public/Images/corp/css/index.css
+ERR: 无法加载模块:Public
+
+[ 2014-09-04T16:44:01+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:44:01+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:44:18+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:44:18+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:48:46+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:48:46+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:49:48+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:49:48+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:49:54+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:49:54+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:52:17+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:52:17+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:55:03+08:00 ] 192.168.0.105 /index/anchorsView.html
+ERR: 非法操作:anchorsview
+
+[ 2014-09-04T16:56:31+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T16:56:31+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:03:24+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:03:24+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:03:35+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:03:35+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:03:38+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:03:38+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:03:38+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:03:38+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:06:33+08:00 ] 192.168.0.105 /Public/Js/Base.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:06:33+08:00 ] 192.168.0.105 /Public/Js/Think/ThinkAjax.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:06:33+08:00 ] 192.168.0.105 /Public/Js/common.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:06:45+08:00 ] 192.168.0.105 /Index/index
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028952s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000505s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000350s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001524s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000436s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2014-09-04T17:07:52+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003719s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.005194s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003972s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 0,5   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000659s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000373s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T17:07:53+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004029s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004364s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000551s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000661s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000458s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000188s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000687s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000356s ]
+
+[ 2014-09-04T17:07:53+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004173s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.005574s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000580s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000740s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000493s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000340s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000657s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000224s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000234s ]
+
+[ 2014-09-04T17:07:55+08:00 ] 192.168.0.105 /ckeditor/ckeditor.js
+ERR: 无法加载模块:Ckeditor
+
+[ 2014-09-04T17:07:55+08:00 ] 192.168.0.105 /ckfinder/ckfinder.js
+ERR: 无法加载模块:Ckfinder
+
+[ 2014-09-04T17:13:17+08:00 ] 192.168.0.105 /ckfinder/ckfinder.js
+ERR: 无法加载模块:Ckfinder
+
+[ 2014-09-04T17:13:17+08:00 ] 192.168.0.105 /ckeditor/ckeditor.js
+ERR: 无法加载模块:Ckeditor
+
+[ 2014-09-04T17:13:46+08:00 ] 192.168.0.105 /ckeditor/ckeditor.js
+ERR: 无法加载模块:Ckeditor
+
+[ 2014-09-04T17:13:46+08:00 ] 192.168.0.105 /ckfinder/ckfinder.js
+ERR: 无法加载模块:Ckfinder
+
+[ 2014-09-04T17:14:58+08:00 ] 192.168.0.105 /ckeditor/ckeditor.js
+ERR: 无法加载模块:Ckeditor
+
+[ 2014-09-04T17:14:58+08:00 ] 192.168.0.105 /ckfinder/ckfinder.js
+ERR: 无法加载模块:Ckfinder
+
+[ 2014-09-04T17:17:23+08:00 ] 192.168.0.105 /ajax/submit/
+SQL: 调试的SQL：UPDATE `db_video_cat` SET `keywords`='生命起源,生命轨迹,探索天地奥秘,生命纪录片,自然现象,大千世界,生命探秘',`description`='栏目以人为本，纵观大千世界，探知天地奥秘，寻访人类文明，纪录生命轨迹，崇尚健康理念，追求真善美。不一样的视野，不一样的镜头，走进生命源头。每周一个专题，以纪录片的形式，一连七天，讲述一个大题材，每天一个小故事，溯根求源，回归本真。\r\n',`pid`=1,`name`='健康全纪录',`zhuanjino`=0,`coverimage`='/Public/upfile/20111223131323.jpg',`programtime`='周一至周五 21:30-22:15',`logo`='/Public/ueditor/php/upload1//20140610/1402404644906593.png',`tvlogo`='/Public/ueditor/php/upload1//20140617/1402995165691090.jpg',`isopen`=1,`updatetime`='2014-09-04 17:17:23',`type`=null,`star`=null WHERE ( `id` = 7 )
+
+[ 2014-09-04T17:17:26+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003897s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004077s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003588s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 0,5   [ RunTime:0.000260s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000629s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000418s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000136s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T17:17:26+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.007280s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004396s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.002099s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000874s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000496s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000362s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000488s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000213s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000671s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000322s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000334s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000200s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000244s ]
+
+[ 2014-09-04T17:17:26+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004178s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004110s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000875s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000812s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000501s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000344s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000403s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000558s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000614s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000175s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000138s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000218s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000138s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000206s ]
+
+[ 2014-09-04T17:18:07+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004221s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004422s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003990s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000453s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 0,5   [ RunTime:0.000309s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '91' )  [ RunTime:0.000227s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '92' )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0017' ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '85' )  [ RunTime:0.000179s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '86' )  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '245' )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0161' ) LIMIT 1   [ RunTime:0.000174s ]
+
+[ 2014-09-04T17:18:17+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004204s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003698s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003697s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 0,5   [ RunTime:0.000264s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000642s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000465s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000854s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000431s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T17:18:18+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004045s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004168s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003906s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 0,5   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '91' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '92' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0017' ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '85' )  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '86' )  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '245' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.001179s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000728s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0161' ) LIMIT 1   [ RunTime:0.000160s ]
+
+[ 2014-09-04T17:18:25+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004541s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004325s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003666s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 5,5   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '48' )  [ RunTime:0.000215s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '49' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '51' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0156' ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '52' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0155' ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '53' )  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000135s ]
+
+[ 2014-09-04T17:18:28+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003746s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003962s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 10,5   [ RunTime:0.000284s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '56' )  [ RunTime:0.000198s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '55' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '58' )  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '59' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '60' )  [ RunTime:0.000175s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000170s ]
+
+[ 2014-09-04T17:18:29+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003819s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003502s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 15,5   [ RunTime:0.000264s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '61' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '62' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '63' )  [ RunTime:0.000170s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '64' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0152' ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '65' )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T17:18:31+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004021s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003626s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003755s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 20,5   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '66' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0017' ) LIMIT 1   [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '67' )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0017' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '68' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0153' ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '69' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000123s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '70' )  [ RunTime:0.000144s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000123s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0157' ) LIMIT 1   [ RunTime:0.000136s ]
+
+[ 2014-09-04T17:18:32+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003779s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004304s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003723s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 25,5   [ RunTime:0.000298s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '73' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0153' ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '74' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '81' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '82' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '83' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000137s ]
+
+[ 2014-09-04T17:18:33+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004231s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004596s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003638s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 30,5   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '93' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0161' ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '94' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0153' ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '95' )  [ RunTime:0.000179s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '84' )  [ RunTime:0.000145s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0153' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '96' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T17:18:35+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004200s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004751s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003856s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000454s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 35,5   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '97' )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0017' ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '98' )  [ RunTime:0.000200s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0015' ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '100' )  [ RunTime:0.000181s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '101' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0152' ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '102' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000137s ]
+
+[ 2014-09-04T17:18:40+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003856s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003713s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003459s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 40,5   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '103' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '104' )  [ RunTime:0.000133s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0153' ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '105' )  [ RunTime:0.000129s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000108s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000110s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '106' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '107' )  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0153' ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0154' ) LIMIT 1   [ RunTime:0.000148s ]
+
+[ 2014-09-04T17:18:42+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003994s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004085s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000558s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 45,5   [ RunTime:0.000315s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '108' )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '109' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0152' ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '110' )  [ RunTime:0.000213s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '111' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '115' )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0017' ) LIMIT 1   [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000141s ]
+
+[ 2014-09-04T17:18:45+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004299s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004086s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003805s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `zhuanjino` = '1' ) LIMIT 50,5   [ RunTime:0.000284s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '116' )  [ RunTime:0.000170s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '117' )  [ RunTime:0.000153s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000317s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '119' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0021' ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '121' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0016' ) LIMIT 1   [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '123' )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0020' ) LIMIT 1   [ RunTime:0.000132s ]
+
+[ 2014-09-04T17:27:20+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004068s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003526s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000228s ]
+
+[ 2014-09-04T17:27:20+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004312s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.005148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000754s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000660s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000359s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000140s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000277s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000588s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000170s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000197s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000129s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000229s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000190s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000353s ]
+
+[ 2014-09-04T17:27:20+08:00 ] 192.168.0.105 /News/getNews.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003826s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\NewsAction.class.php 第 329 行.
+SQL: SHOW COLUMNS FROM `db_news_cat` [ RunTime:0.004552s ]
+SQL: SHOW COLUMNS FROM `db_news` [ RunTime:0.005182s ]
+SQL: SELECT COUNT(*) AS tp_count FROM db_news_cat c  JOIN db_news n ON n.pid=c.id LIMIT 1   [ RunTime:0.001187s ]
+SQL: SELECT c.id AS pid,c.name AS gname,n.id AS id,n.id AS id,n.pid AS pid,n.pid2 AS pid2,n.title AS title,n.shorttitle AS shorttitle,n.flags AS flags,n.click AS click,n.writer AS writer,n.source AS source,n.litpic AS litpic,n.sortrank AS sortrank,n.property AS property,n.pubdate AS pubdate,n.time AS time,n.keywords AS keywords,n.description AS description,n.lastpost AS lastpost,n.goodpost AS goodpost,n.badpost AS badpost,n.notpost AS notpost,n.uname AS uname,n.upuname AS upuname,n.type AS type,n.tagid AS tagid,n.thread AS thread,n.isopen AS isopen,n.info AS info,n.adminid AS adminid FROM db_news_cat c  JOIN db_news n ON n.pid=c.id ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.009060s ]
+
+[ 2014-09-04T17:27:21+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004031s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004032s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000635s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000709s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000405s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000271s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000170s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000152s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000596s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000212s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000222s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000137s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000150s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000181s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000222s ]
+
+[ 2014-09-04T17:34:46+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:34:46+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:34:46+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:34:46+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:43:38+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:43:38+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:44:29+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:44:29+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:45:48+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:45:48+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:47:23+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:47:23+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:48:03+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:48:03+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:48:03+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:48:03+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:48:42+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:48:42+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:48:42+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:48:42+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:52:58+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:52:58+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:06+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:06+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:06+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:53:06+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:53:16+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:16+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:16+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:53:16+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:53:26+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:26+08:00 ] 192.168.0.105 /index/js/jquery1.10.2.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:53:26+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:53:26+08:00 ] 192.168.0.105 /index/js/about.js
+ERR: 非法操作:js
+
+[ 2014-09-04T17:55:00+08:00 ] 192.168.0.105 /index/css/global.css
+ERR: 非法操作:css
+
+[ 2014-09-04T17:55:00+08:00 ] 192.168.0.105 /index/css/index.css
+ERR: 非法操作:css
+
+[ 2014-09-04T18:04:02+08:00 ] 192.168.0.105 /about.html
+ERR: 无法加载模块:About
+
+[ 2014-09-04T18:20:33+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004396s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003972s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000332s ]
+
+[ 2014-09-04T18:20:33+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003676s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004611s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000515s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000595s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000406s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000142s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000209s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000629s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000142s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000205s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000191s ]
+
+[ 2014-09-04T18:20:33+08:00 ] 192.168.0.105 /host/getHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003856s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.004321s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\HostAction.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003768s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_host` LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT * FROM `db_host` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.000350s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '1' ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T18:20:34+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004820s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.008490s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000676s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000676s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000422s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000334s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000142s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000136s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000136s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000139s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000674s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000144s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000139s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000196s ]
+
+[ 2014-09-04T18:41:12+08:00 ] 192.168.0.105 /host/doAddHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004847s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.003683s ]
+SQL: INSERT INTO `db_host` (`name`,`program`,`type`,`info`,`message`,`photo`,`color`,`blood`,`xingge`,`style`,`hobby`,`microblog`,`birthday`,`constellation`,`isopen`,`addtime`) VALUES ('王大锤','38','2','<p>test<br/></p>','tesat','/Public/ueditor/php/upload1//20140812/1407831495514057.jpg','5','4','4','444','3','23','2014-09-12','5',1,'2014-09-04 18:41:12') [ RunTime:0.000347s ]
+
+[ 2014-09-04T18:41:18+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004622s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003682s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000393s ]
+
+[ 2014-09-04T18:41:18+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003811s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003862s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000474s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000595s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000130s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000203s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000124s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000562s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000221s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000205s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000139s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000212s ]
+
+[ 2014-09-04T18:41:18+08:00 ] 192.168.0.105 /host/getHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003750s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.003968s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\HostAction.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003304s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_host` LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_host` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.000359s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '1' ) LIMIT 1   [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T18:41:18+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004332s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004586s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000631s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000808s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000570s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000405s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000175s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000687s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000302s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000198s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000231s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000162s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000228s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000162s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000225s ]
+
+[ 2014-09-04T18:48:27+08:00 ] 192.168.0.105 /host/doAddHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004085s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.004182s ]
+SQL: UPDATE `db_host` SET `name`='王大锤',`program`='38',`type`='2',`info`='<p>test<br/></p>',`message`='tesat',`photo`='/Public/ueditor/php/upload1//20140812/1407831495514057.jpg',`color`='5',`blood`='4',`xingge`='4',`style`='444',`hobby`='3',`microblog`='23',`birthday`='2014-09-12',`constellation`='5',`isopen`=1,`updatetime`='2014-09-04 18:48:27' WHERE ( id = '8255' ) [ RunTime:0.000461s ]
+
+[ 2014-09-04T18:48:31+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003662s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003590s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000268s ]
+
+[ 2014-09-04T18:48:31+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003588s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003846s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000599s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000612s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000378s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000553s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000122s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000201s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000189s ]
+
+[ 2014-09-04T18:48:31+08:00 ] 192.168.0.105 /host/getHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003884s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.004405s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\HostAction.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_host` LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT * FROM `db_host` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.000405s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '1' ) LIMIT 1   [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T18:48:31+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004347s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003665s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000470s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000700s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000426s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000303s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000137s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000665s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000242s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000133s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000198s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000267s ]
+
+[ 2014-09-04T18:48:38+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004186s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003521s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000251s ]
+
+[ 2014-09-04T18:48:38+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004235s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003595s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000514s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000723s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000383s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000145s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000650s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000205s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000175s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000201s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000216s ]
+
+[ 2014-09-04T18:48:38+08:00 ] 192.168.0.105 /host/getHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004127s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.003978s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\HostAction.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_host` LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_host` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.000391s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '1' ) LIMIT 1   [ RunTime:0.000125s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T18:48:38+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003878s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004037s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000548s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000647s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000257s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000222s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000274s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000680s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000235s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000138s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000233s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000233s ]
+
+[ 2014-09-04T18:51:25+08:00 ] 192.168.0.105 /host/doAddHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004045s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.003645s ]
+SQL: UPDATE `db_host` SET `name`='王大锤',`program`='38',`type`='2',`info`='<p>test<br/></p>',`message`='tesat',`photo`='/Public/ueditor/php/upload1//20140812/1407831495514057.jpg',`tvsmpic`='/Public/ueditor/php/upload1//20140702/1404274626124189.jpg',`tvbgpic`='/Public/ueditor/php/upload1//20140702/1404270376117704.jpg',`color`='5',`blood`='4',`xingge`='4',`style`='444',`hobby`='3',`microblog`='23',`birthday`='2014-09-12',`constellation`='5',`isopen`=1,`updatetime`='2014-09-04 18:51:25' WHERE ( id = '8255' ) [ RunTime:0.000330s ]
+
+[ 2014-09-04T18:51:29+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004005s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.004151s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000355s ]
+
+[ 2014-09-04T18:51:29+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003945s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003523s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000459s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000588s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000334s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000245s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000153s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000144s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000136s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000571s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000127s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000212s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000141s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000124s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000184s ]
+
+[ 2014-09-04T18:51:30+08:00 ] 192.168.0.105 /Hospital/getHosp.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003848s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `db_hospital` [ RunTime:0.003940s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\HospitalAction.class.php 第 183 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `db_hospital` LIMIT 1   [ RunTime:0.000267s ]
+SQL: SELECT * FROM `db_hospital` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.000392s ]
+
+[ 2014-09-04T18:51:30+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003738s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003852s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000503s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000601s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000360s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000153s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000584s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000133s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000163s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000130s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000130s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000163s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000124s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000185s ]
+
+[ 2014-09-04T18:51:32+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004315s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.005011s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000335s ]
+
+[ 2014-09-04T18:51:33+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004269s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003959s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000583s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000626s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000138s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000563s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000145s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000130s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000216s ]
+
+[ 2014-09-04T18:51:33+08:00 ] 192.168.0.105 /host/getHost.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003861s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `db_host` [ RunTime:0.003934s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\HostAction.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003910s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_host` LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_host` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.000391s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '1' ) LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '2' ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0' ) LIMIT 1   [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T18:51:33+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003952s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004035s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000571s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000702s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000312s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000245s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000152s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000603s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000227s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000229s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000227s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000260s ]
+
+[ 2014-09-04T19:28:56+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004028s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003762s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003474s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 0,5   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000691s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000363s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000614s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T19:28:57+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003633s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003593s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000549s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000700s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000209s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000129s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000551s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000221s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000150s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000219s ]
+
+[ 2014-09-04T19:28:59+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004211s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003289s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000235s ]
+
+[ 2014-09-04T19:29:00+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003803s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003984s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000547s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000604s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000170s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000257s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000291s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000668s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000218s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000179s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000277s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000244s ]
+
+[ 2014-09-04T19:29:00+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003951s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.005288s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 469 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003707s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.024168s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:29:01+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003818s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003732s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000499s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000651s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000378s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000175s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000828s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000226s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000220s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000211s ]
+
+[ 2014-09-04T19:34:42+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003621s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003624s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 0,5   [ RunTime:0.000271s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000635s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000387s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000243s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T19:34:43+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003855s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003571s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000496s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000623s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000147s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000144s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000201s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000145s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000694s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000203s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000235s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000152s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000250s ]
+
+[ 2014-09-04T19:34:43+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003796s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004007s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000529s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000658s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000413s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000312s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000230s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000682s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000208s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000240s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000211s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000181s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000240s ]
+
+[ 2014-09-04T19:34:46+08:00 ] 192.168.0.105 /ckfinder/ckfinder.js
+ERR: 无法加载模块:Ckfinder
+
+[ 2014-09-04T19:34:46+08:00 ] 192.168.0.105 /ckeditor/ckeditor.js
+ERR: 无法加载模块:Ckeditor
+
+[ 2014-09-04T19:46:17+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003877s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003282s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000255s ]
+
+[ 2014-09-04T19:46:17+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004238s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003801s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000485s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000609s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000354s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000150s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000150s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000149s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000229s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000602s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000349s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000163s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000183s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000244s ]
+
+[ 2014-09-04T19:46:18+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003819s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.004367s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 470 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.004233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000219s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.023372s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:46:18+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003941s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003488s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000481s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000625s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000347s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000213s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000159s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000634s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000190s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000153s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000192s ]
+
+[ 2014-09-04T19:46:26+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003751s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003622s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 470 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003406s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 10,10   [ RunTime:0.023909s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0159' ) LIMIT 1   [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:46:41+08:00 ] 192.168.0.105 /video/doAddVideo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003796s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003934s ]
+NOTIC: [8] Undefined index: content E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 390 行.
+SQL: UPDATE `db_video` SET `subtitle`='产后阴道松弛怎么办',`pid`='275',`type`='0013',`photo`='http://static.polyv.net/uimage/0/0bb65aeb75/f/0bb65aeb755be375b6f3fc80e7e3fedf_7_b.jpg',`video`='http://player.polyv.net/videos/0bb65aeb755be375b6f3fc80e7e3fedf_0.swf',`property`='',`keywords`='阴道，产后修复，产妇',`description`='女人结婚生子看似是顺理成章的事情。然而生孩子可不是这么简单的事，先不说孕期有多辛苦。单是这怀孕生子所带来的风险，就足以让一些女性不想要孩子了。比如说产后的阴道出现的感染、松弛，就让女性痛苦不已，甚至还会影响到家庭生活。如何预防感染，拯救松弛成为众多新妈妈们较为关注的问题。  ',`videotime`='00:32:59',`actor`='',`reporter`='',`isopen`=1,`content`=null,`title`='产后阴道修复',`updatetime`='2014-09-04 19:46:41' WHERE ( id = '9033' ) [ RunTime:0.000409s ]
+
+[ 2014-09-04T19:46:44+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003904s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003448s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000235s ]
+
+[ 2014-09-04T19:46:44+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003819s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003510s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000494s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000647s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000400s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000162s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000740s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000219s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000235s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000163s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000221s ]
+
+[ 2014-09-04T19:46:45+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003982s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003795s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 470 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003592s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.023064s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:46:45+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004054s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004033s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000530s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000649s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000402s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000388s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000641s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000208s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000144s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000133s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000207s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000196s ]
+
+[ 2014-09-04T19:46:51+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003813s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003883s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 470 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 10,10   [ RunTime:0.023933s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0159' ) LIMIT 1   [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000125s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000125s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:47:12+08:00 ] 192.168.0.105 /tags/showTags.html?_=1409831214538
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004071s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `db_tags` [ RunTime:0.003608s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_tags` WHERE ( isopen = '1' ) LIMIT 1   [ RunTime:0.018002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011516s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000410s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001723s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000525s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2014-09-04T19:47:12+08:00 ] 192.168.0.105 /tags/getTags/page/1.html?_=1409831214539
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003880s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `db_tags` [ RunTime:0.003714s ]
+SQL: SELECT * FROM `db_tags` WHERE ( isopen = '1' ) LIMIT 0,200   [ RunTime:0.000729s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018504s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000389s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000342s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000482s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2014-09-04T19:51:32+08:00 ] 192.168.0.105 /video/doAddVideo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004426s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003732s ]
+NOTIC: [8] Undefined index: content E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 390 行.
+SQL: UPDATE `db_video` SET `subtitle`='产后阴道松弛怎么办',`pid`='275',`type`='0013',`photo`='http://static.polyv.net/uimage/0/0bb65aeb75/f/0bb65aeb755be375b6f3fc80e7e3fedf_7_b.jpg',`video`='http://player.polyv.net/videos/0bb65aeb755be375b6f3fc80e7e3fedf_0.swf',`property`='',`keywords`='阴道，产后修复，产妇',`description`='女人结婚生子看似是顺理成章的事情。然而生孩子可不是这么简单的事，先不说孕期有多辛苦。单是这怀孕生子所带来的风险，就足以让一些女性不想要孩子了。比如说产后的阴道出现的感染、松弛，就让女性痛苦不已，甚至还会影响到家庭生活。如何预防感染，拯救松弛成为众多新妈妈们较为关注的问题。  ',`videotime`='00:32:59',`reporter`='',`isopen`=1,`content`=null,`title`='产后阴道修复',`updatetime`='2014-09-04 19:51:32' WHERE ( id = '9033' ) [ RunTime:0.000353s ]
+
+[ 2014-09-04T19:51:36+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003792s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003588s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000237s ]
+
+[ 2014-09-04T19:51:37+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003955s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003863s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000569s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000682s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000370s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000146s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000146s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000678s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000240s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000162s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000226s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000153s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000151s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000285s ]
+
+[ 2014-09-04T19:51:37+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004038s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.004742s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 470 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000139s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.023067s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000116s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:51:37+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004399s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004062s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000500s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000628s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000387s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000163s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000169s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000370s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000152s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000668s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000159s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000188s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000228s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000152s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000185s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000142s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000201s ]
+
+[ 2014-09-04T19:51:41+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003739s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.004032s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 470 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000173s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 10,10   [ RunTime:0.023981s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0159' ) LIMIT 1   [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:53:03+08:00 ] 192.168.0.105 /video/doAddVideo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003887s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003682s ]
+SQL: UPDATE `db_video` SET `subtitle`='产后阴道松弛怎么办',`pid`='275',`type`='0013',`photo`='http://static.polyv.net/uimage/0/0bb65aeb75/f/0bb65aeb755be375b6f3fc80e7e3fedf_7_b.jpg',`video`='http://player.polyv.net/videos/0bb65aeb755be375b6f3fc80e7e3fedf_0.swf',`property`='',`keywords`='阴道，产后修复，产妇',`description`='女人结婚生子看似是顺理成章的事情。然而生孩子可不是这么简单的事，先不说孕期有多辛苦。单是这怀孕生子所带来的风险，就足以让一些女性不想要孩子了。比如说产后的阴道出现的感染、松弛，就让女性痛苦不已，甚至还会影响到家庭生活。如何预防感染，拯救松弛成为众多新妈妈们较为关注的问题。  ',`videotime`='00:32:59',`reporter`='',`isopen`=1,`content`='',`title`='产后阴道修复',`updatetime`='2014-09-04 19:53:03' WHERE ( id = '9033' ) [ RunTime:0.000286s ]
+
+[ 2014-09-04T19:54:21+08:00 ] 192.168.0.105 /video/doAddVideo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004653s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.004893s ]
+SQL: UPDATE `db_video` SET `subtitle`='产后阴道松弛怎么办',`pid`='275',`type`='0013',`photo`='http://static.polyv.net/uimage/0/0bb65aeb75/f/0bb65aeb755be375b6f3fc80e7e3fedf_7_b.jpg',`video`='http://player.polyv.net/videos/0bb65aeb755be375b6f3fc80e7e3fedf_0.swf',`property`='',`keywords`='阴道，产后修复，产妇',`description`='女人结婚生子看似是顺理成章的事情。然而生孩子可不是这么简单的事，先不说孕期有多辛苦。单是这怀孕生子所带来的风险，就足以让一些女性不想要孩子了。比如说产后的阴道出现的感染、松弛，就让女性痛苦不已，甚至还会影响到家庭生活。如何预防感染，拯救松弛成为众多新妈妈们较为关注的问题。  ',`videotime`='00:32:59',`star`='110',`reporter`='',`isopen`=1,`content`='',`title`='产后阴道修复',`updatetime`='2014-09-04 19:54:21' WHERE ( id = '9033' ) [ RunTime:0.000484s ]
+
+[ 2014-09-04T19:54:30+08:00 ] 192.168.0.105 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003667s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003367s ]
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000263s ]
+
+[ 2014-09-04T19:54:31+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003897s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004363s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000597s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000667s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000357s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000601s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000202s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000209s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000158s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000160s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000191s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000225s ]
+
+[ 2014-09-04T19:54:31+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004034s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003783s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 471 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.022955s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000469s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:54:31+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003847s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003628s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000530s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000595s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000129s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000126s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000384s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000223s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000615s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000190s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000135s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000168s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000150s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000193s ]
+
+[ 2014-09-04T19:54:33+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003827s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003705s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 471 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003496s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 10,10   [ RunTime:0.025469s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0159' ) LIMIT 1   [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:54:36+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004007s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003685s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 471 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003341s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 0,10   [ RunTime:0.022981s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0019' ) LIMIT 1   [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T19:54:38+08:00 ] 192.168.0.105 /video/getVideos.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003679s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003720s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 471 行.
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003340s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video` LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `db_video` ORDER BY `addtime` desc LIMIT 10,10   [ RunTime:0.025110s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0159' ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0012' ) LIMIT 1   [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0014' ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0163' ) LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '0013' ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\CommonModel.class.php 第 148 行.
+
+[ 2014-09-04T20:06:10+08:00 ] 192.168.0.105 /video/doAddVideo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003801s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `db_video` [ RunTime:0.003810s ]
+NOTIC: [8] Undefined index: content E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\VideoAction.class.php 第 391 行.
+SQL: UPDATE `db_video` SET `subtitle`='产后阴道松弛怎么办',`pid`='275',`type`='0013',`photo`='http://static.polyv.net/uimage/0/0bb65aeb75/f/0bb65aeb755be375b6f3fc80e7e3fedf_7_b.jpg',`video`='http://player.polyv.net/videos/0bb65aeb755be375b6f3fc80e7e3fedf_0.swf',`property`='',`keywords`='阴道，产后修复，产妇',`description`='女人结婚生子看似是顺理成章的事情。然而生孩子可不是这么简单的事，先不说孕期有多辛苦。单是这怀孕生子所带来的风险，就足以让一些女性不想要孩子了。比如说产后的阴道出现的感染、松弛，就让女性痛苦不已，甚至还会影响到家庭生活。如何预防感染，拯救松弛成为众多新妈妈们较为关注的问题。  ',`videotime`='00:32:59',`star`='000110',`reporter`='',`isopen`=1,`content`=null,`title`='产后阴道修复',`updatetime`='2014-09-04 20:06:10' WHERE ( id = '9033' ) [ RunTime:0.000369s ]
+
+[ 2014-09-04T22:25:14+08:00 ] 192.168.0.105 /Public/Js/Base.js
+ERR: 非法操作:js
+
+[ 2014-09-04T22:25:14+08:00 ] 192.168.0.105 /Public/Js/Think/ThinkAjax.js
+ERR: 非法操作:js
+
+[ 2014-09-04T22:25:14+08:00 ] 192.168.0.105 /Public/Js/common.js
+ERR: 非法操作:js
+
+[ 2014-09-04T22:25:15+08:00 ] 192.168.0.105 /Public/Js/Think/ThinkAjax.js
+ERR: 非法操作:js
+
+[ 2014-09-04T22:25:15+08:00 ] 192.168.0.105 /Public/Js/common.js
+ERR: 非法操作:js
+
+[ 2014-09-04T22:25:15+08:00 ] 192.168.0.105 /Public/Js/Base.js
+ERR: 非法操作:js
+
+[ 2014-09-04T22:25:28+08:00 ] 192.168.0.105 /Index/index
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017179s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000440s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001796s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000518s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2014-09-04T22:25:34+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004057s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.008668s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.001148s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000678s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000408s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000552s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000214s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000145s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000143s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000159s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.003068s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000271s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000211s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000238s ]
+
+[ 2014-09-04T22:25:35+08:00 ] 192.168.0.105 /video/getCat.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004140s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004067s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003521s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( `pid` = '1' ) LIMIT 0,5   [ RunTime:0.000277s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000643s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000363s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000161s ]
+SQL: SELECT * FROM `db_video_type` WHERE ( id = '' ) LIMIT 1   [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: ftype E:\Dropbox\www\jkws_new\App\Modules\Admin\Model\VideoCatModel.class.php 第 56 行.
+
+[ 2014-09-04T22:25:35+08:00 ] 192.168.0.105 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003694s ]
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.004385s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000548s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000623s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000132s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000128s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000125s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000121s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000163s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000664s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000197s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000136s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000165s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000140s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000487s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000449s ]
+
+[ 2014-09-04T22:25:37+08:00 ] 192.168.0.105 /ckfinder/ckfinder.js
+ERR: 无法加载模块:Ckfinder
+
+[ 2014-09-04T22:25:37+08:00 ] 192.168.0.105 /ckeditor/ckeditor.js
+ERR: 无法加载模块:Ckeditor
+

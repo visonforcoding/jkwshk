@@ -1,0 +1,354 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>大家好，我是{$baby.idnum}号选手{$titlename}，参加了健康卫视的活动，记得给我投票哦！{$titlename} Seven Baby-健康卫视官网代言人评选活动</title>
+</block>
+<block name='seo'>
+    <meta name="description" content='第二届《Seven Baby》即2012健康卫视官网代言人网络评选活动，面向全球，以健康卫视建台一周年和国际六一儿童节为契机，通过网友上传图片、日志、视频，并通过为期两个月的网络拉票，最终评选出7名"2012健康卫视官网代言人" ，即第一届"Seven Baby" 和61名"六一健康宝宝"，作为给孩子们六一儿童节的特别礼物.' />
+    <meta name="keywords" content='Seven Baby,健康宝宝,宝宝秀,宝宝图片,健康7宝贝,六一健康宝宝' />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/toastmsg/css/jquery.toastmessage.css">
+</block>
+<block name='js'>
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script>
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(function() {
+            if (window.PIE) {
+                $('.rounded').each(function() {
+                    PIE.attach(this);
+                });
+            }
+        });
+    </script>
+</block>
+<block name='style'>
+    <style>
+        body {
+            background: url(__PUBLIC__/Images/home/sevenbaby/bannerbg.png) repeat;
+        }
+    </style>
+</block>
+<block name='body'>
+    <!--/*顶部*/-->
+    <include file="sevenbaby/top"/>
+    <!--/*顶部结束*/--> 
+    <!--/*头部横幅层*/-->
+    <div class="row">
+        <div class="navposts" ><img src="__PUBLIC__/Images/home/sevenbaby/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+                <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+                <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+                <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+                <empty name="userId">
+                    <area shape="rect" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();
+                            showForbid();
+                            void(0);" >
+                    <else/>
+                    <area shape="rect"   coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+                </empty> 
+                <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="/sevenbaby/program.html" />
+                <area shape="circle" coords="100,99,95" href="/sevenbaby/index.html" title="Seven Baby 2014">
+            </map>
+        </div>
+        <div class="container">
+            <div class="babyiftitle">
+                <a href="/sevenbaby/album/id/{$babyid}.html" class="babymore">查看宝贝相册</a>
+                <a href="#" class="babyend" id="timer"></a>
+                <Script Language="JavaScript">
+                    var interval = 1000;
+                    function ShowCountDown(year, month, day, divname)
+                    {
+                        var now = new Date();
+                        var endDate = new Date(year, month - 1, day);
+                        var leftTime = endDate.getTime() - now.getTime();
+                        var leftsecond = parseInt(leftTime / 1000);
+                        //var day1=parseInt(leftsecond/(24*60*60*6)); 
+                        var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+                        var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+                        var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+                        var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+                        timer.innerHTML = "距离活动结束" + year + "年" + month + "月" + day + "日还有：" + day1 + "天" + hour + "小时" + minute + "分" + second + "秒";
+                    }
+                    var year = "{$year}";
+                    var month = "{$month}";
+                    var day = "{$day}";
+                    window.setInterval(function() {
+                        ShowCountDown(year, month, day, 'divdown1');
+                    }, interval);
+                </Script>   
+            </div>
+            <div class="photobg">
+                <script src="__PUBLIC__/Js/home/sevenbaby/pptBox.js">   /*sevenbaby babyview banner 宝贝信息*/</script> 
+                <!--baby风采 start -->
+                <div id="slides" class="photo" style="overflow:hidden">
+                    <script>
+                        var box = new PPTBox();
+                        box.width = 450; //宽度
+                        box.height = 300;//高度
+                        box.autoplayer = 3;//自动播放间隔时间
+
+                        //box.add({"url":"图片地址","title":"悬浮标题","href":"链接地址"})
+                      <volist name="photos" id="v">
+                        box.add({ "url":"/Uploads/sevenbaby/{$v}", "href": "#", "title": ""});
+                      </volist>
+                        box.show();
+                    </script>
+
+
+                    <!-- <volist name="photos" id="v">
+                         <img src="/Uploads/sevenbaby/{$v}" width="450" height="300"  > 
+                     </volist> -->
+                </div>  
+                <!--baby风采 stop -->      
+
+                <a href="javascript:void(0)" class="piao">{$baby.votes}</a>
+            </div>
+            <div class="parentsay" >
+                <p class="saytitle" id="votemap">家长寄语：</p>
+                <p class="saypro">"孩子，你是世界未来的中心"</p>
+                <p class="saycontent">{$baby.wish}</p>
+                <div class="clearfix" ></div>
+            </div>
+            <div class="bobyinfo">
+                <div class="bobyinfo_frist">
+                    <h2 class="stitle">基本信息 </h2>
+                    <p>昵称：{$baby.nickname}</p>
+                    <p>性别：{$baby.sex}</p>
+                    <p>城市：{$baby.city}</p>
+                    <p>年龄：{$baby.age}岁</p>
+                    <p>出生：{$baby.birthday}</p>
+                    <p>编号：{$baby.idnum}</p>
+                    <p>排名：第 {$rank} 位</p>
+                </div>
+                <div class="bobyinfo_two">
+                    <h2 class="stitle">投票信息 </h2>
+                    <p>输入验证码</p>
+                    <p style="margin-left:50px;font-size:12px;line-height:20px;">为防刷票，必须跳过首张验证码</p>
+                    <p><input id="vcode" type="text" class="inpt" /></p>
+                    <p><img src="/public/gbVerify.html" id="verifyImg" width="100" height="40" /></p>
+                    <p><a href="javascript:void(change_code(this));">看不清，换一张</a></p>
+                    <if condition="($endtime gt $nowtime) and ($nowtime gt $starttime)">
+                        <p><button id="vote" >点击投票</button></p>
+                        <elseif  condition="($endtime lt $nowtime) and ($nowtime gt $starttime)"/>
+                        <p><b style=" margin-top: 10px;background: #CCC; padding: 7px 8px;border-radius: 10px; color:#fff">活动已结束...</b></p>
+                        <else/>
+                        <p><b style=" margin-top: 10px; background: #CCC; padding: 7px 8px;border-radius: 10px; color:#fff">活动未开始...</b></p>
+                    </if>
+                </div>
+                <div class="bobyinfo_three">
+                    <h2 class="stitle">论坛新帖 </h2>
+                    <volist name="bbs" id="v" key="key">
+                        <p>{$key}.  <a h href="{$v.url}" target="_blank">{$v.subject}</a></p>
+                    </volist>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!--分享开始 -->
+                <div class="copyword"  style="position:relative; ">
+                    <p>投票地址:  <a href="#" id="link">{$url} </a></p>
+                    <p style="text-align:left; padding-left:200px;">复制本投票地址,通过QQ/MSN/Email告诉更多的好友来投票！  <span style="font-weight:bold; padding-left:5px;">或&nbsp;一键分享：</span></p>
+                    <p>   
+                    <div class="bdsharebuttonbox" style="position:absolute; right:130px; top:30px;">
+                        <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    </div>
+                    <script>
+                        window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdPic": "{$pic}", "bdStyle": "0", "bdSize": "16", "bdUrl": "{$url}"},
+                            "share": {}, "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
+                            "selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}};
+                        with (document)
+                            0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                    </script>
+                    </p>
+                </div>
+                <!--分享结束 -->
+            </div>
+
+            <div class="container-content" style="margin-top:0px;"> 
+                <!-- 粉丝墙开始 -->
+                <div id='main'>
+                    <volist name="comments" id="v" key="k">
+                        <dl class='paper a{$v.rand}'>
+                            <dt> <span class='username'>第[{$k}]条</span> <a href="" class='close'></a> <span class='time'>{$v.ctime|date='Y-m-d H:i:s',###}</span> </dt>
+                            <dd class='content'>{$v.msg}</dd>
+                            <dd class='bottom'> <img alt="" src="__PUBLIC__/Images/home/sevenbaby/style/{$v.rand2}.gif"> <span class='num'>{$v.province}{$v.city}</span> </dd>
+                        </dl>
+                    </volist>
+
+                </div>
+                <!-- 粉丝墙结束 --> 
+                <!--留言板开始-->
+                <div class="ly">
+                    <form id="msgbox" name="msgbox" method="post" action="">
+                        <div class="ly_con">
+                            <p class="fl" style=" color:#00aeef; font-weight:600; display:block">留言：</p>
+                            <textarea rows="5" cols="63" name="mymsg" id="mymsg"  class="ly_board fl"></textarea>
+                            <div class="Authcode fl">
+                                <p style="color:#00aeef; font-weight:600">验证码：<span style="color:#cb4fa1">{$code}</span></p>
+                                <input  type="text" name='msgrandcode'  maxlength="5" id="msgrandcode" class="Authcodecon" />
+                                <input  name='msguid' type='hidden' id="msguid"  value="166"/>
+                                <input  name='urlid' type='hidden' id="urlid"  value="D08C4CCggKAAEKAA8KCA1aDQoAAQANAQgOCwAPAA5cXw0"/>
+                            </div>
+                            <div class="ly_btn left" style="display:inline">
+                                <input name="add_msg" id="add_msg" class="ly_btn left"   value="提交" onclick="return getmsg();">
+                            </div>
+                        </div>
+                    </form>
+                    <script type="text/javascript">
+                        $(function() {
+                            $('#vcode').val('');
+                            $('#mymsg').val('');
+                            $('#msgrandcode').val('');
+                            $('#vote').click(function() {
+                                var ebid = '{$euid}';
+                                var mid = '{$userId}';
+                                var vcode = $('#vcode').val();
+                                if (mid === '') {
+                                    $().toastmessage('showToast', {
+                                        text: '您需要先登录才能投票哦！',
+                                        sticky: false,
+                                        position: 'top-center',
+                                        type: 'error'
+                                    });
+                                    $('html, body').animate({scrollTop: 0}, 'slow');
+                                    return false;
+                                }
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/sevenbaby/doVote.html",
+                                    data: {'ebid': ebid, 'code': vcode},
+                                    success: function(msg) {
+                                        if (msg.status === 1) {
+                                            $().toastmessage('showToast', {
+                                                text: '投票成功！',
+                                                sticky: false,
+                                                position: 'top-center',
+                                                type: 'success',
+                                                stayTime: 1000,
+                                                close: function() {
+                                                    window.location.reload();
+                                                }
+                                            });
+                                            $('#mymsg').focus();
+                                        } else {
+                                            if (msg.data == 'duedate') {
+                                                window.location.reload();
+                                            }
+                                            ;
+                                            alert(msg.info);
+                                            //$().toastmessage('showToast', {
+                                            //  text: msg.info,
+                                            //sticky: false,
+                                            //position: 'top-center',
+                                            //type: 'error',
+                                            //stayTime: 2000
+                                            //});
+                                        }
+                                    }
+                                });
+                            });
+                        });
+                        function getmsg() {
+                            var tar = document.getElementById('msgrandcode');
+                            var mymsg = document.getElementById('mymsg');
+                            if (mymsg.value === '') {
+                                $().toastmessage('showToast', {
+                                    text: '您未填写任何信息！',
+                                    sticky: false,
+                                    position: 'top-center',
+                                    type: 'error',
+                                    stayTime: 2000
+                                });
+                                document.getElementById('mymsg').focus();
+                                return false;
+                            }
+                            if (tar.value !== '{$code}') {
+                                $().toastmessage('showToast', {
+                                    text: '验证码不正确！',
+                                    sticky: false,
+                                    position: 'top-center',
+                                    type: 'error',
+                                    stayTime: 2000
+                                });
+                                document.getElementById('msgrandcode').focus();
+                                return false;
+                            }
+                            var userId = '{$userId}';
+                            if (userId === '') {
+                                $().toastmessage('showToast', {
+                                    text: '您需要先登录才能留言哦！',
+                                    sticky: false,
+                                    position: 'top-center',
+                                    type: 'error'
+                                });
+                                $('html, body').animate({scrollTop: 0}, 'slow');
+                                return false;
+                            }
+                            var ebid = '{$euid}';
+                            msg = mymsg.value;
+                            $.ajax({
+                                type: "POST",
+                                url: "/sevenbaby/addMsg.html",
+                                data: {msg: msg, ebid: ebid},
+                                success: function(msg) {
+                                    if (msg.status === 1) {
+                                        $().toastmessage('showToast', {
+                                            text: '留言成功！',
+                                            sticky: false,
+                                            position: 'top-center',
+                                            type: 'success',
+                                            stayTime: 1000,
+                                            close: function() {
+                                                window.location.reload();
+                                            }
+                                        });
+                                        $('#mymsg').focus();
+                                    } else {
+                                        $().toastmessage('showToast', {
+                                            text: msg.data,
+                                            sticky: false,
+                                            position: 'top-center',
+                                            type: 'error',
+                                            stayTime: 2000
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                    </script> 
+                </div>
+                <!--留言板结束--> 
+            </div>
+        </div>
+    </div>
+    <!--/*头部横幅层结束*/--> 
+
+    <!--/*底部*/-->
+    <include file="Sevenbaby:foot"/>
+    <!--/*底部结束*/--> 
+
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/tab.js">/*可切换的标签页*/</script> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/common.js">/*公共js*/</script> 
+    <script src="__PUBLIC__/Js/home/sevenbaby/messages.js"> //粉丝墙 </script>
+    <!-- <script src="__PUBLIC__/Js/home/sevenbaby/jquery.slides.min.js"></script>  -->
+    <script type="text/javascript"  src="__PUBLIC__/toastmsg/jquery.toastmessage.js" >/*对话框 */</script> 
+    <script>
+
+
+        function change_code() {
+            var timed = new Date().getTime();
+            document.getElementById('verifyImg').src = '/Public/gbVerify/' + timed;
+        }
+
+    </script> 
+
+
+</block>
+

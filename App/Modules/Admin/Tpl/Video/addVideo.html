@@ -1,0 +1,214 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script src="__PUBLIC__/ueditor/ueditor.config.js" ></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.js" ></script>
+    <script href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" ></script>
+    <script>
+           $(function() {
+                $('#aa').accordion('select', '视频管理');
+                        $('#reset').click(function() {
+                $('#ff').form('clear');
+                });
+                        $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                        param.classname = '{$classname}';
+                        var isValid = $('#ff').form('validate');
+                        <if condition = "$action eq 'edit'" >
+                        param.action = 'edit';
+                        param.id = "{$Rs['id']}";
+                        </if>
+                        if (isValid) {
+                $.ajax({
+                       type: 'post',
+                        url: '/video/doAddVideo.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                        if (data.success) {
+                        if (data.edit){
+                        $.messager.alert('信息提示', data.message, 'info');
+                        } else{
+                        $.messager.alert('信息提示', data.message, 'info', clearForm);
+                        }
+                        } else {
+                        $.messager.alert('错误', data.message, 'error');
+                        }
+                        }
+                });
+                } else {
+                return isValid;
+                }
+                ;
+                });
+                        //上传视频插件
+                        setTimeout(function() {
+                        POLYVJQUERY.polyv.insertHtml = function(thumbnail, html, data) {
+                        var addr = POLYVJQUERY(html).find("embed").attr("src");
+                                POLYVJQUERY("#url").val(addr);
+                                POLYVJQUERY("#photo").val(thumbnail);
+                                POLYVJQUERY("#disimgcover").replaceWith('<div id="disimgcover" class="showImgC"><img src="' + thumbnail + '" width="120" height="120"/></div>');
+                                POLYVJQUERY("#title").val(data.title);
+                                POLYVJQUERY("#duration").val(data.duration);
+                                POLYVJQUERY(".jquery-dialog").trigger("cancel");
+                        };
+                        }, 4000);
+                });
+                function clearForm() {
+                $('#ff').form('clear');
+                }
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加新闻"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form">
+                <div class="input-group">
+                    <label>所属栏目:</label>
+                    {$fpid}
+                </div>
+                <div class="input-group">
+                    <label>视频地址:</label>
+                    <input id="url" name="video" type="text" class="inputText w310" value="{$Rs['video']}" />  
+                    <script>
+                        var writetoken = 'uhyshQ8R9TT0kis-v5KY8EKhb9GXDG0B';
+                                var readtoken = 'vDu4jGkgon-KR3zVkxNTj-0ODJvnDc3I';</script>
+                    <script src='http://static.polyv.net/caret/v_uploader.js'></script>
+                </div>
+                <div class="input-group">
+                    <label>视频名称:</label>
+                    <input class="easyui-validatebox" style="width:400px" id="title" value="{$Rs['title']}" type="text" name="title" data-options="required:true" ></input>
+                </div>
+                <div class="input-group">
+                    <label>视频副标题:</label>
+                    <input class="easyui-validatebox mid-text" value="{$Rs['subtitle']}" type="text" name="subtitle" ></input>
+                </div>
+                <div class="input-group">
+                    <label>视频时长:</label>
+                    <input name="videotime" id="duration" type="text" size="20" value="{$Rs['videotime']}" >
+                </div>
+                <div class="input-group">
+                    <label style="float: left">栏目类型:</label>
+                    <div class="checkbox-inline" style="width:90%;float: left">
+                        {$fflags}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>属性:</label>
+                    <input type="radio" name="property" value="top" <if condition ="$Rs['property'] eq 'top'">checked</if>   />
+                    头条
+                    <input type="radio" name="property" value="rec"  <if condition ="$Rs['property'] eq 'rec'">checked</if>    />
+                    推荐
+                    <input type="radio" name="property" value="hot"  <if condition ="$Rs['property'] eq 'hot'">checked</if>   />
+                    热点
+                </div>
+                <div class="input-group">
+                    <label>标签:</label>
+                    <div id="tagcheckbox" style="display: inline-block">
+                        {$Rs['ftags']}
+                    </div>
+                    <button onclick="$('#tag-window').window('open');
+                                        $('#tag-window').window('refresh', '/tags/showTags.html');" type="button" class="btn btn-primary">选取标签</button>
+                    <div id="tag-window" class="easyui-window" title="选取标签" style="width:700px;height:500px"
+                         data-options="iconCls:'icon-tag4',modal:true,closed:true,minimizable:false,maximizable:false">
+                    </div>
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >图集封面：</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                                {$Rs['fphoto']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" style="width: 133px;" class="btn btn-primary" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="photo" id="photo" value="{$Rs['photo']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                    </div>
+                </div>
+                <div class="input-group">
+                     <label style="float: left">主播:</label>
+                      <div class="checkbox-inline" style="width:90%;float: left">
+                        {$fhost}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>记者：</label>
+                    <input name="reporter" id="reporter" type="text" value="{$Rs['reporter']}" class="inputText" />
+                </div>
+                <div  class="input-group hasEditor">
+                    <label>内容：</label>
+                    <script id="info" class="editor" name="content" type="text/plain">
+                        {$Rs['content']}
+                    </script>
+                    <script type="text/javascript">
+                                var editor = UE.getEditor('info')
+                    </script>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>文章关键字:</label>
+                    <input class="easyui-validatebox w310" type="text" value="{$Rs['keywords']}"  id="keywords" name="keywords"></input>
+                </div>
+                <div class="input-group">
+                    <label>文章描述:</label>
+                    <textarea class="easyui-validatebox"  style="width:700px;height:60px;"  id="description" name="description">{$Rs['description']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+                /*图片上传*/
+                        (function($) {
+                        var image = {
+                        editor: null,
+                                init: function(editorid, keyid) {
+                                var _editor = this.getEditor(editorid);
+                                        _editor.ready(function() {
+                                        _editor.setDisabled();
+                                                _editor.hide();
+                                                _editor.addListener('beforeInsertImage', function(t, args) {
+                                                var imgsrc = args[0].src;
+                                                        $("#" + keyid).val(imgsrc);
+                                                        $("#disimgcover").html('<img src="' + imgsrc + '" width="120" height="120" />');
+                                                });
+                                        });
+                                },
+                                getEditor: function(editorid) {
+                                this.editor = UE.getEditor(editorid);
+                                        return this.editor;
+                                },
+                                show: function(id) {
+                                var _editor = this.editor;
+                                        //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+                                        //和网上一些朋友的代码不同之处就在这里  
+                                        $("#" + id).click(function() {
+                                var image = _editor.getDialog("insertimage");
+                                        image.render();
+                                        image.open();
+                                });
+                                },
+                                render: function(editorid) {
+                                var _editor = this.getEditor(editorid);
+                                        _editor.render();
+                                }
+                        };
+                                $(function() {
+                                image.init("myeditor", "litpic");
+                                        image.show("image");
+                                });
+                        })(jQuery);
+    </script>
+</block>

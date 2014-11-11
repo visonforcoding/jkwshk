@@ -1,0 +1,183 @@
+{// 加载头部公共文件 }
+<include file="Public:header" />
+<script type="text/javascript">
+function changetags(){
+	   parent.box.html({
+	        message: '<iframe src="/tags/tagsBox" id="iframe" style="width:702px; height:500px; border:0pt none;"></iframe>',
+	        title: "选择标签",
+	        width:702,
+	        showbtn_c:false,
+	        showbtn:false,
+	    });	
+	}
+ function setTags(id,name){
+	 	var tags = Dom("tags").innerHTML ;
+		Dom("tags").innerHTML = tags+' <input type="checkbox" name="tagid[]" id="flagsp" value="'+id+'|'+name+'" checked="checked"> <label for="flagsp" class="ml5 mr20"> '+name+'</label> ';
+		//var tagid = Dom('tagid').value;
+		//tagid = tagid == '' ? '' : tagid+',';
+		//Dom('tagid').value =  tagid+id+'|'+name;
+		window.parent.box.doHandler("cancel");
+  }
+  /*进行字符数运算*/
+function checkWord(c){
+	var str = c.value;
+	myLen=getStrleng(str);
+	Dom("wnum").innerHTML = (myLen/2);
+}
+function getStrleng(str){
+	myLen =0;
+	i=0;
+	for(;(i<str.length);i++){
+		if(str.charCodeAt(i)>0&&str.charCodeAt(i)<128){
+			myLen++;
+		}else{
+			myLen+=2;
+		}
+	}
+	return myLen;
+
+}
+
+//设置如果不填默认关键字跟标题一样
+$(function(){
+	$('#title').change(
+		function(){
+			$('#keywords').val($(this).val())
+		});
+	
+})
+
+</script>
+		<div class="edit">
+			<div class="editContent">
+            <form method="post" id="fm1" action="/ajax/submit/" >
+                <input type="hidden" name="id" value="{$Rs['id']}"  />
+            	<input type="hidden" name="action" value="{$action}"  />
+                <input type="hidden" name="classname" value="{$classname}"  />
+                <input type="hidden" name="setreferer" value="{$setreferer}"  />
+				
+				<table width="100%">
+					<tr height="50">
+						<td width="85"><span class="cRed">*</span>标题：</td>
+						<td width="310">
+                        <input name="name" id="name" onKeyUp="javascript:checkWord(this);" onMouseDown="javascript:checkWord(this);" type="text" value="{$Rs['name']}" class="inputText w310" /> 您已经输入了<span id="wnum" style="color:#FF0000;">0</span>个汉字
+                        </td>
+					</tr>
+                    <tr height="80">
+						<td><span class="cRed">*</span>标签：</td>
+						<td>
+                        <div id="tags" style="color:#F00;border: 1px solid #B5B6B6;">{$Rs['ftags']}</div>
+                        <br/>
+                        <input type="button" name="but1" onClick="changetags()" class="btnBlue" value="选择标签" />
+                        </td>
+					</tr>
+                    <tr>
+                        <td >封面：</td>
+                        <td id="tdimgcover">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                            {$Rs['fphoto']}
+                            </div>
+                            <div id="btnimgcover">
+                            <input type="button" class="btnBlue" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="photo" id="photo" value="{$Rs['photo']}"  />
+                        </div>
+                    		<script id="myeditor"></script>  
+                            <script type="text/javascript">
+								/*图片上传*/
+							(function($){  
+								var image = {  
+									editor:null,  
+									init:function(editorid,keyid){  
+										var _editor =this.getEditor(editorid);  
+										_editor.ready(function () {  
+											_editor.setDisabled();  
+											_editor.hide();  
+											_editor.addListener('beforeInsertImage', function (t, args) {
+												var imgsrc = args[0].src;
+												$("#"+keyid).val(imgsrc);  
+												$("#disimgcover").html('<img src="'+imgsrc+'" width="120" height="120" />');
+												
+											});  
+										});  
+									},  
+									getEditor:function(editorid){  
+										this.editor = UE.getEditor(editorid);  
+										return this.editor;  
+									},  
+									show:function(id){  
+										var _editor = this.editor;  
+									   //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+									   //和网上一些朋友的代码不同之处就在这里  
+										$("#"+id).click(function(){  
+											var image = _editor.getDialog("insertimage");  
+											image.render();  
+											image.open();  
+										});  
+									},  
+									render:function(editorid){  
+										var _editor = this.getEditor(editorid);  
+										_editor.render();  
+									}  
+								};  
+								$(function(){  
+									image.init("myeditor","photo");  
+									image.show("image");  
+								});  
+							})(jQuery);  
+							</script>
+                          </td>
+                     </tr>
+                      <tr  height="80">
+                        <td>内容：</td>
+                        <td>
+                        <script id="info" name="info" type="text/plain">
+							{$Rs['info']}
+						</script>
+                        <script type="text/javascript">
+							var editor = UE.getEditor('info')
+						</script>
+                        </td>
+                      </tr>
+                       <tr height="50">
+                        <td width="15%">seo关键字:(keywords)</td>
+                        <td width="85%">
+                        <input name="keywords" id="keywords"
+                           class="inputText w310" type="text" value="{$Rs['keywords']}" />  
+                        </td>
+                    </tr>
+                    <tr height="50">
+                        <td>seo简单描述:(description)</td>
+                        <td>
+                        <textarea id="description" name="description"
+                            style="width: 99%">{$Rs['description']}</textarea>     
+                        </td>
+                    </tr> 
+                    <tr height="50">
+                        <td width="15%">点击数:</td>
+                        <td width="85%">
+                        <input name="hits" id="hits"
+                           class="inputText w75" type="text" value="{$Rs['hits']}" />  
+                        </td>
+                    </tr>
+                      <tr height="50">
+						<td width="85"><span class="cRed">*</span>是否启用：</td>
+						<td width="310">
+                		{$fisopen}
+                        </td>
+					</tr>
+                    <tr height="100">
+						<td>&nbsp;</td>
+						<td><input type="submit" value="确&nbsp;定" class="btnBlue">
+                        <input type="reset" value="取&nbsp;消" class="btnGray ml20">
+                        </td>
+					</tr>
+				</table>
+                </form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

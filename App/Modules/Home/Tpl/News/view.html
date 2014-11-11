@@ -1,0 +1,246 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>{$curNews.title}_健康要闻_健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="{$curNews.keywords}" />
+    <meta name="description" content="{$curNews.description}" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/view.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+    <link href="__PUBLIC__/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function() {
+            SyntaxHighlighter.all();
+        });
+    </script>
+</block>
+<block name='body'>
+    <!--头部代码-->
+    <div id="header"> 
+        <!--头部顶部代码-->
+        <include file="Public/top" />
+        <!--头部顶部代码end--> 
+        <!--栏目代码-->
+        <include file="Public/common_nav" />
+        <!--栏目代码end--> 
+        <!---广告位980X90-->
+        <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/data/index_banner1.jpg" width="970" height="90" /></a></div>
+
+        <!--大栏目代码-->
+        <div class="subnav">
+            <div class="subnavcontent">
+                <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/logo_v.png" width="272" height="31" /></a></div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+
+        <!--大栏目代码end--> 
+
+    </div>
+    <!--头部代码end-->
+
+    <!--中间代码开始-->
+    <div class="main">
+        <div class="titlegps"><a href="/">首页</a>><a href="/news">健康要闻</a>>正文</div>
+        <div class="v_content">
+            <h1> <a>{$curNews.title}</a> <!--<i class="chose_1" title="独家报道"></i> --><!--(chose_1:独家报道、chose_2:独家专访、chose_3:国际资讯、chose_4:国际专访、chose_5:国际报道、chose_6:专题报道、)--> 
+            </h1>
+            <p class="dtitme"> 来源：{$curNews.source} &nbsp;作者：{$curNews.writer} &nbsp;{$curNews.time|date='Y-m-d H:i:s',###}</p>
+            <p class="p_tag"><i></i>标签：
+
+            <volist name="newTagList" id="v">
+                <a href="#" target="_blank">{$v.tagname}</a>&nbsp;&nbsp;
+            </volist>
+            <a class="fr" href="#"><img width="50" height="20" src="__PUBLIC__/Images/home/add.png"></a></p>
+            <div class="daodu"><i>导读</i>{$curNews.description} </div>
+
+            <div class="ctext">
+                {$curNews.info}
+            </div>
+            <!--<p class="peocommon">已有<a href="#"> 2 </a>条评论，共<a href="#"> 2 </a>人参与</p>-->
+            <div class="news_share"> <i></i> 
+                <!-- 分享 -->
+                <div class="jiathis_style_24x24"> <a class="jiathis_button_qzone"></a> <a class="jiathis_button_tsina"></a> <a class="jiathis_button_tqq"></a> <a class="jiathis_button_renren"></a> <a class="jiathis_button_kaixin001"></a> <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a> <a class="jiathis_counter_style"></a> </div>
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script> 
+                <!-- 分享 -->
+            </div>
+            <div class="disclaimer"> 【免责声明】本文仅代表作者个人观点，与健康卫视网站无关。其原创性以及文中陈述文
+                字和内容未经本站证实，转载此文出于传递更多信息之目的，并不意味着赞同其观点或证
+                实其描述。文章内容仅供参考，具体治疗及选购请咨询医生或相关专业人士。 </div>
+            <div class="othernews">
+                <h2> <a class="fr" href="#">更多>></a> 相关新闻 </h2>
+                <ul>
+                    <volist name="loveNewsList" id="v" empty="暂时没有任何数据~" >
+                        <li> <span>{$v.time|date="y-m-d H:i:s",###}</span> <a title="{$v.title}" href="/news/view/id/{$v.id}.html">·{$v.title}</a> </li>
+                    </volist>
+                </ul>
+            </div>
+            <!-- 评论开始 -->
+            <div class="comment">
+
+                <include file='public:comment'/>
+                <script>
+            $(function() {
+                $('.postComment').click(function() {
+                    var oid = '{$curNews.id}';
+                    var $obj = $(this).parents('p').prevAll('textarea.msgarea');
+                    var msg = $(this).parents('p').prevAll('textarea.msgarea').val();
+                    var ctype = '新闻';
+                    if (msg == '') {
+                        $().toastmessage('showToast', {
+                            text: '您未输入任何信息！',
+                            sticky: false,
+                            position: 'top-center',
+                            type: 'error',
+                            stayTime: 2000,
+                        });
+                        $obj.focus();
+                        return;
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "/Comment/addComment.html",
+                        data: {'oid': oid, 'msg': msg, 'ctype': ctype},
+                        success: function(msg) {
+                            if (msg.status) {
+                                $('.commentlist').prepend('<li><dl><dt><img src="{$user.avatar}" width="50" height="50" />' +
+                                        '</dt><dd class="namedate"><span><empty name="user.nickname">{$user.username}' +
+                                        '<else/>{$user.nickname}</empty>' +
+                                        '</span></dd><dd>' + msg.data.msg + '</dd><dd class="replay">' +
+                                        '<span class="spandate">发表日期：' + msg.data.time + '</span>'
+                                        //                                    <a href="#" onclick="support('+msg.data.support+')" class="renum">支持('+msg.data.support+')</a>' +
+                                        //                                    ' <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>'+
+                                        //                                    '<a href="#" class="reshare">分享></a></dd></dl></li> '
+                                        );
+                                $obj.val('');
+                                $('.newscomment').after("<div class='commentpop' id='commentpop'></span>评论已提交。</div>");
+                                setTimeout("$('.commentpop').remove()", 2500);
+                            }
+                            ;
+                        }
+                    });
+                });
+            });
+                </script>
+
+            </div>
+            <!-- 评论结束 -->
+
+            <script type="text/javascript" charset="utf-8">
+                $(function() {
+                    $(".navctr").click(function() {
+                        $(this).next(".navlist").slideToggle(0);
+                    });
+                    function show(svalue, hvalue, showvalue) {
+                        $(svalue).mouseover(function() {
+                            $(hvalue).removeClass("cleck");
+                            $(this).children("a").addClass("cleck");
+                            $num = $(this).index();
+                            $(showvalue).hide();
+                            $(showvalue).eq($num).show();
+                        });
+                    }
+                    show('.playinfoul li', '.playinfoul li a', '.ishow');
+                    $('.postComment').click(function() {
+                        var oid = '{$video.id}';
+                        var $obj = $(this).parents('p').prevAll('textarea.msgarea');
+                        var msg = $(this).parents('p').prevAll('textarea.msgarea').val();
+                        var ctype = '视频';
+                        if (msg == '') {
+                            $().toastmessage('showToast', {
+                                text: '您未输入任何信息！',
+                                sticky: false,
+                                position: 'top-center',
+                                type: 'error',
+                                stayTime: 2000,
+                            });
+                            $obj.focus();
+                            return;
+                        }
+                        $.ajax({
+                            type: "POST",
+                            url: "/Comment/addComment.html",
+                            data: {'oid': oid, 'msg': msg, 'ctype': ctype},
+                            success: function(msg) {
+                                if (msg.status) {
+                                    $('.commentlist').prepend('<li><dl><dt><img src="{$user.avatar}" width="50" height="50" />' +
+                                            '</dt><dd class="namedate"><span><empty name="user.nickname">{$user.username}' +
+                                            '<else/>{$user.nickname}</empty>' +
+                                            '</span></dd><dd>' + msg.data.msg + '</dd><dd class="replay">' +
+                                            '<span class="spandate">发表日期：' + msg.data.time + '</span>'
+//                                    <a href="#" onclick="support('+msg.data.support+')" class="renum">支持('+msg.data.support+')</a>' +
+//                                    ' <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>'+
+//                                    '<a href="#" class="reshare">分享></a></dd></dl></li> '
+                                            );
+                                    $obj.val('');
+                                    $('.newscomment').after("<div class='commentpop' id='commentpop'></span>评论已提交。</div>");
+                                    setTimeout("$('.commentpop').remove()", 2500);
+                                }
+                                ;
+                            }
+                        });
+                    });
+
+                });
+            </script>
+
+        </div>
+
+        <div class="v_right">
+
+            <div class="hotnews">
+                <h2><b>热度排行</b></h2>
+                <ul>
+                    <volist name="hotNews" id="v" key="k" empty="暂时没有数据">
+                        <li><i>{$k}</i><a href="/news/view/id/{$v.id}.html" target="_blank">{$v.title}</a></li>
+                    </volist>
+                </ul>
+            </div>
+
+            <div class="adv335X300"></div>
+
+            <div class="video">
+                <h2><b>热门视频</b></h2>
+                <ul>
+                    <volist name='hotVideo' id='vi'>
+                        <li><a href="/play/index/id/{$vi.id}.html"><img src="{$vi.coverimage}" width="133" height="156" /></a><span> <a class="bofang" href="/play/index/id/{$vi.id}.html"></a> </span></li>
+                    </volist>
+                </ul>
+            </div>
+
+            <div class="pic">
+                <h2><b>热门图片</b></h2>
+                <ul>
+                    <volist name="hotPic" id="v">
+                        <li><a title="{$v.name}" href="/photo/view/id/{$v.id}.html"><img src="{$v.topimg}" title="{$v.name}" width="146" height="100" /></a><span class="span_title"><a href="/photo/view/id/{$v.id}.html" title="{$v.name}">{$v.name}</a></span> </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="adv335X180"></div>
+        </div>
+
+    </div>
+    <!--中间代码结束-->
+    <div class="clear"></div>
+    <!--底部代码开始-->
+    <include file="Public/footer"/>
+    <!--底部代码结束--> 
+
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script> 
+    <script src="__PUBLIC__/Js/home/slides.js" type="text/javascript"></script> 
+    <script type="text/javascript">
+                    $(function() {
+                        $(".hotnews ul li i:lt(3)").addClass("bg");
+                        $(".newslist_ul li:eq(6),.newslist_ul li:eq(12),.newslist_ul li:eq(18),.newslist_ul li:eq(24)").addClass("limargin");
+                    });
+    </script> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/health.js" ></script>
+</block>
+

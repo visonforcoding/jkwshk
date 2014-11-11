@@ -1,0 +1,120 @@
+<extend name='Layout:base'/>
+<block name='head'>
+<title>健闻视频</title>
+<link href="__PUBLIC__/css/home/video/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/home/video/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="__PUBLIC__/js/home/video/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,i,li,a,div');
+</script>
+<![endif]-->
+
+<!--IE6版本提示开始-->
+<!--[if lte IE 6]>  
+<div id="ie6-warning">
+<img src="__PUBLIC__/Images/home/video/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+<a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+ 或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+</div>  
+<script type="text/javascript">  
+function closeme()
+{
+   var div = document.getElementById("ie6-warning");
+   div.style.display ="none";
+}
+function position_fixed(el, eltop, elleft){  
+// check if this is IE6  
+if(!window.XMLHttpRequest)  
+window.onscroll = function(){  
+el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+}  
+else el.style.position = "fixed";  
+}  
+position_fixed(document.getElementById("ie6-warning"),0, 0);  
+</script>  
+<![endif]-->
+<!--版本提示结束-->
+
+<script type="text/javascript" src="__PUBLIC__/js/home/video/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" >
+$(function(){
+		$("input.seartext").focus(function(){
+		$(".seartext").animate({width:'+=100px'});
+		$(".seartext").after( '<p class="sicon" >搜健，一点也不手贱！</p>');
+	});
+	$("input.seartext").blur(function(){
+		$(".seartext").animate({width:'-=100px'});
+		$("form .sicon").remove();
+	});
+});
+
+	function show(svalue,hvalue,showvalue){
+		$(function(){
+			$(svalue).mouseover(function(){
+				$(hvalue).removeClass("select");
+				$(this).children("a").addClass("select");	
+				$num=$(this).index(); //alert($num);
+				$(showvalue).hide();
+				$(showvalue).eq($num).show();			
+			});
+		});
+	}
+	show('.link_three dd','.link_three dd a','.showlink');
+	
+	$(function(){
+		$(".chotdl dd i:lt(3)").addClass("bg");	
+		$(".rnews ul li i:lt(3)").addClass("bg");
+	});
+	
+		$(function(){
+		$("#keyword span i").click(function(){
+			 $(this).parent().hide()
+			})
+			
+			$('.clearall').click(function(){
+			 $("#keyword span").hide()
+			})
+	});
+	
+	$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").hide();}
+		)   
+	})
+	
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.pack.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.SuperSlide.js"></script>
+<script type='text/javascript' src='__PUBLIC__/js/home/video/Slideshow.js'></script>
+<style type="text/css"></style>
+</block>
+
+<block name='body'>
+	<ul class="alllistul clearfix">
+		<volist name='videoList' id='vl'>
+          <li> <a href="#/id/{$vl.id}" class="listpic"><img src="__PUBLIC__/Images/home/video/data/l_img_1.jpg{$vl.photo}" width="151" height="90" /></a>
+            <p><a href="#/id/{$vl.id}">{$vl.title}</a></p>  
+            <a href="#/id/{$vl.id}" class="nowplay">立即观看</a> 
+          </li>
+
+        </volist>
+    </ul>
+        <div class="page">
+          <ul>
+            {$showPage}
+          </ul>
+        </div>
+</block>
+

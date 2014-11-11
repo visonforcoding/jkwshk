@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>健康卫视后台管理系统V2.0版</title>
+    <load href="__PUBLIC__/Css/admin/base.css" />
+    <load href="__PUBLIC__/Css/admin/style.css" />
+    <load href="__PUBLIC__/Js/lan/cn.js" />
+    <load href="__PUBLIC__/Js/dom.js" />
+    <load href="__PUBLIC__/Js/admin/objs.js" />
+    <load href="__PUBLIC__/Js/date.js" />
+    <load href="__PUBLIC__/My97DatePicker/WdatePicker.js" />
+    <load href="__PUBLIC__/ueditor/ueditor.config.js" />
+    <load href="__PUBLIC__/ueditor/ueditor.all.js" />
+    <load href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" />
+    <load href="__PUBLIC__/Js/jquery1.10.2.js" />  
+    <script type="text/javascript">
+    document.domain="__IURL__";
+    Dom.addEvent(window,'load',function(){
+        {$event}
+		var str=[];
+		str.push('当前位置：<a href="javascript:void(0);" onclick="parent.goHome()" class="cBlue">首页</a> 》');
+		if(!empty(parent.bread.name))str.push('<a href="javascript:void(0);" class="cBlue">'+parent.bread.name+'</a> 》');
+		str.push('<a href="javascript:void(0);" class="cBlue">'+parent.bread.title+'</a>');
+		Dom('bread').innerHTML=str.join("");
+		parent.wait(false);
+    });
+	<!--
+//指定当前组模块URL地址 
+var URL = '__URL__';
+var TMPL__ = '__TMPL__';
+var ROOT__ = '__ROOT__';
+var GROUP__ = '__GROUP__';
+var ACTION__ = '__ACTION__';
+var APP	 =	 '__APP__';
+var PUBLIC = '__PUBLIC__';
+var SELF__ = '__SELF__';
+//-->
+    </script>
+
+</head>
+<body>
+	<div id="wrap" class="videoList">
+		<div class="crumbs mb20" id="bread"></div>

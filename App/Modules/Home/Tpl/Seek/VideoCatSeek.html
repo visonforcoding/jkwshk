@@ -1,0 +1,248 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>公共搜索-视频专题</title>
+</block>
+<block name='seo'>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+</block>
+<block name='css'>
+<link href="__PUBLIC__/Css/home/html/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/html/content/search.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<!--[if IE 6]> <script src="__PUBLIC__/Js/home/html/DD_belatedPNG.js"></script> <script>DD_belatedPNG.fix('.png_bg'); </script> <![endif]-->
+</head>
+<body>
+<!--头部代码-->
+<div id="header">
+	<div class="h_content">
+    	<div class="logo"><img src="__PUBLIC__/Images/home/html/content/search_logo.png" width="185" height="50" /></div>
+        <p style="color:#F00; margin-left:350px;">{$msg}</p> 
+      <div class="search">
+        <form name="sofrm" class="sofrm" method="get" action="" onSubmit="return rewrite_search()">
+          <input name="mod" type="hidden" id="mod" value="search" />
+          <input name="type" type="hidden" id="type" value="all" />
+<!--          <input name="type" type="hidden" id="type" value="news" />
+          <input name="type" type="hidden" id="type" value="photo" />
+          <input name="type" type="hidden" id="type" value="video" />
+          <input name="type" type="hidden" id="type" value="wordtopic" />
+          <input name="type" type="hidden" id="type" value="videotopic" />-->
+          <div id="selopt">
+            <div id="cursel">全站</div>
+            <ul id="options">
+              <li><a href="javascript: void(0);" name="all">全站</a></li>
+              <li><a href="javascript: void(0);" name="news">资讯</a></li>
+              <li><a href="javascript: void(0);" name="photo">图片</a></li>
+              <li><a href="javascript: void(0);" name="video">视频</a></li>
+              <li><a href="javascript: void(0);" name="wordtopic">文字专题</a></li>
+              <li><a href="javascript: void(0);" name="videotopic">视频专题</a></li>
+            </ul>
+          </div>
+          <input name="keywords" class="seartext" type="text" onfocus="if(this.value=='{$keyword}') this.value='' " onblur="if(this.value=='') this.value='{$keyword}';"  value="{$keyword}"/>
+          <input name="submit" class="submit" type="submit"  value="" />
+        </form>
+      </div>
+        <div class="ohterico">
+        <p><a href="#"><img src="__PUBLIC__/Images/home/html/content/logo_net.png" width="113" height="30" /></a><a href="#"><img src="__PUBLIC__/Images/home/html/content/live_btn.png" width="78" height="23" /></a></p>
+        </div>
+    </div>
+</div>
+<!--头部代码end--> 
+
+
+<!---中间内容-->
+<div id="main">
+  <div class="leftsize">
+
+    <div class="leftvideo">
+      <h2 class="videotitle">
+        <p><a href="#" title="享受健康从点滴做起 长寿之道知易行难">”{$keyword}“相关<b>视频专题</b></a></p>
+      </h2>
+      <div class="videocon videocons"  style=" height:1700px;">
+        <ul class="videolist videolists">
+        <volist name='VideoCatResult' id='videoCat'>
+          <li><a href="/play/index/pid/{$videoCat.id}.html" target="_blank" class="othertop" >
+          <img src="__PUBLIC__/Images/home/html/grey.gif" data-original="{$videoCat.coverimage}" width="144" height="166" />
+          <span class="masktxt">片长:{$videoCat.videotime}</span></a> </li>
+         </volist>
+        </ul>
+      </div>
+      <div id="page" class="page">
+      <ul>
+        {$show}
+      </ul>
+    </div>
+    </div>
+    
+    
+  </div>
+  <div class="rightsize">
+
+    <div class="order">
+      <div class="ordertitle">
+        <h2><span><a href="#"  class="clecksp">日点击</a><a href="#">周点击</a></span>热门资讯</h2>
+      </div>
+      <ul class="ordershow">
+        <li><i>01</i><a href="#" target="_blank" title="体育摄影幻影极限运动">搜索排行日点击周点击排行日点击周</a></li>
+        <li><i>02</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>03</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>04</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>05</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>06</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>07</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>08</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>09</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>10</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+      </ul>
+      <ul  class="ordershow ordershowi" style=" display:none">
+        <li><i>01</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影："幻影"2</a></li>
+        <li><i>02</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影：""极限运动</a></li>
+        <li><i>03</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>04</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影：""极限运动</a></li>
+        <li><i>05</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>06</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>07</i><a href="#" target="_blank" title="体育摄影幻影极限运动">"幻影"极限运动</a></li>
+        <li><i>08</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>09</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+        <li><i>10</i><a href="#" target="_blank" title="体育摄影幻影极限运动">体育摄影幻影极限运动</a></li>
+      </ul>
+    </div>
+    <div class="adv300X175" ><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/content/adv.jpg" width="300" height="250" longdesc="http://www.jkwshk.tv" /></a></div>
+    <div class="hotvideo">
+      <div class="hotvideotitle">
+        <h2>热门视频<a href="#" class="more">更多</a></h2>
+      </div>
+      <!--体育摄影幻影极限运动<em>点击:50</em>-->
+      <ul class="hotvideolist">
+        <li class="hotcleck" ><i>1</i><a href="#" target="_blank" title="体育摄影"><img src="__PUBLIC__/Images/home/html/content/v-s-1.jpg" width="102" height="61" class="imgdis" />体育摄影幻影极限运动<em>点击:50</em></a></li>
+        <li><i>2</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+        <li><i>3</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+        <li><i>4</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+        <li><i>5</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+        <li><i>6</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+        <li><i>7</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+        <li><i>8</i><a href="#" target="_blank" title="体育摄影"><em>点击:50</em>体育摄影幻影极限运动</a></li>
+      </ul>
+    </div>
+    <div class="adv300X145" ><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/content/adv.jpg" width="300" height="250" longdesc="http://www.jkwshk.tv" /></a></div>
+        <div class="hotvideo">
+      <div class="hotvideotitle">
+        <h2>热门图片<a href="#" class="more">更多</a></h2>
+      </div>
+      <!--体育摄影幻影极限运动<em>点击:50</em>-->
+      <dl class="righotpic">
+        <dt><a href="#" target="_blank" title="体育摄影"><img src="__PUBLIC__/Images/home/html/content/v-s-1.jpg" width="142" height="98" /></a></dt>
+        <dd><a href="#" target="_blank" title="体育摄影">极限运动极限运动</a></dd>
+      </dl>
+      <dl class="righotpic">
+        <dt><a href="#" target="_blank" title="体育摄影"><img src="__PUBLIC__/Images/home/html/content/v-s-1.jpg" width="142" height="98" /></a></dt>
+        <dd><a href="#" target="_blank" title="体育摄影">极限运动极限运动</a></dd>
+      </dl>
+      <dl class="righotpic">
+        <dt><a href="#" target="_blank" title="体育摄影"><img src="__PUBLIC__/Images/home/html/content/v-s-1.jpg" width="142" height="98" /></a></dt>
+        <dd><a href="#" target="_blank" title="体育摄影">极限运动极限运动</a></dd>
+      </dl>
+      <dl class="righotpic">
+        <dt><a href="#" target="_blank" title="体育摄影"><img src="__PUBLIC__/Images/home/html/content/v-s-1.jpg" width="142" height="98" /></a></dt>
+        <dd><a href="#" target="_blank" title="体育摄影">极限运动极限运动</a></dd>
+      </dl>
+    </div>
+    <div class="adv300X250" style=" margin-bottom:20px;" ><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/content/adv.jpg" width="300" height="250" longdesc="http://www.jkwshk.tv" /></a></div>
+    
+  </div>
+
+</div>
+<div class="clear"></div>
+<!---广告位1000X90-->
+<div class="adv1000X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/data/index_banner1.jpg" width="970" height="90" /></a></div>
+<!--底部代码开始-->
+<div id="footer">
+  <div id="footer_end">
+    <div id="footer_econtent">
+      <p style=" margin-bottom:20px;" ><a href="/"><img src="__PUBLIC__/Images/home/html/small_logo.png"  alt="健康卫视视频网站" style=" vertical-align:middle"  /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#">关于我们</a> | <a target="_blank" href="#">联系我们</a> | <a href="/class.php?id=76" target="_blank" >广告服务</a> | <a href="/class.php?id=5" target="_blank">诚聘英才</a> | <a href="/view.php?id=104" target="_blank">保护隐私权</a> | <a href="/view.php?id=102" target="_blank" >免责条款</a> | <a href="/view.php?id=100" target="_blank">版权声明</a> | <a href="http://www.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><img src="__PUBLIC__/Images/home/html/small_logo_t.png" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a></p>
+      <br />
+      <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+      <br />
+      <p>健康卫视  健康新媒体 版权所有</p>
+      <br />
+      <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+<!--底部代码结束--> 
+
+<script src="__PUBLIC__/Js/home/html/jquery-1.9.1.min.js" type="text/javascript"></script> 
+<script src="__PUBLIC__/Js/home/html/jquery.lazyload.js"></script> 
+<script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload();
+      });
+</script> 
+<script type='text/javascript' src='__PUBLIC__/Js/home/html/Slideshow.js' charset='utf-8'></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	function leftnav(par,chil){
+			$(par).hover(function(){
+				$(this).find(chil).stop().slideDown(200);
+			},function(){
+				$(this).find(chil).slideUp(200);
+				});	
+	}
+	leftnav(".first_nav",".first_sub");
+	
+	function show(svalue,hvalue,showvalue){
+	$(svalue).mouseover(function(){
+	$(hvalue).removeClass("clecksp");
+	$(this).addClass("clecksp");	
+	$num=$(this).index();
+	$(showvalue).hide();
+	$(showvalue).eq($num).show();					
+	});	
+	}
+	show('.ctrlshow1 span a','.ctrlshow1 span a','.tab_show1');
+	show('.ctrlshow2 span a','.ctrlshow2 span a','.tab_show2');
+	show('.ctrlshow3 span a','.ctrlshow3 span a','.tab_show3');
+	show('.ordertitle h2 span a','.ordertitle h2 span a','.ordershow');
+});
+
+$(function(){
+	$(".link_three dd").mouseover(function(){
+	$(".link_three dd a").removeClass("showsin");
+	$(this).children("a").addClass("showsin");	
+	$num=$(this).index(); //alert($num);
+	$(".showlink").hide();
+	$(".showlink").eq($num).show();						
+	});	
+	
+	$(".show ul li p span:eq(0)").addClass("spanliove");
+	$(".show ul li p a:eq(0)").css("font-weight","bold");
+	$(".viewfocus ul li:eq(0)").css("margin-right","28px");
+	$(".ordershow li i:lt(3)").css("background","#ff702d");
+	$(".ordershowi li i:lt(3)").css("background","#ff702d");
+	
+	$(".piclist li").hover(function(){
+		
+		  $(this).find("p").slideDown(100);
+		  
+		},function(){
+			$(".piclist li p").slideUp(100);
+			});
+
+});
+$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").slideUp();}
+		)   
+	});
+</script>
+</block>
+

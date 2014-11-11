@@ -1,0 +1,279 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>健闻视频</title>
+</block>
+<block name='css'>
+<link href="__PUBLIC__/Css/home/video/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/video/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    
+<!--[if IE 6]>
+<script type="text/javascript" src="__PUBLIC__/Js/home/video/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,i,li,a,div');
+</script>
+<![endif]-->
+
+<!--IE6版本提示开始-->
+<!--[if lte IE 6]>  
+<div id="ie6-warning">
+<img src="__PUBLIC__/Images/home/video/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+<a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+ 或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+</div>  
+<script type="text/javascript">  
+function closeme()
+{
+   var div = document.getElementById("ie6-warning");
+   div.style.display ="none";
+}
+function position_fixed(el, eltop, elleft){  
+// check if this is IE6  
+if(!window.XMLHttpRequest)  
+window.onscroll = function(){  
+el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+}  
+else el.style.position = "fixed";  
+}  
+position_fixed(document.getElementById("ie6-warning"),0, 0);  
+</script>  
+<![endif]-->
+<!--版本提示结束-->
+
+<script type="text/javascript" src="__PUBLIC__/Js/home/video/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" >
+	function show(svalue,hvalue,showvalue){
+		$(function(){
+			$(svalue).mouseover(function(){
+				$(hvalue).removeClass("select");
+				$(this).children("a").addClass("select");	
+				$num=$(this).index(); //alert($num);
+				$(showvalue).hide();
+				$(showvalue).eq($num).show();			
+			});
+		});
+	}
+	show('.link_three dd','.link_three dd a','.showlink');
+	
+	$(function(){
+		$(".chotdl dd i:lt(3)").addClass("bg");	
+		$(".rnews ul li i:lt(3)").addClass("bg");
+	});
+	
+	$(function(){
+		$("#keyword span i").click(function(){
+			 $(this).parent().remove()
+			})
+			
+			$('.clearall').click(function(){
+			 $("#keyword span").hide()
+			})
+	});
+	
+	$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").hide();}
+		)   
+	})
+	
+</script>
+</block>
+<block name='body'>
+<!------头部------>
+<div class="header">
+  <include file="Public/top2" /> 
+  <include file="Public/common_nav2" /> 
+  <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div> -->
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/video/s1_logo.png" width="277" height="55" /></a></div>
+      <div class="search">
+    <include file='Public:search'/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  
+  <div class="container clearfix">
+  <div class="postname">
+  <p><a href="#" class="select">健闻视频</a><a href="#">健康视频</a> </p></div>
+    
+    <div class="leftmain fr">
+      <div class="latitle clearfix" id="latitle"></div>
+      <div class="alllist" id='searchContent'>
+        <ul class="alllistul clearfix" >
+        <volist name='videoList' id='vl'>
+          <li> <a href="#/id/{$vl.id}" class="listpic"><img src="__PUBLIC__/Images/home/video/data/l_img_1.jpg{$vl.photo}" width="151" height="90" /></a>
+            <p><a href="#/id/{$vl.id}">{$vl.title}</a> </p>  
+            <a href="__APP__/Play?id={$vl.id}&pid={$vl.pid}" class="nowplay">立即观看</a> </li>
+         </volist>
+        </ul>
+        <div class="page">
+          <ul>
+            {$showPage}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rightmain fl">
+    	<div class="tiaojian">
+        <p style=" color:#229d66;">已输入关键词</p>
+		<p><strong>请选择条件</strong></p>
+        <p id="keyword" class="keyword">
+        <span>天下万象<i>x</i></span>
+
+        <p style="margin-top:10px;"><a href="javascript:void(0)" class="clearall">清空所选</a></p>
+      </div>
+    	<h2 class="tjfenlei">请选择条件</h2>
+        <div class="fenlei clearfix">
+       <h3>栏目分类</h3>
+        <p> <a href="#">全部</a> 
+        	<volist name='catName' id='ctn'>
+            <a href="#" onclick='cat({$ctn.id});addchild("{$ctn.name}");'>{$ctn.name}</a> 
+        	</volist>
+        </p>
+        </div>
+		<div class="fenlei clearfix">
+         <h3>标签分类</h3>        
+        <p> <a href="#">全部</a> 
+        <volist name='typeName' id='tn'>
+        <a href="#/{$tn.id}" onclick='typeaj({$tn.id});addchild("{$tn.name}");'>{$tn.name}</a>
+        </volist>
+<script type="text/javascript">
+function addchild(name){
+	var Objkeywords = document.getElementById("keyword");
+	var span= document.createElement("span");
+	var    i= document.createElement("i");
+	span.innerHTML = name;
+	i.innerHTML = "x";
+	span.appendChild(i);
+	Objkeywords.appendChild(span);	
+}
+</script>
+<script type='text/javascript'>
+function typeaj(typeid){
+var typeAjaxUrl;
+	typeAjaxUrl ="__URL__/ajax";
+
+	var typeAjax;	
+	//实例化ajax
+	try{
+		//firefox,oper8.0,Safari
+		typeAjax = new XMLHttpRequest();
+		}catch(e){
+			//IE
+			try{
+			typeAjax = new ActiveXobject("Msxml2.XMLHTTP");
+				
+				}
+				catch(e){
+					try{
+					//向老版本兼容
+					typeAjax = new activeXobject("Microsoft.XMLHTTP");
+						}
+						catch(e){
+							alert("您的浏览器不支持AJAX！！请更换后浏览");
+							return false;
+							}
+					}
+			}
+
+			//实例化结束
+			//发送异步请求
+			typeAjax.open("GET",typeAjaxUrl+"/typeid"+"/"+typeid,true);
+			typeAjax.onreadystatechange=function(){
+
+					if(typeAjax.readyState==4){
+						document.getElementById("searchContent").innerHTML = typeAjax.responseText;
+						//alert(typeAjax.responseTex);
+						}
+				}
+
+			typeAjax.send(null);
+
+			
+			
+	//方法typeaj()结束
+}
+
+</script>
+        </p>
+<script type='text/javascript'>
+	function cat(cid){
+	var catAjaxUrl;
+	catAjaxUrl ="__APP__/ajax/search";
+	alert(catAjaxUrl);
+	var catAjax;	
+	//实例化ajax
+	try{
+		//firefox,oper8.0,Safari
+		catAjax = new XMLHttpRequest();
+		}catch(e){
+			//IE
+			try{
+			catAjax = new ActiveXobject("Msxml2.XMLHTTP");
+				
+				}
+				catch(e){
+					try{
+					//向老版本兼容
+					catAjax = new activeXobject("Microsoft.XMLHTTP");
+						}
+						catch(e){
+							alert("您的浏览器不支持AJAX！！请更换后浏览");
+							return false;
+							}
+					}
+			}
+			//实例化结束
+			//发送异步请求
+			catAjax.open("GET",catAjaxUrl+"/cid"+"/"+cid,true);
+			
+			catAjax.onreadystatechange=function(){
+					if(catAjax.readyState==4){
+						document.getElementById("searchContent").innerHTML = catAjax.responseText;
+						//alert(catAjax.responseText);
+						}
+				}
+			catAjax.send(null);
+
+			
+			
+	//方法cat(cid)结束
+	}
+
+        </script>
+       </div>
+       <div class="fenlei clearfix">
+        <h3>人群分类</h3>
+        <p> <a href="#">全部</a> <a href="#" class="people">白富美推荐1分钟视频</a> <a href="#" class="people">白富美推荐1分钟视频</a><a href="#" class="people">白富美推荐1分钟视频</a><a href="#" class="people">白富美推荐1分钟视频</a></p>
+        </div>
+
+      
+    </div>
+    <div class="clear"></div>
+    <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div>
+  </div>
+</div>
+
+<!--底部代码开始-->
+<include file="Public/footer"/>
+<!--底部代码结束--> 
+
+<!--<div class="left_Bg"><a class="Bg_link"  target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>
+<div class="right_Bg"><a class="Bg_link" target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>-->
+</block>
+

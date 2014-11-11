@@ -1,0 +1,58 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>404</title>
+<script language='javascript' type='text/javascript'> 
+var secs =5; //倒计时的秒数 
+var URL ; 
+function Load(url){ 
+URL =url; 
+for(var i=secs;i>=0;i--) 
+{ 
+window.setTimeout('doUpdate(' + i + ')', (secs-i) * 1000); 
+} 
+} 
+function doUpdate(num) 
+{ 
+document.getElementById('ShowDiv').innerHTML = '将在'+num+'秒后自动跳转到 首页' ; 
+if(num == 0) { window.location=URL; } 
+} 
+</script>
+<style>
+body{ background:#f7f7f7;}
+.lishizhen {
+	width:700px;
+	margin:0 auto;
+	margin-top:50px;
+}
+.lishizhenz {
+	width:700px;
+	position:absolute;
+	top:300px;
+}
+.lishizhenw {
+	margin-top:100px;
+	float:right;
+	color:#656565;
+}
+.lishizhenw a {
+	color:#656565;
+	text-decoration:none;
+}
+.lishizhenw a:hover {
+	color:#2d9a39;
+}
+</style>
+
+</block>
+
+<div class="lishizhen">
+  <p><img src="/Public/Images/home/html/404.png" width="700" height="650" /></p>
+  
+    <p  class="lishizhenw"><a href="#">返回上一页</a> | <a href="http://www.test.com" id="ShowDiv"></a></p>
+    <script language="javascript"> 
+Load("http://www.test.com"); 
+</script> 
+
+</div>

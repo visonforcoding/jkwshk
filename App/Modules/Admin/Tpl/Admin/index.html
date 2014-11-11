@@ -1,0 +1,86 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+
+<!-- 菜单区域  -->
+
+<!-- 主页面开始 -->
+<script type="text/javascript">
+function searcht(){
+	var s=document.getElementById("sword").value;
+	window.location.href="/admin/index/?s="+encodeURIComponent(s);
+}
+</script>
+<style type="text/css">
+.searchBar div{ float:left; margin-left:7px; display:inline;}
+.searchBar div select{ height:24px;}
+</style>
+        <div class="videoListTable">
+         	<div class="search">
+            <form method='post' action="__ACTION__" class="forms" id="fm1">
+                <div class="searchBar fl">
+                  <div style="line-height:24px;">输入关键字:</div>
+                  
+                  <div><input type="text" name="keyword" id="keyword" value="" class="keyword" /></div>
+                  <div><input type="submit" value="搜&nbsp;索" class="btnSearch" /></div>
+                 
+          	   </div>
+                </form>
+             </div>
+		  <div class="clearb">
+				<div class="editBar fr">	
+				  <a href="javascript:void(0);" onclick="dels('admin');" class="iDel">删除</a>
+				  <a href="/admin/indexedit/?action=add" class="iAdd">新增</a>
+				  <a href="javascript:void(0);" onclick="Refresh();" class="iRefresh">刷新</a>
+				</div>
+			</div>
+			<table width="100%" id="J-rowColor">
+				<thead>
+					<tr height="32">
+						<td width="40" align="center"><input type="checkbox" title="全选/取消" onclick="slt()" /></td>
+						<td  align="center">ID</td>
+						<td  align="center">用户名</td>
+                        <td  align="center">权限</td>
+                        <td  align="center">注册时间</td>
+         				<td  align="center">登入时间</td>
+         				<td  align="center">登入IP</td>
+         				<td  align="center">状态</td>
+                        <td width="65" align="center">操作</td>
+				  </tr>
+				</thead>
+				<tbody id="box_list">
+                	<volist name="list" id="vo">
+					<tr id="row{$vo.id}">
+						<td align="center"><input type="checkbox" name="__chk__" value="{$vo.id}" /></td>
+						<td align="center">{$vo.id}</td>
+						<td align="center">{$vo.account}</td>
+                        <td align="center">{$vo.gname}</td>
+						<td align="center">{$vo.create_time|toDate='Y-m-d H:i:s'}</td>
+						<td align="center">{$vo.last_login_time|toDate='Y-m-d H:i:s'}</td>
+						<td align="center">{$vo.last_login_ip}</td>
+                        <td align="center">
+                        <if condition="$vo['isopen'] eq 1">
+                      <p onclick="change(this,'admin','id={$vo.id}&isopen=0')" title="开启|关闭" val='1'><span class="enable"></span>开启</p>
+                        <else />
+                      <p onclick="change(this,'admin','id={$vo.id}&isopen=1')" title="开启|关闭" val='0'><span class="disable"></span>关闭</p>
+                        </if>
+                        </td>
+						<td align="center">
+							<a href="/admin/indexedit/?action=edit&id={$vo.id}" class="iconedit" title="编辑"><img src="/Public/Images/iconedit.png" width="26" height="26"></a>
+							<a href="javascript:void(0);"
+							onClick="del({$vo.id},'admin');" class="icondel" 
+                            title="删除"><img src="/Public/Images/icondel.png" alt="" width="26" height="26"></a>
+						</td>
+					</tr>
+                    </volist>
+				</tbody>
+			</table>
+			<!-- 分页 start -->
+            <div class="page">
+            {$page}
+            </div>
+            <!-- 分页 end -->
+		</div>
+<!-- 主页面结束 -->
+

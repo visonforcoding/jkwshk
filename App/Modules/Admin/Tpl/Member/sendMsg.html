@@ -1,0 +1,150 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '会员管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+            $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                param.classname = '{$classname}';
+                var isValid = $('#ff').form('validate');
+                var action = "{$action}";
+                if (action === 'edit') {
+                    param.action = 'edit';
+                    param.id = "{$Rs['id']}";
+                }
+                if (isValid) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/member/doSendMsg.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.success) {
+                                if (data.edit) {
+                                    $.messager.alert('信息提示', data.message, 'info');
+                                } else {
+                                    $.messager.alert('信息提示', data.message, 'info', clearForm);
+                                }
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        }
+                    });
+                } else {
+                    return isValid;
+                }
+                ;
+            });
+        });
+        function setAll() {
+            $('#oid').combogrid('setValue', '全体');
+            $('#oid').combogrid('disable');
+        }
+        function selectSome() {
+            $('#oid').combogrid('enable');
+            $('#oid').combogrid('clear');
+        }
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="发站内信"   data-options="iconCls:'icon-mail2',collapsible:true,fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form" action="/member/doSendMsg.html">
+                <input type="hidden" name="id" value="{$Rs['id']}"  />
+                <input type="hidden" name="action" value="{$action}"  />
+                <input type="hidden" name="classname" value="{$classname}"  />
+                <input type="hidden" name="setreferer" value="{$setreferer}"  />
+                <div class="input-group">
+                    <label>标题:</label>
+                    <input class="easyui-validatebox" type="text" name="title" data-options="required:true"></input>
+                </div>
+                <div class="input-group">
+                    <label>对象:</label>
+                    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="setAll()">不指定</a>
+                    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="selectSome()">指定</a>
+                    <input id="oid" name="oid" style="width:150px"></input>
+                    <script type="text/javascript">
+                        $(function() {
+                            $('#oid').combogrid({
+                                panelWidth: 200,
+                                multiple: true,
+                                url: '/member/getMembersForCombogrid.html',
+                                idField: 'id',
+                                textField: 'username',
+                                mode: 'remote',
+                                fitColumns: true,
+                                columns: [[
+                                        {field: 'ck', checkbox: true},
+                                        {field: 'username', title: '用户名', width: 60},
+                                    ]]
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="input-group">
+                    <label>开始时间:</label>
+                    <input class="easyui-datetimebox" type="text" name="starttime" data-options="required:true"></input>
+                </div>
+                <div class="input-group">
+                    <label>结束时间:</label>
+                    <input class="easyui-datetimebox" type="text" name="endtime" data-options="required:true"></input>
+                </div>
+                <div class="input-group">
+                    <label>是否发邮件:</label>
+                    <input  type="checkbox" id="isemail" name="isemail" value="1"/> 发邮件
+                </div>
+                <div  class="input-group hasEditor">
+                    <label>内容:</label>
+                    <script id="info" class="editor" name="content" type="text/plain">
+                        {$Rs['content']}
+                    </script>
+                    <script type="text/javascript">
+                        var editor = UE.getEditor('info');
+                    </script>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>引言:</br><a href="#">(用于显示消息列表等处，必填)</a></label>
+                    <textarea class="easyui-validatebox" data-options="required:true" name="summary" style="width:500px;height: 100px;"></textarea>
+                </div>
+                <div class="input-group">
+                    <label>作者:</label>
+                    <if condition="($action eq add) "> 
+                        <input type="text" id="author" name="author" value="健康卫视官方"/>
+                        <else/>
+                        <input name="author" id="author" type="text" value="{$Rs['author']}" class="inputText w310" />
+                    </if>
+                </div>
+                <div class="input-group">
+                    <label>状态:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function loadLocal() {
+            $('#ff').form('load', {
+                name: 'myname',
+                email: 'mymail@gmail.com',
+                subject: 'subject',
+                message: 'message',
+                language: 'en'
+            });
+        }
+        function loadRemote() {
+            $('#ff').form('load', 'form_data1.json');
+        }
+        function clearForm() {
+            $('#ff').form('clear');
+        }
+    </script>
+</block>

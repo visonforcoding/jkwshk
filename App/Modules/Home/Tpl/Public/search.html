@@ -1,0 +1,15 @@
+<form name="sofrm" class="sofrm" method="get" action="/Seek/index" onSubmit="return rewrite_search()">
+    <!--          <input name="mod" type="hidden" id="mod" value="search" />
+              <input name="type" type="hidden" id="type" value="name" />-->
+    <!--          <div id="selopt">
+                <div id="cursel">全站</div>
+                <ul id="options">
+                  <li><a href="javascript: void(0);" name="name">全站</a></li>
+                  <li><a href="javascript: void(0);" name="url">本栏</a></li>
+                </ul>
+              </div>-->
+    <input name="keywords" class="seartext" type="text" onfocus="if (this.value == '搜吗？搜吧！')
+                this.value = ''" onblur="if (this.value == '')
+                            this.value = '搜吗？搜吧！';"  value="搜吗？搜吧！"/>
+    <input name="submit" class="submit" type="submit"  value="搜健" />
+</form>

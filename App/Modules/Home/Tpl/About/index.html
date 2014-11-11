@@ -1,0 +1,175 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>健康卫视台简介_健康卫视</title>
+</block>
+<block name='css'>
+<link href="__PUBLIC__/css/home/about/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/home/about/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/about.js"></script>
+</block>
+<block name='body'>
+<include file="about:top"/>
+<div class="container clearfix">
+  <!-- 左侧导航开始 -->
+  <div class="left fl">
+  <ul class="leftnavtop">
+ <li id="one1" onclick="setTab('one',1,6)"><a href="javascript:void(0)" onclick="change_bg(this)" class="select">关于我们</a></li>
+  </ul>
+    	<ul class="leftnav">
+        	<li id="one2" onclick="setTab('one',2,6)"><a href="javascript:void(0)" onclick="change_bg(this)">健康卫视台简介</a></li>
+            <li id="one3" onclick="setTab('one',3,6)"><a href="javascript:void(0)" onclick="change_bg(this)">健康卫视网简介</a></li>
+            <li id="one4" onclick="setTab('one',4,6)"><a href="javascript:void(0)" onclick="change_bg(this)">保护隐私权</a></li>
+            <li id="one5" onclick="setTab('one',5,6)"><a href="javascript:void(0)" onclick="change_bg(this)">免责条款</a></li>
+            <li id="one6" onclick="setTab('one',6,6)"><a href="javascript:void(0)" onclick="change_bg(this)">版权声明</a></li>
+        </ul>
+    </div>
+  <!-- 左侧导航结束 -->
+  <!-- 右侧显示内容开始 -->
+    <div class="right_Contentbox">
+      <div class="right fr"  id="con_one_1">
+    <p class="postbg">您的位置：<b style=" color:#01913a;">关于我们</b></p>
+    <div class="content">
+      <h1>关于我们</h1>
+      <div class="text">
+        <p style="margin-top:7px;"><img src="__PUBLIC__/Images/home/about/health_10.jpg" width="700" height="228" /></p>
+        <p style="text-indent:2em;">在一片混沌之中，生命之光乍现，走过茹毛饮血、钻木取火的远古时期。</p>
+        <p style="text-indent:2em;">从结绳记事，到甲骨铭文，从文字到图画，人类一直在寻找记录和传播自己以及自己和自然宇宙关系的方式；1895年，人类有了自己的第一段影像，记录和传播，开始变得简单；30年后的1925年，电视机雏形诞生，记录和传播，变得无处不在。</p>
+        <p style="text-indent:2em;">通过电视，在家里，人们第一次看到了国家最高领导人的演讲；还是通过电视，还是在家里，人们看到了38万多公里之外的人类，第一次登陆月球的实时画面；又是通过电视，又是在家里，一粒足球的进网被清晰记录。</p>
+        <p style="text-indent:2em;">不到一百年，电视的记录和传播功能，超乎人类以往的任何一种方式：最及时的政坛风云、最新的科技资讯，最华丽的喜剧演出、最好玩的游戏比赛、最真实的人生百态，最生动的自然世界，最潮流的商品展示，以及最最<br />
+        HIGH的狂欢派对。</p>
+        <p style="text-indent:2em;">然而，不知从何时开始，电视记录和传播的多样化、泛娱乐化，似乎让电视，逐渐偏离了人类最初的本意，2012，人们最希望电视能记录和传播的究竟是什么？</p>
+        <p style="text-indent:2em;">健康。</p>
+        <p style="text-indent:2em;">伴随着时代的印记，健康使者顺运而生，它将带着健康的理念走遍全球，生生不息。</p>
+        <p style="text-indent:2em;">2012，不是世界末日，而是全新开始：是人类心灵重生的开始；</p>
+        <p style="text-indent:2em;">是人类文明崭新阶段的开始；</p>
+        <p style="text-indent:2em;">是人类真正关注生命健康，关注自身与大自然、与社会和谐共处的开始；</p>
+        <p style="text-indent:2em;">更是电视记录和传播回归本初、回归自然的开始。</p>
+        <p style="text-indent:2em;">以2012为元年，珍爱绿色生命、呵护和谐生态、崇尚品质生活；</p>
+        <p style="text-indent:2em;">以2012为元年，健康卫视进驻您家，做您家庭的全职医师，做您环保的全能管家，做您奉献慈悲心、感受人间大爱的纽带桥梁。</p>
+        <p style="text-indent:2em;">以2012为元年，欢迎你我都做“健康人”，未来，不管我们将要面对怎样的挑战，健康卫视，一路与您相伴。</p>
+        <p style="text-indent:2em;">生命、生态、生活，生生不息，这里是健康卫视。 </p>
+        </div>
+      </div>
+  </div>
+    
+  <div class="right fr"  id="con_one_2" style="display:none">
+    <p class="postbg">您的位置：关于我们 > <b style=" color:#01913a;">健康卫视台简介</b></p>
+    <div class="content">
+      <h1>健康卫视台简介</h1>
+      <div class="text">
+        <p style="text-indent:2em;">健康卫视在香港注册上星，是全球第一家，用汉语普通话播出的医学科普卫星电视台。健康卫视始终坚持关注人与自然本身，始终坚持"生命、生态、生活，生生不息"的"大健康"频道理念，采用各类节目形态传播权威的、专业的健康信息，普及健康知识，弘扬科学健康理念，内容涵盖医药卫生、医学科普、生态环保、公益慈善、品质
+          生活等领域。
+        </p>
+        <p style="margin-top:7px;"><img src="__PUBLIC__/Images/home/about/abou-1.jpg" width="703" height="441" /></p>
+        </div>
+      </div>
+  </div>
+      
+      <div class="right fr"  id="con_one_3" style="display:none">
+        <p class="postbg">您的位置：关于我们 > <b style=" color:#01913a;">健康卫视网简介</b></p>
+        <div class="content">
+          <h1>健康卫视网简介</h1>
+          <div class="text">
+            <p style="text-indent:2em;">健康卫视网由健康卫视主办，是全球最大中文健康视频、健康节目门户网站。健康卫视网秉承健康卫视“生命、生态、生活，生生不息”的“大健康”频道理念，希望通过权威的、系统的、细致的健康视频库，减少国民健康自查时间：所有健康知识，上健康卫视网，看健康视频就够了！同时，健康卫视网还通过图片和文字形式，提供健康图片、健康资讯、健康专题等内容，全方位满足国民对健康信息的需求。</p>
+            <p></p>
+            </div>
+        </div>
+        </div>
+      
+      <div class="right fr"  id="con_one_4" style="display:none">
+        <p class="postbg">您的位置：关于我们 > <b style=" color:#01913a;">保护隐私权</b></p>
+        <div class="content">
+          <h1>保护隐私权</h1>
+          <div class="text">
+            <p style="text-indent:2em;"></p>
+            <p style="text-indent:2em;">健康卫视网站（http://www.jkwshk.tv，以下称&ldquo;本网站&rdquo;）隐私权保护声明系本网站保护用户个人隐私的承诺。鉴于网络的特性，本网站将无可避免地与您产生直接或间接的互动关系，故特此说明本网站对用户个人信息所采取的收集、使用和保护政策，请您务必仔细阅读： <br />
+              <strong>1.</strong><strong>与个人身份无关的信息：</strong> <br />
+              我们将通过您的IP地址来收集非个人化的信息，例如您的浏览器性质、操作系统种类、给您提供接入服务的ISP的域名等，以优化在您计算机屏幕上显示的页面。通过收集上述信息，我们亦进行客流量统计，从而改进网站的管理和服务。 <br />
+              <strong>2.</strong><strong>与个人身份有关的信息</strong> <br />
+              2.1&nbsp;当您在健康卫视网站进行用户注册登记、参加网上或公共论坛等各种活动时，在您的同意及确认下，本网站将通过注册表格等形式要求您提供一些个人资料。这些个人资料包括： <br />
+              2.1.1&nbsp;个人识别资料：如姓名、性别、年龄、出生日期、身份证号码（或护照号码）、电话、通信地址、住址、电子邮件地址等。 <br />
+              2.1.2&nbsp;个人背景：&nbsp;职业、教育程度、收入状况、婚姻、家庭状况。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+              2.2&nbsp;请了解，在未经您同意及确认之前，本网站不会将您为参加本网站之特定活动所提供的资料利用于特定活动之外的其它目的。如出现以下第6条规定的情形不在此限。 <br />
+              <strong>3.</strong><strong>信息安全</strong> <br />
+              本网站将对您所提供的资料进行严格的管理及保护，本网站将使用相应的技术，防止您的个人资料丢失、被盗用或遭篡改。 <br />
+              <strong>4.</strong><strong>用户权利</strong> <br />
+              4.1&nbsp;您对于自己的个人资料享有以下权利： <br />
+              4.1.1&nbsp;随时查询及请求阅览； <br />
+              4.1.2&nbsp;随时请求补充或更正； <br />
+              4.1.3&nbsp;随时请求删除； <br />
+              4.1.4&nbsp;请求停止电脑处理及利用。 <br />
+              <strong>5.</strong><strong>合理利用原则</strong> <br />
+              本网站惟在符合下列条件之一，对收集之个人资料进行合理之利用： <br />
+              5.1&nbsp;已取得您的书面或等同于书面的同意； <br />
+              5.2&nbsp;为免除您在生命、身体或财产方面之急迫危险； <br />
+              5.3&nbsp;为防止他人权益之重大危害； <br />
+              5.4&nbsp;为增进公共利益，且无害于您的重大利益； <br />
+              5.5&nbsp;第三方公司可能在本网站收集用户浏览本网站的行为数据和/或与第三方在本网站投放的广告有关的数据。第三方公司的数据收集、使用行为将遵守国家有关法律法规的规定以及第三方公司对用户隐私和数据保护的规定。 <br />
+              <strong>6.</strong><strong>个人资料之披露</strong> <br />
+              当政府机关依照法定程序要求本网站披露个人资料时，本网站将根据执法单位之要求或为公共安全之目的提供个人资料。在此情况下之任何披露，本网站均不承担任何责任。 <br />
+              <strong>7.</strong><strong>未成年人隐私权的保护</strong> <br />
+              7.1&nbsp;本网站将建立和维持合理的程序，以保护未成年人个人资料的保密性及安全性。本网站郑重声明：任何18岁以下的未成年人参加网上活动应事先得到家长或其法定监护人（以下统称为&ldquo;监护人&rdquo;）的可经查证的同意。 <br />
+              7.2&nbsp;监护人应承担保护未成年人在网络环境下的隐私权的首要责任。 <br />
+              7.3&nbsp;本网站收集未成年人的个人资料，仅为应答未成人特定要求的目的，一俟回复完毕即从记录中删除，而不会保留这些资料做进一步的利用。 <br />
+              7.4&nbsp;未经监护人之同意，本网站将不会使用未成年人之个人资料，亦不会向任何第三方披露或传送可识别该未成人的个人资料。本网站如收集监护人或未成年人的姓名或其它网络通讯资料之目的仅是为获得监护人同意，则在经过一段合理时间仍未获得同意时，将主动从记录中删除此类资料。 <br />
+              7.5&nbsp;若经未成人之监护人同意，本网站可对未成年人之个人资料进行收集，本网站将向监护人提供： <br />
+              7.5.1&nbsp;审视自其子女或被监护人收集之资料的机会； <br />
+              7.5.2&nbsp;拒绝其子女或被监护人的个人资料被进一步的收集或利用的机会； <br />
+              7.5.3&nbsp;变更或删除其子女或被监护人个人资料的方式。 <br />
+              7.6&nbsp;监护人有权拒绝本网站与其子女或被监护人做进一步的联络。 <br />
+              7.7&nbsp;本网站收集未成年人的个人资料，这些资料只是单纯作为保护未成年人参与网络活动时的安全，而非作为其它目的之利用。本网站保证不会要求未成年人提供额外的个人资料，以作为允许其参与网上活动的条件。 <br />
+              <strong>8.Cookies</strong> <br />
+              8.1&nbsp;Cookies是指一种技术，当使用者访问设有Cookies装置的本网站时，本网站之服务器会自动发送Cookies至阁下浏览器内，并储存到您的电脑硬盘内，此Cookies便负责记录日后您到访本网站的种种活动、个人资料、浏览习惯、消费习惯甚至信用记录。 <br />
+              8.2&nbsp;运用Cookies技术，本网站能够为您提供更加周到的个性化服务。本网站将会运用Cookies追访您的浏览习惯等喜好，从而向您提供感兴趣的信息资料或储存密码，以便您造访本网站时不必每次重复输入密码。 <br />
+              <strong>9.</strong><strong>免责</strong> <br />
+              除上述第6条规定属免责外，下列情况时本网站亦毋需承担任何责任： <br />
+              9.1&nbsp;由于您将用户密码告知他人或与他人共享注册帐户，由此导致的任何个人资料泄露。 <br />
+              9.2&nbsp;任何由于黑客政击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营之不可抗力而造成的个人资料泄露、丢失、被盗用或被篡改等。 <br />
+              9.3&nbsp;由于与本网站链接的其它网站所造成之个人资料泄露及由此而导致的任何法律争议和后果。 <br />
+            &nbsp; &nbsp;  &nbsp;&nbsp;本网站之保护隐私声明的修改及更新权均属于健康卫视网。 </p>
+  <p></p>
+          </div>
+        </div>
+        </div>
+      
+      <div class="right fr"  id="con_one_5" style="display:none">
+        <p class="postbg">您的位置：关于我们 > <b style=" color:#01913a;">免责条款</b></p>
+        <div class="content">
+          <h1>免责条款</h1>
+          <div class="text">
+            <p style="text-indent:2em;">本网站所有信息仅供参考，不做个别诊断、用药和使用的根据。本网站致力于提供正确、完整的健康资讯，但不保证信息的正确性和完整性，且不对因信息的不正确或遗漏导致的任何损失或损害承担责任。本站所提供的任何医药资讯，仅供参考，不能替代医生和其他医务人员的建议，如自行使用本网资料发生偏差，本站概不负责，亦不负任何法律责任。</p>
+            <p style="text-indent:2em;">本网站所转载的文章出于传递更多信息之目的，并不意味着赞同其观点或证实其描述。文章内容仅供参考，具体治疗及选购请咨询医生或相关专业人士。</p>
+            <p style="text-indent:2em;">凡以任何方式登陆本网站或直接、间接使用本网站资料者，视为自愿接受本网站声明的约束。</p>
+  <p></p>
+          </div>
+        </div>
+        </div>
+      
+      <div class="right fr"  id="con_one_6" style="display:none">
+        <p class="postbg">您的位置：关于我们 > <b style=" color:#01913a;">版权声明</b></p>
+        <div class="content">
+          <h1>版权声明</h1>
+          <div class="text">
+            <p style="text-indent:2em;"></p>
+            <p>　 1、本网站所载的文/图等稿件均出于为公众传播有益健康的信息之目的，并不意味着赞同其观点或证实其内容的真实性，我们不对其科学性、严肃性等作任何形式的保证。如其他媒体、网络或个人从本网下载使用须自负版权等法律责任。</p>
+            <p>　 2、本网站内凡注明&ldquo;来源：健康卫视&rdquo;的所有文字、图片和音、视频稿件均属本网站原创内容，版权均属健康卫视所有，任何媒体、网站或个人未经本网站协议授权不得转载、链接、转贴或以其他方式复制发表。已经本网协议授权的媒体、网站，下载使用时必须注明&ldquo;稿件来源：健康卫视&rdquo;，违者本网将依法追究责任。</p>
+            <p>　 3、凡本网站转载的所有的文章、图片、音频视频文件等资料的版权归版权所有人所有，本站采用的非本站原创文章及图片等内容无法一一和版权者联系，如果本网所选内容的文章作者及编辑认为其作品不宜在网上供群众浏览，或不应无偿使用，请及时用电子邮件或电话通知我们，以迅速采取适当措施，避免给双方造成不必要的经济损失。</p>
+            <p>　 4、对于已经授权本站独家使用提供给本站资料的版权所有人的文章、图片等资料，如需转载使用，需取得本站和版权所有人的同意。</p>
+            
+            <p>&nbsp;</p>
+            <p><strong>章页声明：</strong><br />
+            登载此文出于传递更多信息之目的，并不意味着赞同其观点或证实其描述。文章内容仅供参考，具体治疗及选购请咨询医生或相关专业人士。 </p>
+  <p></p>
+          </div>
+        </div>
+        </div>
+    </div>
+  <!-- 右侧显示内容结束 -->
+</div>
+
+<include file="about:foot"/>
+</block>
+

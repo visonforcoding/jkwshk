@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>健康卫视后台管理系统V2.0版</title>
+<style>html, body {overflow: hidden;}</style>
+<load href="__PUBLIC__/Css/admin/base.css" />
+<load href="__PUBLIC__/Css/admin/style.css" />
+<load href="__PUBLIC__/Js/lan/cn.js" />
+<load href="__PUBLIC__/Js/dom.js" />
+<load href="__PUBLIC__/Js/other/md5.js" />
+<load href="__PUBLIC__/Js/admin/main.js" />
+<load href="__PUBLIC__/Js/box/box.css" />
+<load href="__PUBLIC__/Js/box/box.js" />
+<load href="__PUBLIC__/Js/admin/event.js" />
+<script type="text/javascript">
+document.domain="{$IURL}";
+menuid='{$id}';
+submenuid='{$subid}';
+var menuno={$menuno};
+window.onresize=resize;
+window.onload=function(){
+	Main=Dom('mBrower').contentWindow;
+    Dom('J-navList').style.width=menuno*90;
+    resize();
+    initMenu();
+}
+</script>
+</head>
+
+<body>
+<!-- header start -->
+<div id="header">
+      <div class="logo fl"><a href="/"><img src="__PUBLIC__/Images/logo.png"   height="44"></a></div>
+      <div class="announcement fl">
+    	<marquee>为了获得最佳浏览效果，请升级您的浏览器或换用谷歌、火狐浏览器访问。</marquee>
+  	  </div>
+      <div class="loading fl" id="loading" style="display:none;">请耐心等待....</div>
+      <div class="loginBar fl"> <span class="loginwel" id="J-loginwel">Hello,{$Think.session.loginName}<b class="triangle"></b></span>
+    <ul class="loginwelList" id="J-loginwelList">
+          <li> <a href="/public/password/"  target="mBrower">修改密码</a></li>
+          <li> <a href="/public/logout/">安全退出</a> </li>
+          <li> <a  href="/public/profile/" target="mBrower">修改资料</a></li>
+        </ul>
+    <!-- <a href="" class="notice">8<span></span></a> --> 
+  </div>
+      <div class="nav fl" id="nav">
+    <a href="javascript:void(0);"  onClick="goHome()" target="mBrower">
+    	<img src="__PUBLIC__/Images/menu.png" alt="" id="J-menuTitle" class="fl" width="155">
+    </a>
+    <a id='move_left' href="javascript:void(0);" class="pre" onClick="moveMenu(true)"></a>
+    <div id="J-navList" class="navlist"  style="float:left;width: 94%;height: 65px;overflow: hidden; position: relative;">
+        <ul id="J-navList-ul" style="clear: both;height: 65px; width:2440px;list-style: none;top: 0px;left: 0px;display: block;position: relative;">
+        <volist name="menu" id="vo" key="k">
+        	<if condition="$k eq 1">
+            	<li style="float: left;height: 65px;line-height: 65px;text-align: center;color: #000;font-weight: bold;"><a href="javascript:void(0);" id="menu_btn_{$vo.name}" onClick="show_menu('{$vo.name}','{$vo.title}')" class="{$vo.name} navCurrent"></a></li>
+            <else />
+            	<li style="float: left;height: 65px;line-height: 65px;text-align: center;color: #000;font-weight: bold;"><a href="javascript:void(0);" id="menu_btn_{$vo.name}" onClick="show_menu('{$vo.name}','{$vo.title}')" class="{$vo.name}"></a></li>
+            </if>
+        	
+	</volist>
+      </ul>
+    </div>
+    <a id='move_right' href="javascript:void(0);" onClick="moveMenu(false)" class="next"></a> </div>
+    <div class="navborder"></div>
+    </div>
+<!-- header end --> 
+
+<!-- menu start -->
+<div id="menu" style="left:0px;">
+	<volist name="submenu" id="vo" key="k">
+    	<a href='javascript:void(0);' url="/{$vo['func']}" id="submenu_btn_{$vo.name}" onClick="show_submenu('{$vo.name}','{$vo['title']}')">{$vo['title']}</a>
+	</volist>
+</div>
+<div> 版本说明： </div>
+<a class="menuHide" id="J-menuHide"><img src="__PUBLIC__/Images/menuhide.png" alt="" width="28" height="34"></a> 
+<!-- menu end --> 
+
+<!-- content start -->
+<div id="content">
+      <iframe id="mBrower" name="mBrower" src="__GROUP__/index/welcome.html" width="100%" allowtransparency="true" width="100%" height="100%" frameborder="0" scrolling="yes" style="overflow:visible;">
+      </iframe>
+    </div>
+<!-- content end --> 
+
+
+</body>
+</html>

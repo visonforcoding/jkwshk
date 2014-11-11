@@ -1,0 +1,79 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>联系我们_健康卫视</title>
+</block>
+<block name='css'>
+<link href="__PUBLIC__/css/home/about/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/home/about/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/about.js"></script>
+</block>
+<block name='body'>
+    <include file="about:top"/>
+    <div class="container clearfix">
+        <!-- 左侧导航开始 -->
+        <div class="left fl">
+            <ul class="leftnavtop">
+                <li id="one1" onclick="setTab('one', 1, 2)"><a href="javascript:void(0)" onclick="change_bg(this)" class="select">联系我们</a></li>
+            </ul>
+            <ul class="leftnav">
+                <li id="one2" onclick="setTab('one', 2, 2)"><a href="javascript:void(0)" onclick="change_bg(this)">联系方式</a></li>
+            </ul>
+        </div>
+        <!-- 左侧导航结束 -->
+        <!-- 右侧显示内容开始 -->
+        <div class="right_Contentbox">
+            <div class="right fr"  id="con_one_1">
+                <p class="postbg">您的位置：<b style=" color:#01913a;">联系我们</b></p>
+                <div class="content">
+                    <h1>联系我们</h1>
+                    <div class="text">
+                        <p><strong>健康卫视 (总部）</strong></p>
+                        <p>地　　址： 香港九龍觀塘偉業街205號茂興工業大廈3字樓B座B1室 </p>
+                        <p> 电　　话：  00852-54050779            传　　真： </p>
+                        <p>电子邮箱： hk@jkwshk.com</p>
+
+                        <p><strong>深圳运营中心：</strong></p>
+                        <p>地　　址： 深圳市福田保税区槟榔道1号吉虹大厦A栋</p>
+                        <p>邮　　编： 518045</p>
+                        <p>电　　话：  +86 755 33228188          传　　真： +86 755 33000996</p>
+                        <p>电子邮箱：  cn@jkwshk.com</p>
+
+                        <p><strong>北京运营中心：</strong></p>
+                        <p>地      址：北京市宣武区琉璃厂西街南柳巷三号 100052</p>
+                        <p>电       话：</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right fr"  id="con_one_2" style="display:none;">
+                <p class="postbg">您的位置：联系我们><b style=" color:#01913a;">联系方式</b></p>
+                <div class="content">
+                    <h1>联系我们</h1>
+                    <div class="text">
+                        <p><strong>健康卫视 (总部）</strong></p>
+                        <p>地　　址： 香港九龍觀塘偉業街205號茂興工業大廈3字樓B座B1室 </p>
+                        <p> 电　　话：  00852-54050779            传　　真： </p>
+                        <p>电子邮箱： hk@jkwshk.com</p>
+
+                        <p><strong>深圳运营中心：</strong></p>
+                        <p>地　　址： 深圳市福田保税区槟榔道1号吉虹大厦A栋</p>
+                        <p>邮　　编： 518045</p>
+                        <p>电　　话：  +86 755 33228188          传　　真： +86 755 33000996</p>
+                        <p>电子邮箱：  cn@jkwshk.com</p>
+
+                        <p><strong>北京运营中心：</strong></p>
+                        <p>地      址：北京市宣武区琉璃厂西街南柳巷三号 100052</p>
+                        <p>电       话：</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 右侧显示内容结束 -->
+    </div>
+    <include file="about:foot"/>
+</block>
+

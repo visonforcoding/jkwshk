@@ -1,0 +1,152 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script src="__PUBLIC__/ueditor/ueditor.config.js" ></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.js" ></script>
+    <script href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" ></script>
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '图片管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+            $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                param.classname = '{$classname}';
+                var isValid = $('#ff').form('validate');
+                var action = "{$action}";
+                if (action === 'edit') {
+                    param.action = 'edit';
+                    param.id = "{$Rs['id']}";
+                }
+                if (isValid) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/video/doAddVideo.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.success) {
+                                if (data.edit) {
+                                    $.messager.alert('信息提示', data.message, 'info');
+                                } else {
+                                    $.messager.alert('信息提示', data.message, 'info', clearForm);
+                                }
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        }
+                    });
+                } else {
+                    return isValid;
+                };
+            });
+        });
+        function clearForm() {
+            $('#ff').form('clear');
+        }
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加焦点图"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form">
+                <div class="input-group">
+                    <label>焦点图标题</label>
+                    <input class="easyui-validatebox" style="width:400px" id="title" value="{$Rs['title']}" type="text" name="title" data-options="required:true" ></input>
+                </div>
+                <div class="input-group">
+                    <label>链接:</label>
+                    <input name="link" class="easyui-validatebox" data-options="required:true" id="shorttitle" type="text" value="{$Rs['link']}" class="inputText w310" />
+                </div>
+                <div class="input-group">
+                    <label>排序:</label>
+                    <input name="level" id="shorttitle"  type="text" value="{$Rs['level']}" class="inputText" />
+                </div>
+                <div class="input-group">
+                    <label style="float: left">栏目类型:</label>
+                    <div class="checkbox-inline" style="width:800px;float: left">
+                        {$ffcat}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>焦点图类型:</label>
+                    <select name="type">
+                        <volist name="focusType" id="v">
+                            <option value="{$v.id}" <if condition ="$v.id eq $Rs['type']">selected="selected"</if> >{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >上传焦点图:</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                                {$Rs['pic']}
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" style="width: 133px;" class="btn btn-primary" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="photo" id="litpic" value="{$Rs['photo']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    启用
+                    <input type="radio" name="status" value="1" <empty name='status'>checked</empty> <if condition ="$Rs['status'] eq '1'">checked</if>   id="RadioGroup1_1" />
+                    关闭
+                    <input type="radio" name="status" value="0"  <if condition ="$Rs['status'] eq '0'">checked</if> id="RadioGroup1_1" />
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        /*图片上传*/
+        (function($) {
+            var image = {
+                editor: null,
+                init: function(editorid, keyid) {
+                    var _editor = this.getEditor(editorid);
+                    _editor.ready(function() {
+                        _editor.setDisabled();
+                        _editor.hide();
+                        _editor.addListener('beforeInsertImage', function(t, args) {
+                            var imgsrc = args[0].src;
+                            $("#" + keyid).val(imgsrc);
+                            $("#disimgcover").html('<img src="' + imgsrc + '" width="120" height="120" />');
+                        });
+                    });
+                },
+                getEditor: function(editorid) {
+                    this.editor = UE.getEditor(editorid);
+                    return this.editor;
+                },
+                show: function(id) {
+                    var _editor = this.editor;
+                    //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+                    //和网上一些朋友的代码不同之处就在这里  
+                    $("#" + id).click(function() {
+                        var image = _editor.getDialog("insertimage");
+                        image.render();
+                        image.open();
+                    });
+                },
+                render: function(editorid) {
+                    var _editor = this.getEditor(editorid);
+                    _editor.render();
+                }
+            };
+            $(function() {
+                image.init("myeditor", "litpic");
+                image.show("image");
+            });
+        })(jQuery);
+    </script>
+</block>

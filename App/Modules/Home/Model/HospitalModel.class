@@ -1,0 +1,19 @@
+<?php
+
+/**
+* Encoding     :   UTF-8
+* Created on   :   2014-3-27 11:27:32 by 曹文鹏 , caowenpeng1990@126.com
+* For          :   医院模型
+*/
+class HospitalModel extends Model{
+    
+    
+    public function getHospRank($limit){
+        $this->filed('name,photo')
+                ->where("isopen = '1'")
+                ->order('')
+                ->limit($limit)
+                ->select()
+    }
+    
+}

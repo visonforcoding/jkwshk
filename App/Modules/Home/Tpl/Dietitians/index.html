@@ -1,0 +1,125 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>营养师_中国人营养健康交流第一平台_健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="营养师，营养学，饮食健康，营养搭配" />
+    <meta name="description" content="营养师频道是健康卫视网为满足国民对营养健康知识的越来越关注的需求而全新开辟的一个频道。营养师频道汇聚了国内主要营养师，他们在本平台与国民进行交流，与您一起关注饮食健康与营养，为国民提供营养咨询、找营养师，营养食谱，学习营养知识。" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/Dietitians/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/Dietitians/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script> 
+    <script type="text/javascript" >
+        function show(svalue, hvalue, showvalue) {
+            $(function() {
+                $(svalue).mouseover(function() {
+                    $(hvalue).removeClass("select");
+                    $(this).children("a").addClass("select");
+                    $num = $(this).index(); //alert($num);
+                    $(showvalue).hide();
+                    $(showvalue).eq($num).show();
+                });
+            });
+        }
+        show('.link_three dd', '.link_three dd a', '.showlink');
+        $(function() {
+            $("#selopt").hover(
+                    function() {
+                        $("#options").slideDown();
+                        $("#options li a").click(function() {
+                            $("#cursel").text($(this).text());
+                            $("#type").attr("value", $(this).attr("name"));
+                            $("#options").hide();
+                        });
+                    },
+                    function() {
+                        $("#options").hide();
+                    }
+            );
+        })
+    </script>
+</block>
+<block name='body'>
+    <!------头部------>
+    <div class="header">
+        <!------顶部------>
+        <include file="Public/top2" />
+        <!------顶部结束------>
+        <!------栏目------>
+        <include file="Public/common_nav2"/>
+        <!------栏目结束------>
+        <!--<div class="adv980X90"><a href="#" target="_blank"><img src="images/data/index_banner1.jpg" width="970" height="90" /></a></div>--> 
+        <div class="subnav">
+            <div class="subnavcontent">
+                <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/Dietitians/yys_logo.png" width="196" height="73" /></a></div>
+                <div class="search">
+                       <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部结束-->
+    <div class="row">
+        <div class="bnbg">
+            <div  class="banner"><img src="__PUBLIC__/Images/home/Dietitians/data/yys_banner_1.jpg" width="980" height="273" /></div>
+        </div>
+        <div class="container clearfix">	
+            <div class="larea fl">
+                <div style=" margin-left:20px;">
+                    <h2 class="area_place_title">按地区分类</h2>
+                    <ul class="area_place">
+                        <volist name="areas" id="v">
+                        <li><a href="/dietitians/index/area/{$v.city}.html">{$v.area_name}</a></li>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+            <div class="rarea fr">
+                <div class="adv285X124"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/Dietitians/data/yys_adv1.jpg" width="285" height="124" /></a></div>
+            </div>
+            <div class="clear"></div>
+            <div class="yys">
+                <h2 class="title">营养师介绍</h2>
+                <!--<p class="yyspage">&nbsp;&nbsp;{$page1}</p>--> 
+                <p style=" float:right; line-height:50px;">共为您找到<span style=" color:#12937c;">{$num}</span>个营养师</p>
+            </div>
+            <ul class="yyslist clearfix">
+                <!---循环营养师列表-->
+                <foreach name='arr' item='v'>
+                    <li>
+                        <a href="__APP__/Dietitians/dietitian/id/{$v.id}.html" class="thumb" >
+                            <img src="{$v.photo}" width="165" height="165" alt="{$v.keywords}"/>
+                            <p><b>{$v.name}</b></p>
+                        </a>
+                        <div class="info">
+                            <p>  {$v.info|strip_tags|mb_substr=0,110,'utf-8'}</p>
+                            <span>
+                                <a class="addfav" href="__APP__/Dietitians/dietitian/id/{$v.id}.html" title="详情点击>>">详情点击>></a>
+                            </span>
+                        </div>
+                    </li>
+                </foreach>
+            </ul>
+            <div id="page" class="page">
+                <ul>
+                    {$page}
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/Dietitians/data/index_banner1.jpg" width="970" height="90" /></a></div>
+    </div>
+
+    <!------底部------>
+
+    <include file="Public/foot"/>
+
+    <!--<div class="left_Bg"><a class="Bg_link"  target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>
+    <div class="right_Bg"><a class="Bg_link" target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>-->
+</block>
+

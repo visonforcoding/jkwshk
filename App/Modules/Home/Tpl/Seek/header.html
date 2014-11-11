@@ -1,0 +1,34 @@
+<div id="header">
+    <div class="h_content">
+        <div class="logo"><img src="__PUBLIC__/Images/home/html/content/search_logo.png" width="185" height="50" /></div>
+        <div class="search">
+            <form name="sofrm" class="sofrm" method="get" action="/seek/index.html" onSubmit="return rewrite_search()">
+                <input name="mod" type="hidden" id="mod" value="search" />
+                <input name="type" type="hidden" id="type" value="all" />
+                <!--          <input name="type" type="hidden" id="type" value="news" />
+                          <input name="type" type="hidden" id="type" value="photo" />
+                          <input name="type" type="hidden" id="type" value="video" />
+                          <input name="type" type="hidden" id="type" value="wordtopic" />
+                          <input name="type" type="hidden" id="type" value="videotopic" />-->
+                <div id="selopt">
+                    <div id="cursel">全站</div>
+                    <ul id="options">
+                        <li><a href="javascript: void(0);" name="all">全站</a></li>
+                        <li><a href="javascript: void(0);" name="news">资讯</a></li>
+                        <li><a href="javascript: void(0);" name="picture">图片</a></li>
+                        <li><a href="javascript: void(0);" name="video">视频</a></li>
+                        <li><a href="javascript: void(0);" name="wordtopic">文字专题</a></li>
+                        <li><a href="javascript: void(0);" name="videocat">视频专题</a></li>
+                    </ul>
+                </div>
+                <input id="query" name="keywords" class="seartext" type="text" onfocus="if (this.value == '搜吗？搜吧！')
+                      this.value = ''" onblur="if (this.value == '')
+                                  this.value = '搜吗？搜吧！';"  value="{$keyword}"/>
+                <input name="submit" class="submit" type="submit"  value="" />
+            </form>
+        </div>
+        <div class="ohterico">
+            <p><a href="#"><img src="__PUBLIC__/Images/home/html/content/logo_net.png" width="113" height="30" /></a><a href="/live/index.html"><img src="__PUBLIC__/Images/home/html/content/live_btn.png" width="78" height="23" /></a></p>
+        </div>
+    </div>
+</div>

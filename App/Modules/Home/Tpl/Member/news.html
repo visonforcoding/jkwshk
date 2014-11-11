@@ -1,0 +1,98 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>我收到的消息</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/member/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/style.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/tab.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/uploadify.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-tab.js"></script>
+</block>
+<block name='style'>
+    <style>
+        .page{width:630px; margin:0 auto; margin-top:30px; overflow:hidden; clear:both;}
+        .page ul{overflow:hidden; margin-top:20px;}
+        .page ul li{float:left; margin:0px 2px; display:inline; line-height:26px;width:auto;}
+        .page li a{display:inline-block; height:26px; line-height:26px; padding:0px 10px; margin: 0 2px; border:1px solid #ccc; font-size:14px;}
+        .page li a:hover,.page li a.selectin{background:#0498FA; color:#FFF;}
+
+        p.content a{
+            color:#4C9ED9;
+        }
+        p.content a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</block>
+<block name='body'>
+    <div id="head" class="yebg">
+        <div class="header">
+            <div class="top">
+                <include file="Member:top"/>
+            </div>
+        </div>
+        <div class="whitebg shadows" >
+            <div class="container clearfix">
+                <div class="user_top">
+                    <div class="user_images"><img src=<if condition="($user.avatar eq '0')">__PUBLIC__/Default.jpg<else/>{$user.avatar}</if> width="76" height="78" /></div>
+                    <p class="user_uname"><a href="#" style=" font-size:16px;">{$user.nickname|default="还没昵称"}</a></p>
+                    <p class="user_other"><a href="#image"  data-toggle="tab">修改头像</a>&nbsp;&nbsp;健康学分 {$user.credit} 分</p>
+                </div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix" style=" margin-top:5px; background:#FFF;">
+        <div class="ucleft">
+            <ul class="lsubnav">
+                <li><a href="user.html"title="个人资料"></a></li>
+                <li><a href="#" class="rizhi" title="日志"></a></li>
+                <li><a href="#" class="xiangce" title="相册"></a></li>
+                <li><a href="#" class="liyans" title="留言"></a></li>
+                <li><a href="/member/index.html" class="isee"  title="我看过的"></a></li>
+                <li><a href="#" class="shoucang" title="我的收藏"></a></li>
+                <li><a href="#" class="xuefen" title="健康学分"></a></li>
+                <li><a href="/member/hd.html" class="huodong" title="活动"></a></li>
+                <li><a href="/member/news.html" class="xiaoxi select9" title="消息"></a></li>
+            </ul>
+        </div>
+        <div class="ucright" style="position:relative;">
+            <div class="tab-content">
+                <p style=" font-size:18px; margin-top:10px;">已有{$count}条消息</p>
+                <div class="tab-pane active piclist" id="userinfo" >
+                    <!--消息列表开始 --> 
+                    <div class="newslist">
+                        <volist name="msgs" id="v" empty="暂无任何消息。。。" >
+                            <dl>
+                                <dt><img src="__PUBLIC__/Default.jpg" width="50" height="50" /></dt>
+                                <dd>
+                                    <p class="name_time"><span class="name">{$v.title}</span><span class="time">{$v.ctime}</span></p>
+                                    <p class="content">{$v.summary}......<a href="/member/newsview/id/{$v.id}.html">[查看详细]</a></p>
+                                </dd>
+                            </dl> <div class="newslistline"></div>
+                        </volist>
+                    </div> 
+                    <div id="page" class="page">
+                        <ul>{$show}</ul>
+                    </div>
+                    <!--消息列表结束 --> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部start -->
+    <include file="foot"/>
+    <!--底部stop -->
+
+</block>
+

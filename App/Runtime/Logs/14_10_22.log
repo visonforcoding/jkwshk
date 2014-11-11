@@ -1,0 +1,1046 @@
+[ 2014-10-22T11:34:11+08:00 ] 127.0.0.1 /Public/Js/Base.js
+ERR: 非法操作:js
+
+[ 2014-10-22T11:34:11+08:00 ] 127.0.0.1 /Public/Js/Think/ThinkAjax.js
+ERR: 非法操作:js
+
+[ 2014-10-22T11:34:11+08:00 ] 127.0.0.1 /Public/Js/common.js
+ERR: 非法操作:js
+
+[ 2014-10-22T11:34:20+08:00 ] 127.0.0.1 /Index/index
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 266 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 271 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021689s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000856s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000454s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000302s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002102s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001134s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2014-10-22T11:34:38+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003262s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003076s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.031682s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000639s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000339s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000281s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000182s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000183s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000194s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000275s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000183s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000182s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000713s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000213s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000151s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000181s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000146s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000191s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000145s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000143s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000173s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000143s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000187s ]
+
+[ 2014-10-22T11:34:38+08:00 ] 127.0.0.1 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003231s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003342s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000293s ]
+
+[ 2014-10-22T11:34:38+08:00 ] 127.0.0.1 /permission/getGroupAccess.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\PermissionAction.class.php 第 129 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_group_access` [ RunTime:0.003167s ]
+SQL: SHOW COLUMNS FROM `db_admin_groups` [ RunTime:0.003071s ]
+SQL: SHOW COLUMNS FROM `db_access` [ RunTime:0.004841s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT COUNT(*) AS tp_count FROM db_group_access GroupAccess  JOIN db_admin_groups AdminGroups ON GroupAccess.groupid=AdminGroups.id  JOIN db_access Access ON Access.id=GroupAccess.accessid LIMIT 1   [ RunTime:0.000370s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT GroupAccess.id AS id,GroupAccess.groupid AS groupid,GroupAccess.accessid AS accessid,AdminGroups.id AS gid,AdminGroups.name AS gname,Access.path AS path,Access.id AS aid,Access.title AS aname FROM db_group_access GroupAccess  JOIN db_admin_groups AdminGroups ON GroupAccess.groupid=AdminGroups.id  JOIN db_access Access ON Access.id=GroupAccess.accessid ORDER BY `id` asc LIMIT 0,10   [ RunTime:0.000402s ]
+
+[ 2014-10-22T11:34:39+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003872s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003855s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000633s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000761s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000505s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000340s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000234s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000221s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000250s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000312s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000224s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000223s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000617s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000261s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000220s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000248s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000215s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000278s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000225s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000217s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000249s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000215s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000275s ]
+
+[ 2014-10-22T11:39:45+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003089s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.002829s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000495s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000564s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000360s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000293s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000176s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000172s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000154s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000263s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000188s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000186s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000516s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000217s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000186s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000251s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000207s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000234s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000187s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000184s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000213s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000184s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000234s ]
+
+[ 2014-10-22T11:39:46+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004176s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003645s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000545s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000596s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000359s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000290s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000188s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000188s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000179s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000242s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000184s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000195s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000272s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000180s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000217s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000229s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000237s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000228s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000187s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000223s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000197s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000237s ]
+
+[ 2014-10-22T11:39:46+08:00 ] 127.0.0.1 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003827s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.003192s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000278s ]
+
+[ 2014-10-22T11:39:46+08:00 ] 127.0.0.1 /admin/getAdmins.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.002968s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\AdminAction.class.php 第 245 行.
+SQL: SHOW COLUMNS FROM `db_admin_groups` [ RunTime:0.002970s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.002739s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT COUNT(*) AS tp_count FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id LIMIT 1   [ RunTime:0.000274s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT g.id AS gid,g.name AS gname,a.id AS id,a.account AS account,a.nickname AS nickname,a.password AS password,a.email AS email,a.isopen AS isopen,a.create_time AS create_time,a.last_login_time AS last_login_time,a.login_count AS login_count,a.last_login_ip AS last_login_ip FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id ORDER BY `create_time` desc LIMIT 0,10   [ RunTime:0.000353s ]
+
+[ 2014-10-22T11:41:17+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003341s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.003117s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000480s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000536s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000324s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000268s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000206s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000175s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000168s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000225s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000162s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000168s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000558s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000211s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000178s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000186s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000160s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000205s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000276s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000240s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000241s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000183s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000243s ]
+
+[ 2014-10-22T11:41:18+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.006616s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.006841s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.001134s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.001374s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000779s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000619s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000373s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000361s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000367s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000506s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000391s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000390s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.001415s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000409s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000257s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000286s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000245s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000304s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000268s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000250s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000320s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000254s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000313s ]
+
+[ 2014-10-22T11:41:18+08:00 ] 127.0.0.1 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.006735s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.005146s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000322s ]
+
+[ 2014-10-22T11:41:18+08:00 ] 127.0.0.1 /admin/getAdmins.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004438s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000434s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\AdminAction.class.php 第 245 行.
+SQL: SHOW COLUMNS FROM `db_admin_groups` [ RunTime:0.004258s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003971s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT COUNT(*) AS tp_count FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id LIMIT 1   [ RunTime:0.000352s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT g.id AS gid,g.name AS gname,a.id AS id,a.account AS account,a.nickname AS nickname,a.password AS password,a.email AS email,a.isopen AS isopen,a.create_time AS create_time,a.last_login_time AS last_login_time,a.login_count AS login_count,a.last_login_ip AS last_login_ip FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id ORDER BY `create_time` desc LIMIT 0,10   [ RunTime:0.000476s ]
+
+[ 2014-10-22T11:44:07+08:00 ] 127.0.0.1 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003546s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.002710s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000218s ]
+
+[ 2014-10-22T11:44:07+08:00 ] 127.0.0.1 /admin/getAdmins.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.006706s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000612s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\AdminAction.class.php 第 247 行.
+SQL: SHOW COLUMNS FROM `db_admin_groups` [ RunTime:0.004659s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.004419s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT COUNT(*) AS tp_count FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id LIMIT 1   [ RunTime:0.000396s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT g.id AS gid,g.name AS gname,a.id AS id,a.account AS account,a.nickname AS nickname,a.password AS password,a.email AS email,a.isopen AS isopen,a.create_time AS create_time,a.last_login_time AS last_login_time,a.login_count AS login_count,a.last_login_ip AS last_login_ip FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id ORDER BY `create_time` desc LIMIT 0,10   [ RunTime:0.000515s ]
+
+[ 2014-10-22T11:47:42+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003442s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.002987s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.000547s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.000620s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000355s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000303s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000174s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000168s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000167s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000225s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000161s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000163s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.000531s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000198s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000200s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000258s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000184s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000207s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000169s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000162s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000188s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000304s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000260s ]
+
+[ 2014-10-22T11:47:43+08:00 ] 127.0.0.1 /video/getVideoTypesForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.006821s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `db_video_type` [ RunTime:0.006368s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `id`,name as text FROM `db_video_type`  [ RunTime:0.000492s ]
+
+[ 2014-10-22T11:47:43+08:00 ] 127.0.0.1 /video/getVideoCatForCombo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.006722s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `db_video_cat` [ RunTime:0.006575s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '1' )  [ RunTime:0.001042s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '7' )  [ RunTime:0.001349s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '8' )  [ RunTime:0.000796s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '9' )  [ RunTime:0.000627s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '10' )  [ RunTime:0.000386s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '11' )  [ RunTime:0.000383s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '12' )  [ RunTime:0.000363s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '23' )  [ RunTime:0.000502s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '35' )  [ RunTime:0.000362s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '36' )  [ RunTime:0.000421s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '37' )  [ RunTime:0.001233s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '38' )  [ RunTime:0.000492s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '39' )  [ RunTime:0.000532s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '57' )  [ RunTime:0.000580s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '139' )  [ RunTime:0.000449s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '176' )  [ RunTime:0.000490s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '214' )  [ RunTime:0.000462s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '241' )  [ RunTime:0.000391s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '250' )  [ RunTime:0.000439s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '256' )  [ RunTime:0.000318s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_video_cat` WHERE ( pid = '269' )  [ RunTime:0.000315s ]
+
+[ 2014-10-22T11:47:43+08:00 ] 127.0.0.1 /admin/getAdmins.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003886s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `db_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: where E:\Dropbox\www\jkws_new\App\Modules\Admin\Action\AdminAction.class.php 第 245 行.
+SQL: SHOW COLUMNS FROM `db_admin_groups` [ RunTime:0.003510s ]
+SQL: SHOW COLUMNS FROM `db_admin` [ RunTime:0.003865s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT COUNT(*) AS tp_count FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id LIMIT 1   [ RunTime:0.000387s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT g.id AS gid,g.name AS gname,a.id AS id,a.account AS account,a.nickname AS nickname,a.password AS password,a.email AS email,a.isopen AS isopen,a.create_time AS create_time,a.last_login_time AS last_login_time,a.login_count AS login_count,a.last_login_ip AS last_login_ip FROM db_admin_groups g  JOIN db_admin a ON a.gid=g.id ORDER BY `create_time` desc LIMIT 0,10   [ RunTime:0.000416s ]
+
+[ 2014-10-22T14:04:48+08:00 ] 127.0.0.1 /Public/js/corp/jquery1.10.2.js
+ERR: 无法加载模块:Public
+
+[ 2014-10-22T14:04:48+08:00 ] 127.0.0.1 /Public/js/corp/indexTV.js
+ERR: 无法加载模块:Public
+
+[ 2014-10-22T14:04:48+08:00 ] 127.0.0.1 /Public/js/corp/jquery1.10.2.js
+ERR: 无法加载模块:Public
+
+[ 2014-10-22T14:04:48+08:00 ] 127.0.0.1 /Public/js/corp/jcarousellite_1.0.1.min.js
+ERR: 无法加载模块:Public
+
+[ 2014-10-22T14:52:00+08:00 ] 127.0.0.1 /viewpoint/?&p=2
+ERR: �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2014-10-22T14:53:37+08:00 ] 127.0.0.1 /Man/news
+ERR: 非法操作:news
+
+[ 2014-10-22T17:42:31+08:00 ] 127.0.0.1 /Public/Js/Base.js
+ERR: 非法操作:js
+
+[ 2014-10-22T17:42:31+08:00 ] 127.0.0.1 /Public/Js/common.js
+ERR: 非法操作:js
+
+[ 2014-10-22T17:42:31+08:00 ] 127.0.0.1 /Public/Js/Think/ThinkAjax.js
+ERR: 非法操作:js
+
+[ 2014-10-22T17:42:45+08:00 ] 127.0.0.1 /Index/index
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 266 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 271 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035150s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000713s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000582s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000472s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002619s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2014-10-22T17:55:31+08:00 ] 127.0.0.1 /Index/index
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 266 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 271 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013359s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000965s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000686s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000535s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003032s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000716s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2014-10-22T17:56:15+08:00 ] 127.0.0.1 /Index/index
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 266 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 271 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\Dropbox\www\jkws_new\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013488s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000725s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000637s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002583s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000707s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2014-10-22T17:57:16+08:00 ] 127.0.0.1 /Viewpoint/index.html
+ERR: 无法加载模块:Viewpoint
+

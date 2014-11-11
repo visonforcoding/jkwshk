@@ -1,0 +1,226 @@
+<extend name='Layout:base'/>
+
+<block name='head'>
+
+<title>创意短片</title>
+<link href="__PUBLIC__/Css/home/html/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/html/cydp.css" rel="stylesheet" type="text/css" />
+</block>
+<script src="__PUBLIC__/Js/home/html/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Js/home/html/jquery.lazyload.js"></script>
+<script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload();
+      });
+</script>
+<script type="text/javascript" >
+$(function(){
+	$("input.seartext").focus(function(){
+		$(".seartext").animate({width:'+=100px'});
+		$(".seartext").after( '<p class="sicon" >搜健，一点也不手贱！</p>');
+	});
+	$("input.seartext").blur(function(){
+		$(".seartext").animate({width:'-=100px'});
+		$("form .sicon").remove();
+	});
+	
+	$(".link_three dd").mouseover(function(){
+		$(".link_three dd a").removeClass("showsin");
+		$(this).children("a").addClass("showsin");	
+		$num=$(this).index(); //alert($num);
+		$(".showlink").hide();
+		$(".showlink").eq($num).show();						
+	});	
+	$(".chotdl dd i:lt(3)").addClass("bg");	
+});
+
+</script>
+<block name='body'>
+<!--头部代码-->
+<div id="header"> 
+  <!--头部顶部代码-->
+  <div id="top">
+    <div class="top_content">
+      <ul class="head_top_div_left">
+        <li class="jkname"><a target="_blank" href="首页.html" title="健康卫视网首页">健康卫视网首页</a></li>
+        <li class="jkapp"><a target="_blank" href="app.html" title="手机APP下载  ">手机APP下载 </a></li>
+      </ul>
+      <ul class="head_top_div_right">
+        <li><a target="_blank" href="#" class="tent" title="腾讯微博"></a></li>
+        <li><a target="_blank" href="#" class="sina" title="新浪微博"></a></li>
+        <li class="usercontent first_nav"><a href="javascript:void(0)" class="user " title="用户"></a></li>
+        <li><a target="_blank" href="#" class="live" title="卫视直播"></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--头部顶部代码end--> 
+  <!--栏目代码-->
+  <div id="nav">
+	<include file='Public:nav2'/>
+  </div>
+  <!--栏目代码end--> 
+  <!---广告位980X90--> 
+  <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/data/index_banner1.jpg" width="970" height="90" /></a></div>--> 
+  
+  <!--大栏目代码-->
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/html/content/chuangyi_logo.png" width="197" height="49" /></a></div>
+      <div class="search">
+        <form action="/Seek/index" method="post" target="_blank">
+          <input name="submit" class="submit" type="submit"  value="搜健" />
+          <input name="keywords" class="seartext" type="text" onfocus="if(this.value=='搜吗？搜吧！') this.value='' " onblur="if(this.value=='') this.value='搜吗？搜吧！';"  value="搜吗？搜吧！"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!--大栏目代码end--> 
+  
+</div>
+<!--头部代码end-->
+<div class="main"> 
+  <!--栏目代码-->
+  <ul class="navlist">
+    <li><a href="__APP__/Ideas" class="select" >首页</a></li>
+    <li><a href="__APP__/Ideas/IdeasList/cate/jiemu">节目宣传片</a></li>
+    <li><a href="__APP__/Ideas/IdeasList/cate/gongyi">创意公益短片</a></li>
+    <li><a href="__APP__/Ideas/IdeasList/cate/add">创意广告短片</a></li>
+    <li><a href="__APP__/Ideas/IdeasList/cate/funny">创意搞笑短片</a></li>
+    <li><a href="__APP__/Ideas/IdeasList/cate/tv">卫视宣传片</a></li>
+  </ul>
+  <!--栏目代码end--> 
+  <!--轮播图-->
+  <div id="slider">
+    <div class="slider_box" id="slider_name">
+      <ul class="silder_con">
+        <li class="silder_panel clearfix"> <a href="#" class="f_l"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg" /></a>
+          <div class="silder_intro f_r">
+            <h3> <strong><a href="#">今天，你节约用纸了吗？</a></strong></h3>
+            <p>全球现有森林占陆地总面积的31%，每年净化近千亿吨二氧化碳，每年有1300万公顷森林从我们身边消失，当你使用纸制品时，正在消耗森林资源，请节约使用纸制品。</p>
+            <a class="silder_play" target="_blank" href="#">马上观看</a></div>
+        </li>
+        <li class="silder_panel clearfix"> <a href="#" class="f_l"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg" /></a>
+          <div class="silder_intro f_r">
+            <h3> <strong><a href="#">今天，你节约用纸了吗？</a></strong></h3>
+            <p>全球现有森林占陆地总面积的31%，每年净化近千亿吨二氧化碳，每年有1300万公顷森林从我们身边消失，当你使用纸制品时，正在消耗森林资源，请节约使用纸制品。</p>
+            <a class="silder_play" target="_blank" href="#">马上观看</a></div>
+        </li>
+        <li class="silder_panel clearfix"> <a href="#" class="f_l"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg" /></a>
+          <div class="silder_intro f_r">
+            <h3> <strong><a href="#">今天，你节约用纸了吗？</a></strong></h3>
+            <p>全球现有森林占陆地总面积的31%，每年净化近千亿吨二氧化碳，每年有1300万公顷森林从我们身边消失，当你使用纸制品时，正在消耗森林资源，请节约使用纸制品。</p>
+            <a class="silder_play" target="_blank" href="#">马上观看</a></div>
+        </li>
+        <li class="silder_panel clearfix"> <a href="#" class="f_l"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg" /></a>
+          <div class="silder_intro f_r">
+            <h3> <strong><a href="#">今天，你节约用纸了吗？</a></strong></h3>
+            <p>全球现有森林占陆地总面积的31%，每年净化近千亿吨二氧化碳，每年有1300万公顷森林从我们身边消失，当你使用纸制品时，正在消耗森林资源，请节约使用纸制品。</p>
+            <a class="silder_play" target="_blank" href="#">马上观看</a></div>
+        </li>
+        <li class="silder_panel clearfix"> <a href="#" class="f_l"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg" /></a>
+          <div class="silder_intro f_r">
+            <h3> <strong><a href="#">今天，你节约用纸了吗？</a></strong></h3>
+            <p>全球现有森林占陆地总面积的31%，每年净化近千亿吨二氧化碳，每年有1300万公顷森林从我们身边消失，当你使用纸制品时，正在消耗森林资源，请节约使用纸制品。</p>
+            <a class="silder_play" target="_blank" href="#">马上观看</a></div>
+        </li>
+      </ul>
+      <ul class="silder_nav clearfix">
+        <li><a href="#"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg"/></a></li>
+        <li><a href="#"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg"/></a></li>
+        <li><a href="#"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg"/></a></li>
+        <li><a href="#"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg"/></a></li>
+        <li><a href="#"><img src="__PUBLIC__/Images/home/html/data/2012101623050497.jpg" /></a></li>
+      </ul>
+    </div>
+    <script src="__PUBLIC__/Js/home/html/jquery.slides.js" type="text/javascript"></script> 
+  </div>
+  <!--轮播图end-->
+  
+  <div class="content"> 
+    <!--左边内容代码-->
+    <div class="cleft">
+      <div class="clist">
+        <h2><a href="/IdeasList/cate/jiemu" class="more f_r">更多></a>节目宣传片</h2>
+        <ul>
+        <volist name='advertising' id='adsi'>
+          <li style='float:left;'><a href='__APP__/play/id/{$adsi.id}'><img  src='__PUBLIC__/Images/home/html/grey.gif' data-original='{$adsi.photo}' width='132' height='80' /><b>{$adsi.title|mb_substr=0,9,'utf-8'}</b></a></li>
+		</volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="#" class="more f_r">更多></a>创意公益短片</h2>
+        <ul>
+        <volist name='Commonweal' id='com'>
+          <li><a href='__APP__/play/id/{$com.id}'><img  src='__PUBLIC__/Images/home/html/grey.gif' data-original='{$com.photo}' width='132' height='80' /><b>{$com.title}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="#" class="more f_r">更多></a>创意广告短片</h2>
+        <ul>
+        <volist name='advertisement' id='adse'>
+          <li><a href='__APP__/play/id/{$adse.id}'><img  src='__PUBLIC__/Images/home/html/grey.gif' data-original='{$adse.photo}' width='132' height='80' /><b>{$adse.title}</b></a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="#" class="more f_r">更多></a>创意搞笑短片</h2>
+        <ul>
+        <volist name='funny' id='fy'>
+          <li><a href='__APP__/play/id/{$fy.id}'><img  src='__PUBLIC__/Images/home/html/grey.gif' data-original='{$fy.photo}' width='132' height='80' /><b>{$fy.title}</b></a></li>
+        </ul>
+      </div>
+      <div class="clist">
+        <h2><a href="#" class="more f_r">更多></a>卫视宣传片</h2>
+        <ul>
+        <volist name='tvAdvertising' id='tas'>
+          <li><a href='__APP__/play/id/{$tas.id}'><img  src='__PUBLIC__/Images/home/html/grey.gif' data-original='{$tas.photo}' width='132' height='80' /><b>{$tas.title}</b></a></li>
+	    </volist>
+        </ul>
+      </div>
+    </div>
+    <!--左边内容代码end--> 
+    <!--右边内容代码-->
+    <div class="cright">
+      <div class="chot">
+        <h2 class="title"><b>热门排行</b></h2>
+        <dl class="chotdl">
+        <volist name='hotList' id='hl'>
+          <dd><a href='__APP__/play/id/{$hl.id}'><i>{$i}</i><img src='__PUBLIC__/Images/home/html/grey.gif' data-original='{$hl.photo}' width='132' height='80' /><b>{$hl.title}</b></a></dd>
+        </volist>
+        </dl>
+      </div>
+      <div class="adv320X100" style=" margin-bottom:30px;"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/html/data/cy-adv.jpg" width="320" height="100" /></a></div>
+      <div class="recdview">
+        <h2 class="title"><b>视点推荐</b></h2>
+        <div class="viewpic"> 
+        <volist name='hotNewsCat' id='hnc'>
+        <a href='#' target='_blank' title='{$i}'>
+        <img src='{$hnc.litpic}' width='132' height='92' /><b>{$hnc.title}</b>
+        </a> 
+		</volist>
+        </div>
+      </div>
+      <div class="crnews" >
+        <h2 class="title"><b>热门资讯</b></h2>
+        <ul>
+        <volist name='hotNews' id='hn'>
+          <li><a href="__APP__/news/view/id/{$hn.id}" target="_blank">{$hn.title}</a></li>
+        </volist>
+        </ul>
+      </div>
+      <div class="adv320X120" style=" margin-bottom:30px;"></div>
+      <div class="adv320X160"></div>
+    </div>
+    <!--右边内容代码end--> 
+    
+  </div>
+</div>
+<div class="clear"></div>
+<div class="adv980X90"></div>
+<!--底部代码开始-->
+<include file="Public/foot"/>
+<!--底部代码结束--> 
+</block>
+

@@ -1,0 +1,294 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>我要参加-Seven Baby-健康卫视</title>
+</block>
+<block name='seo'>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+</block>
+<block name='css'>
+<link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/home/sevenbaby/uploadify.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="__PUBLIC__/toastmsg/css/jquery.toastmessage.css">
+</block>
+<block name='js'>
+<script type="text/javascript" src="__PUBLIC__/Js/jquery1.10.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/jquery-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/zh_date.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/jquery.uploadify-3.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/area.js"></script>
+        <script type="text/javascript">
+            var img_id_upload = new Array();//初始化数组，存储已经上传的图片名
+            var i = 0;//初始化数组下标
+            $(function() {
+                $(function() {
+                    $('#file_upload').uploadify({
+                        'auto': false, //关闭自动上传
+                        'removeTimeout': 1, //文件队列上传完成1秒后删除
+                        'swf': '__PUBLIC__/Js/uploadify/uploadify.swf',
+                        'uploader': '/sevenbaby/upload.html',
+                        'method': 'post', //方法，服务端可以用$_POST数组获取数据
+                        'formData': {'id': '6'}, //在服务端使用$_POST['id']获取该数据,服务端代码上传成功后将在目录生成一个6.txt的文件
+                        'buttonText': '选择图片', //设置按钮文本
+                        'multi': false, //允许同时上传多张图片
+                        'uploadLimit': 1, //一次最多只允许上传10张图片
+                        'fileTypeDesc': 'Image Files', //只允许上传图像
+                        'fileTypeExts': '*.gif; *.jpg; *.png;', //限制允许上传的图片后缀
+                        'fileSizeLimit': '2000KB', //限制上传的图片不得超过200KB 
+                        'rollover': true,
+                        'onUploadSuccess': function(file, data, response) {
+                            //每次上传成功后执行的函数
+                            img_id_upload[i] = data;
+                            i++;
+                        },
+                        'onQueueComplete': function(queueData) {
+                            if (img_id_upload.length > 0)
+                                img_id_upload = img_id_upload.filter(function(n) {
+                                    return n;  //去除为空的元素
+                                });
+                            $.each(img_id_upload, function(i, n) {
+                                $("#imgurl").append("<img width='300px' height='200px'  src='/Uploads/sevenbaby/" + n + "'/>");
+                                $("#cover").val(n);
+                            });
+                        }
+
+                    });
+
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                setup();
+                $('#province').change(function() {
+                    var province = $(this).val();
+                    if (province == '国外') {
+                        $('#city').remove();
+                        $('#county').remove();
+                        $(this).after('<input name="city" class="input" id="city" flag="flag" placeholder="国家" type="text" style="margin-left:10px;width:80px;" />');
+                    } else {
+                        var flag = $('#city').attr('flag');
+                        if (flag === 'flag') {
+                            history.go(0);
+                        }
+                    }
+                });
+            });
+            function change_code() {
+                var time = new Date().getTime();
+                document.getElementById('verifyImg').src = '/Public/verify/' + time;
+            }
+        </script>
+</block>
+<block name='style'>
+<style>
+    body {
+        background: url(__PUBLIC__/Images/home/sevenbaby/bannerbg.png) repeat;
+    }
+</style>
+</block>
+<block name='body'>
+        <!--/*顶部*/-->
+    <include file="sevenbaby:top"/>
+    <!--/*顶部结束*/--> 
+
+    <!--/*头部横幅层*/-->
+    <div class="row">
+        <div class="navposts" ><img src="__PUBLIC__/Images/home/sevenbaby/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+                <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+                <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+                <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+                <empty name="userId">
+                    <area shape="rect" style=" margin-left:100px;" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();showForbid();void(0);"   class="icon-login">
+                    <else/>
+                    <area shape="rect"  style=" margin-left:100px;"  coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+                </empty> 
+                <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="/sevenbaby/program.html" />
+                <area shape="circle" coords="100,99,95" href="index.html" title="Seven Baby 2014">
+            </map>
+        </div>
+        <div class="container">
+            <div class="container-content"> 
+                <!--我要参加内容-->
+                <div style=" border-bottom:1px dashed #367dcd; height:90px; text-align:center;"><img src="__PUBLIC__/Images/home/sevenbaby/join_info_stitle.png" width="518" height="65" /></div>
+                <form action="/sevenbaby/doJoin.html" method="post">
+                    <div class="join-left">
+                        <h2 class="title">基本信息</h2>
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>宝贝昵称</td>
+                                <td>：<input name="nickname" type="text" id="nickname"  class="input" /></td>
+                                <td> *（1-12位的中英文和数字组合）</td>
+                            </tr>
+                            <tr>
+                                <td>宝贝生日</td>
+                                <td>：<input type="text" name="birthday" id="datepicker" class="input" ></td>
+                                <td> *（必填项） </td>
+                            </tr>
+                            <tr>
+                                <td>年龄</td>
+                                <td>：<input name="age" type="text" id="age" class="input" /></td>
+                                <td> *（必填项）</td>
+                            </tr>
+                            <tr>
+                                <td>性别</td>
+                                <td>：<label>
+                                        <input type="radio" name="sex" checked value="男" id="RadioGroup1_0" />男</label>
+                                    <label><input type="radio" name="sex"  value="女" id="RadioGroup1_1" />女</label>
+                                </td>
+                                <td> *（必填项）</td>
+                            </tr>
+                            <tr>
+                                <td>手机号码</td>
+                                <td>：<input name="phone" id="phone" type="text" class="input" /></td>
+                                <td> *（活动获奖联系您的直接方式！）</td>
+                            </tr>
+                            <tr>
+                                <td>城市</td>
+                                <td colspan="2">：<select id="province" runat="server" name="province" style="line-height:28px; height: 28px; border:3px solid #95c6fd;">
+                                    </select>
+                                    <select id="city" runat="server" name="city" style="line-height:28px; height: 28px; border:3px solid #95c6fd;">
+                                    </select>
+                                    <select id="county" runat="server" name="country" style=" line-height:28px; height: 28px; border:3px solid #95c6fd;">
+                                    </select>
+                                    *（必填项）
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>验证码</td>
+                                <td>：<input name="code" type="text" class="input"  />
+                                </td>
+                                <td>
+                                    <img  id="verifyImg" src="/public/verify/" width="60" height="28"  />
+                                    <a href="javascript:void(change_code(this));" class="clickagian"> 换一个</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <h2 class="title">图片上传</h2>
+                        <p>宝贝照片：（封面）<b style="color:#fd8088;">*</b>上传图片宽高最佳比例<b style="color:#fd8088;">3:2</b></p>
+                        <p><b style="color:#fd8088;">文件名不可含有特殊字符，只能采用</b>英文字母或数字</p>
+                        <div id="imgurl" style=" margin-rtop:10px;"></div>
+                        <br>
+                        <input type="file" name="file_upload" id="file_upload" />
+                        <p><a href="javascript:$('#file_upload').uploadify('upload','*');" class="uploadify-button sc" >上传</a>
+                            <a href="javascript:$('#file_upload').uploadify('cancel','*')"  class="uploadify-button sc" >取消上传</a>
+                            <br> <br>
+                            <input name="cover" id="cover" type="hidden" value=""/>
+                        <p><b style="color:#fd8088;">父母寄语</b>（30个汉字之内）</p>
+                        <p><textarea name="wish" cols="" rows="" class="prentsword"></textarea></p>
+                    </div>
+                    <div class="join-right">
+                        <h2 class="title">活动须知</h2>
+                        <div class="join_agree_text"> 
+                            <p><i></i><b>本次活动对象：出生于2002年9月1日及其以后的所有宝宝，即活动为止刚满和未满12周岁的宝贝。</b></p>
+                            <p><i class="txti1"></i><b>本次活动分为两期举行：</b></p>
+                            <p><b>2014年6月23日，第二届Seven Baby 活动主页面上线，开始接受报名，但不能投票；</b></p>
+                            <p><b>2014年7月1日至2014年8月1日，由网友票选产生61名“六一健康宝宝”。 同时，截止到8月1日零时各位宝宝的即时票数，以30%（小数四舍五入）的票数累计进入接下来的Seven Baby的评比。</b></p>
+                            <p><b>2014年8月1日至2014年9月1日，由网友票选产生7名“2014健康卫视网代言人”。</b></p>
+                            <p><i class="txti2"></i><b>敬请关注健康卫视亲子论坛Seven Baby交流专区与“健康卫视”官方微信，了解更多的活动信息和活动的最新进展，为宝贝拉票。</b></p>
+                            <p><i class="txti3"></i><b>参赛选手承诺其信息的真实性、原创性，如有侵权或信息不实者由上传者本人承担责任，活动组有权取消其参赛资格。</b></p>
+                            <p><i class="txti4"></i><b>选手一旦参加比赛，健康卫视有权使用选手的照片、视频、文字等信息用作对本次活动的宣传。</b></p>
+                            <p><i class="txti5"></i><b>凡报名参赛的宝贝，其参赛照片未经活动官方许可，其他机构和个人不得以任何方式转载、拷贝和用于其他商业用途。否则，原作者及健康卫视有权依法追究侵权者法律责任。</b></p>
+                            <p><i class="txti6"></i><b>本次活动解释权归健康卫视网所有。 </b></p>   
+                            <p>&nbsp;</p> 
+                            <p class="" style=" font-size:14px; text-align:center;"><input name="" type="checkbox" value="" id="ty"/> <label for="ty">我同意协议</label></p>   
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="upword"><button>提交信息</button> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/*头部横幅层结束*/--> 
+
+    <!--/*底部*/-->
+<include file="Sevenbaby:foot"/>
+    <!--/*底部结束*/--> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript"  src="__PUBLIC__/toastmsg/jquery.toastmessage.js" >/*对话框 */</script> 
+    <script type="text/javascript">
+        $(function() {
+
+            $('form').submit(function() {
+                var $agree = $('#ty'); //同意协议
+                var nickname = $('#nickname').val();
+                var datepicker = $('#datepicker').val();
+                var phone = $('#phone').val();
+                var age = $('#age').val();
+                var cover = $('#cover').val();
+                if (nickname === '') {
+                    $().toastmessage('showToast', {
+                        text: '宝贝昵称不可为空！',
+                        sticky: false,
+                        position: 'top-center',
+                        type: 'error'
+                    });
+                    $('#nickname').focus();
+                    return false;
+                }
+                ;
+                if (datepicker === '') {
+                    $().toastmessage('showToast', {
+                        text: '宝贝生日不可为空！',
+                        sticky: false,
+                        position: 'top-center',
+                        type: 'error'
+                    });
+                    $('#datepicker').focus();
+                    return false;
+                }
+                ;
+                if (phone === '') {
+                    $().toastmessage('showToast', {
+                        text: '手机号不可为空！',
+                        sticky: false,
+                        position: 'top-center',
+                        type: 'error'
+                    });
+                    $('#phone').focus();
+                    return false;
+                }
+                ;
+                if (age === '') {
+                    $().toastmessage('showToast', {
+                        text: '年龄不可为空！',
+                        sticky: false,
+                        position: 'top-center',
+                        type: 'error'
+                    });
+                    $('#age').focus();
+                    return false;
+                }
+                ;
+                if (cover === '') {
+                    $().toastmessage('showToast', {
+                        text: '还未上传封面图片！',
+                        sticky: false,
+                        position: 'top-center',
+                        type: 'error'
+                    });
+                    $('#file_upload').focus();
+                    return false;
+                }
+                ;
+                if (!$agree.is(":checked")) {
+                    $().toastmessage('showToast', {
+                        text: '您还未点击同意协议！',
+                        sticky: false,
+                        position: 'top-center',
+                        type: 'notice'
+
+                    });
+                    $('#ty').focus();
+                    return false;
+                }
+            });
+        });
+    </script>
+</block>
+

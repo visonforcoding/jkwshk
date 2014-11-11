@@ -1,0 +1,66 @@
+<input id="upload" type="text" value=""/>  
+<script id="myeditor"></script>  
+<span  id="image">ddd</span>  
+<load href="__PUBLIC__/ueditor/ueditor.config.js" />
+<load href="__PUBLIC__/ueditor/ueditor.all.min.js" />
+<load href="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js" />
+<load href="__PUBLIC__/Js/jquery1.10.2.js" />
+<script type="text/javascript">
+document.domain="test.com";
+(function($){  
+    var image = {  
+        editor:null,  
+        init:function(editorid,keyid){  
+            var _editor =this.getEditor(editorid);  
+            _editor.ready(function () {  
+                _editor.setDisabled();  
+                _editor.hide();  
+                _editor.addListener('beforeInsertImage', function (t, args) {  
+                    $("#"+keyid).val(args[0].src);  
+                });  
+            });  
+        },  
+        getEditor:function(editorid){  
+            this.editor = UE.getEditor(editorid);  
+            return this.editor;  
+        },  
+        show:function(id){  
+            var _editor = this.editor;  
+           //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+           //和网上一些朋友的代码不同之处就在这里  
+            $("#"+id).click(function(){  
+                var image = _editor.getDialog("insertimage");  
+                image.render();  
+                image.open();  
+            });  
+        },  
+        render:function(editorid){  
+            var _editor = this.getEditor(editorid);  
+            _editor.render();  
+        }  
+    };  
+    $(function(){  
+        image.init("myeditor","upload");  
+        image.show("image");  
+    });  
+})(jQuery);  
+/*
+var myEditorImage;
+var d; 
+function upImage() {     
+    d = myEditorImage.getDialog("insertimage"); 
+    d.render();
+     d.open();
+ } 
+myEditorImage= new UE.ui.Editor(); 
+myEditorImage.render('myEditorImage');
+myEditorImage.ready(function(){
+	myEditorImage.setDisabled();
+	myEditorImage.hide();//隐藏UE框体 
+	myEditorImage.addListener('beforeInsertImage',function(t, arg){
+		alert(arg[0].src);/*arg就是上传图片的返回值，是个数组，如果上传多张图片，请遍历该值。 
+		$("#abccc").attr("value", arg[0].src)/*把图片地址赋值给页面input，我这里使用了jquery，可以根据自己的写法赋值，到这里就很简单了，会js的都会写
+	})
+})
+*/
+</script>

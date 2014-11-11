@@ -1,0 +1,99 @@
+<p class="commentnum">已有<a href="#">{$totalComCount} </a>条评论，共<a href="#"> {$comUserCount} </a>人参与</p>
+<form action="#" method="">
+    <div id="show"></div>
+    <textarea name="msg" class="msgarea" cols="" rows=""s style="width:579px;"></textarea>
+    <p class="commentlogin">
+        <!--<span class="emotion">表情</span>-->
+    <empty name="user">
+        <!--   <input name="username" type="text" class="winput" />
+                                <input name="password" class="winput" type="password" />
+                                <input name="remember" type="checkbox"  class="checkboxinput"value="" checked />下次自动登录 -->
+        <input  value="发布" class="upinput" onclick="javascript:showLogin();
+                showForbid();
+                void(0);" type="button" />
+        </p>
+        <else/>
+
+        <a href="/member/index.html">
+            <empty name="user.nickname">{$user.username}<else/>{$user.nickname}</empty>
+        </a> 
+        <input  value="发布" class="upinput postComment" type="button" /></p>
+    </empty>
+</form>
+<h2 class="newscomment">最新评论 <a href="#" class="reread">刷新</a></h2>
+<ul class="commentlist">
+    <volist name="comments" id="v">
+        <li>
+            <dl>
+                <dt><img src="{$v.avatar}" width="50" height="50" /></dt>
+                <dd class="namedate">
+                    <span><empty name="v.nickname">{$v.username}<else/>{$v.nickname}</empty> 
+                        <empty name='v.city'>[{$v.country}]<else/>[{$v.province}{$v.city}]</empty>
+                    </span>
+                </dd>
+                <dd>{$v.msg}</dd>
+                <dd class="replay">
+                    <span class="spandate">发表日期：{$v.ctime|date='Y-m-d H:i:s',###}</span>
+                    <!--                                <span class="renum1"><a href="#" onclick="support({$v.cid})" class="renum">支持({$v.support})</a></span>
+                                                        <a href="#" class="repbt">回复</a> 
+                                                    <span class="reshare1"><a href="javascript:void(0);" class="reshare">分享></a>
+                                                      <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>
+                                                    </span> -->
+                    <!--                                 <script>
+                                            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"我正在看健康卫视网《{$video.title}》，很不错噢！","bdMini":"1","bdMiniList":["mshare","qzone","renren"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","renren","weixin","qzone"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                                                    </script>-->
+                </dd>
+            </dl>
+        </li> 
+    </volist>
+</ul>
+<div class="pagebg">
+    <div id="page" class="page">
+        <ul>
+            {$show}
+        </ul>
+    </div>
+</div>
+<script>
+   function postComment(ctype){
+        $('.postComment').click(function() {
+            var oid = '{$video.id}';
+            var $obj = $(this).parents('p').prevAll('textarea.msgarea');
+            var msg = $(this).parents('p').prevAll('textarea.msgarea').val();
+            var ctype = ctype;
+            if (msg == '') {
+                $().toastmessage('showToast', {
+                    text: '您未输入任何信息！',
+                    sticky: false,
+                    position: 'top-center',
+                    type: 'error',
+                    stayTime: 2000,
+                });
+                $obj.focus();
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Comment/addComment.html",
+                data: {'oid': oid, 'msg': msg, 'ctype': ctype},
+                success: function(msg) {
+                    if (msg.status) {
+                        $('.commentlist').prepend('<li><dl><dt><img src="{$user.avatar}" width="50" height="50" />' +
+                                '</dt><dd class="namedate"><span><empty name="user.nickname">{$user.username}' +
+                                '<else/>{$user.nickname}</empty>' +
+                                '</span></dd><dd>' + msg.data.msg + '</dd><dd class="replay">' +
+                                '<span class="spandate">发表日期：' + msg.data.time + '</span>'
+//                                    <a href="#" onclick="support('+msg.data.support+')" class="renum">支持('+msg.data.support+')</a>' +
+//                                    ' <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>'+
+//                                    '<a href="#" class="reshare">分享></a></dd></dl></li> '
+                                );
+                        $obj.val('');
+                        $('.newscomment').after("<div class='commentpop' id='commentpop'></span>评论已提交。</div>");
+                        setTimeout("$('.commentpop').remove()", 2500);
+                    }
+                    ;
+                }
+            });
+        });
+       }
+</script>

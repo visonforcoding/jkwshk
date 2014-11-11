@@ -1,0 +1,80 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>奖励机制-Seven Baby-健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script>
+</block>
+<block name='style'>
+    <style>
+        body{   background: url(/Public/Images/home/sevenbaby/bannerbg.png) repeat;}
+    </style>
+</block>
+<block name='body'>
+    <!--/*顶部*/-->
+    <include file="sevenbaby:top"/>
+    <!--/*顶部结束*/--> 
+
+    <!--/*头部横幅层*/-->
+    <div class="row">
+        <div class="navposts" ><img src="/Public/Images/home/sevenbaby/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+                <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+                <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+                <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+                <empty name="userId">
+                    <area shape="rect" style=" margin-left:100px;" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();
+                            showForbid();
+                            void(0);"   class="icon-login">
+                    <else/>
+                    <area shape="rect"  style=" margin-left:100px;"  coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+                </empty> 
+                <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="/sevenbaby/program.html" />
+                <area shape="circle" coords="100,99,95" href="/sevenbaby/index.html" title="Seven Baby 2014">
+            </map>
+        </div>
+
+        <div class="container">
+            <div class="container-content">
+                <!--奖励机制内容-->
+                <dl class="con_dlist">
+                    <dt><i class="icon-a"></i>"六一健康宝宝"奖励如下：</dt>
+                    <dd>
+                        <p>1.	个人空间升级为VIP空间，成长档案得到健康卫视官网永久保存。</p>
+                        <p>2.	优先获得健康卫视台宣和电视节目录制的机会。</p>
+                        <p>3.	价值1366元的澳洲原装进口1881庄园经典干红葡萄酒一瓶。</p></dd>
+                </dl>
+                <dl class="con_dlist">
+                    <dt><i class="icon-b"></i>2014健康卫视第二届"Seven Baby"，奖励如下：</dt>
+                    <dd>
+                        <p>1．享受2012健康卫视官网形象代言人，即2012健康卫视官网 "Seven Baby（健康7宝贝）"荣誉称号。</p>
+                        <p>2．个人空间升级为VIP空间，成长档案得到健康卫视官网永久保存。</p>
+                        <p>3．优先获得2012健康卫视台宣传片和电视节目录制的机会。</p>
+                        <p>4．欧洲最大最具知名度天然琥珀品牌S & A提供的价值 2万元的天然琥珀吊坠。</p>
+                        <p>5．喜沃即将全新上市双核智能手机。</p>
+                    </dd>
+                </dl>
+                <!--奖励机制内容-->
+            </div>
+        </div>
+
+    </div>
+    <!--/*头部横幅层结束*/--> 
+
+    <!--/*底部*/-->
+    <include file="Sevenbaby:foot"/>
+    <!--/*底部结束*/--> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/tab.js">/*可切换的标签页*/</script> 
+    <script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/common.js">/*公共js*/</script>
+</block>
+

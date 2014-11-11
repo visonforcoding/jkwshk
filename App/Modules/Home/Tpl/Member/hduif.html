@@ -1,0 +1,275 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>第二届seven baby-资料管理</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/member/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/tab.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="__PUBLIC__/toastmsg/css/jquery.toastmessage.css">
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/jquery-ui.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/zh_date.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-tab.js"></script>
+    <script type="text/javascript"  src="__PUBLIC__/toastmsg/jquery.toastmessage.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="__PUBLIC__/Js/area.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            setup();
+            $('#province').change(function() {
+                var province = $(this).val();
+                if (province == '国外') {
+                    $('#city').remove();
+                    $('#county').remove();
+                    $(this).after('<input name="city" class="input" id="city" flag="flag" placeholder="国家" type="text" style="margin-left:10px;width:80px;" />');
+                } else {
+                    var flag = $('#city').attr('flag');
+                    if (flag === 'flag') {
+                        history.go(0);
+                    }
+                }
+            });
+            $('#changeCityBtn').click(function(){
+                var status =   $('.cityOption').css('display');
+                if(status == 'none'){
+                    $('.cityOption').css('display','block');
+                    $(this).html('取消修改');
+                }else{
+                    $('.cityOption').css('display','none');
+                    $(this).html('修改');
+                }
+            });
+        });
+        function editBaby() {
+            var nickname = $('#nickname').val();
+            var phone = $('#phone').val();
+            var age = $('#age').val();
+            var birthday = $('#datepicker').val();
+            var truename = $('#truename').val();
+            var wish = $('#wish').val();
+            var parent = $('#parent').val();
+            var email = $('#email').val();
+            var sex = $('#sex').val();
+            var id = '{$baby.id}';
+            var province = $('#province').val();
+            var city = $('#city').val();
+            var country = $('#county').val();
+            if (nickname === '') {
+                $().toastmessage('showToast', {
+                    text: '宝贝昵称不可为空！',
+                    sticky: false,
+                    position: 'top-center',
+                    type: 'error'
+                });
+                $('#nickname').focus();
+                return false;
+            }
+            ;
+            if (datepicker === '') {
+                $().toastmessage('showToast', {
+                    text: '宝贝生日不可为空！',
+                    sticky: false,
+                    position: 'top-center',
+                    type: 'error'
+                });
+                $('#datepicker').focus();
+                return false;
+            }
+            ;
+            if (phone === '') {
+                $().toastmessage('showToast', {
+                    text: '手机号不可为空！',
+                    sticky: false,
+                    position: 'top-center',
+                    type: 'error'
+                });
+                $('#phone').focus();
+                return false;
+            }
+            ;
+            if (age === '') {
+                $().toastmessage('showToast', {
+                    text: '年龄不可为空！',
+                    sticky: false,
+                    position: 'top-center',
+                    type: 'error'
+                });
+                $('#age').focus();
+                return false;
+            }
+            ;
+            $.ajax({
+                url: '/sevenbaby/editBaby.html',
+                type: "POST",
+                data: {'id': id, 'nickname': nickname, 'truename': truename,
+                    'birthday': birthday, 'parent': parent, 'email': email, 'wish': wish,
+                    'sex': sex, 'age': age, 'phone': phone,'province':province,'city':city,'country':country},
+                success: function(msg) {
+                    if (msg.status === 1) {
+                        $().toastmessage('showToast', {
+                            text: msg.info,
+                            sticky: false,
+                            position: 'middle-center',
+                            type: 'success',
+                            stayTime: 1000
+                        });
+                    } else {
+                        $().toastmessage('showToast', {
+                            text: msg.info,
+                            sticky: false,
+                            position: 'middle-center',
+                            type: 'notice',
+                            stayTime: 2000
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+</block>
+<block name='body'>
+    <div id="head" class="yebg">
+        <div class="header">
+            <div class="top">
+                <include file="Member:top"/>
+            </div>
+        </div>
+        <div class="whitebg shadows" >
+            <div class="container clearfix">
+                <div class="user_top">
+                    <div class="user_images"><img src=<if condition="($user.avatar eq '0')">__PUBLIC__/Default.jpg<else/>{$user.avatar}</if> width="76" height="78" /></div>
+                    <p class="user_uname"><a href="/member/user.html#userinfo" style=" font-size:16px;">{$user.nickname|default="还没昵称"}</a></p>
+                    <p class="user_other"><a href="/member/user.html#image"  data-toggle="tab">修改头像</a>&nbsp;&nbsp;健康学分 {$user.credit} 分</p>
+                </div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .lsubnav li a.huodong {  background-position: -100px -560px;}
+        .lsubnav li a.huodong:hover, .lsubnav li a.select8 {  background-position: 0 -560px;}
+        .nav-tabs > li > a, .nav-pills > li > a{  line-height: 14px;  margin-right: 2px;  padding-left: 30px;  padding-right: 30px; font-size:16px; }
+        .nav-tabs > li > a:hover{ color:#01913a}
+        .hd_posttitle{border-bottom:1px solid #ccc; height:25px; line-height:25px;}
+        .hd_number{overflow:hidden; float:right; padding-top:10px; height:75px; width:74px; text-align:center; border:1px solid #ccc; position:absolute; right:30px; color:#FFF;  background:#0f9243; border:2px solid #FFF; border-bottom:none;}
+        .hd_number_ic{background:#f3f3f3; margin-top:10px; width:50px; height:50px; display:inline-block; border:2px solid #FFF;ransform:rotate(-45deg); -ms-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); }
+    </style>
+    <div class="container clearfix" style=" margin-top:5px; background:#FFF;">
+        <div class="ucleft">
+            <ul class="lsubnav">
+                <li><a href="user.html"title="个人资料"></a></li>
+                <li><a href="#" class="rizhi" title="日志"></a></li>
+                <li><a href="#" class="xiangce" title="相册"></a></li>
+                <li><a href="#" class="liyans" title="留言"></a></li>
+                <li><a href="/member/index.html" class="isee"  title="我看过的"></a></li>
+                <li><a href="#" class="shoucang" title="我的收藏"></a></li>
+                <li><a href="#" class="xuefen" title="健康学分"></a></li>
+                <li><a href="/member/hd.html" class="huodong select8" title="活动"></a></li>
+            </ul>
+        </div>
+        <div class="ucright" style="position:relative;">
+            <p class="hd_posttitle">活动>第二届seven baby>资料管理</p>
+            <p class="hd_number">参赛编号<b>&nbsp;&nbsp;0{$baby.idnum}</b> <i class="hd_number_ic"></i></p>
+            <ul class="nav nav-tabs" style=" margin-bottom:0px; border:none; margin-top:15px;">
+                <li class="active"><a href="/member/hd.html " style="color:#01913a">资料管理</a></li>
+                <li><a href="/member/hdpic.html" >图片管理</a></li>
+                <li><a href="/sevenbaby/index.html" style=" color:#fd8a00;">返回活动首页</a></li>
+            </ul>
+            <div class="tab-content">
+                <div style=" background:#f3f3f3; line-height:25px; padding:10px 20px;">我的投票地址：<a href="{$url}" style=" color:#01913a;">
+                        {$url}
+                    </a><br>
+                    【把投票地址告诉好友，让更多人为我投票！】</div>
+                <div class="tab-pane active" id="userinfo">
+                    <div class="tab_table" style=" position:relative; margin-top:20px;">
+                        <div style=" width:288px; height:300px; position:absolute; right:20px; top:0px ; text-align:center;">
+                            <a href="/member/hdpic.html"><img src="/Uploads/sevenbaby/{$baby.cover}" width="288" height="192" /><span>宝贝相册管理<br />
+                                    上传更多宝宝照片，快去上传吧！</span></a> </div>
+                        <form action="" method="post">
+                            <p>
+                                <label>登  录  名：</label>
+                                {$user.username}</p>
+                            <p>
+                                <label>真实姓名：</label>
+                                <input name="truename" value="{$baby.truename}" id="truename"  class="winput" type="text" />
+                                <span><b style=" color:#F60"> *</b>（宝贝的真实姓名）</span> </p>
+                            <p>
+                                <label>宝贝昵称：</label>
+                                <input name="nickname" id="nickname"  class="winput" value="{$baby.nickname}" type="text" />
+                                <span><b style=" color:#F60"> *</b>（必填）</span> </p>
+                            <p>
+                                <label>年       龄：</label>
+                                <input name="age" id="age" class="winput" value="{$baby.age}" type="text" />
+                                <b style="color:#F60"> *</b>（必填）</span> </p>
+                            <p>
+                                <label>性       别：</label>
+                            <input type="radio" name="sex" value="男" <if condition ="$baby['sex'] eq '男'">checked</if>  id="sex" />
+                            男
+                            <input type="radio" name="sex" value="女"   <if condition ="$baby['sex'] eq '女'">checked</if>   id="sex" />
+                            女
+                            </p>
+                            <p>
+                                <label>出生日期：</label>
+                                <input type="text" name="birthday" id="datepicker" value="{$baby.birthday}" class="winput" >
+                            <p>
+                               <label>居住城市：</label>
+                               {$baby.province}{$baby.city}{$baby.country}<button type="button" id="changeCityBtn" >修改</button>
+                            </p>    
+                            <p class="cityOption" style="display:none" >
+                                <label>居住城市：</label>
+                                <select id="province" runat="server" name="province" >
+                                </select>
+                                <select id="city" runat="server" name="city" >
+                                </select>
+                                <select id="county" runat="server" name="country" >
+                                </select>
+                            </p>
+                            <p>
+                                <label>家长姓名：</label>
+                                <input name="parent" value="{$baby.parent}" id="parent" class="winput" type="text" />
+                            </p>
+                            <p>
+                                <label>联系电话：</label>
+                                <input name="phone"  class="winput" id="phone" value="{$baby.phone}" type="text" />
+                            </p>
+                            <p>
+                                <label>电子邮箱：</label>
+                                <input name="email"  class="winput" id="email" value="{$baby.email}" type="text" />
+                            </p>
+                            <p>
+                                <label>父母寄语：</label>
+                                <textarea name="wish" id="wish" cols="" rows="" class="bigwinputt" style=" width:460px;">{$baby.wish}</textarea>
+                            </p>
+                            <p>
+                                <input  type="button" onclick="editBaby();" class="savebtn" style=" margin-left:300px; background:url(__PUBLIC__/Images/home/member/right_icon.png) no-repeat; border:none; width:185px; height:48px;" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_end">
+            <div id="footer_econtent">
+                <p style=" margin-bottom:20px;" ><a href="/"><img src="__PUBLIC__/Images/home/member/small_logo.png" width="127" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#">关于我们</a> | <a href="/class.php?id=76" target="_blank" >广告服务</a> | <a href="/class.php?id=5" target="_blank">诚聘英才</a> | <a href="/view.php?id=104" target="_blank">保护隐私权</a> | <a href="/view.php?id=102" target="_blank" >免责条款</a> | <a href="/view.php?id=100" target="_blank">版权声明</a> | <a href="http://www.jkwshk.tv/view.php?id=1239" target="_blank">健康卫视开播大典</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><img src="__PUBLIC__/Images/home/member/small_logo_t.png" width="126" height="34" alt="健康卫视视频网站" style=" vertical-align:middle"  /></a></p>
+                <br />
+                <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+                <br />
+                <p>健康卫视  健康新媒体 版权所有</p>
+                <br />
+                <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</block>
+

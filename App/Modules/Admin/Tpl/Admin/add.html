@@ -1,0 +1,77 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '管理员管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+        });
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加管理员"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form" action="/ajax/submit/">
+                <input type="hidden" name="id" value="{$Rs['id']}"  />
+                <input type="hidden" name="action" value="{$action}"  />
+                <input type="hidden" name="classname" value="{$classname}"  />
+                <input type="hidden" name="setreferer" value="{$setreferer}"  />
+                <div class="input-group">
+                    <label>角色:</label>
+                    <select name="gid">
+                        <volist name="fname" id="v">
+                            <option value="{$v.id}" <if condition="$v.id eq $Rs['gid']">selected ="selected"</if>>{$v.name}</option>
+                        </volist>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>登入名:</label>
+                    <input class="easyui-validatebox mid-text" value="{$Rs['account']}" type="text" name="account" ></input>
+                </div>
+                <div class="input-group">
+                    <label>昵称:</label>
+                    <input name="nickname" id="nickname" type="text" size="20" value="{$Rs['nickname']}" >
+                </div>
+                <div class="hasEditor hasPic" style="margin-top:20px;">
+                    <label >头像：</label>
+                    <div id="tdimgcover" style="display: inline-block">
+                        <div class="showImg" >
+                            <div id="disimgcover" style='width:33px;height:33px;' class="showImgC">
+                                {$Rs['favatar']}
+                            </div>
+                            <div id="btnimgcover" style="margin-top:10px;">
+                                <button onclick="$('#tag-window').window('open');
+                                            $('#tag-window').window('refresh', '/admin/avatar.html');" type="button" class="btn btn-primary">设置头像</button>
+                                <div id="tag-window" class="easyui-window" title="设置头像" style="width:700px;height:500px"
+                                     data-options="iconCls:'icon-tag4',modal:true,closed:true,minimizable:false,maximizable:false">
+                                </div>
+                            </div>
+                            <input type="hidden" name="avatar" id="avatar" value="{$Rs['avatar']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>密码:</label>
+                    <input name="password"  id="password" type="password" size="20" >
+                </div>
+                <div class="input-group">
+                    <label>重复密码:</label>
+                    <input name="repassword"  id="repassword" type="password" size="20"  >
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="submit">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</block>

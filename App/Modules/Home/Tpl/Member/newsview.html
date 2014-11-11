@@ -1,0 +1,83 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>来自{$msg.author}的消息</title>
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/css/home/member/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/style.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/tab.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/home/member/uploadify.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery1.10.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/bootstrap-tab.js"></script>
+</block>
+<block name='style'>
+    <style type="text/css">
+        .newsview a{
+            color:#4C9ED9;
+        }
+       p.text-indent2 a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</block>
+<block name='body'>
+    <div id="head" class="yebg">
+        <div class="header">
+            <div class="top">
+                <include file="Member:top"/>
+            </div>
+        </div>
+        <div class="whitebg shadows" >
+            <div class="container clearfix">
+                <div class="user_top">
+                    <div class="user_images"><img src=<if condition="($user.avatar eq '0')">__PUBLIC__/Default.jpg<else/>{$user.avatar}</if> width="76" height="78" /></div>
+                    <p class="user_uname"><a href="#" style=" font-size:16px;">{$user.nickname|default="还没昵称"}</a></p>
+                    <p class="user_other"><a href="#image"  data-toggle="tab">修改头像</a>&nbsp;&nbsp;健康学分 {$user.credit} 分</p>
+                </div>
+                <div class="search">
+                    <include file='Public:search'/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix" style=" margin-top:5px; background:#FFF;">
+        <div class="ucleft">
+            <ul class="lsubnav">
+                <li><a href="user.html"title="个人资料"></a></li>
+                <li><a href="#" class="rizhi" title="日志"></a></li>
+                <li><a href="#" class="xiangce" title="相册"></a></li>
+                <li><a href="#" class="liyans" title="留言"></a></li>
+                <li><a href="/member/index.html" class="isee"  title="我看过的"></a></li>
+                <li><a href="#" class="shoucang" title="我的收藏"></a></li>
+                <li><a href="#" class="xuefen" title="健康学分"></a></li>
+                <li><a href="/member/hd.html" class="huodong" title="活动"></a></li>
+                <li><a href="/member/news.html" class="xiaoxi select9" title="消息"></a></li>
+            </ul>
+        </div>
+        <div class="ucright" style="position:relative;">
+            <div class="tab-content">
+                <p style=" height:20px; line-height:20px;"></p>
+                <div class="tab-pane active" id="userinfo" >
+                    <!--消息内容开始 --> 
+                    <div class="newsviews">
+                        <span class="title">{$msg.title}</span><span class="time">(&nbsp;{$msg.ctime}&nbsp;)</span></div>
+                    <div class="newsview">
+                        {$msg.content}
+                    </div>
+                    <!--消息内容结束 --> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部start -->
+    <include file="foot"/>
+    <!--底部stop -->
+
+</block>
+

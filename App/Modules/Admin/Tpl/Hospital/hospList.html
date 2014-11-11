@@ -1,0 +1,246 @@
+<extend name="Layout:layout2"/>
+<!--新闻管理-->
+<block name="script">
+<script type="text/javascript">
+    $(function() {
+        $('#aa').accordion('select', '机构管理');
+        $('#dg').datagrid({
+            url: "/Hospital/getHosp.html",
+            pagination: true,
+            rownumbers: true, //显示行号
+            multiSort: true, //是否能按多个字段排序
+            fitColumns: true, //可以自动拓展
+            height: 450,
+            toolbar: '#tb',
+            pageList: [5, 10, 20, 30, 40, 50, 60],
+            autoRowHeight: false,
+            columns: [[
+                    {field: 'ck', checkbox: true},
+                    {field: 'name', title: '医院名称',
+                        editor: {
+                            type: 'validatebox',
+                            options: {
+                                valueField: 'title',
+                                required: true
+                            }
+                        }},
+                    {field: 'address', title: '地址',width:20, sortable: true},
+                    {field: 'time', title: '添加时间', sortable: true,
+                        formatter: function(value, row, index) {
+                            return date('Y-m-d H:i:s', row.time);
+                        }},
+                    {field: 'pubdate', title: '更新时间', sortable: true,
+                        formatter: function(value, row, index) {
+                            return date('Y-m-d H:i:s', row.pubdate);
+                        }
+                    },
+                    {field: 'status', title: '状态', editor: {
+                            type: 'combobox',
+                            options: {
+                                valueField: 'value',
+                                textField: 'text',
+                                data: [{
+                                        value: 1,
+                                        text: '启用'
+                                    }, {
+                                        value: 0,
+                                        text: '关闭'
+                                    }]
+                            }
+                        },
+                        formatter: function(value, row, index) {
+                            if (row.isopen == '1') {
+                                return "启用";
+                            } else {
+                                return "关闭";
+                            }
+                        }
+                    },
+                    {field: 'action', title: "操作", width: 20, formatter: function(value, row, index) {
+                            return "<a class='cwp-btn'   href='/hospital/add/action/edit/id/"+row.id+".html' title='修改新闻' con='news' act='add/action/edit/id/" + row.id + "'><span style='color:#E66A3C' class='icon-pencil2'></span> 编辑</a>" +
+                                    "<a class='cwp-btn' title='删除' href='javascript:void(0)' onclick='delIt();' style='margin-left:10px;'><span style='color:#E66A3C' class='icon-close'></span> 删除</a>";
+
+                        }}
+                ]],
+            queryParams: {
+                pid: '{$pid}'
+            }
+        });
+
+        $('#addCat_form').form({
+            onSubmit: function() {
+                var isValid = $(this).form('validate');
+                if (!isValid) {
+                    showMessage('类别名不能为空！');
+                }
+                return isValid;
+            },
+            success: function(data) {
+                showMessage(data);
+            }
+        });
+        $('#name').validatebox({
+            required: true
+        });
+        $('#pid-combotree').combotree({
+            onChange: function(newValue, oldValue) {
+                $('#dg').datagrid({
+                    queryParams: {
+                        pid: newValue
+                    }
+                });
+            }
+        });
+        $('#column-combo').combobox({
+            url: '/video/getVideoTypesForCombo.html',
+            valueField: 'id',
+            textField: 'text',
+            onSelect: function(record) {
+                $('#dg').datagrid({
+                    queryParams: {
+                        typeid: record.id
+                    }
+                });
+            }
+        });
+        //搜素按钮
+        $('#search_button').click(function() {
+            var name = $('#name').val();
+            $('#dg').datagrid({
+                queryParams: {
+                    name: name
+                }
+            });
+        });
+        //清除按钮
+        $('#clear_button').click(function() {
+            $('#dg').datagrid({
+                queryParams: {
+                }
+            });
+        });
+
+    });
+    function edit_a(id) {
+        var tab = $('#main-tab').tabs('getSelected');  // get selected panel
+        $('#main-tab').tabs('update', {
+            tab: tab,
+            options: {
+                title: '新闻更新',
+                href: '/news/add/action/edit/id/' + id  // the new content URL
+            }
+        });
+    }
+    function delIt() {
+        var ss = [];
+        var rows = $('#dg').datagrid('getSelections');
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            ss.push(row.id); //这行记录的ID值 
+        }
+        ;
+        $.messager.confirm('Confirm', '确定要删除记录?', function(r) {
+            if (r) {
+                $.ajax({
+                    type: "POST",
+                    url: "/ajax/ajaxDel.html",
+                    data: {"data[]": ss, 'classname': 'Hospital'},
+                    success: function(msg) {
+                        showMessage(msg.info);
+                        $('#dg').datagrid('load', {
+                        });
+                    }
+                });
+            }
+        });
+    }
+    ;
+    function editIt() {
+        $('#dg').datagrid('beginEdit', getIndex());
+    }
+    function getIndex() {
+        // 获取行索引
+        var row = $('#dg').datagrid('getSelected');
+        var index = $('#dg').datagrid('getRowIndex', row);
+        return index;
+    }
+    function saveEdit() {
+        $('#dg').datagrid('endEdit', getIndex());
+        var updated = $('#dg').datagrid('getChanges', 'updated');
+        if (updated.length) {
+            $.ajax({
+                type: "POST",
+                url: "",
+                data: {"data": updated},
+                success: function(msg) {
+                    showMessage(msg.info);
+                    $('#dg').datagrid('reload');
+                }
+            });
+        } else {
+            showMessage("您未更新任何数据！");
+        }
+
+    }
+    function cancelEdit() {
+        //取消编辑
+        $('#dg').datagrid('cancelEdit', getIndex());
+    }
+
+    function showMessage(msg) {
+        $.messager.show({
+            title: "提示信息",
+            msg: msg,
+            timeout: 3000,
+            showType: 'show',
+            style: {
+                right: '0',
+                left: '',
+                top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                bottom: ''
+            }
+        });
+    }
+</script>
+</block>
+<block name="css">
+<style type="text/css">
+    #dg tr{
+        height:30px!important;
+    }
+    .datagrid-row {
+        height: 40px;
+    }
+    .datagrid-cell {
+        height:30px;
+    }
+    a.cwp-btn{
+        text-decoration: none;
+    }
+</style>
+</block>
+<block name="main">
+<div class="easyui-panel" title="医院管理" data-options="iconCls:'icon-office',collapsible:true" >
+    <div id="tb" style="padding:5px;height:auto">  
+        <div style="margin-bottom:5px">
+            <a href="/hospital/add.html" class="easyui-linkbutton open_tab" con="news" act="add" title="添加新闻" iconCls="icon-add" plain="true">添加</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="delIt();">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editIt();">编辑</a>  
+            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" plain="true" onclick="cancelEdit()">取消</a> 
+            <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveEdit();">保存</a>  
+        </div>
+        <div>
+            栏目: 
+            <input class="easyui-combotree" id="pid-combotree" data-options="url:'/video/getVideoCatForCombo.html',method:'get'" style="width:200px;">
+            频道: 
+            <input id="column-combo" class="easyui-combobox" >
+            标题:
+            <input id="name" type="text" value="" >
+            <a href="javascript:void(0)" id="search_button" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
+            <a href="javascript:void(0)" id="clear_button" class="easyui-linkbutton" iconCls="icon-trash-alt">清除</a>
+        </div>
+    </div>
+    <table id="dg">
+    </table>
+</div>
+</block>

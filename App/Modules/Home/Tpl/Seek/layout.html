@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <block name='title'></block>
+    <block name='seo'></block>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <block name='css'></block>
+    <script type="text/javascript" src="__PUBLIC__/js/home/logined.js" ></script>
+    <block name='js'></block>
+    <block name='style'></block>
+</head>
+<body>
+<block name='body'></block>
+<block name='script'>
+    <script>
+        $(function() {
+        });
+        function rewrite_search() {
+            var type = $("#type").val();
+            var query = $.trim($("#query").val());
+            if (query == "") {
+                $("#query").focus();
+                return false;
+            }
+        }
+    </script>
+</block>
+</body>
+</html>

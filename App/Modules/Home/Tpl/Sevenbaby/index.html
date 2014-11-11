@@ -1,0 +1,442 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>第二届Seven Baby_儿童代言人网络投票活动_健康卫视</title>
+</block>
+<block name='seo'>
+<meta name="keywords" content="网络投票，儿童活动,健康卫视,亲子活动,儿童电视节目" />
+<meta name="description" content="“Seven baby”即“健康7宝贝”，是健康卫视网1周7天的7个健康天使。第二届《seven baby》即2014健康卫视网代言人网络评选活动，面向全球，以健康卫视上星开播三周年和国际六一儿童节为契机，通过7爸7妈上传图片、日志、视频，并通过为期两个月的网络拉票，最终评选出7名“2014健康卫视网代言人” ，即第二届“seven baby” 和61名“六一健康宝宝”，作为给孩子们六一儿童节的特别礼物。" />
+</block>
+<block name='css'>
+<link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Css/home/sevenbaby/prizeslist.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+<script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Js/lrscroll.js"  type="text/javascript"  ></script>
+<script src="__PUBLIC__/Js/home/sevenbaby/prizes_scroll.js"  type="text/javascript" >/*奖品展示*/</script>
+</block>
+<block name='body'>
+<!--/*顶部*/-->
+<include file="sevenbaby/top"/>
+<!--/*顶部结束*/-->  
+<!--/*头部横幅层*/-->
+<div class="row hei700">
+  <div class="bannerbg"></div>
+  <div class="navpost"><div class="join_us"><img src="__PUBLIC__/Images/home/sevenbaby/join_us.png" width="494" height="63" border="0" ></div><img src="__PUBLIC__/Images/home/sevenbaby/nav.png" width="1046" height="205" border="0" usemap="#Map">
+    <map name="Map">
+      <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+      <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+      <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+      <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+      <empty name="userId">
+      <area shape="rect" style=" margin-left:100px;" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();showForbid();void(0);"  class="icon-login">
+       <else/>
+      <area shape="rect"  style=" margin-left:100px;"  coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+      </empty> 
+      <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="电视节目" href="/sevenbaby/program.html" />
+      <area shape="circle" coords="100,99,95" href="/sevenbaby/index.html" title="seven baby 2014">
+    </map>
+  </div>
+  <div class="bannershow">
+    <div class="bannerleft">
+      <ul class="banthree">
+        <li><a href="javascript:void(0)" class="hdbj_t1" title="活动海报" ><i class="icon-draw"></i></a></li>
+        <li><a href="javascript:void(0)" class="hdbj_t2" title="活动视频" ><i class="icon-video"></i></a></li>
+        <li><a href="javascript:void(0)" class="hdbj_t3" title="什么是SEVEN BABY"><i class="icon-whatbb"></i></a></li>
+      </ul>
+      <a href="javascript:void(0)" title="最快掌握活动消息，请扫" ><i class="icon-code"></i></a>
+      <a href="babyshow.html" title="我要投票" ><i class="icon-join"></i></a> 
+    </div>
+    <div class="bannerright bg1">
+   <div class="banner-bg">
+    <img src="__PUBLIC__/Images/home/sevenbaby/banner-bg.png" width="796" height="451">
+    </div>
+   
+
+<div class="banner_hd" style="margin:0; z-index:10;">
+     <a href="#" target="_blank" title="活动海报"><img src="__PUBLIC__/Images/home/sevenbaby/banner_3.jpg" width="800" height="455"></a>
+<div class="tuijian_icon"><a onclick="add_hit('sevenbaby海报')" href="http://item.taobao.com/item.htm?id=39847891582&qq-pf-to=pcqq.c2c" title="" target="_blank">
+    <img src="__PUBLIC__/Images/home/sevenbaby/banner_link.png" width="800" height="455" class="banner_img"></a></div>
+</div>
+
+    </div>
+
+    <div class="bannerright bg2" style="display:none;">
+      <div class="banner_hd">
+        <div class="players-box"> 
+          <script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/player.js"></script> 
+          <script src='__PUBLIC__/Js/home/sevenbaby/polyvplayer.min.js'></script> 
+          <script language="javascript" type="text/javascript">
+            $(function(){
+           		//player("{$hdVideo.video}");
+            });
+            function focusComment(){
+            	if(document.getElementById('message')){
+            	document.getElementById('message').focus();
+            }
+            }
+            </script>
+          <div id="CuPlayer2"></div>
+          <div id='video_div'></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bannerright bg3" style="display:none;">
+      <div class="banner_hd">
+        <div class="banner_word">
+          <p class="text-indent"><b style=" font-weight:bold; font-size:24px; color:#FFF; font-family:Arial;">"Seven Baby"</b>即"健康7宝贝"，是健康卫视官网1周7天的7个健康天使。</p>
+          <p class="text-indent">第二届《Seven Baby》即2014健康卫视网代言人网络评选活动，面向全球，以<font class="fontcolor">健康卫视上星开播三周年</font>和国际六一儿童节为契机，通过7爸7妈上传图片、日志、视频，并通过为期两个月的网络拉票，最终评选出<font class="fontcolor">7名"2014健康卫视网代言人" </font>，即第二届"Seven Baby" 和<font class="fontcolor">61名"六一健康宝宝"</font>，作为给孩子们六一儿童节的特别礼物。</p>
+          <p class="text-indent"> 第一届《Seven Baby》，为期两个月的活动，引发内地<font class="fontcolor">二十多家媒体</font>的持续关注，来自<font class="fontcolor">法国巴黎、香港以及中国内地的超1千名宝宝</font>参加了活动。《Seven Baby》活动主网页两个月累计浏览超1200万人次。</p>
+          <p class="text-indent">第二届"Seven Baby"不仅会获得代表时尚创意的全新波兰琥珀品牌Creamber提供的
+           <font class="fontcolor">价值3千元的天然琥珀吊坠、</font>深圳市宏智力科技有限公司提供的通过了苹果MFi认证，能帮您训练孩子"静思考"能力的<font class="fontcolor">顶尖科技产品BrainLink</font>，而且还将获得由Seven Baby自己出品的<font class="fontcolor">国内首款搭配视频APP的故事机</font>，以及健康卫视年度宣传片拍摄，<font class="fontcolor">全家三人游</font>等等神秘大奖。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--/*头部横幅层结束*/--> 
+
+<!--推荐消息开始 -->
+   <div id="recommend">
+     <div class="title"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/tuijian.png" width="65" height="30"></div>
+     <div class="prizes"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/prizes.png" width="129" height="30"></div>
+      <div class="mubanlan"><a href="http://weibo.com/u/2232993991" title="健康卫视" target="_blank"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/mubanlan.png" width="205" height="271"></a></div>
+      <div class="contents">
+      <ul>
+      <li style="margin-top:18px;"><span class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/active_news.png" width="88" height="25"></span><a href="http://www.jkwshk.tv/news/view/id/4430.html" target="_blank">Seven Baby 互动升级 终极大奖倒计时</a></li>
+      <li><span class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/luntanretie.png" width="88" height="25"></span><a href="http://www.jkwshk.tv/bbs/thread-14686-1-2.html" target="_blank">1193号诺诺，小清新范的宝贝，求关注投票哦。</a></li>
+      <li><span class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/weibotuijian.png" width="88" height="25"></span><a href="http://weibo.com/2232993991/Bh2pgrv10" target="_blank">“七天日记”海报主角产生 真人版“小苹果”抢占头条</a></li>
+      </ul>
+      
+       <ul>
+      <li style="margin-top:18px;"><span class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/yuerbaike.png" width="88" height="25"></span><a href="http://www.jkwshk.tv/sevenbaby/kids/id/9243.html" target="_blank">孩子恐惧某件事情时，怎么办？</a></li>
+ <li><span class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/qinzishipin.png" width="88" height="25"></span><a href="http://www.jkwshk.tv/sevenbaby/example/id/9244.html" target="_blank">“荣誉导视员”1223号宝妞</a></li>
+      <li><span class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/tuijian/weixintuijian.png" width="88" height="25"></span><a href="http://mp.weixin.qq.com/s?__biz=MzA5NTMzMTAzNg==&mid=200827953&idx=3&sn=b48124082cb9b1e09038db860f4cb7f8#rd" target="_blank">4位千金挑大梁 宝宝秀场各展风骚</a></li>
+      </ul>
+      </div>     
+     
+    <!--奖品展示开始 -->
+    <div class="prizes-presentation">
+    <!-- 代码开始 -->
+    
+    <div class="box" style="margin-top:40px;">
+	<div class="picbox">
+		<ul class="piclist mainlist">
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/zaojiaoji.png" width="100" height="100"/><a href="http://item.taobao.com/item.htm?id=39847891582&qq-pf-to=pcqq.c2c" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://item.taobao.com/item.htm?id=39847891582&qq-pf-to=pcqq.c2c" target="_blank" class="prizes_title1">Seven Baby故事机<br />声光安抚音乐玩具</a></div></li>
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/BrainLink.jpg"/><a href="http://www.macrotellect.com/" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://www.macrotellect.com/" target="_blank" class="prizes_title">意念头箍BrainLink</a></div></li>
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/amber.jpg"/><a href="http://charmsea.taobao.com/category-926451608.htm" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://charmsea.taobao.com/category-926451608.htm" target="_blank" class="prizes_title">波兰琥珀creamber</a></div></li>
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/jumiaoli.jpg"/><a href="http://grelii.taobao.com/" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://grelii.taobao.com/"  target="_blank" class="prizes_title">巨妙立音乐电子琴</a></div></li>
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/mystery-prize.jpg"/><a href="javascript:void(0);" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="javascript:void(0);"  target="_blank" class="prizes_title">神秘大奖</a></div></li>
+             <li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/zaojiaoji.png" width="100" height="100"/><a href="http://item.taobao.com/item.htm?id=39847891582&qq-pf-to=pcqq.c2c" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://item.taobao.com/item.htm?id=39847891582&qq-pf-to=pcqq.c2c" target="_blank" class="prizes_title1">Seven Baby故事机<br />声光安抚音乐玩具</a></div></li>
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/BrainLink.jpg"/><a href="http://www.macrotellect.com/" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://www.macrotellect.com/" target="_blank" class="prizes_title">意念头箍BrainLink</a></div></li>
+			<li><img src="__PUBLIC__/Images/home/sevenbaby/prizes/amber.jpg"/><a href="http://charmsea.taobao.com/category-926451608.htm" target="_blank"><div class="imgbox"></div></a><div class="prizes-txt"><a href="http://charmsea.taobao.com/category-926451608.htm" target="_blank" class="prizes_title">波兰琥珀creamber</a></div></li>  
+                    
+		</ul>
+        
+        <ul class="piclist swaplist"></ul>
+	</div>
+	<div class="og_prev"></div>
+	<div class="og_next"></div>
+</div>
+    
+    <!-- 代码结束 --> 
+        </div>
+    <!-- 奖品展示结束 -->
+
+     <div class="paopaonews">
+     <div class="content"><a href="http://mp.weixin.qq.com/s?__biz=MzA5NTMzMTAzNg==&mid=200793165&idx=4&sn=d2837bff8a23f4aaaedc514d2faf48c9#rd" title="微信推荐：宝宝秀场星范十足，西瓜头小魔女各分春秋。" target="_blank">关注“健康卫视”<font class="font1">微信</font><br />公众平台，向官微提问求推<br />荐，转发<font class="font1">朋友圈</font><br />为宝贝拉票。</a></div>
+     </div>
+   </div>
+<!--推荐消息结束 -->
+
+
+<!--/*中间层*/-->
+<div class="main">
+  <ul class="subtitle">
+    <li class="active"><a title="最新上传" href="/sevenbaby/babyshow.html"></a></li>
+    <li class="ts1"><a title="人气宝贝" href="/sevenbaby/babyshow/_search/votes.html"></a></li>
+    <li class="ts2"><a title="随机推荐" href="/sevenbaby/babyshow/_search/rand.html" ></a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="sublist tab-pane active" id="Newest">
+      <ul>
+          <volist name="newBabys" id="v">
+           <li> <a href="/sevenbaby/babyview/id/{$v.ebid}.html"><img src="/Uploads/sevenbaby/{$v.cover}" width="auto" height="150" style="max-width:220px;"/></a>
+            <p><span class="nicheng">昵称：</span><span class="name"><a href="javascript:void(0);" title="{$v.nickname}"><b>{$v.nickname}</b></a></span><span class="span1">性别：<b>{$v.sex}</b></span></p>
+          <p><span>城市：<b>{$v.city}</b></span><span class="span1">年龄：<b>{$v.age}</b></span></p>
+          <p><span>票数：<b>{$v.votes}</b></span><span class="span1"> 编号：<b>{$v.idnum}</b></span></p>
+          <p class="button_t">
+            <a href="/sevenbaby/babyview/id/{$v.ebid}.html" class="point">点击投票</a>
+            <a href="/sevenbaby/babyview/id/{$v.ebid}.html#main"  class="message">留言</a>
+          </p>
+           <if condition="$v.61baby eq 1 "> 
+              <div class="awards61"></div> 
+           </if>
+   <!--<div class="awards7"></div> --> 
+           </li>
+          </volist>
+      </ul>
+    </div>
+    <div class="sublist tab-pane" id="Popularbaby">
+      <ul>
+          <volist name="hotBabys" id="v">
+           <li> <a href="/sevenbaby/babyview/id/{$v.ebid}.html"><img src="/Uploads/sevenbaby/{$v.cover}" width="auto" height="150" style="max-width:220px;" /></a>
+            <p><span class="nicheng">昵称：</span><span class="name"><a href="javascript:void(0);" title="{$v.nickname}"><b>{$v.nickname}</b></a></span><span class="span1">性别：<b>{$v.sex}</b></span></p>
+          <p><span>城市：<b>{$v.city}</b></span><span class="span1">年龄：<b>{$v.age}</b></span></p>
+          <p><span>票数：<b>{$v.votes}</b></span><span class="span1"> 编号：<b>{$v.idnum}</b></span></p>
+          <p class="button_t">
+            <a href="/sevenbaby/babyview/id/{$v.ebid}.html" class="point">点击投票</a>
+            <a href="/sevenbaby/babyview/id/{$v.ebid}.html#main"  class="message">留言</a>
+          </p>
+           </li>
+          </volist>
+      </ul>
+    </div>
+    <div class="sublist tab-pane" id="Random">
+      <ul>
+         <volist name="randBabys" id="v">
+           <li> <a href="/sevenbaby/babyview/id/{$v.ebid}.html"><img src="/Uploads/sevenbaby/{$v.cover}" width="auto" height="150" style="max-width:220px;" /></a>
+           <p><span class="nicheng">昵称：</span><span class="name"><a href="javascript:void(0);" title="{$v.nickname}"><b>{$v.nickname}</b></a></span><span class="span1">性别：<b>{$v.sex}</b></span></p>
+          <p><span>城市：<b>{$v.city}</b></span><span class="span1">年龄：<b>{$v.age}</b></span></p>
+          <p><span>票数：<b>{$v.votes}</b></span><span class="span1"> 编号：<b>{$v.idnum}</b></span></p>
+          <p class="button_t">
+            <a href="/sevenbaby/babyview/id/{$v.ebid}.html" class="point">点击投票</a>
+            <a href="/sevenbaby/babyview/id/{$v.ebid}.html#main"  class="message">留言</a>
+          </p>
+           </li>
+          </volist>
+      </ul>
+    </div>
+  </div>
+  <!--adv980X90广告 -->
+  <div class="adv980X90 m_t_30" style="background:none;">
+  <a href="http://grelii.taobao.com/" target="_blank" title="巨妙立玩具工厂店"><img src="__PUBLIC__/Images/home/sevenbaby/banner-001.jpg" width="960" height="90" /></a>
+  </div>
+   <!--adv980X90广告 -->
+  <ul class="subtitle">
+    <li class="ts3"><a href="javascript:void(0)" title="活动时间"></a></li>
+    <li class="ts4"><a href="http://www.jkwshk.tv/bbs" title="活动交流" target="_blank"></a></li>
+    <li class="ts5"><a href="javascript:void(0)" title="协办、赞助"></a></li>
+  </ul>
+  <div class="subothter">
+    <div class="sothterCTX" style="position:relative;">
+      <div class="title">本次活动为多重评选，具体时间为:</div>
+      <dl>
+        <dt></dt>
+        <dd class="font16">六一健康宝宝</dd>
+        <dd>2014年7月1日•••8月1日零点 网络票选前61位的宝贝，成为"六一健康宝贝"；同时，截止到8月1日零时各位宝宝的即时票数，以30%（小数四舍五入）的票数累计进入接下来的Seven Baby的评比。
+</dd>
+      </dl>
+      <dl>
+        <dt class="nubtwo"></dt>
+        <dd class="font16">Seven Baby（健康7宝贝）</dd>
+        <dd>2014年8月1日•••9月1日零点 网络票选前7位的宝贝，成为第二届"Seven Baby"。</dd>
+      </dl>
+      <dl>
+        <dt class="nubthree"></dt>
+        <dd class="font16">活动官方邮箱：</dd>
+        <dd>1586980075@qq.com<br />
+        </dd>
+      </dl>
+            <dl>
+        <dt class="nubfour"></dt>
+        <dd class="font16">官方微博：</dd>
+        <dd> 
+         
+          <div class="weibo">
+          <ul>
+          <li class="tencent">
+              <span class="title"><a href="http://e.t.qq.com/jkwshk" target="_blank">&nbsp;腾讯微博</a></span>
+              <span class="code"><a href="http://e.t.qq.com/jkwshk" target="_blank"><img src="__PUBLIC__/Images/home/sevenbaby/tencent.png" width="90" height="90" /></a></span>
+            </li>
+          <li class="sina">
+            <span class="title"><a href="http://weibo.com/u/2232993991" target="_blank">&nbsp;新浪微博</a></span>
+            <span class="code"><a href="http://weibo.com/u/2232993991" target="_blank"><img src="__PUBLIC__/Images/home/sevenbaby/sina.png" width="90" height="90" /></a></span>
+          </li>
+          </ul>
+          </div>
+        
+        </dd>
+      </dl>
+      <div  class="home-ad01" style="text-align:center; margin-top:15px;">     
+       <include file="Public/adv300X250"/>
+      </div>
+      
+      <!--特别推荐开始 -->
+    <div class="prizes-presentation2">
+    <!-- 代码开始 -->
+<DIV id=featureContainer2>
+<DIV id=feature2>
+<DIV id=block2>
+
+<DIV id=botton-scroll2>
+<UL class=featureUL2>
+    <LI class=featureBox>
+<img src="__PUBLIC__/Images/home/sevenbaby/tuijian/qitianriji.png" width="100" height="100" />
+  <div class="prizes_title"><a href="http://www.jkwshk.tv/bbs/forum-54-1.html" target="_blank" class="prizes_title1">七天亲子合影<br />
+赢海报主角机会</a></div>
+<a href="http://www.jkwshk.tv/bbs/forum-54-1.html" target="_blank"><div class="featureBox2"></div></a>
+  </LI>
+    <LI class=featureBox>
+<img src="__PUBLIC__/Images/home/sevenbaby/tuijian/baobeishiguang.png" width="100" height="100" />
+  <div class="prizes_title"><a href="http://www.jkwshk.tv/bbs/forum-53-1.html" target="_blank" class="prizes_title1">创意亲子故事<br />节目组上门拍摄</a></div>
+  <a href="http://www.jkwshk.tv/bbs/forum-53-1.html" target="_blank" ><div class="featureBox2"></div></a>
+  </LI>
+      <LI class=featureBox>
+<img src="__PUBLIC__/Images/home/sevenbaby/tuijian/weixinfengmian.png" width="100" height="100" />
+  <div class="prizes_title"><a href="http://mp.weixin.qq.com/s?__biz=MzA5NTMzMTAzNg==&mid=200779732&idx=3&sn=494796a564c26f6e38e9fdf5b55e6bb8#rd" target="_blank" class="prizes_title1">转发朋友圈<br />赢微信封面秀</a></div>
+  <a href="http://mp.weixin.qq.com/s?__biz=MzA5NTMzMTAzNg==&mid=200779732&idx=3&sn=494796a564c26f6e38e9fdf5b55e6bb8#rd" target="_blank"><div class="featureBox2"></div></a>
+  </LI>
+    <LI class=featureBox>
+<img src="__PUBLIC__/Images/home/sevenbaby/tuijian/weibotoutiao.png" width="100" height="100" />
+  <div class="prizes_title"><a href="http://weibo.com/u/2232993991" target="_blank" class="prizes_title1">转发宝贝投票链接<br />帮孩子上头条</a></div>
+ <a href="http://weibo.com/u/2232993991" target="_blank"><div class="featureBox2"></div></a>
+  </LI>
+      <LI class=featureBox>
+<img src="__PUBLIC__/Images/home/sevenbaby/tuijian/yuerbaike2.png" width="100" height="100" />
+  <div class="prizes_title"><a href="http://www.jkwshk.tv/bbs/forum-51-1.html" target="_blank" class="prizes_title1"> 美国心理学博士<br />在线回答</a></div>
+ <a href="http://www.jkwshk.tv/bbs/forum-51-1.html" target="_blank"><div class="featureBox2"></div></a>
+  </LI>
+</UL>
+</DIV>
+<!-- /botton-scroll --></DIV>
+<!-- /block -->
+<A class=prev href="javascript:void();">Previous</A>
+<A class=next href="javascript:void();">Next</A>
+</DIV>
+<!-- /feature --></DIV>
+<!-- 代码结束 --> 
+    </div>
+<!-- 特别推荐结束 -->
+ 
+    </div>
+    <div class="sothterCTX" style="overflow:hidden;">
+      <ul class="mulitline">
+          <volist name="bbs" id="v">
+            <li>
+              <p><span class="onespan">{$v.author}</span><span class="twospan">发表于：{$v.dateline|date='Y-m-d H:i:s',###}</span></p>
+              <p class="jiao"></p>
+              <p class="pnobg"><a href="{$v.url}" target="_blank" title="{$v.subject}">{$v.subject}</a></p>
+            </li>
+          </volist>
+      </ul>
+   <!--   <div class="" style="margin-top:20px;" ><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/sevenbaby/adv_3.jpg" width="318" height="88" /></a></div> -->
+    </div>
+   <!--右边合作伙伴开始 -->
+    <div class="sothterCTX1" >
+      <div class="prizes-offered">
+      <div class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/seven-baby5_001.png" width="98" height="45" /></div>
+     <ul>
+      <li><a href="http://www.seven-baby.com/" target="_blank" title="早教机"><img src="__PUBLIC__/Images/home/sevenbaby/logo/zaojiaoji.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.macrotellect.com/" target="_blank"   title="宏智力" ><img src="__PUBLIC__/Images/home/sevenbaby/logo/hongzhili.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.creamber.com/" target="_blank"  title="琥珀"><img src="__PUBLIC__/Images/home/sevenbaby/logo/CREAMBER.png" width="120" height="40" /></a></li>
+      <li><a href="http://grelii.taobao.com/" target="_blank" title="巨妙立"><img src="__PUBLIC__/Images/home/sevenbaby/logo/jumiaoli.png" width="120" height="40" /></a></li>
+    </ul>
+      </div>
+      
+          <div class="co-organizer">
+      <div class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/seven-baby5_003.png" width="98" height="45" /></div>
+     <ul>
+      <li><a href="http://v.qq.com/" target="_blank" title="腾讯视频"><img src="__PUBLIC__/Images/home/sevenbaby/logo/tencent.png" width="120" height="40" /></a></li>
+      <li><a href="http://v.163.com/" target="_blank" title="网易视频"><img src="__PUBLIC__/Images/home/sevenbaby/logo/v.163.png" width="120" height="40" /></a></li>
+    </ul>
+      </div>
+      
+            <div class="associated-media">
+      <div class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/seven-baby5_002.png" width="98" height="45" /></div>
+     <ul>
+      <li><a href="http://baby.sina.com.cn/" target="_blank" title="新浪育儿"><img src="__PUBLIC__/Images/home/sevenbaby/logo/xinlangyuer.png" width="120" height="40" /></a></li>
+      <li><a href="http://tv.sohu.com/" target="_blank"  title="搜狐视频"><img src="__PUBLIC__/Images/home/sevenbaby/logo/sohu.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.pcbaby.com.cn/" target="_blank"  title="太平洋亲子网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/qinzi.png" width="120" height="40" /></a></li>
+      <li><a href="http://baby.qq.com/" target="_blank"  title="腾讯育儿"><img src="__PUBLIC__/Images/home/sevenbaby/logo/baby.qq.png" width="120" height="40" /></a></li>
+      <li><a href="http://baby.163.com/" target="_blank"  title="网易亲子网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/163qinzi.jpg" width="120" height="40" /></a></li>
+      <li><a href="http://www.iqiyi.com/" target="_blank"  title="爱奇艺"><img src="__PUBLIC__/Images/home/sevenbaby/logo/iqiyi.png" width="120" height="40" /></a></li> 
+      <li><a href="http://tv.sohu.com/documentary/" target="_blank"  title="搜狐纪录片"><img src="__PUBLIC__/Images/home/sevenbaby/logo/tv.sohu.png" width="120" height="40" /></a></li>
+       <li><a href="http://www.wasu.cn/" target="_blank"  title="华数TV"><img src="__PUBLIC__/Images/home/sevenbaby/logo/huashuTV.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.qinbei.com/" target="_blank"  title="亲贝网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/qinbei.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.fengyunzhibo.com/" target="_blank"  title="风云直播"><img src="__PUBLIC__/Images/home/sevenbaby/logo/fengyun.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.seedit.com/" target="_blank"  title="播种网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/bozhong.png" width="120" height="40" /></a></li>
+      <li><a href="http://baby.39.net/" target="_blank"  title="39育儿"><img src="__PUBLIC__/Images/home/sevenbaby/logo/yuer.png" width="120" height="40" /></a></li>
+        <li><a href="http://www.mop.com/" target="_blank"  title="猫扑"><img src="__PUBLIC__/Images/home/sevenbaby/logo/mop.jpg" width="120" height="40" /></a></li>
+      <li><a href="http://www.familydoctor.com.cn/" target="_blank"  title="家庭医生在线"><img src="__PUBLIC__/Images/home/sevenbaby/logo/jiatingyisheng.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.dayoo.com/" target="_blank"  title="大洋网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/dayang.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.hntv9.cn/" target="_blank"  title="河南第九频道"><img src="__PUBLIC__/Images/home/sevenbaby/logo/henandijiu.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.yaolan.com/" target="_blank"  title="摇篮网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/yaolan.png" width="120" height="40" /></a></li>
+      <li><a href="http://www.babytree.com/" target="_blank"  title="宝宝树"><img src="__PUBLIC__/Images/home/sevenbaby/logo/babytree.png" width="120" height="40" /></a></li>
+     
+    </ul>
+      </div>
+      
+            <div class="co-institution">
+      <div class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/cooperative-institution.png" width="98" height="45" /></div>
+     <ul>
+     <li><a href="http://www.ivan.com.cn" target="_blank" title="艾文英语"><img src="__PUBLIC__/Images/home/sevenbaby/logo/aiwen.png" width="120" height="40" /></a></li>
+     <li><a href="http://weibo.com/p/1006062959848594/home" target="_blank" title="孵爱代"><img src="__PUBLIC__/Images/home/sevenbaby/logo/fuaidai.png" width="120" height="40" /></a></li>
+     <li><a href="http://weibo.com/huntonghua" target="_blank" title="混通话"><img src="__PUBLIC__/Images/home/sevenbaby/logo/huntonghua.png" width="120" height="40" /></a></li>
+     <li><a href="http://www.imhaigui.com/welcome" target="_blank" title="我是海归网"><img src="__PUBLIC__/Images/home/sevenbaby/logo/haiguiwang.png" width="120" height="40" /></a></li>
+     <li><a href="#" target="_blank" title="metis"><img src="__PUBLIC__/Images/home/sevenbaby/logo/metis.jpg" width="120" height="40" /></a></li>   
+    </ul>
+      </div>
+       
+      
+                  <div class="phone-TV">
+      <div class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/seven-baby5_004.png" width="187" height="51" /></div>
+     <ul>
+      <li><a href="http://www.dopool.com/" target="_blank" title="Dopool"><img src="__PUBLIC__/Images/home/sevenbaby/logo/Dopool.png" width="120" height="40" /></a></li>
+    </ul>
+      </div>
+                        <div class="TV-net">
+      <div class="icon"><img src="__PUBLIC__/Images/home/sevenbaby/seven-baby5_005.png" width="267" height="59" /></div>
+     <ul>
+      <li><a href="http://www.togic.cn/livetv.html" target="_blank" title="泰捷视频"><img src="__PUBLIC__/Images/home/sevenbaby/logo/taijie.png" width="120" height="40" /></a></li>
+    </ul>
+      </div>
+    </div>
+    <!--右边合作伙伴结束 -->
+  </div>
+</div>
+<!--/*中间层结束*/--> 
+<!--/*底部*/-->
+        <!--loveme-->
+    <div class="loveme">
+         <marquee behavior="alternate" scrolldelay=150 direction="up"  style="width:112px;height:400px;">  
+         <marquee behavior="alternate" scrolldelay=100 direction="down"  style="width:112px;height:360px;">  
+         <div class="lovemeimg"> 
+     <a href="http://item.taobao.com/item.htm?id=39847891582&qq-pf-to=pcqq.c2c" target="_blank"><img src="__PUBLIC__/Images/home/sevenbaby/loveme.png" width="112" height="213"  border="0"/></a>
+        </div>
+        </marquee>
+        </marquee>
+    </div>    
+
+    
+<include file="Sevenbaby:foot"/>
+<!--/*底部结束*/--> 
+    <!--弹出登录框开始 -->
+    <include file="Public/loginbox"/>
+    <!--弹出登录框线束 -->
+<script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/tab.js">/*可切换的标签页*/ </script> 
+<script type="text/javascript"  src="__PUBLIC__/Js/home/sevenbaby/modal.js" >/*对话框 */ </script> 
+<script type="text/javascript" src="__PUBLIC__/Js/home/sevenbaby/common.js">/*公共js*/</script>
+<script type="text/javascript">
+          $(function(){
+          });
+           function add_hit(flag){
+               $.ajax({
+                  url:'/sevenbaby/addHits.html',
+                  data:{'flag':flag},
+                  success:function(){
+                      console.info('i do it');
+                  }
+               });
+           }
+           function change_code() {
+                var time = new Date().getTime();
+                document.getElementById('verifyImg').src = '/Public/verify/' + time;
+            }
+</script>
+
+</block>
+

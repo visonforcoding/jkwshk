@@ -1,0 +1,73 @@
+<extend name="Layout:base"/>
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            document.domain = 'test.com';
+        });
+        function showMessage(msg) {
+            $.messager.show({
+                title: "提示信息",
+                msg: msg,
+                timeout: 2000,
+                showType: 'show',
+                style: {
+                    right: 0,
+                    left: '',
+                    top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                    bottom: ''
+                }
+            });
+        }
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+        #dg tr{
+            height:30px;
+        }
+    </style>
+</block>
+<block name="main">
+    <div class="curpostion">
+        <!--        <ul class="breadcrumb">
+                    <li><a href="#">后台管理</a>><span class="divider"></span></li>
+                    <li><a href="#">博客管理</a>><span class="divider"></span></li>
+                    <li class="active">文章管理</li>
+                </ul>-->
+        <div class="clear"></div>
+    </div>
+    <div class="easyui-panel" title="添加活动" data-options="iconCls:'icon-images',collapsible:true" >
+        <div class="form_box">
+        <form id="ff" method="post" action="/ajax/submit/">
+            <input type="hidden" name="action" value="{$action}"  />
+            <input type="hidden" name="id" value="{$Rs['id']}"  />
+            <input type="hidden" name="classname" value="{$classname}"  />
+            <input type="hidden" name="setreferer" value="{$setreferer}"  />
+            <p>
+                <label for="name">活动名称:</label>
+                <input class="easyui-validatebox" value="{$Rs['name']}" type="text" name="name" data-options="required:true" />
+            </p>
+            <p>
+                <label for="flag">标识符:</label>
+                <input class="easyui-validatebox" type="text" value="{$Rs['flag']}" name="flag" data-options="required:true" />
+            </p>
+            <p>
+                <label for="starttime">开始时间:</label>
+                <input class="easyui-datetimebox" type="text" value="{$Rs['starttime']}" name="starttime" data-options="required:true" />
+            </p>
+            <p>
+                <label for="endtime">结束时间:</label>
+                <input class="easyui-datetimebox" type="text" value="{$Rs['endtime']}" name="endtime" data-options="required:true" />
+            </p>
+            <p>
+                <label for="idnum">活动编号:</label>
+                <input class="easyui-numberbox" type="text" value="{$Rs['idnum']}" name="idnum" data-options="required:true" />
+            </p>
+            <p>
+                <label for=""></label>
+                <button  type="submit"  class="btn">确定</button>
+            </p>
+        </form>
+        </div>
+    </div>
+</block>

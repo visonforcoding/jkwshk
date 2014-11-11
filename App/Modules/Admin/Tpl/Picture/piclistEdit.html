@@ -1,0 +1,114 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+		<div class="edit">
+			<div class="editContent">
+            <form method="post" id="fm1" action="/ajax/submit/" >
+                <input type="hidden" name="id" value="{$Rs['id']}"  />
+                <input type="hidden" name="pid" value="{$fRs['pid']}" />
+            	<input type="hidden" name="action" value="{$action}"  />
+                <input type="hidden" name="classname" value="{$classname}"  />
+                <input type="hidden" name="setreferer" value="{$setreferer}"  />
+                <input type="hidden" name="uname" value="{$uname}"  />
+				<table width="100%">
+                	<tr height="50">
+						<td width="85"><span class="cRed">*</span>所属分类：</td>
+						<td width="310">
+                		{$fRs['name']}
+                        </td>
+					</tr>
+					<tr height="50">
+						<td width="85"><span class="cRed">*</span>图片名称：</td>
+						<td width="310">
+                        <input name="name" id="name" 
+				type="text" value="{$Rs['name']}" class="inputText w310" />
+                        </td>
+					</tr>
+                    <tr>
+                        <td >图集封面：</td>
+                        <td id="tdimgcover">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                            {$Rs['fimgurl']}
+                            </div>
+                            <div id="btnimgcover">
+                            <input type="button" class="btnBlue" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="imgurl" id="imgurl" value="{$Rs['imgurl']}"  />
+                        </div>
+                        <script id="myeditor"></script> 
+                      <tr  height="80">
+                        <td>描述：</td>
+                        <td>
+                        <script id="info" name="info" type="text/plain">
+							{$Rs['info']}
+						</script>
+                        <script type="text/javascript">
+							var editor = UE.getEditor('info')
+						</script>
+                        </td>
+                      </tr>
+                      <tr height="50">
+						<td width="85"><span class="cRed">*</span>排序：</td>
+						<td width="310">
+                        <input name="ascno" id="ascno" 
+				type="text" value="{$Rs['ascno']}" class="inputText w75" />
+                        </td>
+					</tr>
+                    <tr height="100">
+						<td>&nbsp;</td>
+						<td><input type="submit" value="确&nbsp;定" class="btnBlue">
+                        <input type="reset" value="取&nbsp;消" class="btnGray ml20">
+                        </td>
+					</tr>
+				</table>
+                </form>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	/*图片上传*/
+(function($){  
+    var image = {  
+        editor:null,  
+        init:function(editorid,keyid){  
+            var _editor =this.getEditor(editorid);  
+            _editor.ready(function () {  
+                _editor.setDisabled();  
+                _editor.hide();  
+                _editor.addListener('beforeInsertImage', function (t, args) {
+					var imgsrc = args[0].src;
+                    $("#"+keyid).val(imgsrc);  
+					$("#disimgcover").html('<img src="'+imgsrc+'" width="120" height="120" />');
+					
+                });  
+            });  
+        },  
+        getEditor:function(editorid){  
+            this.editor = UE.getEditor(editorid);  
+            return this.editor;  
+        },  
+        show:function(id){  
+            var _editor = this.editor;  
+           //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+           //和网上一些朋友的代码不同之处就在这里  
+            $("#"+id).click(function(){  
+                var image = _editor.getDialog("insertimage");  
+                image.render();  
+                image.open();  
+            });  
+        },  
+        render:function(editorid){  
+            var _editor = this.getEditor(editorid);  
+            _editor.render();  
+        }  
+    };  
+    $(function(){  
+        image.init("myeditor","imgurl");  
+        image.show("image");  
+    });  
+})(jQuery);  
+</script>
+</body>
+</html>

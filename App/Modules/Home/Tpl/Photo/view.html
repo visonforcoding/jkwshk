@@ -1,0 +1,325 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>{$curPic.name}-健康的图</title>
+</block>
+<block name='seo'>
+<meta name="keywords" content="{$curPic.keywords}" />
+<meta name="description" content="{$curPic.description}" />
+</block>
+<block name='css'>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/home/photo/base.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/home/photo/gallery.css" media="screen">
+</block>
+<block name='js'>
+<!--[if IE 6]>
+<script type="text/javascript" src="__PUBLIC__Js/home/photo//DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,li,a,div');
+</script>
+<![endif]-->
+</block>
+<block name='body'>
+<!--头部代码-->
+<div id="header">
+<!--头部顶部代码-->
+<include file="Public/top" />
+<!--头部顶部代码end--> 
+<!--栏目代码-->
+<include file="Public/common_nav" />
+<!--栏目代码end--> 
+<!---广告位980X90-->
+  <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/photo/data/index_banner1.jpg" width="970" height="90" /></a></div>
+  <!--大栏目代码-->  
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/photo/logo_pic.png" width="253" height="34" /></a></div>
+      <div class="search">
+          <include file='Public:search'/>
+      </div>
+    </div>
+  </div>  
+  <!--大栏目代码end--> 
+</div>
+<!--头部代码end-->
+<!--相册代码-->
+<div class="photoMHD">
+  <div class="title">
+    <div class="txt">
+      <h1>{$curPic.name}<span class="num">(<em id="photoIndex"></em>/{$picListNum})</span><span class="time">{$curPic.time}</span></h1>
+    </div>
+    <div class="function"> <a id="btnOrig" title="查看大图" target="_blank"><i  class="ckbp"></i>查看大图</a><a title="查看全部图片" id="showallPic" href="javascript:void(0)"><i class="ckap"></i>查看全部图片</a>  <a class="return" title="返回幻灯" style="display:none"></a> </div>
+  </div>
+  <!--title end-->
+  <div class="photoNews" id="imgBox">
+    <div id="picDiv" style="display:block;">
+      <div class="pic" id="photoView"> <img id="photoPrevLoading" src="" width="1" height="1" alt="" style="display:none"/>
+        <div class="photo_prev"><a id="photoPrev" class="btn_pphoto" target="_self" hidefocus="true" title="上一张，支持 '← '翻页"></a></div>
+        <div class="photo_next"><a id="photoNext" class="btn_nphoto" target="_self" hidefocus="true" title="下一张，支持 '→ '翻页"></a></div>
+        <a id="photoimg"><img id="photo" style="filter:alpha(opacity=100);" src="" width="1" height="1" /></a> </div>
+    </div>
+    <div class="allPic" id="moretab" style="display:none">
+      <div class="leftArae"><a id="moreLeft"></a></div>
+      <div class="smallpic_box clearfix">
+        <div style="height:560px;overflow:hidden;position:relative;width:935px;">
+          <div id="imageListView"  class="smallpic_con clearfix"></div>
+        </div>
+      </div>
+      <div class="rightArae"><a id="moreRight"></a></div>
+      <div class="clear"></div>
+      <div class="btn" id="btnPage"></div>
+    </div>
+    <div class="zy clearfix">
+      <div class="wrap_text">
+      <p id="haha"></p>
+        <p class="text_con" id="photoDesc"><!--描述--></p>
+        <p class="keywords">标签：
+            <volist name="newTagList" id="v">
+                <a href="#" target="_blank">{$v.tagname}</a>&nbsp;&nbsp;
+            </volist>
+        <span class="talkabout"><i></i> 评论:<a href="#comment">{$totalComCount}</a> |</span>
+        <span class="downpic"><i></i> <a id="Downloadpic" target="_blank">下载</a> |</span>
+        </p>
+      </div>
+      <div class="sharecen">
+        <span class="jiathis_style_24x24 shareweb"><b style=" float:left; margin-left:20px; font-weight:normal;">分享到：</b> <a class="jiathis_button_qzone"></a> <a class="jiathis_button_tsina"></a> <a class="jiathis_button_tqq"></a> <a class="jiathis_button_renren"></a> <a class="jiathis_button_kaixin001"></a> <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a> <a class="jiathis_counter_style"></a> </span>  
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script> 
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="photoList" id="picList_b">
+      <div class="before"> 
+      <!--当图片全部切换完时。下一个图集的链接-->
+      <a id="prevSet" href="/photo/view/id/{$prevPic.id}.html" title="{$prevPic.name}" target="_blank"><img src="{$prevPic.topimg}"  width="104" height="69" /></a>
+      <!--当图片全部切换完时。下一个图集的链接-->
+        <p><a href="/photo/view/id/{$prevPic.id}.html" target="_blank">&lt;&lt;&nbsp;上一图集</a></p>
+      </div>
+      <div class="picList" id="scrl">
+        <div id="scrlPrev" class="l1"><a id="scrlPrev_b"></a></div>
+        <div class="l2">
+          <div class="listM" style="position:relative">
+            <ul id="thumb" style="position:absolute">
+                <volist name="newPicList" id="v" key="key">
+                    <li><a href="#p={$key}" hidefocus="true" ><img src="{$v.img}"  width="105px" /></a></li>  
+                </volist>
+            </ul>
+          </div>
+          <div class="scrollBar"> <a class="drag" id="bar"><b class="l_arrow"></b><b class="r_arrow"></b></a> </div>
+        </div>
+        <div id="scrlNext" class="l3"><a id="scrlNext_b"></a></div>
+      </div>
+      <div class="after"> 
+      <!--当图片全部切换完时。下一个图集的链接-->
+      	<a id="nextSet" href="/photo/view/id/{$nextPic.id}.html" title="{$nextPic.name}" target="_blank"><img src="{$nextPic.topimg}"  width="104" height="69" /></a>
+      <!--当图片全部切换完时。下一个图集的链接-->   
+        <p><a href="/photo/view/id/{$nextPic.id}.html" target="_blank">下一图集&nbsp;&gt;&gt;</a></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--photoNews end-->
+  <div class="clear"></div>
+</div>
+<!--相册代码end-->
+<div class="w_980px">
+<div class="w_left">
+    <div class="like">
+    <h2>猜你喜欢</h2>
+    <ul>
+        <volist name="lovePicList" id="v" empty="暂时没有任何数据~">
+      <li><a href="/photo/view/id/{$v.id}.html" target="_blank" title="{$v.name}"><span style="height:95px; width:135px; overflow:hidden; display:inline-block; text-align:center;"><img src="{$v.topimg}" width="135" alt="{$v.name}" style=" text-align:center;" /></span><b>{$v.name}</b></a></li>
+        </volist>
+    </ul>
+    </div>
+    <div class="like" style=" margin-top:10px;">
+    <h2>热门健康视频</h2>
+    <ul>
+        <volist name="hotVideo" id='v'>
+    <li><a href="/play/index/id/{$v.id}.html" title='{$v.name}'><img src="{$v.coverimage}" alt='{$v.name}' height="156" /></a></li>
+        </volist>
+    </ul>
+    </div>
+</div>
+<div class="w_right">
+  <div class="hotnews" id="hotnews">
+  <h2><b>新闻排行</b></h2>
+	<ul>
+    	    <volist name="hotNews" id="v" key="k" empty="暂时没有数据">
+                 <li><i>{$k}</i><a href="/news/view/id/{$v.id}.html" target="_blank">{$v.title}</a></li>
+            </volist>
+        </ul>
+  </div>
+    <script type="text/javascript">
+    window.onload= function (){  
+        function b(){
+                for (var n=0;n<3;n++) { 			
+                var h = document.getElementById('hotnews').getElementsByTagName("i")[n];
+                h .className+= 'bg' ;	
+                }
+            }
+            b();
+        };
+    </script>
+</div>	
+</div>
+<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/photo/data/index_banner1.jpg" width="970" height="90" /></a></div>
+<div class="w_980px">
+
+
+
+<div class="comment">
+                <p class="commentnum">已有<a href="#">{$totalComCount} </a>条评论，共<a href="#"> {$comUserCount} </a>人参与</p>
+
+                <form action="#" method="">
+                    <div id="show"></div>
+                    <textarea name="msg" class="msgarea" cols="" rows="" style="width:937px;"></textarea>
+                    <p class="commentlogin">
+                        <!--<span class="emotion">表情</span>-->
+                    <empty name="user">
+                        <!--   <input name="username" type="text" class="winput" />
+                                                <input name="password" class="winput" type="password" />
+                                                <input name="remember" type="checkbox"  class="checkboxinput"value="" checked />下次自动登录 -->
+                        <input  value="发布" class="upinput" onclick="javascript:showLogin();
+                                showForbid();
+                                void(0);" type="button" />
+                        </p>
+                        <else/>
+
+                        <a href="/member/index.html">
+                            <empty name="user.nickname">{$user.username}<else/>{$user.nickname}</empty>
+                        </a> 
+                        <input  value="发布" class="upinput postComment" type="button" /></p>
+                    </empty>
+                </form>
+                <h2 class="newscomment">最新评论 <a href="#" class="reread">刷新</a></h2>
+                <ul class="commentlist">
+                    <volist name="comments" id="v">
+                        <li>
+                            <dl>
+                                <dt><img src="{$v.avatar}" width="50" height="50" /></dt>
+                                <dd class="namedate">
+                                    <span><empty name="v.nickname">{$v.username}<else/>{$v.nickname}</empty> 
+                                        <empty name='v.city'>[{$v.country}]<else/>[{$v.province}{$v.city}]</empty>
+                                    </span>
+                                </dd>
+                                <dd>{$v.msg}</dd>
+                                <dd class="replay">
+                                <span class="spandate">发表日期：{$v.ctime|date='Y-m-d H:i:s',###}</span>
+                             <span class="renum1"><a href="#" onclick="support({$v.cid})" class="renum">支持({$v.support})</a></span>
+                                    <a href="#" class="repbt">回复</a> =======
+                                <span class="renum1">
+                                <a href="#" onclick="support({$v.cid})" class="renum">支持<font class="color2">({$v.support})</font></a>
+                                </span>
+                                    
+                                    <a href="#" class="repbt">回复</a>
+                                <span class="reshare1"><a href="javascript:void(0);" class="reshare">分享></a>
+                                  <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>
+
+    
+                               
+                                </span>  
+                                 <script>
+                                 var vmgs=$v.msg;
+                                 document.write("vmgs");
+								 
+                                </script>    
+                               
+                                 
+                              
+								<script>
+									window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"#精彩评论#【{$video.title}】 @{$v.username}：{$v.msg}","bdMini":"1","bdMiniList":["mshare","qzone","renren"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","renren","weixin","qzone"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                                </script>
+
+                                </span> 
+                             <script>
+			window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"我正在看健康卫视网《{$video.title}》，很不错噢！","bdMini":"1","bdMiniList":["mshare","qzone","renren"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","renren","weixin","qzone"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                                </script>
+                               
+                                
+                                </dd>
+                            </dl>
+                        </li> 
+                    </volist>
+                </ul>
+                <div class="pagebg">
+                    <div id="page" class="page">
+                        <ul>
+                            {$show}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+  <script>
+      $(function(){
+        $('.postComment').click(function() {
+            var oid = '{$curPic.id}';
+            var $obj = $(this).parents('p').prevAll('textarea.msgarea');
+            var msg = $(this).parents('p').prevAll('textarea.msgarea').val();
+            var ctype = 'photo';
+            if (msg == '') {
+                $().toastmessage('showToast', {
+                    text: '您未输入任何信息！',
+                    sticky: false,
+                    position: 'top-center',
+                    type: 'error',
+                    stayTime: 2000,
+                });
+                $obj.focus();
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Comment/addComment.html",
+                data: {'oid': oid, 'msg': msg, 'ctype': ctype},
+                success: function(msg) {
+                    if (msg.status) {
+                        $('.commentlist').prepend('<li><dl><dt><img src="{$user.avatar}" width="50" height="50" />' +
+                                '</dt><dd class="namedate"><span><empty name="user.nickname">{$user.username}' +
+                                '<else/>{$user.nickname}</empty>' +
+                                '</span></dd><dd>' + msg.data.msg + '</dd><dd class="replay">' +
+                                '<span class="spandate">发表日期：' + msg.data.time + '</span>'
+//                                    <a href="#" onclick="support('+msg.data.support+')" class="renum">支持('+msg.data.support+')</a>' +
+//                                    ' <span class="span1 bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></span>'+
+//                                    '<a href="#" class="reshare">分享></a></dd></dl></li> '
+                                );
+                        $obj.val('');
+                        $('.newscomment').after("<div class='commentpop' id='commentpop'></span>评论已提交。</div>");
+                        setTimeout("$('.commentpop').remove()", 2500);
+                    }
+                    ;
+                }
+            });
+        });
+      })
+  </script>
+
+</div>
+<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/photo/data/index_banner1.jpg" width="970" height="90" /></a></div>
+<!---底部--->
+<include file="Public/footer"/>
+<!---底部--->
+<script type="text/javascript" src="__PUBLIC__/Js/home/photo/BX.1.0.1.U.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Js/home/photo/gallery.js"></script> 
+ <script type="text/javascript">
+        //图片集数据组成
+var _listdata= [];
+<volist name='newPicList' id='v' key='k'>
+     _listdata[{$key}] = {
+	title:'{$v.info}',
+	timg:'{$v.img}',
+	img:'{$v.img}', 
+	listimg:'{$v.img}',
+//	picwidth:'609',
+//	picheight:'800',
+	morelink:'http://www.jkwshk.tv/',
+	altname:'杂志的照片拍摄'
+};
+</volist>
+new ifeng.Gallery({
+	photoViewMode:"skip"//"loop":循环/ "skip":下一图集
+	,activeThumbCls:"current"//预览图选中的类名
+	,data:_listdata
+}); 
+    </script>
+<!--<script type="text/javascript" src="__PUBLIC__/Js/home/photo/piclist.js"></script>-->
+</block>

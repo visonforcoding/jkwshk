@@ -1,0 +1,408 @@
+<extend name='Layout:base'/>
+<block name='title'>
+<title>健康视频_全球最大权威中文健康节目、健康视频网站_健康卫视</title>
+</block>
+<block name='seo'>
+<meta name="keywords" content="健康视频，健康小常识视频，男性健康视频，女性健康视频，养生视频，育儿视频，瑜伽视频，明星健康视频" />
+<meta name="description" content="健康视频，引领健康自查新风尚：健康自查看健康视频就够了。健康视频为全球最大权威中文健康节目、健康视频网站，致力于为国民提供“健康问题看健康视频一站式解答”服务，彻底解决国民健康自查信息真假难辨、理解吃力等困扰，节省国民健康自查时间和精力。一边干家务、一边收听或收看健康视频，您的健康困扰轻松解决。健康视频内容包括：减肥视频，孕妇视频，老人健康视频，男性健康视频，女性健康视频，美食视频等。" />
+</block>
+<block name='css'>
+<link href="__PUBLIC__/css/home/video/global.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/home/video/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    
+<!--[if IE 6]>
+<script type="text/javascript" src="__PUBLIC__/js/home/video/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,i,li,a,div');
+</script>
+<![endif]-->
+<!--IE6版本提示开始-->
+<!--[if lte IE 6]>  
+<div id="ie6-warning">
+<img src="__PUBLIC__/Images/home/video/close.jpg" width="14" height="14" onclick="closeme();" alt="关闭提示" />
+您正在使用 Internet Explorer 6 低版本的IE浏览器。为更好的浏览本页，建议您将浏览器升级到
+<a href="http://www.microsoft.com/china/windows/internet-explorer/ie8howto.aspx" target="_blank">IE8</a>
+ 或以下浏览器：<a href="http://www.firefox.com.cn/download/">Firefox</a> / <a href="http://www.google.cn/chrome">
+Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.Opera.com/">Opera</a>  
+</div>  
+<script type="text/javascript">  
+function closeme()
+{
+   var div = document.getElementById("ie6-warning");
+   div.style.display ="none";
+}
+function position_fixed(el, eltop, elleft){  
+// check if this is IE6  
+if(!window.XMLHttpRequest)  
+window.onscroll = function(){  
+el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+}  
+else el.style.position = "fixed";  
+}  
+position_fixed(document.getElementById("ie6-warning"),0, 0);  
+</script>  
+<![endif]-->
+<!--版本提示结束-->
+<script type="text/javascript" src="__PUBLIC__/js/home/video/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" >
+	function show(svalue,hvalue,showvalue){
+		$(function(){
+			$(svalue).mouseover(function(){
+				$(hvalue).removeClass("select");
+				$(this).children("a").addClass("select");	
+				$num=$(this).index(); //alert($num);
+				$(showvalue).hide();
+				$(showvalue).eq($num).show();			
+			});
+		});
+	}
+	show('.link_three dd','.link_three dd a','.showlink');
+	
+	function show2(svalue,hvalue,showvalue){
+		$(function(){
+			$(svalue).mouseover(function(){
+				$(hvalue).css("color","#333");
+				$(this).css("color","#009944");
+				$num=$(this).index(); //alert($num);
+				$(this).parent().parent().parent().parent().find(showvalue).hide();
+				$(this).parent().parent().parent().parent().find(showvalue).eq($num).show();			
+			});
+		});
+	}
+	show2('.titlew b a','.titlew b a','.videolist');
+	
+	$(function(){
+		$(".chotdl dd i:lt(3)").addClass("bg");	
+		$(".rnews ul li i:lt(3)").addClass("bg");
+	});
+	
+		$(function(){
+		$("#keyword span i").click(function(){
+			 $(this).parent().hide()
+			})
+			
+			$('.clearall').click(function(){
+			 $("#keyword span").hide()
+			})
+	});
+	
+	$(function(){
+		$("#selopt").hover(
+			function(){
+				$("#options").slideDown();
+				$("#options li a").click(function(){
+					$("#cursel").text($(this).text());
+					$("#type").attr("value", $(this).attr("name"));
+					$("#options").hide();
+				});
+			},		
+			function(){$("#options").hide();}
+		)   
+	});
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.pack.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/video/jquery.SuperSlide.js"></script>
+<script type='text/javascript' src="__PUBLIC__/js/home/video/Slideshow.js"></script>
+<style type="text/css"></style>
+</block>
+<block name='body'>
+<!------头部------>
+<div class="header"> <include file="Public/top2" /> 
+ <include file="Public/common_nav2" /> 
+  <!--<div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div> -->
+  <div class="subnav">
+    <div class="subnavcontent">
+      <div class="subnavlogo"><a href="#"><img src="__PUBLIC__/Images/home/video/s2_logo.png" width="337" height="55" /></a></div>
+      <div class="search">
+     <include file='Public:search'/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="banner">
+  <div id='tmpSlideshow'>
+    <volist name="focus" id="v" key="k">
+    <div id='tmpSlide-{$k}' class='tmpSlide'><a href="{$v.link}" target="_blank">
+     <img src="{$v.photo}" width="700" height="340" alt="男士眼部护理常识" /></a>
+      <div class='tmpSlideCopy'>
+        <h4><a href="{$v.link}" target="_blank">{$v.title}</a></h4>
+        <p>{$v.info}......</p>
+      </div>
+      </div>
+      </volist>
+    <div id='tmpSlideshowControls'> 
+      <!--<h4>控制器</h4>-->
+      <volist name="focus" id="v" key="k">
+      <div class='tmpSlideshowControl' id='tmpSlideshowControl-{$k}'></div>
+      </volist>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="container clearfix">
+  <div class="stable clearfix">
+    <div class="searchdate"  style=" width:300px; ">
+      <h3>按标签</h3>
+      <p> <a href='__APP__/video/videoList/'>全部</a>
+        <volist name='typeName' id='tn' > <a href="/video/videocatlist/tid/{$tn.id}.html">{$tn.name}</a> </volist>
+      </p>
+    </div>
+    <div class="searchpr" style=" width:580px; padding-left:20px;">
+      <h3>按节目</h3>
+      <p>
+        <volist name='oneProgramaId' id='opi' > <a href="/video/videocatlist/cid/{$opi.id}.html">{$opi.name}</a> </volist>
+      </p>
+    </div>
+  </div>
+  <div class="larea fl">
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$manId}.html" class="imgtitle mxjknxs" title="男性">男性</a><b><a href="__APP__/Video/videoCatList/tid/{$manId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$manId}.html">单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='manSList' id='msl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$msl.id}.html">
+                  <img width="144" height="170" src="{$msl.coverimage}" > 
+                      <span class="masktxt">片长:{$msl.videotime}</span> 
+                      <span class="play"></span> </a>
+          </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='manList' id='ml'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$ml.id}.html"> <img width="204" height="123" src="{$ml.photo}" >
+                      <span class="masktxt">片长:{$ml.videotime}</span> 
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$ml.id}.html">{$ml.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$womanId}.html" class="imgtitle wdjkrj" title="女性">女性</a><b><a href="__APP__/Video/videoCatList/tid/{$womanId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$womanId}.html" >单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='womanSList' id='wsl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$wsl.id}.html">
+            <img width="144" height="170" src="{$wsl.coverimage}" >
+                <span class="masktxt">片长:{$wsl.videotime}</span> 
+                <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='womanList' id='wl'>
+          <li> 
+           <a class="onetop" target="_blank" href="__APP__/play/index/id/{$wl.id}.html"> 
+             <img width="204" height="123" src="{$wl.photo}" > 
+                 <span class="masktxt">片长:{$wl.videotime}</span> 
+                 <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$wl.id}.html">{$wl.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$childId}.html" class="imgtitle smcd" title="儿童">儿童</a><b><a href="__APP__/Video/videoCatList/tid/{$childId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$childId}.html" >单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='childSList' id='chsl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$wl.id}/id/{$chsl.id}.html"> 
+                  <img width="144" height="170" src="{$chsl.coverimage}" > 
+                      <span class="masktxt">片长:{$chsl.videotime}</span> 
+                      <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='childList' id='chl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$chl.id}.html"> <img width="204" height="123" src="{$chl.photo}" > 
+                      <span class="masktxt">{$chl.videotime}</span> 
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$chl.id}.html">{$ml.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$oldId}.html" class="imgtitle zongyi" title="老人">老人</a><b><a href="__APP__/Video/videoCatList/tid/{$oldId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$oldId}.html" >单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='oldSList' id='oldsl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$oldsl.id}.html"> 
+          <img width="144" height="170" src="{$oldsl.coverimage}" >
+              <span class="masktxt">片长:{$oldsl.videotime}</span> 
+              <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='oldlist' id='oldl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$oldl.id}.html"> <img width="204" height="123" src="{$oldl.photo}" > 
+                      <span class="masktxt">片长:{$oldl.videotime}</span> 
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$oldl.id}.html">{$oldl.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="adv670X90" style=" margin-bottom:20px;"></div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$chronicId}.html" class="imgtitle jkxbk" title="慢病">慢病</a><b><a href="__APP__/Video/videoCatList/tid/{$chronicId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$chronicId}.html" >单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='chronicSList' id='crsl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$crsl.id}.html"> <img width="144" height="170" src="{$crsl.coverimage}" > 
+                      <span class="masktxt">片长:{$crsl.videotime}</span> 
+                      <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='chronicList' id='crl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$crl.id}.html"> <img width="204" height="123" src="{$crl.photo}" >
+                      <span class="masktxt">片长:{$crl.videotime}</span> 
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$crl.id}.html">{$ml.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew">
+       <a href="__APP__/Video/videoCatList/tid/{$foodId}.html" class="imgtitle dqyxz" title="美食">美食</a>
+       <b><a href="__APP__/Video/videoCatList/tid/{$foodId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$foodId}.html" >单集</a></b>
+        </p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='foodSList' id='fsl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$fsl.id}.html"> <img width="144" height="170" src="{$fsl.coverimage}" >
+                      <span class="masktxt">{$fsl.name}</span> 
+                      <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='foodList' id='fl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$fl.id}.html"> <img width="204" height="123" src="{$fl.photo}" >
+                      <span class="masktxt">片长:{$fl.videotime}</span> 
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$fl.id}.html">{$fl.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$fashionId}.html" class="imgtitle yydyj" title="时尚健康">时尚健康</a><b><a href="__APP__/Video/videoCatList/tid/{$fashionId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoList/tid/{$fashionId}.html" >单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='fashionSList' id='fasl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$fasl.id}.html"> <img width="144" height="170" src="{$fasl.coverimage}" > 
+                      <span class="masktxt">片长:{$fasl.videotime}</span>
+                      <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='fashionList' id='fal'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$fal.id}.html"> <img width="204" height="123" src="{$fal.photo}" > 
+                      <span class="masktxt">片长:{$fal.videotime}</span>
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$fal.id}.html">{$fal.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="llist">
+      <div class="title">
+        <p class="titlew"><a href="__APP__/Video/videoCatList/tid/{$natureId}.html" class="imgtitle jkxsj" title="自然探秘">自然探秘</a><b><a href="__APP__/Video/videoCatList/tid/{$natureId}.html" style=" color:#009944">专辑</a> | <a href="__APP__/Video/videoCatList/tid/{$natureId}.html" >单集</a></b></p>
+      </div>
+      <!-- 专辑开始-->
+      <ul class="videolist videolists">
+        <volist name='natureSList' id='nasl'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/pid/{$nasl.id}.html"> <img width="144" height="170" src="{$nasl.coverimage}" > 
+                      <span class="masktxt">片长:{$nasl.videotime}</span> 
+                      <span class="play"></span> </a> </li>
+        </volist>
+      </ul>
+      <!-- 视频开始-->
+      <ul class="videolist"  style=" display:none;">
+        <volist name='natureList' id='nal'>
+          <li> <a class="onetop" target="_blank" href="__APP__/play/index/id/{$nal.id}.html"> <img width="204" height="123" src="{$nal.photo}" >
+                      <span class="masktxt">片长:{$nal.videotime}</span> 
+                      <span class="play"></span> </a>
+            <p class="vtitle"> <a href="__APP__/play/index/id/{$nal.id}.html">{$nal.title}</a> </p>
+          </li>
+        </volist>
+      </ul>
+    </div>
+  </div>
+  <div class="rarea  fr">
+    <div class="rhot">
+      <h2><a class="imgtitle" title="排行榜">排行榜</a></h2>
+      <dl class="chotdl">
+        <volist name='topVideo' id='tV'>
+          <dd><a href="__APP__/play/index/id/{$tV.id}.html"><i>{$i}</i><img width="132" height="80"  src="{$tV.photo}" /><b>{$tV.title}</b></a></dd>
+        </volist>
+      </dl>
+    </div>
+    <div class="adv285X155"></div>
+    <div class="rnews">
+      <h2><a href="_APP__/News/.html" class="imgtitle" title="热门资讯"  target="_blank">热门资讯</a></h2>
+      <ul>
+        <volist name='hotNews' id='hn'>
+          <li><i>{$i}</i><a href="/news/view/id/{$hn.id}.html" target="_blank">{$hn.title}</a></li>
+        </volist>
+      </ul>
+    </div>
+    <div class="rpic clearfix">
+      <h2><a href="__APP__/Photo/index.html" class="imgtitle" title="热门图片"  target="_blank">热门图片</a></h2>
+      <ul class="clearfix">
+        <volist name='hotPic' id='hp'>
+          <li><a href="__APP__/photo/view/id/{$hp.id}.html"><img width="132" height="80" src="{$hp.topimg}" style="display: inline;"> <b>{$hp.name}</b></a> </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="adv285X185"></div>
+    <div class="rzhuanji clearfix">
+      <h2><a href="__APP__/Video/index/.html" class="imgtitle" title="热门专辑"  target="_blank">热门专辑</a></h2>
+      <ul  class="clearfix" >
+        <volist name='hotCatVideo' id='hcv'>
+          <li><a href="__APP__/play/index/id/{$hcv.id}.html"><img width="132" height="156"  src="{$hcv.coverimage}"></a></li>
+        </volist>
+      </ul>
+    </div>
+    <br />
+    <div class="adv285X185"></div>
+    <br />
+    <div class="adv285X185"></div>
+  </div>
+  <div class="clear"></div>
+  <div class="adv980X90"><a href="#" target="_blank"><img src="__PUBLIC__/Images/home/video/data/index_banner1.jpg" width="970" height="90" /></a></div>
+</div>
+</div>
+<!--底部代码开始--> 
+<include file="Public/foot"/> 
+<!--底部代码结束--> 
+<!--<div class="left_Bg"><a class="Bg_link"  target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>
+<div class="right_Bg"><a class="Bg_link" target="_blank" href="http://photo.msn.com.cn/c/248789.shtml#p1" title="泰勒">泰勒</a></div>-->
+</block>
+

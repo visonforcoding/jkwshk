@@ -1,0 +1,163 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+//            document.domain = 'test.com';
+            $('#aa').accordion('select', '活动管理');
+            $('#dg').datagrid({
+                url: "/Activity/getActivity.html",
+                pagination: true,
+                rownumbers: true, //显示行号
+                multiSort: true, //是否能按多个字段排序
+                fitColumns: true, //可以自动拓展
+                toolbar: '#tb',
+                pageList: [10, 20, 30, 40, 50, 60],
+                columns: [[
+                        {field: 'ck', checkbox: true},
+                        {field: 'name', title: '活动名', width: 50,
+                            editor: {
+                                type: 'validatebox',
+                                options: {
+                                    valueField: 'name',
+                                    required: true
+                                }
+                            }},
+                        {field: 'flag', title: '识别码', width: 20},
+                        {field: 'starttime', title: '开始时间', width: 100, sortable: true,
+                            editor: {
+                                type: 'datebox',
+                                options: {
+                                    valueField: 'starttime'
+                                }
+                            }},
+                        {field: 'endtime', title: '结束时间', width: 100, sortable: true,
+                            editor: {
+                                type: 'datebox',
+                                options: {
+                                    valueField: 'endtime'
+                                }
+                            }},
+                        {field: 'idnum', title: '活动编号', sortable: true,
+                            editor: {
+                                type: 'validatebox',
+                                options: {
+                                    valueField: 'idnum',
+                                    required: true
+                                }
+                            }},
+                        {field: 'action', title: "操作", width: 20, formatter: function(value, row, index) {
+                                return "<a href='/activity/addActivity/action/edit/id/" + row.id + "'>编辑</a>";
+                            }}
+                    ]]
+            });
+            $('#addCat_form').form({
+                onSubmit: function() {
+                    var isValid = $(this).form('validate');
+                    if (!isValid) {
+                        showMessage('类别名不能为空！');
+                    }
+                    return isValid;
+                },
+                success: function() {
+                    $('#dlg1').dialog('close');
+                    // showMessage(msg);//这里愣是解析不了thinkphp ajaxReturn 返回的json 
+                    $('#dg').datagrid('load', {
+                    });
+                }
+            });
+            $('#name').validatebox({
+                required: true
+            });
+        });
+        function delIt() {
+            var ss = [];
+            var rows = $('#dg').datagrid('getSelections');
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                ss.push(row.id); //这行记录的ID值 
+            }
+            ;
+            $.messager.confirm('Confirm', '确定要删除记录?', function(r) {
+                if (r) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/focus/delCat.html",
+                        data: {"data[]": ss},
+                        success: function(msg) {
+                            showMessage(msg.info);
+                            $('#dg').datagrid('load', {
+                            });
+                        }
+                    });
+                }
+            });
+        }
+        ;
+        function editIt() {
+            $('#dg').datagrid('beginEdit', getIndex());
+        }
+        function getIndex() {
+            // 获取行索引
+            var row = $('#dg').datagrid('getSelected');
+            var index = $('#dg').datagrid('getRowIndex', row);
+            return index;
+        }
+        function saveEdit() {
+            $('#dg').datagrid('endEdit', getIndex());
+            var updated = $('#dg').datagrid('getChanges', 'updated');
+            if (updated.length) {
+                $.ajax({
+                    type: "POST",
+                    url: "/focus/editCat.html",
+                    data: {"data": updated},
+                    success: function(msg) {
+                        showMessage(msg.info);
+                        $('#dlg1').dialog('close');
+                        $('#dg').datagrid('refreshRow', getIndex());
+                    }
+                });
+            } else {
+                showMessage("您未更新任何数据！");
+            }
+
+        }
+        function cancelEdit() {
+            //取消编辑
+            $('#dg').datagrid('cancelEdit', getIndex());
+        }
+        function showMessage(msg) {
+            $.messager.show({
+                title: "提示信息",
+                msg: msg,
+                timeout: 2000,
+                showType: 'show',
+                style: {
+                    right: 0,
+                    left: '',
+                    top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                    bottom: ''
+                }
+            });
+        }
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+        #dg tr{
+            height:30px;
+        }
+    </style>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="活动管理" data-options="iconCls:'icon-images',collapsible:true" >
+        <div id="tb">  
+            <a href="/activity/addActivity" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加栏目</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="delIt();">删除栏目</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editIt();">编辑栏目</a>  
+            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" plain="true" onclick="cancelEdit()">取消</a> 
+            <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveEdit();">保存</a>  
+        </div>  
+        <table id="dg">
+        </table>
+    </div>
+</block>

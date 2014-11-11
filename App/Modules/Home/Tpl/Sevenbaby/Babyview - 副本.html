@@ -1,0 +1,387 @@
+<extend name='Layout:base'/>
+
+<block name='head'>
+
+<title>大家好，我是166号选手赵伊姜，参加了健康卫视的活动，记得给我投票哦！ 赵伊姜 Seven Baby-健康卫视官网代言人评选活动</title>
+<meta name="description" content='第一届《Seven Baby》即2012健康卫视官网代言人网络评选活动，面向全球，以健康卫视建台一周年和国际六一儿童节为契机，通过网友上传图片、日志、视频，并通过为期两个月的网络拉票，最终评选出7名"2012健康卫视官网代言人" ，即第一届"Seven Baby" 和61名"六一健康宝宝"，作为给孩子们六一儿童节的特别礼物.' />
+<meta name="keywords" content='Seven Baby,健康宝宝,宝宝秀,宝宝图片,健康7宝贝,六一健康宝宝' />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+
+
+<style>
+body{   background: url(images/bannerbg.png) repeat;}
+</style>
+<style>
+
+	 #slides {
+      display: none
+    }
+    .slidesjs-pagination {
+	  position:absolute;
+	  bottom: 10px;
+   	  left: 200px;
+      list-style: none;
+	  z-index: 9999;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+   
+</block>
+<block name='body'>
+<!--/*顶部*/-->
+<div id="top">
+  <div class="w1k">
+    <div class="top_logo"> <a href="/"><img src="images/logo_top.png" width="134" height="35" /></a> <a href="javascript:void(0)"><img src="images/logo_hd.png" width="181" height="21" /></a> <a href="javascript:void(0)"><img src="images/logo_hg.png" width="72" height="20" /></a> </div>
+    <div class="top_ctr"> <a  href="/bbs/" target="_blank" data-toggle="modal" class="icon-dearbbs" title="亲子论坛"></a> <a  href="#myModal" data-toggle="modal" class="icon-login" title="选手登录"></a> <a  href="/live/" target="_blank" data-toggle="modal" class="icon-live" title="卫视直播"></a> </div>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" style="display:none;">
+  <div class="modal-header"> <a class="close" data-dismiss="modal" >&times;</a>
+    <h3>选手登录</h3>
+  </div>
+  <div class="modal-body">
+    <div class="login_box">
+      <form action="" method="post">
+        <p><label>登录名：</label><input name="" type="text" /><span>*用户名不正确！</span></p>
+        <p><label>密码：</label><input name="" type="password" /><span>*密码错误！</span></p>
+        <p><label>验证码：</label><input name="" type="text" style="width:80px;" /><img src="images/code.png" style=" vertical-align:middle; width:80px; height:27px;"/><span>*验证码错误！</span></p>
+        <p><label></label><button class="btn btn-primary">登录</button> <button name="" type="reset" class="btn btn-primary" />重置</button></p>
+      </form>
+    </div>
+    <div class="reg_box">
+      <p>还不是活动选手？</p>
+      <a href="join.html" class="btn btn-primary">提交信息</a> </div>
+  </div>
+  <div class="modal-footer">
+    <p>&copy;2014健康卫视网代言人评选活动</p>
+  </div>
+</div>
+<!--/*顶部结束*/--> 
+
+<!--/*头部横幅层*/-->
+<div class="row">
+  <div class="navposts" ><img src="images/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+    <map name="Map">
+      <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="News.html">
+      <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="Rule.html">
+      <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="Incentives.html">
+      <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="Babyshow.html">
+      <area shape="rect" coords="711,131,839,194" target="_blank" title="我要参加" href="join.html">
+      <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="program.html" />
+      <area shape="circle" coords="100,99,95" href="index.html" title="Seven Baby 2014">
+    </map>
+  </div>
+  
+  <div class="container">
+  
+  <div style=" background:url(images/babyinfotitle.jpg) no-repeat; width:980px; height:50px; margin-top:60px;"></div>
+  <div  style=" background:url(images/photobg.jpg) no-repeat; width:980px; height:325px;">
+      <div id="slides" style=" float:right; margin:10px 0px; border:1px solid #ccc; position:relative; width:450px; height:300px; border-radius:50%; overflow:hidden; behavior: url(js/pie.htc);">
+          <img src="images/boy_1.jpg" width="450" height="300"  >
+          <img src="images/boy_1.jpg" width="450" height="300"  >
+          <img src="images/boy_1.jpg" width="450" height="300"  >
+          <img src="images/boy_1.jpg" width="450" height="300"  >
+          </div>
+  </div>
+              	<div class="clearfix" ></div>
+  	<div class="container-content" style="margin-top:0px;">
+        <!-- 粉丝墙样式 -->
+        <link href="css/wall.css" rel="stylesheet" type="text/css" />
+        <script src="scripts/jquery-1.2.6.pack.js" type="text/javascript"></script> 
+        <script src="scripts/jqDnR.pack.js" type="text/javascript"></script> 
+        <script src="scripts/dimensions.pack.js" type="text/javascript"></script> 
+        <script src="scripts/wishingWall.pack.js" type="text/javascript"></script>
+        <!-- 粉丝墙样式 -->
+        <!-- 粉丝墙开始 -->    
+          <div class="blackboard">
+            <div id=wall909 class="wall" style="z-index:1;margin-left:72px;margin-top:193px;">
+            <div class="top-4"><span class="x">×</span>第[1]条&nbsp;&nbsp;2012-06-04 14:02:26</div>
+            <div class="mid-4"><span> 好乖乖的宝宝呦</span></div>
+            <div class="bot-4"><img src="images/style/11.gif" alt="" /><span class="inline">60.213.48.42</span></div>
+            </div>
+            <div id=wall1190 class="wall" style="z-index:2;margin-left:230px;margin-top:110px;">
+            <div class="top-8"><span class="x">×</span>第[2]条&nbsp;&nbsp;2012-06-05 09:28:59</div>
+            <div class="mid-8"><span>好宝宝，我来支持你了。妹妹就是洒脱。</span></div>
+            <div class="bot-8"><img src="images/style/9.gif" alt="" /><span class="inline">60.213.48.42</span></div>
+            </div>
+            <div id=wall1191 class="wall" style="z-index:3;margin-left:278px;margin-top:178px;">
+            <div class="top-1"><span class="x">×</span>第[3]条&nbsp;&nbsp;2012-06-05 09:28:59</div>
+            <div class="mid-1"><span>好宝宝，我来支持你了。妹妹就是洒脱。</span></div>
+            <div class="bot-1"><img src="images/style/13.gif" alt="" /><span class="inline">60.213.48.42</span></div>
+            </div>
+            <div id=wall1395 class="wall" style="z-index:4;margin-left:264px;margin-top:58px;">
+            <div class="top-5"><span class="x">×</span>第[4]条&nbsp;&nbsp;2012-06-05 16:18:14</div>
+            <div class="mid-5"><span> 好漂亮的宝宝啊~</span></div>
+            <div class="bot-5"><img src="images/style/9.gif" alt="" /><span class="inline">119.163.46.101</span></div>
+            </div>
+            <div id=wall1560 class="wall" style="z-index:5;margin-left:497px;margin-top:78px;">
+            <div class="top-1"><span class="x">×</span>第[5]条&nbsp;&nbsp;2012-06-05 20:58:30</div>
+            <div class="mid-1"><span> 宝宝好可爱</span></div>
+            <div class="bot-1"><img src="images/style/4.gif" alt="" /><span class="inline">119.164.110.146</span></div>
+            </div>
+            <div id=wall2429 class="wall" style="z-index:6;margin-left:505px;margin-top:89px;">
+            <div class="top-2"><span class="x">×</span>第[6]条&nbsp;&nbsp;2012-06-07 17:50:07</div>
+            <div class="mid-2"><span> 真可爱的小女孩</span></div>
+            <div class="bot-2"><img src="images/style/12.gif" alt="" /><span class="inline">119.163.42.234</span></div>
+            </div>
+            <div id=wall2482 class="wall" style="z-index:7;margin-left:78px;margin-top:36px;">
+            <div class="top-3"><span class="x">×</span>第[7]条&nbsp;&nbsp;2012-06-07 20:34:56</div>
+            <div class="mid-3"><span> 很萌~~~~~~</span></div>
+            <div class="bot-3"><img src="images/style/10.gif" alt="" /><span class="inline">124.133.211.71</span></div>
+            </div>
+            <div id=wall2492 class="wall" style="z-index:8;margin-left:304px;margin-top:154px;">
+            <div class="top-3"><span class="x">×</span>第[8]条&nbsp;&nbsp;2012-06-07 20:48:03</div>
+            <div class="mid-3"><span> 精灵古怪~~~~~~~~</span></div>
+            <div class="bot-3"><img src="images/style/12.gif" alt="" /><span class="inline">119.164.100.132</span></div>
+            </div>
+            <div id=wall2493 class="wall" style="z-index:9;margin-left:451px;margin-top:196px;">
+            <div class="top-5"><span class="x">×</span>第[9]条&nbsp;&nbsp;2012-06-07 20:49:05</div>
+            <div class="mid-5"><span> 超可爱~~~~~···</span></div>
+            <div class="bot-5"><img src="images/style/12.gif" alt="" /><span class="inline">119.164.100.132</span></div>
+            </div>
+            <div id=wall2494 class="wall" style="z-index:10;margin-left:49px;margin-top:205px;">
+            <div class="top-7"><span class="x">×</span>第[10]条&nbsp;&nbsp;2012-06-07 20:49:09</div>
+            <div class="mid-7"><span> 超可爱~~~~~···</span></div>
+            <div class="bot-7"><img src="images/style/7.gif" alt="" /><span class="inline">119.164.100.132</span></div>
+            </div>
+            <div id=wall2497 class="wall" style="z-index:11;margin-left:446px;margin-top:127px;">
+            <div class="top-4"><span class="x">×</span>第[11]条&nbsp;&nbsp;2012-06-07 20:54:02</div>
+            <div class="mid-4"><span> 可爱乖宝宝</span></div>
+            <div class="bot-4"><img src="images/style/6.gif" alt="" /><span class="inline">124.133.212.15</span></div>
+            </div>
+            <div id=wall2575 class="wall" style="z-index:12;margin-left:132px;margin-top:195px;">
+            <div class="top-3"><span class="x">×</span>第[12]条&nbsp;&nbsp;2012-06-08 07:22:48</div>
+            <div class="mid-3"><span> 伊姜宝宝加油啊</span></div>
+            <div class="bot-3"><img src="images/style/7.gif" alt="" /><span class="inline">119.164.97.222</span></div>
+            </div>
+            <div id=wall2576 class="wall" style="z-index:13;margin-left:454px;margin-top:165px;">
+            <div class="top-7"><span class="x">×</span>第[13]条&nbsp;&nbsp;2012-06-08 07:26:55</div>
+            <div class="mid-7"><span> 可爱宝贝加油啊~~·</span></div>
+            <div class="bot-7"><img src="images/style/4.gif" alt="" /><span class="inline">119.164.100.13</span></div>
+            </div>
+            <div id=wall2577 class="wall" style="z-index:14;margin-left:422px;margin-top:77px;">
+            <div class="top-6"><span class="x">×</span>第[14]条&nbsp;&nbsp;2012-06-08 07:37:28</div>
+            <div class="mid-6"><span> 大大的眼睛</span></div>
+            <div class="bot-6"><img src="images/style/9.gif" alt="" /><span class="inline">119.164.106.177</span></div>
+            </div>
+            <div id=wall2578 class="wall" style="z-index:15;margin-left:344px;margin-top:69px;">
+            <div class="top-4"><span class="x">×</span>第[15]条&nbsp;&nbsp;2012-06-08 07:39:00</div>
+            <div class="mid-4"><span> 真可爱~~~~~~</span></div>
+            <div class="bot-4"><img src="images/style/1.gif" alt="" /><span class="inline">119.164.107.103</span></div>
+            </div>
+            <div id=wall2579 class="wall" style="z-index:16;margin-left:269px;margin-top:183px;">
+            <div class="top-6"><span class="x">×</span>第[16]条&nbsp;&nbsp;2012-06-08 07:52:13</div>
+            <div class="mid-6"><span> 很有气质的小姑娘~~~~~~~</span></div>
+            <div class="bot-6"><img src="images/style/9.gif" alt="" /><span class="inline">119.164.100.160</span></div>
+            </div>
+            <div id=wall2580 class="wall" style="z-index:17;margin-left:505px;margin-top:175px;">
+            <div class="top-8"><span class="x">×</span>第[17]条&nbsp;&nbsp;2012-06-08 07:55:33</div>
+            <div class="mid-8"><span> 可爱，苹果脸~~葡萄眼~~</span></div>
+            <div class="bot-8"><img src="images/style/10.gif" alt="" /><span class="inline">119.164.103.101</span></div>
+            </div>
+            <div id=wall2583 class="wall" style="z-index:18;margin-left:63px;margin-top:86px;">
+            <div class="top-1"><span class="x">×</span>第[18]条&nbsp;&nbsp;2012-06-08 07:58:59</div>
+            <div class="mid-1"><span> 眼睛够大，够萌·</span></div>
+            <div class="bot-1"><img src="images/style/4.gif" alt="" /><span class="inline">119.164.106.27</span></div>
+            </div>
+            <div id=wall2584 class="wall" style="z-index:19;margin-left:290px;margin-top:52px;">
+            <div class="top-3"><span class="x">×</span>第[19]条&nbsp;&nbsp;2012-06-08 08:00:47</div>
+            <div class="mid-3"><span> 来支持你了啊~~~越长越俊了 </span></div>
+            <div class="bot-3"><img src="images/style/11.gif" alt="" /><span class="inline">119.164.107.240</span></div>
+            </div>
+            <div id=wall2585 class="wall" style="z-index:20;margin-left:194px;margin-top:118px;">
+            <div class="top-4"><span class="x">×</span>第[20]条&nbsp;&nbsp;2012-06-08 08:03:05</div>
+            <div class="mid-4"><span>笑起来真可爱~~</span></div>
+            <div class="bot-4"><img src="images/style/3.gif" alt="" /><span class="inline">119.164.111.183</span></div>
+            </div>
+            <div id=wall2586 class="wall" style="z-index:21;margin-left:86px;margin-top:36px;">
+            <div class="top-8"><span class="x">×</span>第[21]条&nbsp;&nbsp;2012-06-08 08:04:22</div>
+            <div class="mid-8"><span> 很有镜头感嘛~·</span></div>
+            <div class="bot-8"><img src="images/style/1.gif" alt="" /><span class="inline">119.164.98.104</span></div>
+            </div>
+            <div id=wall2587 class="wall" style="z-index:22;margin-left:13px;margin-top:41px;">
+            <div class="top-6"><span class="x">×</span>第[22]条&nbsp;&nbsp;2012-06-08 08:06:23</div>
+            <div class="mid-6"><span> 伊姜比小时候还可爱了啊</span></div>
+            <div class="bot-6"><img src="images/style/5.gif" alt="" /><span class="inline">119.164.102.117</span></div>
+            </div>
+            <div id=wall2589 class="wall" style="z-index:23;margin-left:284px;margin-top:78px;">
+            <div class="top-8"><span class="x">×</span>第[23]条&nbsp;&nbsp;2012-06-08 08:19:24</div>
+            <div class="mid-8"><span> 漂亮~~~可爱</span></div>
+            <div class="bot-8"><img src="images/style/6.gif" alt="" /><span class="inline">124.133.212.101</span></div>
+            </div>
+            <div id=wall2592 class="wall" style="z-index:24;margin-left:429px;margin-top:189px;">
+            <div class="top-5"><span class="x">×</span>第[24]条&nbsp;&nbsp;2012-06-08 08:25:15</div>
+            <div class="mid-5"><span> 笑的很灿烂·~~</span></div>
+            <div class="bot-5"><img src="images/style/5.gif" alt="" /><span class="inline">124.133.213.106</span></div>
+            </div>
+            <div id=wall2593 class="wall" style="z-index:25;margin-left:235px;margin-top:130px;">
+            <div class="top-7"><span class="x">×</span>第[25]条&nbsp;&nbsp;2012-06-08 08:28:47</div>
+            <div class="mid-7"><span> 阿姨也来支持你了啊~~</span></div>
+            <div class="bot-7"><img src="images/style/7.gif" alt="" /><span class="inline">119.164.103.0</span></div>
+            </div>
+            <div id=wall2594 class="wall" style="z-index:26;margin-left:272px;margin-top:133px;">
+            <div class="top-6"><span class="x">×</span>第[26]条&nbsp;&nbsp;2012-06-08 08:30:25</div>
+            <div class="mid-6"><span> 可耐~~~····</span></div>
+            <div class="bot-6"><img src="images/style/13.gif" alt="" /><span class="inline">124.133.214.19</span></div>
+            </div>
+            <div id=wall2595 class="wall" style="z-index:27;margin-left:328px;margin-top:145px;">
+            <div class="top-4"><span class="x">×</span>第[27]条&nbsp;&nbsp;2012-06-08 08:32:35</div>
+            <div class="mid-4"><span> 伊姜小宝贝真漂亮</span></div>
+            <div class="bot-4"><img src="images/style/15.gif" alt="" /><span class="inline">119.164.104.44</span></div>
+            </div>
+            <div id=wall2717 class="wall" style="z-index:28;margin-left:452px;margin-top:207px;">
+            <div class="top-8"><span class="x">×</span>第[28]条&nbsp;&nbsp;2012-06-08 11:51:23</div>
+            <div class="mid-8"><span> 漂亮宝贝~</span></div>
+            <div class="bot-8"><img src="images/style/13.gif" alt="" /><span class="inline">124.133.215.141</span></div>
+            </div>
+            <div id=wall2720 class="wall" style="z-index:29;margin-left:433px;margin-top:75px;">
+            <div class="top-5"><span class="x">×</span>第[29]条&nbsp;&nbsp;2012-06-08 11:53:24</div>
+            <div class="mid-5"><span> 可爱！！！</span></div>
+            <div class="bot-5"><img src="images/style/12.gif" alt="" /><span class="inline">124.133.213.175</span></div>
+            </div>
+            <div id=wall2739 class="wall" style="z-index:30;margin-left:319px;margin-top:172px;">
+            <div class="top-1"><span class="x">×</span>第[30]条&nbsp;&nbsp;2012-06-08 12:42:12</div>
+            <div class="mid-1"><span> 伊姜宝宝，来看你了啊</span></div>
+            <div class="bot-1"><img src="images/style/14.gif" alt="" /><span class="inline">119.164.111.21</span></div>
+            </div>
+            </div>
+      <!-- 粉丝墙结束 --> 
+      <!--留言板开始-->
+      <div class="ly">
+        <form id="msgbox" name="msgbox" method="post" action="/bbs/sevenbaby/module/addmsg.php">
+        <div class="ly_con">
+        <p class="fl" style=" color:#00aeef; font-weight:600; display:block">留言：</p>
+        <textarea rows="5" cols="63" name="mymsg" id="mymsg"  class="ly_board fl"> </textarea>
+        <div class="Authcode fl">
+        <p style="color:#00aeef; font-weight:600">验证码：<span style="color:#cb4fa1">82570</span></p>
+        <input  type="text" name='msgrandcode'  maxlength="5" id="msgrandcode" class="Authcodecon" />
+        <input  name='msguid' type='hidden' id="msguid"  value="166"/>
+        <input  name='urlid' type='hidden' id="urlid"  value="D08C4CCggKAAEKAA8KCA1aDQoAAQANAQgOCwAPAA5cXw0"/>
+        </div>
+        <div class="ly_btn left" style="display:inline">
+        <input  type="submit" name="add_msg" id="add_msg" class="ly_btn left"   value="提交" onclick="return getmsg();">
+        </div>
+        </div>
+        </form>
+        <script type="text/javascript">
+        function getmsg(){
+			var tar=document.getElementById('msgrandcode');
+			var mymsg=document.getElementById('mymsg');
+			if(mymsg.value==' '){
+			alert('请填写留言!');
+			document.getElementById('mymsg').focus();
+			return false;
+       		}	
+        if(tar.value==''){
+			alert('请输入验证码!');
+			document.getElementById('msgrandcode').focus();
+			return false;
+			}
+        }
+        </script>
+        </div>
+      <!--留言板结束-->
+    </div>
+  </div>
+  
+</div>
+<!--/*头部横幅层结束*/--> 
+
+<!--/*底部*/-->
+<div id="foot">
+  <div class="baby_7"></div>
+  <div class="footer clearfix">
+    <div class="footinfo">
+      <h3 class="title">首届SEVEN BABY</h3>
+      <p><a href="#">活动首页</a><a href="#">同名节目</a><a href="#">代言人主页</a></p>
+    </div>
+    <div class="footinfo m_l_w">
+      <h3 class="title tp1">健康卫视台</h3>
+      <p><a href="#">关于我们</a><a href="#">联系我们</a><a href="#">广告服务</a><a href="#">诚聘英才</a><a href="#">广告服务</a><a href="#">免责条款</a><a href="#">版权声明</a><a href="#">保护隐私权</a><a href="#">健康卫视开播大典</a></p>
+    </div>
+    <div class="footinfo m_l_w">
+      <h3 class="title tp2">健康卫视网</h3>
+      <p><a href="#">健康卫视</a><a href="#">卫视直播</a><a href="#">卫视节目</a><a href="#">健闻视频</a><a href="#">健康的图</a><a href="#">健康视点</a><a href="#">健康要闻</a><a href="#">健康要闻</a></p>
+    </div>
+  </div>
+  <div class="baby_foot"></div>
+  <div class="foot_copy">
+    <p>粤ICP备11075253号-1 <a href="permit.html" target="_blank">广播电视节目制作经营许可证：（粤）字第1001号</a></p>
+    <p>健康卫视  健康新媒体 版权所有</p>
+    <p>Copyright &copy; 2011-2014 Jkwshk.tv All Rights Reserved</p>
+  </div>
+</div>
+<!--/*底部结束*/--> 
+
+<script type="text/javascript" src="js/tab.js">/*可切换的标签页*/ </script> 
+<script type="text/javascript"  src="js/modal.js" >/*对话框 */ </script> 
+<script type="text/javascript" src="js/common.js">/*公共js*/</script>
+
+  <script src="js/jquery.slides.min.js"></script>
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 450,
+        height: 300,
+        navigation: false,
+        play: {auto: true}
+      });
+    });
+  </script>
+ <!--[if lt IE 10]>
+<script type="text/javascript" src="js/PIE.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script> 
+
+</block>
+
+

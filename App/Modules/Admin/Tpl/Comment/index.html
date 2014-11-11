@@ -1,0 +1,142 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            $('#aa').accordion('select', '评论管理');
+            document.domain = 'test.com';
+            $('#dg').datagrid({
+                url: "/Comment/getComment.html",
+                pagination: true,
+                rownumbers: true, //显示行号
+                multiSort: true, //是否能按多个字段排序
+                fitColumns: true, //可以自动拓展
+                height: 400,
+                toolbar: '#tb',
+                pageList: [10, 20, 30, 40, 50, 60],
+                autoRowHeight: false,
+                sortName: 'ctime',
+                sortOrder: 'desc',
+                columns: [[
+                        {field: 'ck', checkbox: true},
+                        {field: 'id', title: 'ID'},
+                        {field: 'category', title: '类别'},
+                        {field: 'username', title: '用户名'},
+                        {field: 'msg', title: '内容'},
+                        {field: 'ctime', title: '发表时间', sortable: true,
+                            formatter: function(value, row, index) {
+                                return date('Y-m-d H:i:s', row.time);
+                            }},
+                        {field: 'ip', title: 'IP', width: 20, editor: {
+                                type: 'validatebox',
+                                options: {
+                                    valueField: 'email'
+                                }
+
+                            }
+                        },
+                        {field: 'city', title: '城市', width: 20, editor: {
+                                type: 'validatebox',
+                                options: {
+                                    valueField: 'city'
+                                }
+                            }
+                        }
+                       
+                    ]]
+            });
+
+            $('#addCat_form').form({
+                onSubmit: function() {
+                    var isValid = $(this).form('validate');
+                    if (!isValid) {
+                        showMessage('类别名不能为空！');
+                    }
+                    return isValid;
+                },
+                success: function(data) {
+                    showMessage(data);
+                }
+            });
+            $('#name').validatebox({
+                required: true
+            });
+            //搜素按钮
+            $('#search_button').click(function() {
+                var column = $('#column-combo').combo('getValue');
+                $('#dg').datagrid({
+                    queryParams: {
+                        cid: column
+                    }
+                });
+            });
+            //清除按钮
+            $('#clear_button').click(function() {
+                $('#dg').datagrid({
+                    queryParams: {
+                    }
+                });
+            });
+        });
+        function delIt() {
+            var ss = [];
+            var rows = $('#dg').datagrid('getSelections');
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                ss.push(row.id); //这行记录的ID值 
+            }
+            ;
+            $.messager.confirm('Confirm', '确定要删除记录?', function(r) {
+                if (r) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/ajax/ajaxDel.html",
+                        data: {"data[]": ss,"classname":'Comment'},
+                        success: function(msg) {
+                            showMessage(msg.info);
+                            $('#dg').datagrid('load', {
+                            });
+                        }
+                    });
+                }
+            });
+        }
+        ;
+        function cancelEdit() {
+            //取消编辑
+            $('#dg').datagrid('cancelEdit', getIndex());
+        }
+
+        function showMessage(msg) {
+            $.messager.show({
+                title: "提示信息",
+                msg: msg,
+                timeout: 2000,
+                showType: 'show',
+                style: {
+                    right: 0,
+                    left: '',
+                    top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                    bottom: ''
+                }
+            });
+        }
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+        #dg tr{
+            height:30px;
+        }
+    </style>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="评论管理" data-options="iconCls:'icon-bubbles2',collapsible:true" >
+        <div id="tb" style="padding:5px;height:auto">  
+            <div style="margin-bottom:5px">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="delIt();">删除</a>
+            </div>
+        </div>
+        <table id="dg">
+        </table>
+    </div>
+</block>

@@ -1,0 +1,176 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+<div class="edit">
+    <div class="editContent">
+        <form method="post" id="fm1" action="/ajax/submit/" >
+            <input type="hidden" name="id" value="{$Rs['id']}"  />
+            <input type="hidden" name="action" value="{$action}"  />
+            <input type="hidden" name="classname" value="{$classname}"  />
+            <input type="hidden" name="setreferer" value="{$setreferer}"  />
+            <table width="1024">
+                <tr height="50">
+                    <td width="80" align="right"><span class="cRed">*</span>主持人姓名：</td>
+                    <td width="310"> 
+                        <input type="text"  class="inputText w310" id="name" name="name" value="{$Rs['name']}"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td >主持人照片：</td>
+                    <td id="tdimgcover">
+                        <div class="showImg" style="height:163px;">
+                            <div id="disimgcover" class="showImgC">
+                                <img src="{$Rs['photo']}" width="120" height="120"/>
+                            </div>
+                            <div id="btnimgcover">
+                                <input type="button" class="btnBlue" id="image" value="上传图片" />
+                            </div>
+                            <input type="hidden" name="photo" id="photo" value="{$Rs['photo']}"  />
+                        </div>
+                        <script id="myeditor"></script>  
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>点击数：</td>
+                    <td ><input type="text"  class="inputText w310" id="hits" name="hits" value="{$Rs['hits']}"  /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>主持风格：</td>
+                    <td ><input type="text"  class="inputText w310" id="style" name="style" value="{$Rs['style']}"  /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>微博地址：</td>	
+                    <td><input type="text" id="microblog" class="inputText w310" name="microblog" /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>生日：</td>
+                    <td>
+                        <input type="text" id="birthday" name="birthday"  value="{$Rs['birthday']}" />
+                        <!--<input type="text" id="birthday" name="birthday" onFocus="WdatePicker({startDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd',alwaysUseStartDate:true})" value="{$Rs['birthday']}" />-->
+                        <!--<input type="text" id="birthday" name="birthday" onFocus="WdatePicker({startDate:'%y-%M-%d %HH:%mm:%ss',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})"/>-->
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>星座：</td>	
+                    <td><input type="text" id="constellation" class="inputText w310" name="constellation" value="{$Rs['constellation']}" /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>喜欢的颜色：</td>	
+                    <td><input type="text" id="color" class="inputText w310" name="color" value="{$Rs['color']}" /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>血型：</td>	
+                    <td><input type="text" id="blood" name="blood" class="inputText w310" value="{$Rs['blood']}" /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>性格：</td>	
+                    <td><input type="text" id="xingge" name="xingge" class="inputText w310" value="{$Rs['xingge']}" /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>爱好：</td>	
+                    <td><input type="text" id="hobby" name="hobby" class="inputText w310" value="{$Rs['hobby']}" /></td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>主持节目：</td>	
+                    <td>
+                        {$fprogram}
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>主持人属性：</td>	
+                    <td>
+                        {$ftype}
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>主持人寄语：</td>	
+                    <td><textarea id="message" name="message"
+                                  style="width: 50%">{$Rs['message']}</textarea>     
+                    </td>
+                </tr>
+                <tr  height="80">
+                    <td>内容：</td>
+                    <td>
+                        <script id="info" name="info" type="text/plain">
+                            {$Rs['info']}
+                        </script>
+                        <script type="text/javascript">
+                            var editor = UE.getEditor('info')
+                        </script>
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right"><span class="cRed">*</span>是否启用：</td>
+                    <td width="310">
+                        {$fisopen}
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right">seo关键字:(keywords)</td>
+                    <td width="85%">
+                        <input name="keywords" id="keywords"
+                               class="inputText w310" type="text" value="{$Rs['keywords']}" />  
+                    </td>
+                </tr>
+                <tr height="50">
+                    <td align="right">seo简单描述:(description)</td>
+                    <td>
+                        <textarea id="description" name="description"
+                                  style="width: 99%">{$Rs['description']}</textarea>     
+                    </td>
+                </tr> 
+                <tr height="60">
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="提&nbsp;交" class="btnBlue"><input type="reset" value="重&nbsp;置" class="btnGray ml20"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+            /*图片上传*/
+                    (function($) {
+                        var image = {
+                            editor: null,
+                            init: function(editorid, keyid) {
+                                var _editor = this.getEditor(editorid);
+                                _editor.ready(function() {
+                                    _editor.setDisabled();
+                                    _editor.hide();
+                                    _editor.addListener('beforeInsertImage', function(t, args) {
+                                        var imgsrc = args[0].src;
+                                        $("#" + keyid).val(imgsrc);
+                                        $("#disimgcover").html('<img src="' + imgsrc + '" width="120" height="120" />');
+
+                                    });
+                                });
+                            },
+                            getEditor: function(editorid) {
+                                this.editor = UE.getEditor(editorid);
+                                return this.editor;
+                            },
+                            show: function(id) {
+                                var _editor = this.editor;
+                                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）  
+                                //和网上一些朋友的代码不同之处就在这里  
+                                $("#" + id).click(function() {
+                                    var image = _editor.getDialog("insertimage");
+                                    image.render();
+                                    image.open();
+                                });
+                            },
+                            render: function(editorid) {
+                                var _editor = this.getEditor(editorid);
+                                _editor.render();
+                            }
+                        };
+                        $(function() {
+                            image.init("myeditor", "photo");
+                            image.show("image");
+                        });
+                    })(jQuery);
+</script>
+</body>
+</html>

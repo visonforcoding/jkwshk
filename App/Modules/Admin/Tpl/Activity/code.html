@@ -1,0 +1,177 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            $('#aa').accordion('select', '活动管理');
+            $('#dg').datagrid({
+                url: "/Activity/getCodes.html",
+                pagination: true,
+                rownumbers: true, //显示行号
+                multiSort: true, //是否能按多个字段排序
+                fitColumns: true, //可以自动拓展
+                height: 400,
+                toolbar: '#tb',
+                pageList: [10, 20, 30, 40, 50, 60],
+                autoRowHeight: false,
+                columns: [[
+                        {field: 'ck', checkbox: true},
+                        {field: 'username', title: '用户名', width: 40},
+                        {field: 'code', title: '折扣码', width: 40},
+                        {field: 'status', title: '状态', width: 20,
+                            formatter: function(value, row, index) {
+                                if (row.status == '1') {
+                                    return "未使用";
+                                } else {
+                                    return "已使用";
+                                }
+                            },
+                            editor: {
+                                type: 'combobox',
+                                options: {
+                                    valueField: 'value',
+                                    textField: 'text',
+                                    data: [{
+                                            value: 1,
+                                            text: '未使用'
+                                        }, {
+                                            value: 0,
+                                            text: '已使用'
+                                        }]
+                                }
+                            }
+                        }
+                    ]]
+            });
+
+            $('#addCat_form').form({
+                onSubmit: function() {
+                    var isValid = $(this).form('validate');
+                    if (!isValid) {
+                        showMessage('类别名不能为空！');
+                    }
+                    return isValid;
+                },
+                success: function(data) {
+                    showMessage(data);
+                }
+            });
+            $('#name').validatebox({
+                required: true
+            });
+            //搜素按钮
+            $('#search_button').click(function() {
+                var username = $('#name').val();
+                $('#dg').datagrid({
+                    queryParams: {
+                        username: username
+                    }
+                });
+            });
+            //清除按钮
+            $('#clear_button').click(function() {
+                $('#dg').datagrid({
+                    queryParams: {
+                    }
+                });
+            });
+        });
+        function delIt() {
+            var ss = [];
+            var rows = $('#dg').datagrid('getSelections');
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                ss.push(row.id); //这行记录的ID值 
+            }
+            ;
+            $.messager.confirm('Confirm', '确定要删除记录?', function(r) {
+                if (r) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Activity/delCode.html",
+                        data: {"data[]": ss},
+                        success: function(msg) {
+                            showMessage(msg.info);
+                            $('#dg').datagrid('load', {
+                            });
+                        }
+                    });
+                }
+            });
+        }
+        ;
+        function editIt() {
+            $('#dg').datagrid('beginEdit', getIndex());
+        }
+        function getIndex() {
+            // 获取行索引
+            var row = $('#dg').datagrid('getSelected');
+            var index = $('#dg').datagrid('getRowIndex', row);
+            return index;
+        }
+        function saveEdit() {
+            $('#dg').datagrid('endEdit', getIndex());
+            var updated = $('#dg').datagrid('getChanges', 'updated');
+            if (updated.length) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Activity/editCode.html",
+                    data: {"data": updated},
+                    success: function(msg) {
+                        showMessage(msg.info);
+                        $('#dg').datagrid('reload');
+                    }
+                });
+            } else {
+                showMessage("您未更新任何数据！");
+            }
+
+        }
+        function cancelEdit() {
+            //取消编辑
+            $('#dg').datagrid('cancelEdit', getIndex());
+        }
+
+        function showMessage(msg) {
+            $.messager.show({
+                title: "提示信息",
+                msg: msg,
+                timeout: 2000,
+                showType: 'show',
+                style: {
+                    right: 0,
+                    left: '',
+                    top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                    bottom: ''
+                }
+            });
+        }
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+        #dg tr{
+            height:30px;
+        }
+    </style>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="sevenbaby折扣码管理" data-options="iconCls:'icon-pacman',collapsible:true" >
+        <div id="tb" style="padding:5px;height:auto">  
+            <div style="margin-bottom:5px">
+                <a href="/focus/addFocus/action/add" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="delIt();">删除</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editIt();">编辑</a>  
+                <a href="#" class="easyui-linkbutton" iconCls="icon-redo" plain="true" onclick="cancelEdit()">取消</a> 
+                <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveEdit();">保存</a>  
+            </div>
+            <div>
+                用户名:
+                <input id="name" type="text" value="" >
+                <a href="javascript:void(0)" id="search_button" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
+                <a href="javascript:void(0)" id="clear_button" class="easyui-linkbutton" iconCls="icon-trash-alt">清除</a>
+            </div>
+        </div>
+        <table id="dg">
+        </table>
+    </div>
+</block>

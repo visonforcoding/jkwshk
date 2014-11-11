@@ -1,0 +1,94 @@
+<extend name="Layout:layout2"/>
+<!--管理员群组管理-->
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            $('#aa').accordion('select', '日志管理');
+            $('#dg').datagrid({
+                url: "/Log/getLogs.html",
+                pagination: true,
+                rownumbers: true, //显示行号
+                multiSort: true, //是否能按多个字段排序
+                fitColumns: true, //可以自动拓展
+                height: 450,
+                toolbar: '#tb',
+                pageList: [5, 10, 20, 30, 40, 50, 60],
+                autoRowHeight: false,
+                sortName: 'ctime',
+                sortOrder: 'desc',
+                columns: [[
+                        {field: 'ck', checkbox: true},
+                        {field: 'id', title: 'ID'},
+                        {field: 'account', title: '操作者',width:10},
+                        {field: 'action', title: '操作',width:10},
+                        {field: 'ctime', title: '操作时间',width:10},
+                        {field: 'ip', title: '操作IP',width:10}
+                    ]]
+            });
+
+            $('#addCat_form').form({
+                onSubmit: function() {
+                    var isValid = $(this).form('validate');
+                    if (!isValid) {
+                        showMessage('类别名不能为空！');
+                    }
+                    return isValid;
+                },
+                success: function(data) {
+                    showMessage(data);
+                }
+            });
+            $('#name').validatebox({
+                required: true
+            });
+            $('#pid-combotree').combotree({
+                onChange: function(newValue, oldValue) {
+                    $('#dg').datagrid({
+                        queryParams: {
+                            pid: newValue
+                        }
+                    });
+                }
+            });
+            //搜素按钮
+            $('#search_button').click(function() {
+                var name = $('#name').val();
+                $('#dg').datagrid({
+                    queryParams: {
+                        name: name
+                    }
+                });
+            });
+            //清除按钮
+            $('#clear_button').click(function() {
+                $('#dg').datagrid({
+                    queryParams: {
+                    }
+                });
+            });
+        });
+
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+        #dg tr{
+            height:30px!important;
+        }
+        .datagrid-row {
+            height: 40px;
+        }
+        .datagrid-cell {
+            height:30px;
+        }
+        a.cwp-btn{
+            text-decoration: none;
+        }
+    </style>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="日志管理" data-options="iconCls:'icon-calendar2',collapsible:true,fit:true,border:false" >
+        <table id="dg">
+        </table>
+    </div>
+</block>

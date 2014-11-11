@@ -1,0 +1,38 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/swfobject.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/home/member/fullAvatarEditor.js"></script>
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '管理员管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+        });
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加管理员"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form" action="/ajax/submit/">
+                <input type="hidden" name="id" value="{$Rs['id']}"  />
+                <input type="hidden" name="action" value="{$action}"  />
+                <input type="hidden" name="classname" value="{$classname}"  />
+                <input type="hidden" name="setreferer" value="{$setreferer}"  />
+                <div class="input-group">
+                    <label>组名:</label>
+                    <input class="easyui-validatebox mid-text" value="{$Rs['name']}" type="text" name="name" ></input>
+                </div>
+                <div class="input-group hasEditor">
+                    <label>描述:</label>
+                    <textarea name="info" style="width:300px;height: 100px;" >{$Rs['info']}</textarea>
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="submit">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</block>

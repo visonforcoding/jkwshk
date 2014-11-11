@@ -1,0 +1,94 @@
+<extend name='Layout:base'/>
+<block name='title'>
+    <title>参与规则-Seven Baby-健康卫视</title>
+</block>
+<block name='seo'>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</block>
+<block name='css'>
+    <link href="__PUBLIC__/Css/home/sevenbaby/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/home/sevenbaby/style.css" rel="stylesheet" type="text/css" />
+</block>
+<block name='js'>
+    <script src="__PUBLIC__/Js/jquery1.10.2.js" type="text/javascript"></script>
+</block>
+<block name='style'>
+    <style>
+        body{   background: url(__PUBLIC__/Images/home/sevenbaby/bannerbg.png) repeat;}
+    </style>
+</block>
+<block name='body'>
+    <!--/*顶部*/-->
+    <include file="sevenbaby/top"/>
+    <!--/*顶部结束*/--> 
+    <!--/*头部横幅层*/-->
+    <div class="row">
+        <div class="navposts" ><img src="__PUBLIC__/Images/home/sevenbaby/nav.png" width="1046" height="205"  border="0" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="204,135,331,198" target="_blank" title="活动新闻" href="/sevenbaby/news.html">
+                <area shape="rect" coords="331,133,458,198" target="_blank" title="参与规则" href="/sevenbaby/rule.html">
+                <area shape="rect" coords="458,134,583,197" target="_blank" title="奖励机制" href="/sevenbaby/incentives.html">
+                <area shape="rect" coords="583,133,711,196" target="_blank" title="宝贝show" href="/sevenbaby/babyshow.html">
+                <empty name="userId">
+                    <area shape="rect" style=" margin-left:100px;" coords="711,131,839,194" title="我要参加" href="#" onclick="javascript:showLogin();
+                            showForbid();void(0);"   class="icon-login">
+                    <else/>
+                    <area shape="rect"  style=" margin-left:100px;"  coords="711,131,839,194" target="_blank" title="我要参加" href="/sevenbaby/join.html">
+                </empty> 
+                <area shape="poly" coords="842,199,864,109,987,137,970,201" target="_blank" title="同名节目" href="/sevenbaby/program.html" />
+                <area shape="circle" coords="100,99,95" href="index.html" title="Seven Baby 2014">
+            </map>
+        </div>
+
+        <div class="container">
+            <div class="container-content">
+                <!--参与规则内容-->
+                <dl class="con_dlist">
+                    <dt><i class="icon-q"></i>第二届《Seven Baby》怎么选？</dt>
+                    <dd>
+                        <p>1.票数决定一切，第二届《Seven Baby》所有优胜者都将通过网络票选得出。投票通道24小时开放，一个IP每12小时只能被一个会员账号使用，每个会员账号从投第一票开始，12小时内最多只能投7票，且7票只能投给7个不同的宝宝。活动组对于任何形式的刷票行为都将严肃处理，刷票者一律取消参赛资格。</p>
+                        <p>2.2014年7月1日至2014年8月1日，由网友票选产生61名“六一健康宝宝”。 同时，截止到8月1日零时各位宝宝的即时票数，以30%（小数四舍五入）的票数累计进入接下来的Seven Baby的评比。
+                            2014年8月1日至2014年9月1日，由网友票选产生7名“2014健康卫视网代言人”。</p>
+                    </dd>
+
+                </dl>
+                <dl class="con_dlist">
+                    <dt><i class="icon-q"></i>谁能参加第二届《Seven Baby》?</dt>
+                    <dd>
+                        <p>1.	出生于2005年6月1日至2012年7月31日的所有宝宝，即年满7周岁及其以下的所有宝宝。</p>
+                        <p>2.	本届活动将通过健康卫视电视和官网、各大网站以及内地各省、市电视台和报纸、论坛等多家合作媒体共同发布。如果您家或您身边有符合条件的可爱宝贝，快快带TA来参加我们的聚会吧！</p></dd>
+                </dl>
+                <dl class="con_dlist">
+                    <dt><i class="icon-q"></i>怎么参加第二届《Seven Baby》?</dt>
+                    <dd>
+                        <p>1.	注册成为健康卫视网会员，上传基本信息、完善个人空间。</p>
+                        <p>2.	在活动主页面点击"我要参加"。</p>
+                        <p>3.	为感谢第一届Seven Baby参赛宝宝对活动支持，本届活动直接给与你们参赛资格。</p>
+                        <p>4.	为保证账户安全，首届活动的7爸7妈，需重新输入会员名和注册邮箱或手机号码通过身份验证，然后通过注册邮箱重置密码，即可重新登录更新宝贝的资料。</p>
+                        <p>5.	相比首届活动，健康卫视网会员系统已做升级，一个会号账号，全网通用，包括发表评论、参加活动、登陆论坛，健康学分累计以及未来健康卫视网为您提供的各种健康服务的获得，一号通用。</p>
+                    </dd>
+                </dl>
+                <dl class="con_dlist">
+                    <dt><i class="icon-q"></i>活动小窍门</dt>
+                    <dd>
+                        <p>1. 在个人空间修改和丰富自己的资料，同时回答粉丝的留言、提问。出色的“父母寄语”，会为您的宝贝带来更多投票。</p>
+                        <p>2．尽量完善宝贝的个人信息，出色的"父母寄语"会为您的宝贝带来更多投票。</p>
+                        <p>3．在活动交流区发布话题，可以出现在活动首页，增加宝贝的曝光率。</p>
+                    </dd>
+                </dl>
+                <!--参与规则内容-->
+            </div>
+        </div>
+
+    </div>
+    <!--/*头部横幅层结束*/--> 
+
+    <!--/*底部*/-->
+    <include file="Sevenbaby:foot"/>
+    <!--/*底部结束*/--> 
+    <script type="text/javascript" src="js/tab.js">/*可切换的标签页*/</script> 
+    <script type="text/javascript"  src="js/modal.js" >/*对话框 */</script> 
+    <script type="text/javascript" src="js/common.js">/*公共js*/</script>
+</block>
+

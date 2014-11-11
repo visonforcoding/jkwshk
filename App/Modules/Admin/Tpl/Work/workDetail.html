@@ -1,0 +1,62 @@
+<extend name="Layout:layout2"/>
+<!--管理员群组管理-->
+<block name="script">
+    <link href='__PUBLIC__/js/lib/cal/lib/cupertino/jquery-ui.min.css' rel='stylesheet' />
+    <link href='__PUBLIC__/js/lib/cal/fullcalendar.css' rel='stylesheet' />
+    <link href='__PUBLIC__/js/lib/cal/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='__PUBLIC__/js/lib/cal/lib/moment.min.js'></script>
+    <script src='__PUBLIC__/js/lib/cal/fullcalendar.min.js'></script>
+    <script src='__PUBLIC__/js/lib/cal/lang-all.js'></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#aa').accordion('select', '工作记录');
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                lang:'zh-cn',
+                defaultDate:"{$today}",
+                editable: false,
+                eventLimit: true, // allow "more" link when too many events
+                events: {
+                    url: '/work/getRecord/id/{$id}.html',
+                    error: function() {
+                        $('#script-warning').show();
+                    }
+                },
+                loading: function(bool) {
+                    $('#loading').toggle(bool);
+                }
+            });
+        });
+
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+        #dg tr{
+            height:30px!important;
+        }
+        .datagrid-row {
+            height: 40px;
+        }
+        .datagrid-cell {
+            height:30px;
+        }
+        a.cwp-btn{
+            text-decoration: none;
+        }
+        #calendar {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 10px;
+        }
+    </style>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="{$admin.nickname}工作记录" data-options="iconCls:'icon-clipboard2',collapsible:true,fit:true,border:false" >
+        <div id='calendar'></div>
+    </div>
+</block>

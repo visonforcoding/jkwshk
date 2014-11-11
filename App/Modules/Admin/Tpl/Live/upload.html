@@ -1,0 +1,103 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+                 $('#aa').accordion('select', '直播管理');
+            $('#dg').datagrid({
+                url: "/Live/getLive.html",
+                pagination: true,
+                rownumbers: true, //显示行号
+                multiSort: true, //是否能按多个字段排序
+                pageList: [10, 20, 30, 40, 50, 60],
+                fitColumns: true, //可以自动拓展
+                toolbar: '#tb',
+                striped: false, //设置条纹
+                showFooter: true,
+                showHeader: true,
+                columns: [[
+                        {field: 'ck', checkbox: true},
+                        {field: 'plandate', title: '播出日期', sortable: true},
+                        {field: 'plantime', title: '播出时间', width: 100, sortable: true},
+                        {field: 'column', title: '栏目名'},
+                        {field: 'name', title: '节目', width: 198},
+                        {field: 'week', title: '星期', width: 300, sortable: true}
+
+                    ]]
+            });
+            $('.pagination').pagination({
+                buttons: [  {
+                        iconCls: 'icon-save',
+                        text:'导入节目单',
+                        handler: function() {
+                         window.location.href="/live/index/action/copy.html";
+                        }
+                    }]
+            });
+            $('#addCat_form').form({
+                onSubmit: function() {
+                    var isValid = $(this).form('validate');
+                    if (!isValid) {
+                        showMessage('类别名不能为空！');
+                    }
+                    return isValid;
+                },
+                success: function(data) {
+                    showMessage(data);
+                    //$('#dlg1').dialog('close');
+                    //$('#dg').datagrid('load');
+                }
+            });
+            $('#category').validatebox({
+                required: true
+            });
+        });
+        function del() {
+            var ss = [];
+            var rows = $('#dg').datagrid('getSelections');
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                ss.push(row.id);
+            }
+            ;
+            $.messager.confirm('Confirm', '确定要删除记录?', function(r) {
+                if (r) {
+                    $.ajax({
+                        type: "POST",
+                        url: "{:U('Admin/Blog/delBlog/')}",
+                        data: {"data[]": ss},
+                        success: function(msg) {
+                            showMessage(msg);
+                            $('#dg').datagrid('load', {
+                            });
+                        }
+                    });
+                }
+            });
+        }
+        function showMessage(msg) {
+            $.messager.show({
+                title: "提示信息",
+                msg: msg,
+                timeout: 2000,
+                showType: 'show',
+                style: {
+                    right: 0,
+                    left: '',
+                    top: parent.document.body.scrollTop + parent.document.documentElement.scrollTop,
+                    bottom: ''
+                }
+            });
+        }
+    </script>
+</block>
+<block name="css">
+    <style type="text/css">
+
+    </style>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="临时节目单" data-options="iconCls:'icon-calendar4', collapsible:true" >
+            <table id="dg" >
+            </table>
+    </div>
+</block>

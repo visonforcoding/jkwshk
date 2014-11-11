@@ -1,0 +1,90 @@
+<script type="text/javascript">
+    function tips_pop() {
+        var MsgPop = document.getElementById("newsbox");//获取窗口这个对象,即ID为newsbox的对象
+        var popH = parseInt(MsgPop.style.height);//用parseInt将对象的高度转化为数字,以方便下面比较
+        if (popH == 0) {         //如果窗口的高度是0
+            MsgPop.style.display = "block";//那么将隐藏的窗口显示出来
+            show = setInterval("changeH('up')", 2);//开始以每0.002秒调用函数changeH("up"),即每0.002秒向上移动一次
+        }
+        else {         //否则
+            hide = setInterval("changeH('down')", 2);//开始以每0.002秒调用函数changeH("down"),即每0.002秒向下移动一次
+        }
+    }
+    function changeH(str) {
+        var MsgPop = document.getElementById("newsbox");
+        var popH = parseInt(MsgPop.style.height);
+        if (str == "up") {     //如果这个参数是UP
+            if (popH <= 20) {    //如果转化为数值的高度小于等于20
+                MsgPop.style.height = (popH + 4).toString() + "px";//高度增加4个象素
+            }
+            else {
+                clearInterval(show);//否则就取消这个函数调用,意思就是如果高度超过20象度了,就不再增长了
+            }
+        }
+        if (str == "down") {
+            if (popH >= 4) {       //如果这个参数是down
+                MsgPop.style.height = (popH - 4).toString() + "px";//那么窗口的高度减少4个象素
+            }
+            else {        //否则
+                clearInterval(hide);    //否则就取消这个函数调用,意思就是如果高度小于4个象度的时候,就不再减了
+                MsgPop.style.display = "none";  //因为窗口有边框,所以还是可以看见1~2象素没缩进去,这时候就把DIV隐藏掉
+            }
+        }
+    }
+    window.onload = function() {    //加载
+        $('#seeMsg').click(function() {
+            $.ajax({
+                type: "POST",
+                url: "/member/seeMsg.html",
+                success: function(msg) {
+                    console.info('i have see the msg (*^__^*) 嘻嘻……');
+                    window.location.href = "/member/news.html";
+                }
+            });
+        });
+        document.getElementById('newsbox').style.height = '0px'; //初始化这个高度
+        // 这里的if 要保证if 与
+                <if condition = "$msgCount gt 0" > 
+                setTimeout("tips_pop()", 1000);
+                </if>
+    }
+</script>
+
+<div class="container clearfix">
+    <ul class="top-smarea fl">
+        <li><a target="_blank" style=" padding:5px;" href="/index.html" title="健康卫视网首页"><img src="__PUBLIC__/Images/home/member/top_logo.png" width="83" height="27" /></a></li>
+        <li class="limgbg"></li>
+        <li><a target="_blank" href="/index.html" title="健康卫视台">健康卫视台</a></li>
+        <li class="limg"></li>
+        <li><a target="_blank" href="/video/index.html" title="健康视频">健康视频</a></li>
+        <li class="limg"></li>
+        <li><a target="_blank" href="/tv/index.html" title="卫视节目">卫视节目</a></li>
+        <li class="limg"></li>
+        <li><a target="_blank" href="/ssg/index.html" title="健康三色光">健康三色光</a></li>
+    </ul>
+    <ul class="top-smarea fr">
+        <li><a href="javascript:void(0)" title="用户">
+                <empty name="user.nickname">{$username}<else/>{$user.nickname}</empty>
+            </a></li>
+        <li class="limgbg"></li>
+        <li><a href="/member/doLogout.html" title="退出">退出</a></li>
+        <li><a href="/member/news.html" title="消息">
+                <if condition = "$msgCount gt 0" >
+                <img src="__PUBLIC__/Images/home/member/news1.png" width="25" height="20" class="news-icon"/></a></li>
+                 <else/>
+                <img src="__PUBLIC__/Images/home/member/news.png" width="25" height="20" class="news-icon"/> </li>
+                </if>
+        <li><a target="_blank" href="http://e.t.qq.com/jkwshk" title="腾讯微博"><i class="icon-tx"></i></a></li>
+        <li><a target="_blank" href="http://weibo.com/u/2232993991" title="新浪微博"><i class="icon-sina"></i></a></li>
+        <li class="limg"></li>
+        <li  class="live-bg"><a target="_blank" href="/live/index.html" title="卫视直播"><i class="icon-play"></i>卫视直播</a></li>
+    </ul>
+
+    <!--消息提醒开始 -->
+    <div id="newsbox">
+        {$msgCount}条新消息，<a href="javascript:void(0)" id="seeMsg"><font class="scan_comment">查看消息</font></a>
+        <a href="javascript:void(0);" title="关闭"  onclick="tips_pop()"><img src="__PUBLIC__/Images/home/member/close.png" width="9" height="9" class="close"/></a>   
+    </div>
+    <!--消息提醒结论 -->    
+
+</div>

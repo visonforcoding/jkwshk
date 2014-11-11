@@ -1,0 +1,83 @@
+<extend name="Layout:layout2"/>
+<block name="script">
+    <script>
+        $(function() {
+            $('#aa').accordion('select', '机构管理');
+            $('#reset').click(function() {
+                $('#ff').form('clear');
+            });
+            $('#submit').click(function() {
+                var param = $('#ff').serializeObject();
+                param.classname = '{$classname}';
+                var isValid = $('#ff').form('validate');
+                var action = "{$action}";
+                if (action === 'edit') {
+                    param.action = 'edit';
+                    param.id = "{$Rs['id']}";
+                }
+                if (isValid) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/corp/doAddCorpnews.html',
+                        data: param,
+                        dataType: 'json',
+                        success: function(data) {
+                                if (data.success) {
+                                     $.messager.alert('信息提示', data.message, 'info');
+                                     window.location.href = '/corp/corpnewslist.html';
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        }
+                    });
+                } else {
+                    return isValid;
+                }
+                ;
+            });
+        });
+        function clearForm() {
+            $('#ff').form('clear');
+        }
+    </script>
+</block>
+<block name="main">
+    <div class="easyui-panel" title="添加公司动态"  data-options="fit:true,border:false">
+        <div style="padding:10px 60px 20px 60px">
+            <form id="ff" method="post" class="admin-form">
+                <div class="input-group">
+                    <label>事件标题:</label>
+                    <input class="easyui-validatebox" style="width:400px" id="title" value="{$Rs['title']}" type="text" name="title" data-options="required:true" ></input>
+                </div>
+                <div class="input-group">
+                    <label>事件时间:</label>
+                    <input name="time" class="easyui-datebox" id="birthday" type="text" size="20" value="{$Rs['time']}" >
+                </div>
+                <div class="input-group hasEditor" >
+                    <label>事件导语:</label>
+                    <textarea name="summary" style="width: 600px;height: 100px;" >{$Rs['summary']}</textarea>
+                </div>
+                <div  class="input-group hasEditor">
+                    <label>内容：</label>
+                    <script id="content" class="editor" name="content" type="text/plain">
+                        {$Rs['content']}
+                    </script>
+                    <script type="text/javascript">
+                        var editor = UE.getEditor('content');
+                    </script>
+                    <div class="clear"></div>
+                </div>
+                <div class="input-group">
+                    <label>是否启用:</label>
+                    {$fisopen}
+                </div>
+                <div class="input-group">
+                    <label></label>
+                    <button class="btn btn-primary" id="submit" type="button">提交</button>
+                    <button class="btn btn-primary" id="reset" type="button" >重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</script>
+</block>

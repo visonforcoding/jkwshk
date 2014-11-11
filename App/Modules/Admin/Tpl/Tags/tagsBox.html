@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>健康卫视后台管理系统V2.0版</title>
+    <load href="__PUBLIC__/Css/admin/base.css" />
+    <load href="__PUBLIC__/Css/admin/style.css" />
+    <load href="__PUBLIC__/Js/lan/cn.js" />
+    <load href="__PUBLIC__/Js/dom.js" />
+    <load href="__PUBLIC__/Js/admin/event.js" />
+
+<!-- 菜单区域  -->
+
+<!-- 主页面开始 -->
+    <script type="text/javascript">
+	document.domain="__IURL__";
+	function update(id,name){
+		var tname =name;
+		window.parent.setTags(id,tname);
+	}
+</script>
+<style>.selectTeacher{width:70px; height:24px; line-height: 24px; border:1px solid #ddd; float:left; padding:0 10px; margin:10px 0 5px 10px; overflow: hidden;} .selectTeacher:hover{background-color: #E8E8E8;} .selectTeacher a:hover{text-decoration: none;}.filegrids{width: 707px;height: 340px;background-color: #fff;overflow-x: hidden;overflow-y: scroll;}
+.fileListBar .fileSearch{margin:6px 7px 0 0; background: url(../images/filesearchbar.png) no-repeat 0 -30px;}
+			.fileSearch .popRefresh{float:left; width:37px; height: 28px; background: url(../images/filesearchbar.png) no-repeat 0 -30px; cursor: pointer;}
+			.fileSearch .popBtnGrid, .fileSearch .popBtnList{float:left; width:35px; height: 28px; cursor: pointer;}
+			.fileSearch .popBtnGridP, .fileSearch .popBtnListP{float:left; width:35px; height: 28px; cursor: pointer;}
+			.fileSearch .popBtnList{background: url(../images/filesearchbar.png) no-repeat -40px -150px;;  background-position: -42px -150px;}
+			.fileSearch .popBtnGrid{background: url(../images/filesearchbar.png) no-repeat 0 -30px;  background-position: -76px -150px;}
+			.fileSearch .popKeyword{padding:4px 5px; border: 1px solid #cfcfcf;}
+</style>
+</head>
+<body>
+<div  class="videoList">
+		<div class="popBig">
+			<div class="popContent">
+				<div class="fileListBar">
+					<div class="fileSearch fl" style="width:600px">
+                    <form method='post' action="__ACTION__" class="forms" id="fm1" style="float:left;">
+                        <input type="text" class="fl popKeyword" id="keyword" name="keyword" value="{$keyword}">
+                        <input type="submit" value="添加新标签" class="btnBgGray ml5"> 
+                     </form>
+							<span style="color:#FF0000;float:left;">{$infos}</span>
+					</div>
+				</div>
+
+                <div class="filegrids fr" id="J-fileGrid">
+					<ul class="pt10 pb10 fl">
+                 	 <volist name="list" id="vo">
+                     
+                    	<li class="selectTeacher">
+							<a href="javascript:void(0);" onClick="update({$vo.id},'{$vo.name}')" title="{$vo.name}">
+                            （<span class="<if condition="$vo.name eq $keyword ">cRed<else />cBlue</if>">{$vo.name}</span>）</a>
+						</li>
+                     </volist>
+                    </ul>
+				</div>				
+				<!-- 分页 start -->
+            <div class="page">
+            {$page}
+            </div>
+            <!-- 分页 end -->
+			</div>
+		</div>
+	</div>
+  
+</body>
+</html>
+

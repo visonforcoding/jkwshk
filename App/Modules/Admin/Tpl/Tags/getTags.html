@@ -1,0 +1,32 @@
+<div class="top-bar" style="padding:10px;">
+    <input type="text" style="height:25px;" id="newtag" placeholder="输入新标签" /> <button id="addTag" class="btn btn-primary">添加新标签</button>
+    <p style="display: inline-block;float: right;">
+        <img src="__PUBLIC__/Images/admin/recycle.png" title="拖到此处删除" alt="回收站"/>
+    </p>
+</div>
+<div class="tag-box">
+    <volist name="tags" id="v">
+        <span   class="tag" tagid="{$v.id}">{$v.name}</span>
+    </volist>
+</div>
+<script>
+    $(function() {
+        $('#addTag').click(function() {
+            var tag = $('#newtag').val();
+            $.ajax({
+                url: '/tags/getTags.html',
+                data: {tag: tag},
+                success: function(msg) {
+                    $('#content').panel('refresh', '/tags/getTags?tag=' + tag);
+                }
+            });
+        });
+        $('.tag').click(function() {
+            var tagid = $(this).attr('tagid');
+            var tag = $(this).html();
+            var v = tagid + '|' + tag;
+            $('#tagcheckbox').append('<input class="checkinput" checked name="tagid[]" type="checkbox" value="' + v + '"/> <span class="checkspan">' + tag + '</span>');
+            $('#tag-window').window('close');
+        });
+    });
+</script>
